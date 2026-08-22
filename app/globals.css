@@ -1,3 +1,4 @@
+@import "tailwindcss";
 :root{--ink:#102f31;--deep:#092629;--gold:#d5a755;--cream:#f4f1e9;--paper:#fffdf9;--muted:#667476}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -63,6 +64,24 @@ h2{font-size:clamp(39px,4.6vw,65px);line-height:1.03}
 .property-card h3{margin:12px 0 10px}
 .property-facts{color:var(--muted);font-size:12px;margin-bottom:18px}
 .property-card>strong{font:400 19px Georgia,serif}
+.gallery-status{margin-top:14px;color:#64706f;font-size:14px;letter-spacing:.01em}
+.listing-carousel{position:relative;margin-top:12px}
+.listing-rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/3);gap:18px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px 18px}
+.listing-rail::-webkit-scrollbar{display:none}
+.listing-card{position:relative;display:block;aspect-ratio:8/5;overflow:hidden;border-radius:2px;background:#17383a;box-shadow:0 12px 34px rgba(7,35,38,.13);scroll-snap-align:start;color:#fff}
+.listing-card img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.listing-card:hover img{transform:scale(1.035)}
+.listing-card-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;background:linear-gradient(180deg,rgba(7,35,38,.03) 35%,rgba(7,35,38,.92) 100%)}
+.listing-card-overlay p{margin:0 0 5px;font-size:13px;letter-spacing:.02em}
+.listing-card-overlay strong{font:400 23px/1.15 Georgia,serif}
+.listing-card-title{margin-top:12px;font-size:13px;color:#e6c986;opacity:0;transform:translateY(4px);transition:.25s ease}
+.listing-card:hover .listing-card-title,.listing-card:focus-visible .listing-card-title{opacity:1;transform:none}
+.listing-badge{position:absolute;top:18px;left:18px;padding:7px 10px;background:#d8b664;color:#082527;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em}
+.listing-badge.sold{background:rgba(7,35,38,.82);color:#fff}
+.listing-arrow{position:absolute;z-index:3;top:calc(50% - 28px);width:48px;height:48px;border:0;border-radius:50%;background:#fff;color:#0b3335;box-shadow:0 8px 26px rgba(7,35,38,.2);font-size:22px;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.listing-arrow:hover{transform:scale(1.06);background:#e6c986}
+.listing-arrow-prev{left:-23px}.listing-arrow-next{right:-23px}
+.listing-source{margin:2px 0 0;color:#78817f;font-size:12px}
 .reviews{background:#143b3d;color:#fff}
 .reviews-title{text-align:center;max-width:740px;margin:0 auto 56px}
 .rating{color:var(--gold);letter-spacing:.12em}
@@ -103,6 +122,7 @@ footer p,footer a{display:block;font-size:11px;line-height:1.75;color:#9cacaa;ma
 .copyright{background:#041416;color:#718480;padding:18px clamp(24px,8vw,132px);font-size:9px;letter-spacing:.05em}
 .contact,.properties,.profile,.process,.reviews,.cities{scroll-margin-top:82px}
 @media(max-width:980px){.site-header nav{display:none}
+.listing-rail{grid-auto-columns:calc((100% - 18px)/2)}
 .profile,.contact{grid-template-columns:1fr}
 .profile-image{max-width:650px}
 .steps,.property-grid,.review-grid{grid-template-columns:1fr 1fr}
@@ -110,6 +130,10 @@ footer p,footer a{display:block;font-size:11px;line-height:1.75;color:#9cacaa;ma
 footer{grid-template-columns:1fr 1fr}
 }
 @media(max-width:650px){.site-header{height:70px}
+.listing-rail{grid-auto-columns:88%;gap:12px}
+.listing-arrow{width:42px;height:42px;top:calc(50% - 30px)}
+.listing-arrow-prev{left:-12px}.listing-arrow-next{right:-12px}
+.listing-card-overlay{padding:20px}
 .header-cta{display:none}
 .hero{min-height:calc(100svh - 70px);padding-top:55px}
 h1{font-size:50px}
