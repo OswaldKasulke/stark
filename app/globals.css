@@ -1,3 +1,7 @@
+@font-face{font-family:made_mirage;font-style:normal;font-weight:400;src:url('/BGL/fonts/made-mirage.woff2') format('woff2');font-display:swap}
+@font-face{font-family:object_sans;font-style:normal;font-weight:300;src:url('/BGL/fonts/object-sans-light.woff2') format('woff2');font-display:swap}
+@font-face{font-family:object_sans;font-style:normal;font-weight:400;src:url('/BGL/fonts/object-sans-regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:object_sans;font-style:normal;font-weight:500;src:url('/BGL/fonts/object-sans-medium.woff2') format('woff2');font-display:swap}
 :root{--ink:#102f31;--deep:#092629;--gold:#d5a755;--cream:#f4f1e9;--paper:#fffdf9;--muted:#667476}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -224,3 +228,35 @@ footer{grid-template-columns:1fr}
 
 @media(max-width:980px){.market-facts-grid{grid-template-columns:1fr 1fr}.market-facts-head{align-items:flex-start;flex-direction:column;gap:15px}}
 @media(max-width:650px){.market-facts-grid{grid-template-columns:1fr}.district-street-grid{grid-template-columns:1fr}.district-street:nth-child(odd){margin-right:0}.street-directory summary{padding:18px}.district-street-grid{padding:10px 18px 20px}}
+
+/* Evernest visual system: monochrome, generous spacing, Made Mirage headings */
+:root{--ink:#000;--deep:#000;--gold:#000;--cream:#f5f5f3;--paper:#fff;--muted:#6a6e75}
+html{font-family:object_sans,Arial,sans-serif}
+body{background:#fff;color:#000;font-family:object_sans,Arial,sans-serif;font-weight:300;font-size:16px;line-height:1.625}
+.site-header{height:70px;background:#000;color:#fff;border:0;padding:0 clamp(24px,8vw,110px)}
+.brand{gap:14px}.brand-mark{width:auto;height:auto;border:0;color:#fff;font:500 15px/1 object_sans,Arial,sans-serif;letter-spacing:.08em}.brand-mark span{font-size:inherit;margin:0 1px}
+.brand strong{font:400 17px/1 object_sans,Arial,sans-serif;letter-spacing:.04em}.brand small{color:#aaa;font-size:8px;letter-spacing:.13em;margin-top:7px}
+.site-header nav{gap:32px;color:#c8c8c8;font-size:14px}.site-header nav a{padding:25px 0;border:0}.site-header nav a:hover{color:#fff}
+.header-cta,.button{min-height:45px;padding:0 22px;border-radius:14px;text-transform:none;letter-spacing:-.01em;font-size:15px;font-weight:500}
+.header-cta{border:1px solid #fff;color:#000;background:#fff}.header-cta:hover{background:#ddd;color:#000}.header-phone{color:#fff}
+.hero{min-height:calc(100vh - 70px);padding:72px max(24px,calc((100vw - 1120px)/2));background-position:center;color:#fff}
+.hero-content{max-width:620px}.eyebrow,.eyebrow.light{color:inherit;text-transform:none;letter-spacing:-.01em;font-size:14px;font-weight:400;margin-bottom:18px}
+h1,h2,.step h3,.property-card h3,.market-facts-grid strong,.market-facts-grid h3,.listing-card-overlay strong,.review-grid blockquote>p,.city strong,.contact address strong,.footer-brand strong,.district-hero p:not(.eyebrow),.district-intro .lead,.district-intro aside strong,.district-street>a:first-child,.district-range strong,.table-title,.brw-table td:not(:first-child),.nearby a strong,.tool-hero>p:last-child,.type-grid button strong,.search-field>span,.resolved-grid strong,.valuation-notice strong,.summary strong{font-family:made_mirage,Georgia,serif;font-weight:400;letter-spacing:0}
+h1{font-size:clamp(46px,5vw,64px);line-height:1.05}h2{font-size:clamp(32px,3.4vw,44px);line-height:1.2}
+.hero-copy{font:300 16px/1.625 object_sans,Arial,sans-serif;color:#fff;margin:24px 0 30px;max-width:560px}
+.button.gold,.button.dark{background:#000;color:#fff;border:1px solid #000}.hero .button.gold,.dark-section .button,.district-hero .button.gold,.district-contact .button.gold{background:#fff;color:#000;border-color:#fff}
+.button:hover{transform:none;opacity:.78}.text-link span,.trust-row span:before{color:inherit}.trust-row{margin-top:44px;color:#d8d8d8;text-transform:none;letter-spacing:0;font-size:12px}
+.section{padding:clamp(72px,8vw,112px) max(24px,calc((100vw - 1120px)/2))}
+.profile,.market-facts,.cities,.nearby,.tool-section{background:#f5f5f3}.profile-image img{filter:none}.image-label{background:#000}.image-label strong{font-family:made_mirage,Georgia,serif}.image-label span{color:#bbb}
+.profile-copy .lead{font-family:made_mirage,Georgia,serif;color:#000}.profile-copy>p:not(.eyebrow):not(.lead),.market-facts-head>p,.property-facts,.gallery-status,.listing-source,.district-intro>div>p:not(.eyebrow):not(.lead),.valuation-grid p,.tool-intro{color:#6a6e75}
+.profile-points span:before,.valuation-grid li:before{color:#000}.dark-section,.reviews,.contact,.brw,.district-contact,.tool-hero{background:#000}
+.section-head>p,.step p,.contact-info>p:not(.eyebrow),.district-contact p:not(.eyebrow){color:#b8b8b8}.steps,.step{border-color:#333}.step>span{color:#fff}.step h3,.property-card h3{font-family:made_mirage,Georgia,serif}
+.market-facts-grid{border-color:#d5d5d5}.market-facts-grid article{background:#fff;border-color:#d5d5d5}.market-facts-grid article:before{background:#000;height:1px}.market-facts-grid strong{color:#000}
+.market-facts-grid strong{font-size:clamp(30px,2.5vw,43px);line-height:1.05;white-space:nowrap}.market-facts-grid article{min-width:0}.market-facts-grid h3{hyphens:auto}
+.arrow-link,.source-link,.data-source{color:#000;border-color:#000;text-transform:none;letter-spacing:0}.source-link.light,.rating,.rating span,.district-contact>div:last-child>a:last-child{color:#fff}
+.listing-card{border-radius:0;background:#111;box-shadow:none}.listing-card-overlay{background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.88) 100%)}.listing-card-title{color:#fff}.listing-badge{background:#fff;color:#000}.listing-badge.sold{background:#000;color:#fff}.listing-arrow{background:#fff;color:#000;border:1px solid #000;box-shadow:none}.listing-arrow:hover{background:#000;color:#fff}
+.review-grid blockquote{color:#000}.review-grid blockquote>div{color:#000}.cities,.nearby{background:#f5f5f3}.city span,.city b,.nearby a b{color:#000}.contact address a{color:#fff}.contact form{color:#000}.contact input:focus,.contact select:focus,.contact textarea:focus{border-color:#000}
+footer,.copyright{background:#000;color:#fff}footer h4,footer p,footer a,.footer-brand small{color:#aaa}.footer-brand strong{color:#fff}
+.district-hero{background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.18)),url(https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=webp&q=82&w=1800) center/cover}.district-hero p:not(.eyebrow){color:#fff;font-family:object_sans,Arial,sans-serif;font-weight:300;font-size:16px;line-height:26px}.district-intro aside{background:#f5f5f3}.street-directory{background:#fff}.street-directory>p:not(.eyebrow){font-family:object_sans,Arial,sans-serif;color:#6a6e75}.street-directory details{border-color:#d5d5d5}.street-directory summary{color:#000}.street-directory summary:before,.district-street>a:first-child span,.district-street .map-link{color:#000}.district-range strong,.brw-table th{color:#fff}.source-note{background:#151515}.source-note>p{color:#bbb}
+.tool-hero h1{font-size:clamp(42px,5vw,60px)}.tool-hero>p:last-child{font-family:object_sans,Arial,sans-serif;color:#ccc;font-size:16px}.progress span{background:#dedede;color:#666}.progress span.active{background:#000;color:#fff}.tool-panel{box-shadow:none;border:1px solid #ddd}.type-grid button,.condition-grid button{background:#f5f5f3;border-color:#ddd;color:#000}.type-grid button>span,.search-field>span,.street-results button span{color:#000}.type-grid button.selected,.condition-grid button.selected{background:#000;color:#fff;border-color:#000}.tool-panel input:focus,.tool-panel select:focus{border-color:#000}.street-results{box-shadow:none}.street-results button:hover,.address-result,.resolved-grid span{background:#f5f5f3}.valuation-notice{background:#f5f5f3;border-left-color:#000}.button.outline{border-color:#000;color:#000}
+@media(max-width:650px){.hero{min-height:72svh}.site-header{padding:0 20px}.brand small{display:none}h1{font-size:44px}.section{padding-top:64px;padding-bottom:64px}}

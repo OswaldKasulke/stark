@@ -54,7 +54,7 @@ export default function Home() {
       <a className="header-cta" href="/BGL/immobilienbewertung">Kostenlose Bewertung</a>
     </header>
 
-    <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(7,35,38,.94) 0%,rgba(7,35,38,.75) 45%,rgba(7,35,38,.12) 76%),url(${heroImage})`}}>
+    <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.08) 82%),url(${heroImage})`}}>
       <div className="hero-content">
         <p className="eyebrow light">Ihre Immobilienmakler in Bergisch Gladbach</p>
         <h1>Erfolgreich verkaufen.<br/>Persönlich begleitet.</h1>
@@ -65,7 +65,7 @@ export default function Home() {
     </section>
 
     <section className="market-facts section" id="markt">
-      <div className="market-facts-head"><div><p className="eyebrow">Immobilienmarkt Bergisch Gladbach</p><h2>Der Markt in Zahlen.</h2></div><p>Amtlich registrierte Transaktionen und Umsätze des Marktjahres 2025.</p></div>
+      <div className="market-facts-head"><div><p className="eyebrow">Immobilienmarkt Bergisch Gladbach</p><h2>Der Markt in Zahlen.</h2></div><p>Amtlich registrierte Transaktionen und Umsätze in Bergisch Gladbach im Marktjahr 2025.</p></div>
       <div className="market-facts-grid">{marketFacts.map(([value,label,note])=><article key={label}><strong>{value}</strong><h3>{label}</h3><p>{note}</p></article>)}</div>
       <a className="source-link" href="https://www.gars.nrw/stadt-gl/produkte-gl/grundstuecksmarktbericht-gl" target="_blank" rel="noreferrer">Quelle: Gutachterausschuss Bergisch Gladbach, Grundstücksmarktbericht 2026, S. 5, 7 und 10 ↗</a>
     </section>
@@ -98,7 +98,7 @@ export default function Home() {
 
     <section className="cities section" id="staedte">
       <div className="section-head"><div><p className="eyebrow">Unsere Städte</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Unser Standort in Bensberg verbindet lokale Marktkenntnis mit einem Netzwerk über die Stadtgrenzen hinaus.</p></div>
-      <div className="city-grid">{districts.map((district)=><a className="city" href={`/BGL/stadtteile/${district.slug}`} key={district.slug}><span>{district.code}</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
+      <div className="city-grid">{districts.map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><span>{district.code}</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
     </section>
 
     <section className="contact section" id="kontakt">
