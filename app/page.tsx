@@ -36,6 +36,13 @@ const reviews = [
   ["George Mukasa", "Bei den Besichtigungen selbst hat Herr Brauns auf mich einen sehr professionellen Eindruck gemacht."],
 ];
 
+const marketFacts = [
+  ["1.251", "Kaufverträge", "im Marktjahr 2025"],
+  ["482,26 Mio. €", "Geldumsatz", "im gesamten Stadtgebiet 2025"],
+  ["332", "Ein- und Zweifamilienhäuser", "Verkäufe im Marktjahr 2025"],
+  ["+40,5 %", "Wohnungseigentum", "mehr Kauffälle als 2024"],
+];
+
 export default function Home() {
   return <main>
     <header className="site-header">
@@ -43,7 +50,7 @@ export default function Home() {
         <span className="brand-mark">S<span>&</span>H</span>
         <span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span>
       </a>
-      <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Unsere Städte</a></nav>
+      <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Stadtteile</a></nav>
       <a className="header-cta" href="/BGL/immobilienbewertung">Kostenlose Bewertung</a>
     </header>
 
@@ -55,6 +62,12 @@ export default function Home() {
         <div className="hero-actions"><a className="button gold" href="/BGL/immobilienbewertung">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
         <div className="trust-row"><span>Lokale Expertise</span><span>Persönliche Beratung</span><span>Digital unterstützt</span></div>
       </div>
+    </section>
+
+    <section className="market-facts section" id="markt">
+      <div className="market-facts-head"><div><p className="eyebrow">Immobilienmarkt Bergisch Gladbach</p><h2>Der Markt in Zahlen.</h2></div><p>Amtlich registrierte Transaktionen und Umsätze des Marktjahres 2025.</p></div>
+      <div className="market-facts-grid">{marketFacts.map(([value,label,note])=><article key={label}><strong>{value}</strong><h3>{label}</h3><p>{note}</p></article>)}</div>
+      <a className="source-link" href="https://www.gars.nrw/stadt-gl/produkte-gl/grundstuecksmarktbericht-gl" target="_blank" rel="noreferrer">Quelle: Gutachterausschuss Bergisch Gladbach, Grundstücksmarktbericht 2026, S. 5, 7 und 10 ↗</a>
     </section>
 
     <section className="profile section" id="profil">
