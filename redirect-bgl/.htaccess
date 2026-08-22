@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ /BGL/$1 [R=301,L,NE]
