@@ -1,0 +1,14 @@
+Straßen und Postleitzahlen in Bergisch Gladbach
+Quelle: https://www.bergischgladbach.de/strassenabfrage.aspx
+Abgerufen am: 22.08.2026
+
+Straßen: 1.004
+Datensätze nach Entfernung identischer Duplikate: 3060
+Postleitzahlen: 51427, 51429, 51465, 51467, 51469
+
+Für vier im Auswahlmenü enthaltene Straßen liefert die offizielle Abfrage ohne Hausnummer keine PLZ:
+- Duckterather Weg
+- Heinrich-Strünker-Straße
+- Sigbertstraße
+- Zum Steinrutsch
+
