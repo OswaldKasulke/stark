@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { districts } from "./stadtteile";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://doktorbecker.de/BGL";
   const lastModified = new Date("2026-08-22");
