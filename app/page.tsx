@@ -64,12 +64,6 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="market-facts section" id="markt">
-      <div className="market-facts-head"><div><p className="eyebrow">Immobilienmarkt Bergisch Gladbach</p><h2>Der Markt in Zahlen.</h2></div><p>Amtlich registrierte Transaktionen und Umsätze in Bergisch Gladbach im Marktjahr 2025.</p></div>
-      <div className="market-facts-grid">{marketFacts.map(([value,label,note])=><article key={label}><strong>{value}</strong><h3>{label}</h3><p>{note}</p></article>)}</div>
-      <a className="source-link" href="https://www.gars.nrw/stadt-gl/produkte-gl/grundstuecksmarktbericht-gl" target="_blank" rel="noreferrer">Quelle: Gutachterausschuss Bergisch Gladbach, Grundstücksmarktbericht 2026, S. 5, 7 und 10 ↗</a>
-    </section>
-
     <section className="profile section" id="profil">
       <div className="profile-image"><img src="https://images.ctfassets.net/if6f7uzjzqut/51Q5Kc6ioaMR8Z5f6qgwDf/207bb0c0af4ffd48b5cf917a3eb69b2a/_DSC5868.jpg?f=face&fit=fill&fm=webp&q=70&w=1400" alt="Team von Evernest Bergisch Gladbach"/><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
@@ -79,6 +73,12 @@ export default function Home() {
         <div className="profile-points"><span>Professionelle Immobilienbewertung</span><span>Zielgerichtete Vermarktung</span><span>Geprüfte Kaufinteressenten</span><span>Begleitung bis zum Abschluss</span></div>
         <a className="button dark" href="#kontakt">Team kennenlernen</a><a className="source-link" href="https://www.evernest.com/de/seiten/immobilienmakler-in-bergisch-gladbach/" target="_blank" rel="noreferrer">Quelle: Evernest – Team Bergisch Gladbach ↗</a>
       </div>
+    </section>
+
+    <section className="market-facts section" id="markt">
+      <div className="market-facts-head"><div><p className="eyebrow">Immobilienmarkt Bergisch Gladbach</p><h2>Der Markt in Zahlen.</h2></div><p>Amtlich registrierte Transaktionen und Umsätze in Bergisch Gladbach im Marktjahr 2025.</p></div>
+      <div className="market-facts-grid">{marketFacts.map(([value,label,note])=><article key={label}><strong>{value}</strong><h3>{label}</h3><p>{note}</p></article>)}</div>
+      <a className="source-link" href="https://www.gars.nrw/stadt-gl/produkte-gl/grundstuecksmarktbericht-gl" target="_blank" rel="noreferrer">Quelle: Gutachterausschuss Bergisch Gladbach, Grundstücksmarktbericht 2026, S. 5, 7 und 10 ↗</a>
     </section>
 
     <section className="process section dark-section" id="fahrplan">
