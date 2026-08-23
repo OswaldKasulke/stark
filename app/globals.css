@@ -1,7 +1,7 @@
-@font-face{font-family:made_mirage;font-style:normal;font-weight:400;src:url('/BGL/fonts/made-mirage.woff2') format('woff2');font-display:swap}
-@font-face{font-family:object_sans;font-style:normal;font-weight:300;src:url('/BGL/fonts/object-sans-light.woff2') format('woff2');font-display:swap}
-@font-face{font-family:object_sans;font-style:normal;font-weight:400;src:url('/BGL/fonts/object-sans-regular.woff2') format('woff2');font-display:swap}
-@font-face{font-family:object_sans;font-style:normal;font-weight:500;src:url('/BGL/fonts/object-sans-medium.woff2') format('woff2');font-display:swap}
+@font-face{font-family:made_mirage;font-style:normal;font-weight:400;src:url('/fonts/made-mirage.woff2') format('woff2');font-display:swap}
+@font-face{font-family:object_sans;font-style:normal;font-weight:300;src:url('/fonts/object-sans-light.woff2') format('woff2');font-display:swap}
+@font-face{font-family:object_sans;font-style:normal;font-weight:400;src:url('/fonts/object-sans-regular.woff2') format('woff2');font-display:swap}
+@font-face{font-family:object_sans;font-style:normal;font-weight:500;src:url('/fonts/object-sans-medium.woff2') format('woff2');font-display:swap}
 :root{--ink:#102f31;--deep:#092629;--gold:#d5a755;--cream:#f4f1e9;--paper:#fffdf9;--muted:#667476}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}

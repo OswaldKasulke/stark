@@ -4,7 +4,7 @@ import { districts } from "./stadtteile";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://doktorbecker.de/BGL";
+  const base = "https://immobilienmakler-bergisch-gladbach.de";
   const lastModified = new Date("2026-08-22");
   return [
     { url: `${base}/`, lastModified, changeFrequency: "weekly", priority: 1 },

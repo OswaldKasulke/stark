@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: "*", allow: "/BGL/" },
-    sitemap: "https://doktorbecker.de/BGL/sitemap.xml",
+    rules: { userAgent: "*", allow: "/" },
+    sitemap: "https://immobilienmakler-bergisch-gladbach.de/sitemap.xml",
   };
 }

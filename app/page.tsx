@@ -51,7 +51,7 @@ export default function Home() {
         <span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span>
       </a>
       <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Stadtteile</a></nav>
-      <a className="header-cta" href="/BGL/immobilienbewertung">Kostenlose Bewertung</a>
+      <a className="header-cta" href="/immobilienbewertung">Kostenlose Bewertung</a>
     </header>
 
     <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.08) 82%),url(${heroImage})`}}>
@@ -59,7 +59,7 @@ export default function Home() {
         <p className="eyebrow light">Ihre Immobilienmakler in Bergisch Gladbach</p>
         <h1>Erfolgreich verkaufen.<br/>Persönlich begleitet.</h1>
         <p className="hero-copy">Lokale Marktkenntnis, moderne Vermarktung und ein starkes Netzwerk – für den Verkauf Ihrer Immobilie in Bergisch Gladbach und Umgebung.</p>
-        <div className="hero-actions"><a className="button gold" href="/BGL/immobilienbewertung">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
+        <div className="hero-actions"><a className="button gold" href="/immobilienbewertung">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
         <div className="trust-row"><span>Lokale Expertise</span><span>Persönliche Beratung</span><span>Digital unterstützt</span></div>
       </div>
     </section>
@@ -98,7 +98,7 @@ export default function Home() {
 
     <section className="cities section" id="staedte">
       <div className="section-head"><div><p className="eyebrow">Unsere Städte</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Unser Standort in Bensberg verbindet lokale Marktkenntnis mit einem Netzwerk über die Stadtgrenzen hinaus.</p></div>
-      <div className="city-grid">{districts.map((district)=><a className="city" href={`/BGL/stadtteile/${district.slug}`} key={district.slug}><span>{district.code}</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
+      <div className="city-grid">{districts.map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><span>{district.code}</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
     </section>
 
     <section className="contact section" id="kontakt">

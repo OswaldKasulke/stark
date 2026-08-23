@@ -1,6 +1,6 @@
 # Immobilienmakler Bergisch Gladbach
 
-Quellcode der lokalen Immobilienmakler-Webseite für `doktorbecker.de/BGL`.
+Quellcode der lokalen Immobilienmakler-Webseite für `immobilienmakler-bergisch-gladbach.de`.
 
 ## Datenprinzip
 
