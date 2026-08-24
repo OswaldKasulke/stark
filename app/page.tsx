@@ -71,7 +71,7 @@ export default function Home() {
         <p className="lead">Patrick Stark und Julian Hoffmann verantworten das operative und strategische Geschäft am Bergisch Gladbacher Standort.</p>
         <p>Mit umfangreicher Vertriebs- und Branchenerfahrung begleitet unser Team Eigentümer persönlich und transparent – bei Verkauf, Kauf und Vermietung. Moderne Prozesse unterstützen unsere Arbeit, ersetzen aber nie das persönliche Gespräch.</p>
         <div className="profile-points"><span>Professionelle Immobilienbewertung</span><span>Zielgerichtete Vermarktung</span><span>Geprüfte Kaufinteressenten</span><span>Begleitung bis zum Abschluss</span></div>
-        <a className="button dark" href="#kontakt">Team kennenlernen</a><a className="source-link" href="https://www.evernest.com/de/seiten/immobilienmakler-in-bergisch-gladbach/" target="_blank" rel="noreferrer">Quelle: Evernest – Team Bergisch Gladbach ↗</a>
+        <a className="button dark" href="#kontakt">Team kennenlernen</a>
       </div>
     </section>
 
