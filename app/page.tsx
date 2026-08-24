@@ -38,6 +38,16 @@ const reviews = [
 
 const googleReviewsUrl = "https://www.google.com/maps/place/Evernest+Bergisch+Gladbach+-+Stark+%26+Hoffmann+Immobilien+GmbH/@50.9659599,7.1237848,14z/data=!4m10!1m2!2m1!1shoffmann+und+stark!3m6!1s0x47bed77e6a23d7b5:0xa1ba73d86f4ba04f!8m2!3d50.9659599!4d7.1598337!15sChJob2ZmbWFubiB1bmQgc3RhcmtaFCISaG9mZm1hbm4gdW5kIHN0YXJrkgEScmVhbF9lc3RhdGVfYWdlbnRzmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0V1ZGTldSWGxsVlVwcVVWWk9iVTlZUWxSaVZWWlFZVE53YVZadFl4QULgAQD6AQUInAQQSg!16s%2Fg%2F11pq_xh29r?entry=ttu";
 
+const locations = [
+  ["Bechen", "bechen"],
+  ["Engelskirchen", "engelskirchen"],
+  ["Königsforst", "koenigsforst"],
+  ["Kürten", "kuerten"],
+  ["Lindlar", "lindlar"],
+  ["Odenthal", "odenthal"],
+  ["Overath", "overath"],
+];
+
 const marketFacts = [
   ["1.251", "Kaufverträge", "im Marktjahr 2025"],
   ["482,26 Mio. €", "Geldumsatz", "im gesamten Stadtgebiet 2025"],
@@ -118,7 +128,9 @@ export default function Home() {
     </section>
 
     <section className="cities section" id="staedte">
-      <div className="section-head"><div><p className="eyebrow">Unsere Städte</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Unser Standort in Bensberg verbindet lokale Marktkenntnis mit einem Netzwerk über die Stadtgrenzen hinaus.</p></div>
+      <div className="section-head"><div><p className="eyebrow">Unsere Standorte</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für Bergisch Gladbach und die Region.</p></div>
+      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Standortseite</span><strong>{name}</strong><b>↗</b></a>)}</div>
+      <div className="district-list-head"><p className="eyebrow">Bergisch Gladbach</p><h3>Alle 25 Stadtteile.</h3></div>
       <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><strong>{district.name}</strong><b>↗</b></a>)}</div>
     </section>
 
