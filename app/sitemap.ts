@@ -5,10 +5,12 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://immobilienmakler-bergisch-gladbach.de";
-  const lastModified = new Date("2026-08-22");
+  const lastModified = new Date("2026-08-24");
   return [
     { url: `${base}/`, lastModified, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/immobilienbewertung/`, lastModified, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/impressum/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/agb/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     ...districts.map((district) => ({ url: `${base}/stadtteile/${district.slug}/`, lastModified, changeFrequency: "monthly" as const, priority: 0.8 })),
   ];
 }
