@@ -43,14 +43,33 @@ const marketFacts = [
   ["+40,5 %", "Wohnungseigentum", "mehr Kauffälle als 2024"],
 ];
 
+const faq = [
+  ["Was ist meine Immobilie in Bergisch Gladbach aktuell wert?", "Der Marktwert hängt von der konkreten Straße, dem Stadtteil, Grundstück, Baujahr, Zustand, Energieeffizienz und der aktuellen Nachfrage ab. Eine Online-Bewertung liefert eine erste Orientierung; für eine belastbare Einschätzung prüfen wir die Immobilie und ihre Mikrolage persönlich."],
+  ["Ist jetzt ein guter Zeitpunkt, um in Bergisch Gladbach zu verkaufen?", "Der passende Zeitpunkt richtet sich nicht nur nach dem Gesamtmarkt, sondern auch nach Ihrer persönlichen Planung, einer möglichen Spekulationsfrist und dem Zustand der Immobilie. Entscheidend ist, wie Angebot und Nachfrage im jeweiligen Stadtteil aktuell zusammenpassen."],
+  ["Brauche ich einen Makler – und was kostet das?", "Ein Makler ist nicht vorgeschrieben. Er übernimmt Bewertung, Unterlagenprüfung, Vermarktung, Interessentenqualifizierung, Verhandlung und Vorbereitung des Notartermins. Die konkrete Provision wird vor Auftragserteilung transparent vereinbart; bei Wohnungen und Einfamilienhäusern gelten die gesetzlichen Regeln zur Verteilung der Maklerkosten."],
+  ["Wie lange dauert ein Immobilienverkauf in Bergisch Gladbach?", "Die Dauer hängt von Objektart, Preis, Unterlagen und Nachfrage ab. Nach vollständiger Vorbereitung folgen Vermarktung, Besichtigungen, Finanzierungsprüfung und Notartermin. Ein realistischer Angebotspreis und frühzeitig vollständige Unterlagen verkürzen den Prozess meist deutlich."],
+  ["Welche Unterlagen brauche ich für den Hausverkauf?", "Typischerweise werden Grundbuchauszug, Flurkarte, Bauunterlagen, Wohn- und Nutzflächenberechnung, Grundrisse, Energieausweis und Nachweise zu Modernisierungen benötigt. Bei Eigentumswohnungen kommen unter anderem Teilungserklärung, Wirtschaftsplan, Protokolle und Informationen zur Instandhaltungsrücklage hinzu."],
+  ["Brauche ich einen Energieausweis für den Immobilienverkauf?", "In den meisten Verkaufsfällen ja. Die gesetzlich vorgeschriebenen Angaben müssen bereits in der Immobilienanzeige erscheinen, sofern ein Energieausweis vorliegt. Spätestens bei der Besichtigung ist er vorzulegen. Welche Ausweisart erforderlich ist, hängt vom Gebäude ab."],
+  ["Vermietet oder unvermietet verkaufen – was ist der Unterschied?", "Vermietete Immobilien sprechen überwiegend Kapitalanleger an und werden stärker nach nachhaltig erzielbarer Miete und Rendite beurteilt. Bezugsfreie Häuser und Wohnungen kommen zusätzlich für Eigennutzer infrage. Mietvertrag, Miethöhe und rechtliche Rahmenbedingungen beeinflussen deshalb Zielgruppe und Preis."],
+  ["Muss ich beim Immobilienverkauf Steuern zahlen?", "Das hängt vom Einzelfall ab. Relevant können insbesondere Haltedauer, Eigennutzung, Veräußerungsgewinn und die Anzahl früherer Verkäufe sein. Bei geerbten Immobilien kann die Besitzzeit des Erblassers eine Rolle spielen. Steuerliche Fragen sollten vor dem Verkauf mit einer Steuerberatung geklärt werden."],
+  ["Geerbtes Haus verkaufen – was muss ich beachten?", "Zunächst sollten Eigentumsverhältnisse, Grundbuch und mögliche Belastungen geklärt werden. Bei einer Erbengemeinschaft müssen die Beteiligten den Verkauf gemeinsam tragen. Zusätzlich sind steuerliche Fristen, der Zustand der Immobilie und eine neutrale Wertermittlung wichtig."],
+  ["Was ist der Bodenrichtwert in Bergisch Gladbach?", "Der Bodenrichtwert ist ein amtlicher Orientierungswert für ein typisches unbebautes Grundstück innerhalb einer Bodenrichtwertzone. Bergisch Gladbach umfasst 286 Wohnzonen. Der Wert der konkreten Immobilie kann wegen Zuschnitt, Erschließung, Topografie, Bebauung und Mikrolage deutlich abweichen."],
+  ["Welche Rolle spielt der Stadtteil bei der Bewertung?", "Eine sehr große. Zwischen Schildgen, Stadtmitte, Bensberg, Refrath und den ländlicheren Randlagen unterscheiden sich Grundstücksniveau, Gebäudestruktur und Nachfrage. Selbst innerhalb eines Stadtteils können Straße, Aussicht, Verkehr, Grundstückszuschnitt und Bodenrichtwertzone den Wert verändern."],
+  ["Wie läuft die kostenlose Immobilienbewertung ab?", "Sie übermitteln zunächst die Eckdaten und Adresse. Wir ordnen die Immobilie dem richtigen Stadtteil und der konkreten Marktlage zu, prüfen Grundstück und Gebäudemerkmale und besprechen anschließend die realistische Preisspanne sowie mögliche nächste Schritte – unverbindlich und transparent."],
+  ["Welche Fehler sollte ich beim Hausverkauf vermeiden?", "Häufige Fehler sind ein nicht belegbarer Angebotspreis, unvollständige Unterlagen, schlechte Foto- und Grundrissqualität, ungeprüfte Interessenten und vorschnelle Preiszugeständnisse. Auch bekannte Mängel sollten transparent dokumentiert werden, damit der Verkauf rechtssicher vorbereitet ist."],
+  ["Kann ich diskret verkaufen, ohne öffentliches Immobilienportal?", "Ja. Bei einem diskreten Verkauf wird die Immobilie zunächst gezielt vorgemerkten und geprüften Interessenten angeboten. Ob diese Vorgehensweise sinnvoll ist, hängt von Objekt, Lage, Zielgruppe und gewünschtem Zeitrahmen ab."],
+];
+
 export default function Home() {
+  const faqStructuredData = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":faq.map(([question,answer])=>({"@type":"Question","name":question,"acceptedAnswer":{"@type":"Answer","text":answer}}))};
   return <main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqStructuredData)}} />
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Startseite">
         <span className="brand-mark">S<span>&</span>H</span>
         <span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span>
       </a>
-      <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Stadtteile</a></nav>
+      <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Stadtteile</a><a href="#faq">FAQ</a></nav>
       <a className="header-cta" href="/immobilienbewertung">Kostenlose Bewertung</a>
     </header>
 
@@ -99,6 +118,12 @@ export default function Home() {
     <section className="cities section" id="staedte">
       <div className="section-head"><div><p className="eyebrow">Unsere Städte</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Unser Standort in Bensberg verbindet lokale Marktkenntnis mit einem Netzwerk über die Stadtgrenzen hinaus.</p></div>
       <div className="city-grid">{districts.map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><span>{district.code}</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
+    </section>
+
+    <section className="faq-section section" id="faq">
+      <div className="section-head"><div><p className="eyebrow">Häufige Fragen</p><h2>Was Eigentümer in Bergisch Gladbach wissen wollen.</h2></div><p>Antworten rund um Immobilienbewertung, Hausverkauf, Unterlagen und Bodenrichtwerte.</p></div>
+      <div className="faq-grid">{faq.map(([question,answer])=><details className="faq-item" key={question}><summary>{question}<span aria-hidden="true">+</span></summary><div><p>{answer}</p></div></details>)}</div>
+      <div className="faq-cta"><a className="button dark" href="/immobilienbewertung/">Immobilie kostenlos bewerten</a><a href="tel:+4922049147881">Weitere Frage? +49 2204 914 7881</a></div>
     </section>
 
     <section className="contact section" id="kontakt">
