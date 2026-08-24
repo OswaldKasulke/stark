@@ -1,0 +1,51 @@
+import { properties } from "./immobilien";
+
+function uniqueCurrentProperties() {
+  const current = properties.filter((property) => property.status !== "Verkauft" && property.price !== "Verkauft");
+  const unique = new Map<string, (typeof properties)[number]>();
+
+  for (const property of current) {
+    const key = `${property.place}|${property.price}|${property.image}`;
+    unique.set(key, property);
+  }
+
+  return [...unique.values()];
+}
+
+export function currentBergischGladbachOfferCount() {
+  return uniqueCurrentProperties().filter((property) => property.place.startsWith("Bergisch Gladbach-")).length;
+}
+
+export default function DistrictOffers({ district }: { district: string }) {
+  const current = uniqueCurrentProperties();
+  const local = current.filter((property) => property.place.startsWith(`Bergisch Gladbach-${district},`));
+  const fallback = current.filter((property) => property.place.startsWith("Bergisch Gladbach-")).slice(0, 3);
+  const offers = local.length ? local : fallback;
+  const localOffers = local.length > 0;
+
+  return (
+    <section className="properties section district-offers" id="angebote">
+      <div className="section-head">
+        <div>
+          <p className="eyebrow">Aktuelle Immobilienangebote</p>
+          <h2>{localOffers ? `Immobilien in ${district}` : "Angebote aus Bergisch Gladbach und Umgebung"}</h2>
+        </div>
+        <p>{localOffers ? `Aktuell geführte Evernest-Angebote mit der Lageangabe Bergisch Gladbach-${district}.` : `Derzeit ist in ${district} kein eigenes Angebot in der Evernest-Suche geführt. Hier sehen Sie aktuelle Angebote aus dem näheren Marktumfeld.`}</p>
+      </div>
+      <div className="property-grid">
+        {offers.map((property, index) => (
+          <a className="property-card" href={property.url} target="_blank" rel="noreferrer" key={property.url}>
+            <div className="property-photo">
+              <img src={property.image} alt={property.alt} loading={index < 2 ? "eager" : "lazy"} />
+              {property.status && <span>{property.status}</span>}
+            </div>
+            <p className="property-place">{property.place}</p>
+            <h3>{property.price}</h3>
+            <span className="arrow-link">Immobilie ansehen ↗</span>
+          </a>
+        ))}
+      </div>
+      <a className="source-link" href="https://www.evernest.com/de/search/?lat=50.9929303&lng=7.1277379&zoom=10" target="_blank" rel="noreferrer">Quelle der Angebotspreise: Evernest-Immobiliensuche · Stand 25.08.2026 ↗</a>
+    </section>
+  );
+}
