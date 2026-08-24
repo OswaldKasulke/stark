@@ -81,7 +81,7 @@ export default function Home() {
         <span className="brand-mark">S<span>&</span>H</span>
         <span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span>
       </a>
-      <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Standorte</a><a href="/downloads/">Downloads</a><a href="#faq">FAQ</a></nav>
+      <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Region</a><a href="/downloads/">Downloads</a><a href="#faq">FAQ</a></nav>
       <a className="header-cta" href="/immobilienbewertung">Kostenlose Bewertung</a>
     </header>
 
@@ -128,8 +128,8 @@ export default function Home() {
     </section>
 
     <section className="cities section" id="staedte">
-      <div className="section-head"><div><p className="eyebrow">Unsere Standorte</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für Bergisch Gladbach und die Region.</p></div>
-      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Standortseite</span><strong>{name}</strong><b>↗</b></a>)}</div>
+      <div className="section-head"><div><p className="eyebrow">Region &amp; Umland</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für Bergisch Gladbach und die Region.</p></div>
+      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Ortsprofil</span><strong>{name}</strong><b>↗</b></a>)}</div>
       <div className="district-list-head"><p className="eyebrow">Bergisch Gladbach</p><h3>Alle 25 Stadtteile.</h3></div>
       <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><strong>{district.name}</strong><b>↗</b></a>)}</div>
     </section>

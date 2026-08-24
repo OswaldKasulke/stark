@@ -25,7 +25,7 @@ const marketReports = [
 
 export default function DownloadsPage(){
   return <main className="downloads-page">
-    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Hauptnavigation"><a href="/#profil">Profil</a><a href="/#markt">Markt</a><a href="/#staedte">Standorte</a><a href="/downloads/">Downloads</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
+    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Hauptnavigation"><a href="/#profil">Profil</a><a href="/#markt">Markt</a><a href="/#staedte">Region</a><a href="/downloads/">Downloads</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
     <section className="downloads-hero"><div><p className="eyebrow light">Kostenlose Downloads</p><h1>Gut vorbereitet verkaufen.</h1><p>Praktische Checklisten für Eigentümer in Bergisch Gladbach und im Bergischen Land - kompakt, druckbar und ohne Anmeldung verfügbar.</p></div></section>
     <section className="downloads-content section">
       <div className="section-head"><div><p className="eyebrow">Checklisten</p><h2>Praktische Hilfen für Ihren Immobilienverkauf.</h2></div><p>Die beiden Verkaufs- und Notarchecklisten basieren auf den Ratgeber-Inhalten von Roman Becker und wurden für Bergisch Gladbach und das Bergische Land angepasst.</p></div>
