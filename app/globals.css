@@ -96,14 +96,21 @@ h2{font-size:clamp(39px,4.6vw,65px);line-height:1.03}
 .listing-source{margin:2px 0 0;color:#78817f;font-size:12px}
 .reviews{background:#143b3d;color:#fff}
 .reviews-title{text-align:center;max-width:740px;margin:0 auto 56px}
-.rating{color:var(--gold);letter-spacing:.12em}
-.rating span{color:#c5d0cd;font-size:11px;letter-spacing:.04em;margin-left:12px}
+.rating-sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:28px auto 14px;max-width:620px;text-align:left}
+.rating-sources a{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center;padding:17px 20px;border:1px solid rgba(255,255,255,.3);color:#fff;transition:border-color .2s ease,background .2s ease}
+.rating-sources a:hover{border-color:var(--gold);background:rgba(255,255,255,.06)}
+.rating-stars{grid-row:1/3;color:var(--gold);font-size:17px;letter-spacing:.04em;white-space:nowrap}
+.rating-sources strong{font-size:17px;line-height:1.2}
+.rating-sources small{color:#c5d0cd;font-size:10px;line-height:1.4}
+.reviews-source-note{margin:0;color:#aebbb9;font-size:10px;line-height:1.6}
+.reviews-source-note a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .review-grid blockquote{margin:0;background:#fff;color:var(--ink);padding:34px;min-height:280px;display:flex;flex-direction:column}
 .review-grid blockquote>div{color:var(--gold);letter-spacing:.12em}
 .review-grid blockquote>p{font:400 17px/1.65 Georgia,serif;flex:1}
 .review-grid cite{font-style:normal;font-size:12px;font-weight:bold}
 .review-grid cite span{display:block;color:var(--muted);font-weight:normal;font-size:10px;margin-top:5px}
+@media(max-width:620px){.rating-sources{grid-template-columns:1fr}.rating-sources a{padding:15px 17px}}
 .cities{background:var(--cream)}
 .city-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #c8ccc5}
 .city{display:grid;grid-template-columns:48px 1fr 24px;align-items:center;gap:12px;padding:25px 18px;border-bottom:1px solid #c8ccc5}

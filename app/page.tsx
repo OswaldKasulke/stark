@@ -36,6 +36,8 @@ const reviews = [
   ["George Mukasa", "Bei den Besichtigungen selbst hat Herr Brauns auf mich einen sehr professionellen Eindruck gemacht."],
 ];
 
+const googleReviewsUrl = "https://www.google.com/maps/place/Evernest+Bergisch+Gladbach+-+Stark+%26+Hoffmann+Immobilien+GmbH/@50.9659599,7.1237848,14z/data=!4m10!1m2!2m1!1shoffmann+und+stark!3m6!1s0x47bed77e6a23d7b5:0xa1ba73d86f4ba04f!8m2!3d50.9659599!4d7.1598337!15sChJob2ZmbWFubiB1bmQgc3RhcmtaFCISaG9mZm1hbm4gdW5kIHN0YXJrkgEScmVhbF9lc3RhdGVfYWdlbnRzmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0V1ZGTldSWGxsVlVwcVVWWk9iVTlZUWxSaVZWWlFZVE53YVZadFl4QULgAQD6AQUInAQQSg!16s%2Fg%2F11pq_xh29r?entry=ttu";
+
 const marketFacts = [
   ["1.251", "Kaufverträge", "im Marktjahr 2025"],
   ["482,26 Mio. €", "Geldumsatz", "im gesamten Stadtgebiet 2025"],
@@ -111,7 +113,7 @@ export default function Home() {
     </section>
 
     <section className="reviews section">
-      <div className="reviews-title"><p className="eyebrow light">Was Kunden über uns sagen</p><h2>Vertrauen entsteht durch gute Arbeit.</h2><p className="rating">★★★★★ <span>9,2 / 10 bei Trustlocal · 91 Bewertungen</span></p><a className="source-link light" href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer">Quelle und vollständige Bewertungen: Trustlocal ↗</a></div>
+      <div className="reviews-title"><p className="eyebrow light">Was Kunden über uns sagen</p><h2>Vertrauen entsteht durch gute Arbeit.</h2><div className="rating-sources"><a href={googleReviewsUrl} target="_blank" rel="noreferrer" aria-label="Google-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>4,9 / 5</strong><small>Google · 111 Rezensionen</small></a><a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer" aria-label="Trustlocal-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>9,2 / 10</strong><small>Trustlocal · 91 Bewertungen</small></a></div><p className="reviews-source-note">Stand: 24.08.2026 · Quellen und vollständige Bewertungen: <a href={googleReviewsUrl} target="_blank" rel="noreferrer">Google ↗</a> und <a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer">Trustlocal ↗</a></p></div>
       <div className="review-grid">{reviews.map(([name,quote])=><blockquote key={name}><div>★★★★★</div><p>„{quote}“</p><cite>{name}<span>Google-Bewertung, 2025</span></cite></blockquote>)}</div>
     </section>
 
