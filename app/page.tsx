@@ -128,10 +128,10 @@ export default function Home() {
     </section>
 
     <section className="cities section" id="staedte">
-      <div className="section-head"><div><p className="eyebrow">Region &amp; Umland</p><h2>Zu Hause im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für Bergisch Gladbach und die Region.</p></div>
-      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Ortsprofil</span><strong>{name}</strong><b>↗</b></a>)}</div>
       <div className="district-list-head"><p className="eyebrow">Bergisch Gladbach</p><h3>Alle 25 Stadtteile.</h3></div>
       <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><strong>{district.name}</strong><b>↗</b></a>)}</div>
+      <div className="section-head region-list-head"><div><p className="eyebrow">Region &amp; Umland</p><h2>Ortsprofile im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für die Region rund um Bergisch Gladbach.</p></div>
+      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Ortsprofil</span><strong>{name}</strong><b>↗</b></a>)}</div>
     </section>
 
     <section className="faq-section section" id="faq">
