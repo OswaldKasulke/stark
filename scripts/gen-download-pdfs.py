@@ -3,7 +3,7 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepTogether
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,7 +62,7 @@ def make_pdf(filename, label, headline, description, sections, sources):
         Paragraph(description, intro),
     ]
     for name, items in sections:
-        story.extend([Paragraph(name, heading), checklist(items)])
+        story.append(KeepTogether([Paragraph(name, heading), checklist(items)]))
     story.extend([
         Spacer(1, 3*mm),
         Paragraph("Hinweis", heading),
@@ -78,13 +78,29 @@ make_pdf(
     "checkliste-verkaufsunterlagen.pdf",
     "Kostenlose Checkliste",
     "Unterlagen für den Immobilienverkauf",
-    "Eine kompakte Übersicht für Eigentümer in Bergisch Gladbach und im Bergischen Land. Haken Sie ab, was bereits vorliegt; offene Unterlagen lassen sich anschließend gezielt beschaffen.",
+    "Nach der Checkliste von Roman Becker, regional angepasst für Eigentümer in Bergisch Gladbach und im Bergischen Land. Haken Sie ab, was bereits vorliegt; offene Unterlagen lassen sich anschließend gezielt beschaffen.",
     [
-        ("Grundlagen für Haus und Wohnung", ["Aktueller Grundbuchauszug", "Flurkarte beziehungsweise Liegenschaftskarte", "Grundrisse und Bauzeichnungen", "Wohn- und Nutzflächenberechnung", "Energieausweis", "Nachweise über Modernisierungen und Sanierungen", "Gebäudeversicherung und Angaben zu laufenden Kosten"]),
-        ("Zusätzlich bei Eigentumswohnungen", ["Teilungserklärung mit Aufteilungsplan", "Protokolle der letzten Eigentümerversammlungen", "Aktueller Wirtschaftsplan und letzte Jahresabrechnung", "Höhe der Instandhaltungsrücklage", "Verwaltervertrag und Kontaktdaten der Verwaltung"]),
-        ("Bei vermieteten Immobilien", ["Mietvertrag und Nachträge", "Aktuelle Miethöhe und letzte Betriebskostenabrechnung", "Übersicht zu Kaution, Mietrückständen und vereinbarten Anpassungen"]),
+        ("Für ein Haus", ["Ausweis aller Eigentümer und gegebenenfalls Vollmacht", "Grundbuchauszug - möglichst nicht älter als drei Monate", "Vermaßte Grundrisse, Ansichten und Schnitte", "Wohn- und Nutzflächenberechnung", "Baubeschreibung, Baugenehmigung und Abnahme", "Wohngebäudeversicherung", "Baulastenauskunft und Flurkarte", "Energieausweis", "Grundbesitzabgabenbescheid und jährliche Kosten", "Mietverträge bei vermieteten Flächen"]),
+        ("Zusätzlich für eine Eigentumswohnung", ["Teilungserklärung, Abgeschlossenheitsbescheinigung und Aufteilungsplan", "Letzte drei Wohngeldabrechnungen", "Letzte drei Protokolle der Eigentümerversammlungen", "Aktueller Wirtschaftsplan", "Angabe zur Instandhaltungsrücklage und geplanten Maßnahmen", "Kontaktdaten der Hausverwaltung"]),
+        ("Zusätzlich für ein Mehrfamilienhaus", ["Grundrisse und Flächenberechnung für alle Einheiten", "Mietverträge und vollständige Mietaufstellung", "Auflistung der jährlichen Kosten", "Teilungserklärung und Nachträge, sofern aufgeteilt", "Nachweise über Modernisierungen mit Jahreszahlen"]),
+        ("Für die finanzierende Bank", ["Aktuelle Objektunterlagen einschließlich Grundbuch und Flurkarte", "Aussagekräftige Innen- und Außenfotos", "Baujahr, Modernisierungen und Energieausweis", "Bei Wohnungen: WEG-Unterlagen", "Bei Vermietung: Mietverträge und Mietaufstellung", "Kaufvertragsentwurf des Notars"]),
+        ("Wo Sie Unterlagen erhalten", ["Grundbuchauszug: zuständiges Grundbuchamt", "Flurkarte: Kataster- oder Liegenschaftsamt", "Baulastenauskunft und Bauakte: örtliche Bauaufsicht", "WEG-Unterlagen: Hausverwaltung", "Energieausweis: zugelassene Aussteller", "Altlastenauskunft: zuständige Umweltbehörde"]),
     ],
-    ["Gebäudeenergiegesetz (GEG), insbesondere Angaben in Immobilienanzeigen: https://www.gesetze-im-internet.de/geg/", "BORIS-NRW - amtliche Bodenrichtwerte: https://www.boris.nrw.de/"],
+    ["Redaktionelle Grundlage: Roman Becker, Unterlagen für den Immobilienverkauf: https://romanbecker.de/ratgeber/unterlagen-immobilienverkauf.html", "Gebäudeenergiegesetz (GEG): https://www.gesetze-im-internet.de/geg/"],
+)
+
+make_pdf(
+    "checkliste-notar-kaufvertrag.pdf",
+    "Kostenlose Checkliste",
+    "19 Angaben für den Kaufvertragsentwurf",
+    "Nach der Praxis-Checkliste von Roman Becker: Diese Angaben helfen dem Notariat, den Kaufvertragsentwurf vollständig und ohne unnötige Rückfragen vorzubereiten.",
+    [
+        ("Organisation und Objekt", ["Notariat auswählen", "Wunschtermin für die Beurkundung", "Grundbuchauszug für jede betroffene Einheit", "Vereinbarter Kaufpreis", "Angabe, ob der Käufer finanziert", "Belastungen aus Abteilung II und III: löschen oder übernehmen"]),
+        ("Übergabe und besondere Regelungen", ["Übergabetermin und Räumung", "Angabe: bewohnt, vermietet oder frei", "Gewünschter Übergabezeitpunkt", "Besondere Wünsche, etwa Wohnrecht oder Nießbrauch", "Vertretungssituation und mögliche Nachgenehmigung", "Mobilnummer für Rückfragen"]),
+        ("Beteiligte und Zahlungen", ["Steuer-IDs, Anschriften, E-Mail-Adressen und Ausweiskopien aller Beteiligten", "Güterstand der Verkäuferseite", "Kontoverbindungen aller Zahlungsempfänger", "Hausverwaltung mit vollständiger Anschrift", "Erforderliche Löschungsbewilligungen"]),
+        ("Mitverkauftes und Zustand", ["Liste mitverkaufter beweglicher Gegenstände mit Einzelwerten", "Übergabezustand ausdrücklich festlegen, zum Beispiel besenrein und frei von nicht mitverkauftem Mobiliar"]),
+    ],
+    ["Redaktionelle Grundlage: Roman Becker, Was braucht der Notar für den Kaufvertrag?: https://romanbecker.de/ratgeber/was-braucht-der-notar-fuer-den-kaufvertrag.html", "Bundesnotarkammer - Immobilien: https://www.notar.de/themen/immobilien"],
 )
 
 make_pdf(
@@ -116,4 +132,4 @@ make_pdf(
     ["Bundesnotarkammer - Informationen zum Immobilienkaufvertrag: https://www.notar.de/themen/immobilien", "Stark & Hoffmann Immobilien - Verkaufsfahrplan: https://immobilienmakler-bergisch-gladbach.de/#fahrplan"],
 )
 
-print("3 PDFs erstellt")
+print("4 PDFs erstellt")
