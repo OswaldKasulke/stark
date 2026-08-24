@@ -21,8 +21,13 @@ export const metadata: Metadata = {
     google: "UMEgdX9HRciaQpNQvzxL_seevwM8gpWzNM39AV8sLQI",
   },
   icons: {
-    icon: "https://immobilienmakler-bergisch-gladbach.de/favicon.svg",
-    shortcut: "https://immobilienmakler-bergisch-gladbach.de/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
