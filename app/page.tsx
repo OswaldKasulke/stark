@@ -1,5 +1,6 @@
 import { districts } from "./stadtteile";
 import ImmobilienGalerie from "./ImmobilienGalerie";
+import ContactForm from "./ContactForm";
 
 const heroImage = "https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=webp&q=82&w=1800";
 
@@ -142,7 +143,7 @@ export default function Home() {
 
     <section className="contact section" id="kontakt">
       <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie uns im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></address></div>
-      <form action="mailto:bergischgladbach@evernest.com" method="post" encType="text/plain"><div className="form-row"><label>Vorname<input name="Vorname" required/></label><label>Nachname<input name="Nachname" required/></label></div><label>E-Mail<input name="E-Mail" type="email" required/></label><label>Telefon<input name="Telefon" type="tel"/></label><label>Worum geht es?<select name="Anliegen"><option>Immobilie verkaufen</option><option>Immobilie bewerten</option><option>Immobilie kaufen</option><option>Allgemeine Anfrage</option></select></label><label>Nachricht<textarea name="Nachricht" rows={4}/></label><label className="consent"><input type="checkbox" required/> Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</label><button className="button gold" type="submit">Anfrage senden</button></form>
+      <ContactForm/>
     </section>
 
     <footer><div className="footer-brand"><span className="brand-mark">S<span>&</span>H</span><div><strong>Stark & Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Kontakt</h4><p>Schloßstraße 41<br/>51429 Bergisch Gladbach</p><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></div><div><h4>Unternehmen</h4><a href="/bergisch-gladbach/">Bergisch Gladbach</a><a href="/downloads/">Downloads</a><a href="https://www.evernest.com/de/unsere-makler/bergisch-gladbach/" target="_blank" rel="noreferrer">Evernest Bergisch Gladbach</a><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a><a href="https://www.evernest.com/de/datenschutz/" target="_blank" rel="noreferrer">Datenschutz</a></div><div><h4>Rechtliches</h4><p>Stark & Hoffmann Immobilien GmbH<br/>Amtsgericht Köln, HRB 116396<br/>Geschäftsführer: Patrick Stark, Julian Hoffmann</p></div></footer>
