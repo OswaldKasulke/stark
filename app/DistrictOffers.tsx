@@ -1,10 +1,9 @@
 import { properties } from "./immobilien";
 
-function uniqueCurrentProperties() {
-  const current = properties.filter((property) => property.status !== "Verkauft" && property.price !== "Verkauft");
+function uniqueProperties() {
   const unique = new Map<string, (typeof properties)[number]>();
 
-  for (const property of current) {
+  for (const property of properties) {
     const key = `${property.place}|${property.price}|${property.image}`;
     unique.set(key, property);
   }
@@ -12,14 +11,14 @@ function uniqueCurrentProperties() {
   return [...unique.values()];
 }
 
-export function currentBergischGladbachOfferCount() {
-  return uniqueCurrentProperties().filter((property) => property.place.startsWith("Bergisch Gladbach-")).length;
+export function bergischGladbachOfferCount() {
+  return uniqueProperties().filter((property) => property.place.startsWith("Bergisch Gladbach-")).length;
 }
 
 export default function DistrictOffers({ district }: { district: string }) {
-  const current = uniqueCurrentProperties();
-  const local = current.filter((property) => property.place.startsWith(`Bergisch Gladbach-${district},`));
-  const fallback = current.filter((property) => property.place.startsWith("Bergisch Gladbach-")).slice(0, 3);
+  const all = uniqueProperties();
+  const local = all.filter((property) => property.place.startsWith(`Bergisch Gladbach-${district},`));
+  const fallback = all.filter((property) => property.place.startsWith("Bergisch Gladbach-")).slice(0, 3);
   const offers = local.length ? local : fallback;
   const localOffers = local.length > 0;
 
@@ -27,10 +26,10 @@ export default function DistrictOffers({ district }: { district: string }) {
     <section className="properties section district-offers" id="angebote">
       <div className="section-head">
         <div>
-          <p className="eyebrow">Aktuelle Immobilienangebote</p>
+          <p className="eyebrow">Immobilienangebote & Referenzen</p>
           <h2>{localOffers ? `Immobilien in ${district}` : "Angebote aus Bergisch Gladbach und Umgebung"}</h2>
         </div>
-        <p>{localOffers ? `Aktuell geführte Evernest-Angebote mit der Lageangabe Bergisch Gladbach-${district}.` : `Derzeit ist in ${district} kein eigenes Angebot in der Evernest-Suche geführt. Hier sehen Sie aktuelle Angebote aus dem näheren Marktumfeld.`}</p>
+        <p>{localOffers ? `Evernest-Angebote und verkaufte Referenzen mit der Lageangabe Bergisch Gladbach-${district}.` : `Derzeit ist in ${district} kein eigenes Angebot oder keine verkaufte Referenz in der Evernest-Suche geführt. Hier sehen Sie Immobilien aus dem näheren Marktumfeld.`}</p>
       </div>
       <div className="property-grid">
         {offers.map((property, index) => (
