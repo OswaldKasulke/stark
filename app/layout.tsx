@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     description: "Immobilienbewertung und Verkauf in Bergisch Gladbach und allen 25 Stadtteilen.",
     images: ["https://immobilienmakler-bergisch-gladbach.de/og.png"],
   },
+  verification: {
+    google: "UMEgdX9HRciaQpNQvzxL_seevwM8gpWzNM39AV8sLQI",
+  },
   icons: {
     icon: "https://immobilienmakler-bergisch-gladbach.de/favicon.svg",
     shortcut: "https://immobilienmakler-bergisch-gladbach.de/favicon.svg",
