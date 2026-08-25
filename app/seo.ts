@@ -26,6 +26,7 @@ export const businessSchema = {
   sameAs: [
     "https://www.evernest.com/de/unsere-makler/bergisch-gladbach/",
     "https://www.google.com/maps/place/Evernest+Bergisch+Gladbach+-+Stark+%26+Hoffmann+Immobilien+GmbH/",
+    "https://www.instagram.com/evernest.bergischgladbach/",
   ],
 };
 
