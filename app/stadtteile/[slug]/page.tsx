@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { districtBySlug, districts } from "../../stadtteile";
 import { streets } from "../../strassen";
 import DistrictOffers from "../../DistrictOffers";
-import { breadcrumbSchema, businessSchema, faqSchema, graphSchema, siteUrl } from "../../seo";
+import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../../seo";
 
 export function generateStaticParams(){ return districts.map(({slug})=>({slug})); }
 
@@ -14,8 +14,8 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
     title:`Immobilienmakler ${district.name} | Bodenrichtwert & Bewertung`,
     description:`Makler ${district.name}: Immobilienbewertung, Immobilienverkauf und amtliche Informationen zum Bodenrichtwert ${district.name} in Bergisch Gladbach.`,
     alternates:{canonical:`https://immobilienmakler-bergisch-gladbach.de/stadtteile/${district.slug}/`},
-    openGraph:{title:`Immobilienmakler ${district.name} | Stark & Hoffmann`,description:`Immobilienbewertung und Bodenrichtwert ${district.name} – lokale Beratung in Bergisch Gladbach.`,url:`https://immobilienmakler-bergisch-gladbach.de/stadtteile/${district.slug}/`,images:["/og.png"]},
-    twitter:{card:"summary_large_image",images:["/og.png"]},
+    openGraph:{title:`Immobilienmakler ${district.name} | Stark & Hoffmann`,description:`Immobilienbewertung und Bodenrichtwert ${district.name} – lokale Beratung in Bergisch Gladbach.`,url:`https://immobilienmakler-bergisch-gladbach.de/stadtteile/${district.slug}/`,images:[defaultImage]},
+    twitter:{card:"summary_large_image",images:[defaultImage]},
   };
 }
 

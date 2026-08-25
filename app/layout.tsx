@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { defaultImage } from "./seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://immobilienmakler-bergisch-gladbach.de/"),
@@ -9,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Immobilienmakler Bergisch Gladbach | Stark & Hoffmann",
     description: "Immobilienbewertung und Verkauf in Bergisch Gladbach und allen 25 Stadtteilen.",
-    images: [{ url: "https://immobilienmakler-bergisch-gladbach.de/og.png", width: 1568, height: 1003, alt: "Immobilienmakler Bergisch Gladbach – Stark & Hoffmann Immobilien" }],
+    images: [{ url: defaultImage, width: 1568, height: 1003, alt: "Immobilienmakler Bergisch Gladbach – Stark & Hoffmann Immobilien" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Immobilienmakler Bergisch Gladbach | Stark & Hoffmann",
     description: "Immobilienbewertung und Verkauf in Bergisch Gladbach und allen 25 Stadtteilen.",
-    images: ["https://immobilienmakler-bergisch-gladbach.de/og.png"],
+    images: [defaultImage],
   },
   verification: {
     google: "UMEgdX9HRciaQpNQvzxL_seevwM8gpWzNM39AV8sLQI",

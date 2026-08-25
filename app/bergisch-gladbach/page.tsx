@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { districts } from "../stadtteile";
-import { breadcrumbSchema, businessSchema, faqSchema, graphSchema, siteUrl } from "../seo";
+import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../seo";
 
 export const metadata: Metadata = {
   title: "Immobilienmarkt Bergisch Gladbach | Stadtteile & Bewertung",
@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     title: "Immobilienmarkt Bergisch Gladbach | Stark & Hoffmann",
     description: "Marktdaten, Bodenrichtwerte und Immobilienbewertung für Bergisch Gladbach und alle 25 Stadtteile.",
     url: "https://immobilienmakler-bergisch-gladbach.de/bergisch-gladbach/",
-    images:["/og.png"],
+    images:[defaultImage],
   },
-  twitter:{card:"summary_large_image",images:["/og.png"]},
+  twitter:{card:"summary_large_image",images:[defaultImage]},
 };
 
 const marketFacts = [

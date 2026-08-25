@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { standorte, standortBySlug } from "./standorte";
-import { breadcrumbSchema, businessSchema, faqSchema, graphSchema, siteUrl } from "./seo";
+import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "./seo";
 
 export function standortMetadata(slug: string): Metadata {
   const place = standortBySlug(slug)!;
@@ -9,8 +9,8 @@ export function standortMetadata(slug: string): Metadata {
     title: `Immobilienmakler ${place.name} | Haus & Wohnung verkaufen`,
     description: `Makler ${place.name}: Haus, Wohnung oder Grundstück verkaufen, Preis und Wert ermitteln – mit amtlichen Marktdaten und persönlicher Beratung.`,
     alternates: { canonical: url },
-    openGraph: { title: `Immobilienmakler ${place.name} | Stark & Hoffmann`, description: place.intro, url, images:["/og.png"] },
-    twitter:{card:"summary_large_image",images:["/og.png"]},
+    openGraph: { title: `Immobilienmakler ${place.name} | Stark & Hoffmann`, description: place.intro, url, images:[defaultImage] },
+    twitter:{card:"summary_large_image",images:[defaultImage]},
   };
 }
 

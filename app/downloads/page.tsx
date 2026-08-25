@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { breadcrumbSchema, businessSchema, graphSchema, siteUrl } from "../seo";
+import { breadcrumbSchema, businessSchema, defaultImage, graphSchema, siteUrl } from "../seo";
 
 export const metadata: Metadata = {
   title: "Downloads für Immobilieneigentümer | Stark & Hoffmann",
   description: "Kostenlose PDF-Checklisten für Immobilienbewertung, Verkaufsunterlagen und den Immobilienverkauf in Bergisch Gladbach.",
   alternates: { canonical: "https://immobilienmakler-bergisch-gladbach.de/downloads/" },
-  openGraph:{title:"Downloads für Immobilieneigentümer | Stark & Hoffmann",description:"Checklisten und amtliche Grundstücksmarktberichte für Bergisch Gladbach und die Region.",url:`${siteUrl}/downloads/`,images:["/og.png"]},
-  twitter:{card:"summary_large_image",images:["/og.png"]},
+  openGraph:{title:"Downloads für Immobilieneigentümer | Stark & Hoffmann",description:"Checklisten und amtliche Grundstücksmarktberichte für Bergisch Gladbach und die Region.",url:`${siteUrl}/downloads/`,images:[defaultImage]},
+  twitter:{card:"summary_large_image",images:[defaultImage]},
 };
 
 const checklists = [

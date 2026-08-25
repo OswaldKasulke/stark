@@ -1,6 +1,6 @@
 export const siteUrl = "https://immobilienmakler-bergisch-gladbach.de";
 export const businessId = `${siteUrl}/#immobilienmakler`;
-export const defaultImage = `${siteUrl}/og.png`;
+export const defaultImage = "https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=jpg&q=82&w=1568&h=1003";
 
 export const businessSchema = {
   "@type": ["RealEstateAgent", "LocalBusiness"],
