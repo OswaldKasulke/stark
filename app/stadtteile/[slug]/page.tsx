@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { districtBySlug, districts } from "../../stadtteile";
 import { streets } from "../../strassen";
 import DistrictOffers from "../../DistrictOffers";
+import { districtImages } from "../../district-images";
 import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../../seo";
 
 export function generateStaticParams(){ return districts.map(({slug})=>({slug})); }
@@ -10,17 +11,19 @@ export function generateStaticParams(){ return districts.map(({slug})=>({slug}))
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
   const {slug}=await params; const district=districtBySlug(slug);
   if(!district) return {};
+  const image=districtImages[slug];
   return {
     title:`Immobilienmakler ${district.name} | Bodenrichtwert & Bewertung`,
     description:`Makler ${district.name}: Immobilienbewertung, Immobilienverkauf und amtliche Informationen zum Bodenrichtwert ${district.name} in Bergisch Gladbach.`,
     alternates:{canonical:`https://immobilienmakler-bergisch-gladbach.de/stadtteile/${district.slug}/`},
-    openGraph:{title:`Immobilienmakler ${district.name} | Stark & Hoffmann`,description:`Immobilienbewertung und Bodenrichtwert ${district.name} – lokale Beratung in Bergisch Gladbach.`,url:`https://immobilienmakler-bergisch-gladbach.de/stadtteile/${district.slug}/`,images:[defaultImage]},
-    twitter:{card:"summary_large_image",images:[defaultImage]},
+    openGraph:{title:`Immobilienmakler ${district.name} | Stark & Hoffmann`,description:`Immobilienbewertung und Bodenrichtwert ${district.name} – lokale Beratung in Bergisch Gladbach.`,url:`https://immobilienmakler-bergisch-gladbach.de/stadtteile/${district.slug}/`,images:[image?.src || defaultImage]},
+    twitter:{card:"summary_large_image",images:[image?.src || defaultImage]},
   };
 }
 
 export default async function DistrictPage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params; const district=districtBySlug(slug); if(!district) notFound();
+  const image=districtImages[slug];
   const position=districts.findIndex((item)=>item.slug===slug); const nearby=[districts[(position+24)%25],districts[(position+1)%25]];
   const districtStreets=streets.filter((street)=>street.ranges.some((range)=>range[3]===district.name));
   const url=`${siteUrl}/stadtteile/${district.slug}/`;
@@ -38,7 +41,7 @@ export default async function DistrictPage({params}:{params:Promise<{slug:string
   return <main className="district-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}} />
     <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Seitennavigation"><a href="/#profil">Profil</a><a href="/#fahrplan">Verkaufsfahrplan</a><a href="/#immobilien">Immobilien</a><a href="/#staedte">Stadtteile</a></nav><a className="header-cta" href="#kontakt">Kostenlose Bewertung</a></header>
-    <section className="district-hero"><div><p className="eyebrow light">Makler {district.name}</p><h1>Immobilienmakler {district.name}</h1><p>Immobilien verkaufen und bewerten – mit persönlicher Beratung durch den Standort Bergisch Gladbach.</p><a className="button gold" href="#kontakt">Immobilienbewertung {district.name}</a></div></section>
+    <section className="district-hero" style={image?{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.18)),url(${image.src})`}:undefined}><div><p className="eyebrow light">Makler {district.name}</p><h1>Immobilienmakler {district.name}</h1><p>Immobilien verkaufen und bewerten – mit persönlicher Beratung durch den Standort Bergisch Gladbach.</p><a className="button gold" href="#kontakt">Immobilienbewertung {district.name}</a></div>{image&&<a className="district-photo-credit" href={image.source} target="_blank" rel="noreferrer">Foto: {image.author} · Wikimedia Commons · {image.license} ↗</a>}</section>
     <section className="district-intro section"><div><p className="eyebrow">Stadtteilprofil</p><h2>{district.name} im Porträt</h2><p className="lead">{district.profile}</p><p>Zum 31. Dezember 2025 lebten hier <strong>{district.inhabitants} Einwohner</strong>. Für eine Immobilienbewertung werden neben der konkreten Lage auch Grundstück, Baujahr, Zustand, Nutzung und Energieeffizienz betrachtet.</p></div><aside><span>Stadtteilnummer</span><strong>{district.code}</strong><span>Einwohner 2025</span><strong>{district.inhabitants}</strong><small>Stand: 31.12.2025</small></aside></section>
     <DistrictOffers district={district.name} />
     <section className="street-directory section" id="strassen"><p className="eyebrow">Straßenverzeichnis</p><h2>Alle Straßen in Bergisch Gladbach-{district.name}</h2><p>Sie besitzen eine Immobilie in einer dieser {districtStreets.length} Straßen? Ein Klick auf den Straßennamen öffnet die kostenlose Immobilienbewertung mit vorausgewählter Adresse.</p><details><summary>Straßenverzeichnis {district.name} anzeigen ({districtStreets.length} Straßen)</summary><div className="district-street-grid">{districtStreets.map((street)=><div className="district-street" key={street.name}><a href={`/immobilienbewertung?street=${encodeURIComponent(street.name)}`}>{street.name}<span>Bewertung starten →</span></a><a className="map-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${street.name}, Bergisch Gladbach`)}`} target="_blank" rel="noreferrer" aria-label={`${street.name} auf Google Maps anzeigen`}>⌖</a></div>)}</div></details></section>

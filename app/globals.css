@@ -186,7 +186,7 @@ footer{grid-template-columns:1fr}
 .source-link.light{color:#dfc378;margin-left:0}
 .reviews-title .source-link{margin-top:10px}
 .district-hero{min-height:520px;display:flex;align-items:center;padding:100px clamp(24px,8vw,132px);color:#fff;background:linear-gradient(90deg,rgba(7,35,38,.95),rgba(7,35,38,.72)),url(https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=webp&q=82&w=1800) center/cover}
-.district-hero>div{max-width:780px}
+.district-hero>div{max-width:780px}.district-hero{position:relative}.district-photo-credit{position:absolute;right:24px;bottom:18px;color:#fff;font-size:11px;line-height:1.4;text-decoration:none;background:rgba(0,0,0,.58);padding:7px 10px;border-radius:4px}.district-photo-credit:hover{text-decoration:underline}
 .district-hero p:not(.eyebrow){font:400 20px/1.65 Georgia,serif;max-width:620px;margin:25px 0 32px;color:#e1e8e4}
 .district-intro{display:grid;grid-template-columns:1fr 290px;gap:90px;align-items:start}
 .district-intro .lead{font:400 21px/1.55 Georgia,serif;margin:28px 0 15px}
