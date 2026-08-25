@@ -3,7 +3,7 @@ import ImmobilienGalerie from "./ImmobilienGalerie";
 import ContactForm from "./ContactForm";
 import { businessSchema, faqSchema, graphSchema, siteUrl } from "./seo";
 
-const heroImage = "https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=webp&q=82&w=1800";
+const heroImage = "/location/2.jpg";
 const serviceLinks = [
   ["Haus verkaufen", "/haus-verkaufen-bergisch-gladbach/", "Bewertung, Unterlagen und Vermarktung für Ein- und Zweifamilienhäuser."],
   ["Wohnung verkaufen", "/wohnung-verkaufen-bergisch-gladbach/", "Wohnungswert, Gemeinschaftsunterlagen und passende Käuferansprache."],
@@ -112,7 +112,7 @@ export default function Home() {
     </section>
 
     <section className="profile section" id="profil">
-      <div className="profile-image"><img src="https://images.ctfassets.net/if6f7uzjzqut/51Q5Kc6ioaMR8Z5f6qgwDf/207bb0c0af4ffd48b5cf917a3eb69b2a/_DSC5868.jpg?f=face&fit=fill&fm=webp&q=70&w=1400" alt="Team von Evernest Bergisch Gladbach"/><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
+      <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Evernest Immobilienbüro in der Schloßstraße in Bergisch Gladbach"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
         <p className="eyebrow">Unser Profil</p><h2>Erfahrene Branchenkenner und Vertriebsprofis.</h2>
         <p className="lead">Patrick Stark und Julian Hoffmann verantworten das operative und strategische Geschäft am Bergisch Gladbacher Standort.</p>
