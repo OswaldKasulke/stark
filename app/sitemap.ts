@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/wohnung-verkaufen-bergisch-gladbach/`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/grundstueck-verkaufen-bergisch-gladbach/`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/downloads/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/team/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/impressum/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/agb/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     ...standorte.map((place) => ({ url: `${base}/${place.slug}/`, lastModified, changeFrequency: "monthly" as const, priority: 0.8 })),
