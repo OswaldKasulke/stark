@@ -14,13 +14,13 @@ const checklists = [
 ];
 
 const marketReports = [
-  { area:"Stadt Bergisch Gladbach", scope:"Eigenständiger Gutachterausschuss für das Stadtgebiet", url:"https://www.gars.nrw/stadt-gl/produkte-gl/grundstuecksmarktbericht-gl", note:"Aktueller Bericht und Archiv über BORIS.NRW" },
-  { area:"Rheinisch-Bergischer Kreis", scope:"Unter anderem Odenthal, Overath und Kürten - ohne Stadt Bergisch Gladbach", url:"https://www.gars.nrw/rbk/produkte-rbk/grundstuecksmarktberichte-rbk", note:"Aktueller Bericht und frühere Jahrgänge" },
+  { area:"Stadt Bergisch Gladbach", scope:"Eigenständiger Gutachterausschuss für das Stadtgebiet", url:"https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_20700_2026.pdf", note:"Grundstücksmarktbericht 2026 · amtliches PDF" },
+  { area:"Rheinisch-Bergischer Kreis", scope:"Unter anderem Odenthal, Overath und Kürten - ohne Stadt Bergisch Gladbach", url:"https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_32300_2026.pdf", note:"Grundstücksmarktbericht 2026 · amtliches PDF" },
   { area:"Stadt Leverkusen", scope:"Grundstücksmarktbericht 2026 für das Stadtgebiet", url:"https://gars.nrw/images/user/GA_Leverkusen/pdf/GMB_11600_2026.pdf", note:"Amtliches PDF · 62 Seiten" },
   { area:"Oberbergischer Kreis", scope:"Unter anderem Lindlar und Engelskirchen", url:"https://gars.nrw/images/user/GA_OBK/gmb/obk_pdf-gmb2026-20260402-120244.pdf", note:"Grundstücksmarktbericht 2026 · amtliches PDF" },
   { area:"Stadt Köln", scope:"Unter anderem die Kölner Bereiche des Königsforsts", url:"https://www.gars.nrw/images/user/GA_K%C3%B6ln/GMB2026_Digitalversion.pdf", note:"Grundstücksmarktbericht 2026 · amtliches PDF" },
   { area:"Rhein-Erft-Kreis", scope:"Unter anderem Hürth, Wesseling, Kerpen, Brühl und Bergheim", url:"https://www.gars.nrw/images/user/GA_Rhein-Erft-Kreis/GMB_2026.pdf", note:"Grundstücksmarktbericht 2026 · amtliches PDF" },
-  { area:"Rhein-Sieg-Kreis und Troisdorf", scope:"Östliches und südliches Kölner Umland", url:"https://www.gars.nrw/rhein-sieg-kreis/produkte-rsk/grundstuecksmarktbericht-rsk", note:"Aktueller Bericht und Halbjahresberichte" },
+  { area:"Rhein-Sieg-Kreis und Troisdorf", scope:"Östliches und südliches Kölner Umland", url:"https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_32400_2026.pdf", note:"Grundstücksmarktbericht 2026 · amtliches PDF" },
 ];
 
 export default function DownloadsPage(){
@@ -32,7 +32,7 @@ export default function DownloadsPage(){
       <div className="download-grid">{checklists.map((item,index)=><article key={item.file}><span className="download-number">0{index+1}</span><p className="download-label">{item.label}</p><h3>{item.title}</h3><p>{item.text}</p><a className="button dark" href={item.file} download>PDF herunterladen ↓</a><a className="download-view" href={item.file} target="_blank" rel="noreferrer">Im Browser ansehen ↗</a></article>)}</div>
       <p className="download-origin">Redaktionelle Grundlage der ersten beiden Checklisten: <a href="https://romanbecker.de/ratgeber/unterlagen-immobilienverkauf.html" target="_blank" rel="noreferrer">Unterlagen Immobilienverkauf ↗</a> und <a href="https://romanbecker.de/ratgeber/was-braucht-der-notar-fuer-den-kaufvertrag.html" target="_blank" rel="noreferrer">Notar-Checkliste ↗</a> auf romanbecker.de.</p>
       <div className="reports-head"><p className="eyebrow">Amtliche Marktdaten</p><h2>Grundstücksmarktberichte der Region.</h2><p>Die Berichte stammen ausschließlich von den jeweils zuständigen Gutachterausschüssen. Bei Gremien, die aktuelle Jahrgänge zentral über BORIS.NRW anbieten, führt der Link zur amtlichen Auswahlseite.</p></div>
-      <div className="report-grid">{marketReports.map(item=><a href={item.url} target="_blank" rel="noreferrer" key={item.area}><span>{item.note}</span><h3>{item.area}</h3><p>{item.scope}</p><b>Amtliche Quelle öffnen ↗</b></a>)}</div>
+      <div className="report-grid">{marketReports.map(item=><a href={item.url} target="_blank" rel="noreferrer" key={item.area}><span>{item.note}</span><h3>{item.area}</h3><p>{item.scope}</p><b>PDF direkt öffnen ↗</b></a>)}</div>
       <p className="boris-note">Alle Grundstücksmarktberichte Nordrhein-Westfalens und Bodenrichtwerte finden Sie zusätzlich zentral bei <a href="https://www.boris.nrw.de/" target="_blank" rel="noreferrer">BORIS.NRW ↗</a>.</p>
       <div className="downloads-cta"><div><p className="eyebrow">Nächster Schritt</p><h2>Was ist Ihre Immobilie wert?</h2><p>Nutzen Sie unsere kostenlose Ersteinschätzung für Bergisch Gladbach und die Region.</p></div><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten lassen</a></div>
     </section>

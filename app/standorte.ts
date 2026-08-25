@@ -19,7 +19,7 @@ export type Standort = {
 
 const rbkReport = {
   label: "Gutachterausschuss Rheinisch-Bergischer Kreis, Grundstücksmarktbericht 2026",
-  url: "https://www.gars.nrw/rbk/produkte-rbk/grundstuecksmarktberichte-rbk",
+  url: "https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_32300_2026.pdf",
 };
 
 const obkReport = {
@@ -118,7 +118,7 @@ export const standorte: Standort[] = [
     marketFacts: [["keine", "eigene Markttabelle", "Königsforst ist keine Kommune"], ["3", "mögliche Zuständigkeiten", "Köln, Bergisch Gladbach, Rösrath"], ["Adresse", "entscheidet", "über Gutachterausschuss und Zone"]],
     brw: [["Bergisch Gladbach", "510–970 €/m²", "gebietstypische Wohnlagen"], ["Köln", "adressabhängig", "Gutachterausschuss Köln"], ["Rösrath", "adressabhängig", "Gutachterausschuss RBK"]],
     brwNote: "Die Bergisch Gladbacher Werte gelten nur für Grundstücke innerhalb Bergisch Gladbachs und nicht pauschal für den Königsforst. Für Köln und Rösrath gelten andere Gutachterausschüsse.",
-    marketSource: { label: "Gutachterausschuss Bergisch Gladbach, Grundstücksmarktbericht 2026", url: "https://www.gars.nrw/stadt-gl/produkte-gl/grundstuecksmarktbericht-gl" },
+    marketSource: { label: "Gutachterausschuss Bergisch Gladbach, Grundstücksmarktbericht 2026", url: "https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_20700_2026.pdf" },
   },
 ];
 
