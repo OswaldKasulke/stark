@@ -1,8 +1,14 @@
 import { districts } from "./stadtteile";
 import ImmobilienGalerie from "./ImmobilienGalerie";
 import ContactForm from "./ContactForm";
+import { businessSchema, faqSchema, graphSchema, siteUrl } from "./seo";
 
 const heroImage = "https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=webp&q=82&w=1800";
+const serviceLinks = [
+  ["Haus verkaufen", "/haus-verkaufen-bergisch-gladbach/", "Bewertung, Unterlagen und Vermarktung für Ein- und Zweifamilienhäuser."],
+  ["Wohnung verkaufen", "/wohnung-verkaufen-bergisch-gladbach/", "Wohnungswert, Gemeinschaftsunterlagen und passende Käuferansprache."],
+  ["Grundstück verkaufen", "/grundstueck-verkaufen-bergisch-gladbach/", "Bodenrichtwert, Baurecht und Entwicklungspotenzial richtig einordnen."],
+];
 
 const steps = [
   ["01", "Bewertung & Erstgespräch", "Wir analysieren Lage, Zustand, Baujahr, Energieeffizienz und aktuelle Vergleichswerte – persönlich und transparent."],
@@ -74,9 +80,13 @@ const faq = [
 ];
 
 export default function Home() {
-  const faqStructuredData = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":faq.map(([question,answer])=>({"@type":"Question","name":question,"acceptedAnswer":{"@type":"Answer","text":answer}}))};
+  const structuredData = graphSchema(
+    businessSchema,
+    { "@type": "WebSite", "@id": `${siteUrl}/#website`, url: `${siteUrl}/`, name: "Stark & Hoffmann Immobilien", publisher: { "@id": `${siteUrl}/#immobilienmakler` }, inLanguage: "de-DE" },
+    faqSchema(faq as Array<[string,string]>),
+  );
   return <main>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqStructuredData)}} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}} />
     <header className="site-header">
       <a className="brand" href="#top" aria-label="Startseite">
         <span className="brand-mark">S<span>&</span>H</span>
@@ -89,11 +99,16 @@ export default function Home() {
     <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.08) 82%),url(${heroImage})`}}>
       <div className="hero-content">
         <p className="eyebrow light">Ihre Immobilienmakler in Bergisch Gladbach</p>
-        <h1>Erfolgreich verkaufen.<br/>Persönlich begleitet.</h1>
-        <p className="hero-copy">Lokale Marktkenntnis, moderne Vermarktung und ein starkes Netzwerk – für den Verkauf Ihrer Immobilie in Bergisch Gladbach und Umgebung.</p>
+        <h1>Immobilienmakler Bergisch Gladbach.<br/>Persönlich begleitet.</h1>
+        <p className="hero-copy">Stark &amp; Hoffmann begleitet Eigentümer beim Verkauf und bei der Bewertung von Häusern, Wohnungen und Grundstücken in Bergisch Gladbach – regional auch BGL genannt – sowie im Umland.</p>
         <div className="hero-actions"><a className="button gold" href="/immobilienbewertung">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
         <div className="trust-row"><span>Lokale Expertise</span><span>Persönliche Beratung</span><span>Digital unterstützt</span></div>
       </div>
+    </section>
+
+    <section className="seo-services section" aria-labelledby="verkaufen-heading">
+      <div className="section-head"><div><p className="eyebrow">Immobilie verkaufen in Bergisch Gladbach</p><h2 id="verkaufen-heading">Welches Eigentum möchten Sie verkaufen?</h2></div><p>Objektart, Lage und Unterlagen bestimmen den richtigen Verkaufsweg. Unsere Fachseiten beantworten die wichtigsten Fragen mit lokalen Markt- und Bewertungsinformationen.</p></div>
+      <div className="seo-service-grid">{serviceLinks.map(([title,url,text])=><a href={url} key={url}><span>Verkaufsratgeber</span><h3>{title}</h3><p>{text}</p><b>Mehr erfahren →</b></a>)}</div>
     </section>
 
     <section className="profile section" id="profil">
@@ -139,6 +154,7 @@ export default function Home() {
       <div className="section-head"><div><p className="eyebrow">Häufige Fragen</p><h2>Was Eigentümer in Bergisch Gladbach wissen wollen.</h2></div><p>Antworten rund um Immobilienbewertung, Hausverkauf, Unterlagen und Bodenrichtwerte.</p></div>
       <div className="faq-grid">{faq.map(([question,answer])=><details className="faq-item" key={question}><summary>{question}<span aria-hidden="true">+</span></summary><div><p>{answer}</p></div></details>)}</div>
       <div className="faq-cta"><a className="button dark" href="/immobilienbewertung/">Immobilie kostenlos bewerten</a><a href="tel:+4922049147881">Weitere Frage? +49 2204 914 7881</a></div>
+      <p className="editorial-note">Redaktionell geprüft durch Stark &amp; Hoffmann Immobilien GmbH · zuletzt aktualisiert am 25.08.2026 · Marktdaten aus amtlichen Grundstücksmarktberichten.</p>
     </section>
 
     <section className="contact section" id="kontakt">

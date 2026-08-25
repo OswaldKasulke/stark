@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { breadcrumbSchema, businessSchema, graphSchema, siteUrl } from "../seo";
 
 export const metadata: Metadata = {
   title: "Downloads für Immobilieneigentümer | Stark & Hoffmann",
   description: "Kostenlose PDF-Checklisten für Immobilienbewertung, Verkaufsunterlagen und den Immobilienverkauf in Bergisch Gladbach.",
   alternates: { canonical: "https://immobilienmakler-bergisch-gladbach.de/downloads/" },
+  openGraph:{title:"Downloads für Immobilieneigentümer | Stark & Hoffmann",description:"Checklisten und amtliche Grundstücksmarktberichte für Bergisch Gladbach und die Region.",url:`${siteUrl}/downloads/`,images:["/og.png"]},
+  twitter:{card:"summary_large_image",images:["/og.png"]},
 };
 
 const checklists = [
@@ -24,14 +27,16 @@ const marketReports = [
 ];
 
 export default function DownloadsPage(){
+  const schema=graphSchema(businessSchema,breadcrumbSchema([{name:"Startseite",url:siteUrl},{name:"Downloads",url:`${siteUrl}/downloads/`}]))
   return <main className="downloads-page">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} />
     <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Hauptnavigation"><a href="/#profil">Profil</a><a href="/#markt">Markt</a><a href="/#staedte">Region</a><a href="/downloads/">Downloads</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
     <section className="downloads-hero"><div><p className="eyebrow light">Kostenlose Downloads</p><h1>Gut vorbereitet verkaufen.</h1><p>Praktische Checklisten für Eigentümer in Bergisch Gladbach und im Bergischen Land - kompakt, druckbar und ohne Anmeldung verfügbar.</p></div></section>
     <section className="downloads-content section">
       <div className="section-head"><div><p className="eyebrow">Checklisten</p><h2>Praktische Hilfen für Ihren Immobilienverkauf.</h2></div><p>Die beiden Verkaufs- und Notarchecklisten basieren auf den Ratgeber-Inhalten von Roman Becker und wurden für Bergisch Gladbach und das Bergische Land angepasst.</p></div>
       <div className="download-grid">{checklists.map((item,index)=><article key={item.file}><span className="download-number">0{index+1}</span><p className="download-label">{item.label}</p><h3>{item.title}</h3><p>{item.text}</p><a className="button dark" href={item.file} download>PDF herunterladen ↓</a><a className="download-view" href={item.file} target="_blank" rel="noreferrer">Im Browser ansehen ↗</a></article>)}</div>
       <p className="download-origin">Redaktionelle Grundlage der ersten beiden Checklisten: <a href="https://romanbecker.de/ratgeber/unterlagen-immobilienverkauf.html" target="_blank" rel="noreferrer">Unterlagen Immobilienverkauf ↗</a> und <a href="https://romanbecker.de/ratgeber/was-braucht-der-notar-fuer-den-kaufvertrag.html" target="_blank" rel="noreferrer">Notar-Checkliste ↗</a> auf romanbecker.de.</p>
-      <div className="reports-head"><p className="eyebrow">Amtliche Marktdaten</p><h2>Grundstücksmarktberichte der Region.</h2><p>Die Berichte stammen ausschließlich von den jeweils zuständigen Gutachterausschüssen. Bei Gremien, die aktuelle Jahrgänge zentral über BORIS.NRW anbieten, führt der Link zur amtlichen Auswahlseite.</p></div>
+      <div className="reports-head"><p className="eyebrow">Amtliche Marktdaten</p><h2>Grundstücksmarktberichte der Region.</h2><p>Die Berichte stammen ausschließlich von den jeweils zuständigen Gutachterausschüssen. Jeder Link öffnet den ausgewiesenen amtlichen PDF-Bericht direkt.</p></div>
       <div className="report-grid">{marketReports.map(item=><a href={item.url} target="_blank" rel="noreferrer" key={item.area}><span>{item.note}</span><h3>{item.area}</h3><p>{item.scope}</p><b>PDF direkt öffnen ↗</b></a>)}</div>
       <p className="boris-note">Alle Grundstücksmarktberichte Nordrhein-Westfalens und Bodenrichtwerte finden Sie zusätzlich zentral bei <a href="https://www.boris.nrw.de/" target="_blank" rel="noreferrer">BORIS.NRW ↗</a>.</p>
       <div className="downloads-cta"><div><p className="eyebrow">Nächster Schritt</p><h2>Was ist Ihre Immobilie wert?</h2><p>Nutzen Sie unsere kostenlose Ersteinschätzung für Bergisch Gladbach und die Region.</p></div><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten lassen</a></div>
