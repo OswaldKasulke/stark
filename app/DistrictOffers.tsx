@@ -44,7 +44,7 @@ export default function DistrictOffers({ district }: { district: string }) {
           </a>
         ))}
       </div>
-      <a className="source-link" href="https://www.evernest.com/de/search/?lat=50.9929303&lng=7.1277379&zoom=10" target="_blank" rel="noreferrer">Quelle der Angebotspreise: Evernest-Immobiliensuche · Stand 25.08.2026 ↗</a>
+      {district !== "Frankenforst" && <a className="source-link" href="https://www.evernest.com/de/search/?lat=50.9929303&lng=7.1277379&zoom=10" target="_blank" rel="noreferrer">Quelle der Angebotspreise: Evernest-Immobiliensuche · Stand 25.08.2026 ↗</a>}
     </section>
   );
 }
