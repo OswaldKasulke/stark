@@ -93,7 +93,7 @@ export default function Home() {
         <span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span>
       </a>
       <nav aria-label="Hauptnavigation"><a href="#profil">Profil</a><a href="/team/">Team</a><a href="#markt">Markt</a><a href="#fahrplan">Verkaufsfahrplan</a><a href="#immobilien">Immobilien</a><a href="#staedte">Region</a><a href="/downloads/">Downloads</a><a href="#faq">FAQ</a></nav>
-      <a className="header-cta" href="/immobilienbewertung">Kostenlose Bewertung</a>
+      <a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a>
     </header>
 
     <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.08) 82%),url(${heroImage})`}}>
@@ -101,7 +101,7 @@ export default function Home() {
         <p className="eyebrow light">Ihre Immobilienmakler in Bergisch Gladbach</p>
         <h1>Immobilienmakler Bergisch Gladbach.<br/>Persönlich begleitet.</h1>
         <p className="hero-copy">Stark &amp; Hoffmann begleitet Eigentümer beim Verkauf und bei der Bewertung von Häusern, Wohnungen und Grundstücken in Bergisch Gladbach – regional auch BGL genannt – sowie im Umland.</p>
-        <div className="hero-actions"><a className="button gold" href="/immobilienbewertung">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
+        <div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
         <div className="trust-row"><span>Lokale Expertise</span><span>Persönliche Beratung</span><span>Digital unterstützt</span></div>
       </div>
     </section>
@@ -145,7 +145,7 @@ export default function Home() {
 
     <section className="cities section" id="staedte">
       <div className="district-list-head"><p className="eyebrow">Bergisch Gladbach</p><h3>Alle 25 Stadtteile.</h3></div>
-      <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}`} key={district.slug}><span>Stadtteilprofil</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
+      <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}/`} key={district.slug}><span>Stadtteilprofil</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
       <div className="section-head region-list-head"><div><p className="eyebrow">Region &amp; Umland</p><h2>Ortsprofile im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für die Region rund um Bergisch Gladbach.</p></div>
       <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Ortsprofil</span><strong>{name}</strong><b>↗</b></a>)}</div>
     </section>
