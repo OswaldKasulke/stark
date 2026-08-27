@@ -134,7 +134,7 @@ export default function Home() {
     </section>
 
     <section className="properties section" id="immobilien">
-      <div className="section-head"><div><p className="eyebrow">Unsere Immobilien</p><h2>Immobilienangebote in Bergisch Gladbach und Umgebung.</h2><p className="gallery-status">51 Einträge · nach Angebotspreis absteigend · Stand 22.08.2026</p></div><a className="arrow-link" href="https://www.evernest.com/de/search/?lat=50.9929303&amp;lng=7.1277379&amp;zoom=12" target="_blank" rel="noreferrer">Alle Immobilien ansehen ↗</a></div>
+      <div className="section-head"><div><p className="eyebrow">Unsere Immobilien</p><h2>Immobilienangebote in Bergisch Gladbach und Umgebung.</h2><p className="gallery-status">51 Einträge · nach Angebotspreis absteigend · Stand 22.08.2026</p></div></div>
       <ImmobilienGalerie />
     </section>
 

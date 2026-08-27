@@ -40,7 +40,6 @@ export default function DistrictOffers({ district }: { district: string }) {
             </div>
             <p className="property-place">{property.place}</p>
             <h3>{property.price}</h3>
-            <span className="arrow-link">Immobilie ansehen ↗</span>
           </a>
         ))}
       </div>

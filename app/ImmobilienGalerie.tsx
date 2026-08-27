@@ -23,7 +23,6 @@ export default function ImmobilienGalerie() {
               {property.status && <span className={`listing-badge${property.status === "Verkauft" ? " sold" : ""}`}>{property.status}</span>}
               <p>{property.place}</p>
               <strong>{property.price}</strong>
-              <span className="listing-card-title">Immobilie ansehen ↗</span>
             </div>
           </a>
         ))}
