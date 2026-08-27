@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://immobilienmakler-bergisch-gladbach.de";
-  const lastModified = new Date("2026-08-25");
+  const lastModified = new Date("2026-08-27");
   return [
     { url: `${base}/`, lastModified, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/bergisch-gladbach/`, lastModified, changeFrequency: "monthly", priority: 0.9 },
