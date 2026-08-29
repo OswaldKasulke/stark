@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/team/`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/impressum/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/agb/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${base}/datenschutz/`, lastModified, changeFrequency: "yearly", priority: 0.3 },
     ...standorte.map((place) => ({ url: `${base}/${place.slug}/`, lastModified, changeFrequency: "monthly" as const, priority: 0.8 })),
     ...districts.map((district) => ({ url: `${base}/stadtteile/${district.slug}/`, lastModified, changeFrequency: "monthly" as const, priority: 0.8 })),
   ];

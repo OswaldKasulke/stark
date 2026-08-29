@@ -35,7 +35,7 @@ export default function DistrictOffers({ district }: { district: string }) {
         {offers.map((property, index) => (
           <a className="property-card" href={property.url} target="_blank" rel="noreferrer" key={property.url}>
             <div className="property-photo">
-              <img src={property.image} alt={property.alt} loading={index < 2 ? "eager" : "lazy"} />
+              <img data-src={property.image} alt={property.alt} loading={index < 2 ? "eager" : "lazy"} className="external-media" />
               {property.status && <span>{property.status}</span>}
             </div>
             <p className="property-place">{property.place}</p>

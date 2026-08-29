@@ -31,6 +31,6 @@ export default function ImpressumPage() {
         <p>Patrick Stark und Julian Hoffmann<br/>Anschrift wie oben.</p>
       </article>
     </section>
-    <footer><div className="footer-brand"><span className="brand-mark">S<span>&</span>H</span><div><strong>Stark &amp; Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Kontakt</h4><p>Schloßstraße 41<br/>51429 Bergisch Gladbach</p><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></div><div><h4>Unternehmen</h4><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a><a href="https://www.evernest.com/de/datenschutz/" target="_blank" rel="noreferrer">Datenschutz</a></div><div><h4>Register</h4><p>Amtsgericht Köln<br/>HRB 116396</p></div></footer>
+    <footer><div className="footer-brand"><span className="brand-mark">S<span>&</span>H</span><div><strong>Stark &amp; Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Kontakt</h4><p>Schloßstraße 41<br/>51429 Bergisch Gladbach</p><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></div><div><h4>Unternehmen</h4><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a><a href="/datenschutz/">Datenschutz</a></div><div><h4>Register</h4><p>Amtsgericht Köln<br/>HRB 116396</p></div></footer>
   </main>;
 }
