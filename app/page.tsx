@@ -134,7 +134,7 @@ export default function Home() {
     </section>
 
     <section className="properties section" id="immobilien">
-      <div className="section-head"><div><p className="eyebrow">Unsere Immobilien</p><h2>Immobilienangebote in Bergisch Gladbach und Umgebung.</h2><p className="gallery-status">51 Einträge · nach Angebotspreis absteigend · Stand 22.08.2026</p></div></div>
+      <div className="section-head"><div><p className="eyebrow">Unsere Immobilien</p><h2>Immobilienangebote in Bergisch Gladbach und Umgebung.</h2><p className="gallery-status">50 Einträge · nach Entfernung zur Stadtmitte sortiert</p></div></div>
       <ImmobilienGalerie />
     </section>
 
