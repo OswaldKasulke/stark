@@ -43,6 +43,7 @@ export default function DistrictOffers({ district }: { district: string }) {
           </a>
         ))}
       </div>
+      <p className="listing-more"><a className="button dark" href="https://evernest.com/de/search/?lat=50.9924&lng=7.1287&zoom=11" target="_blank" rel="noreferrer">Alle Immobilien im Umkreis ansehen</a></p>
     </section>
   );
 }
