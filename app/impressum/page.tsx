@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { breadcrumbSchema, businessSchema, graphSchema, siteUrl } from "../seo";
 
+const url = `${siteUrl}/impressum/`;
 export const metadata: Metadata = {
   title: "Impressum | Stark & Hoffmann Immobilien",
   description: "Impressum der Stark & Hoffmann Immobilien GmbH in Bergisch Gladbach.",
-  alternates: { canonical: "https://immobilienmakler-bergisch-gladbach.de/impressum/" },
+  alternates: { canonical: url },
 };
 
 export default function ImpressumPage() {
+  const schema = graphSchema(businessSchema, breadcrumbSchema([{ name: "Startseite", url: `${siteUrl}/` }, { name: "Impressum", url }]));
   return <main className="legal-page">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
     <section className="legal-hero"><p className="eyebrow light">Rechtliche Angaben</p><h1>Impressum</h1></section>
     <section className="legal-content section">

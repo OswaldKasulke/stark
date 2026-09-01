@@ -139,6 +139,9 @@ h2{font-size:clamp(39px,4.6vw,65px);line-height:1.03}
 .contact address a{color:#e4c478}
 .contact form{background:#fff;color:var(--ink);padding:42px}
 .contact label{display:flex;flex-direction:column;gap:8px;margin-bottom:18px;text-transform:uppercase;font-size:9px;letter-spacing:.12em}
+.contact .form-required{margin:0 0 22px;color:var(--muted);font-size:12px}
+.contact .form-field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.contact .form-field label{margin-bottom:0}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .contact input,.contact select,.contact textarea{border:0;border-bottom:1px solid #bdc5c1;background:transparent;padding:11px 2px;font:14px Arial;outline:none}
 .contact input:focus,.contact select:focus,.contact textarea:focus{border-color:var(--gold)}
