@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
 import { standorte, standortBySlug } from "./standorte";
 import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "./seo";
+import { locationImages } from "./location-images";
 
 export function standortMetadata(slug: string): Metadata {
   const place = standortBySlug(slug)!;
+  const image = locationImages[slug];
   const url = `https://immobilienmakler-bergisch-gladbach.de/${place.slug}/`;
   return {
     title: `Immobilienmakler ${place.name} | Haus & Wohnung verkaufen`,
     description: `Makler ${place.name}: Haus, Wohnung oder Grundstück verkaufen, Preis und Wert ermitteln – mit amtlichen Marktdaten und persönlicher Beratung.`,
     alternates: { canonical: url },
-    openGraph: { title: `Immobilienmakler ${place.name} | Stark & Hoffmann`, description: place.intro, url, images:[defaultImage] },
-    twitter:{card:"summary_large_image",images:[defaultImage]},
+    openGraph: { title: `Immobilienmakler ${place.name} | Stark & Hoffmann`, description: place.intro, url, images:[image?.src || defaultImage] },
+    twitter:{card:"summary_large_image",images:[image?.src || defaultImage]},
   };
 }
 
 export default function StandortPage({ slug }: { slug: string }) {
   const place = standortBySlug(slug)!;
+  const image = locationImages[slug];
   const related = standorte.filter((entry) => entry.slug !== slug);
   const url=`${siteUrl}/${place.slug}/`;
   const placeFaq=[
@@ -33,7 +36,7 @@ export default function StandortPage({ slug }: { slug: string }) {
   return <main className="city-page location-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}} />
     <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Seitennavigation"><a href="#profil">Profil</a><a href="#markt">Markt</a><a href="#bodenrichtwert">Bodenrichtwert</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
-    <section className="city-hero location-hero"><div><p className="eyebrow light">{place.label} · {place.region}</p><h1>Immobilienmakler {place.name}</h1><p>{place.intro} Wir unterstützen Eigentümer dabei, Haus, Wohnung oder Grundstück marktgerecht zu bewerten und zu verkaufen.</p><div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten</a><a className="text-link light" href="#profil">Ortsprofil <span>↓</span></a></div></div></section>
+    <section className="city-hero location-hero" style={image?{position:"relative",backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.38)),url(${image.src})`}:undefined}><div><p className="eyebrow light">{place.label} · {place.region}</p><h1>Immobilienmakler {place.name}</h1><p>{place.intro} Wir unterstützen Eigentümer dabei, Haus, Wohnung oder Grundstück marktgerecht zu bewerten und zu verkaufen.</p><div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten</a><a className="text-link light" href="#profil">Ortsprofil <span>↓</span></a></div></div>{image&&<a className="district-photo-credit" href={image.source} target="_blank" rel="noreferrer">Quelle: Wikipedia ↗</a>}</section>
     <section className="city-profile section" id="profil"><div><p className="eyebrow">Profil {place.name}</p><h2>{place.profileLead}</h2><p className="lead">{place.profile}</p><div className="profile-sources"><a className="source-link" href={place.municipalitySource.url} target="_blank" rel="noreferrer">Quelle: {place.municipalitySource.label} ↗</a><a className="source-link" href={place.wikipedia} target="_blank" rel="noreferrer">Ergänzende Quelle: Wikipedia ↗</a></div></div><aside>{place.facts.map(([value,label])=><div key={label}><span>{label}</span><strong>{value}</strong></div>)}</aside></section>
     <section className="market-facts section" id="markt"><div className="market-facts-head"><div><p className="eyebrow">Immobilienmarkt {place.name}</p><h2>Der Markt in Zahlen.</h2></div><p>{place.marketIntro}</p></div><div className="market-facts-grid location-market-grid">{place.marketFacts.map(([value,label,note])=><article key={label}><strong>{value}</strong><h3>{label}</h3><p>{note}</p></article>)}</div><a className="source-link" href={place.marketSource.url} target="_blank" rel="noreferrer">Quelle: {place.marketSource.label} ↗</a></section>
     <section className="city-brw section dark-section" id="bodenrichtwert"><div className="section-head"><div><p className="eyebrow light">Bodenrichtwert {place.name}</p><h2>Amtliche Werte – korrekt eingeordnet.</h2></div><p>{place.brwNote}</p></div><div className="city-brw-grid">{place.brw.map(([label,value,note])=><article key={label}><span>{label}</span><strong>{value}</strong><p>{note}</p></article>)}</div><div className="city-source-row"><a className="button gold" href="https://www.boris.nrw.de/" target="_blank" rel="noreferrer">Adresse in BORIS-NRW prüfen ↗</a><a className="source-link light" href={place.marketSource.url} target="_blank" rel="noreferrer">Quelle: {place.marketSource.label} ↗</a></div></section>
