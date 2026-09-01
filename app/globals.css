@@ -313,3 +313,14 @@ footer,.copyright{background:#000;color:#fff}footer h4,footer p,footer a,.footer
 .consent-banner{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;padding:18px max(20px,calc((100vw - 1120px)/2));background:#000;color:#fff;border-top:1px solid #333;font-size:13px;line-height:1.6}.consent-banner p{margin:0;flex:1 1 340px;color:#c9c9c9}.consent-banner a{color:#fff;text-decoration:underline;text-underline-offset:3px}.consent-actions{display:flex;gap:10px;flex-wrap:wrap}.consent-btn{padding:10px 22px;border:1px solid #fff;background:transparent;color:#fff;font:inherit;cursor:pointer}.consent-btn.accept{background:#fff;color:#000}.consent-btn:hover{opacity:.85}img.media-blocked{background:#e8e8e6;min-height:120px}.legal-hero{background:#000;color:#fff;padding:80px max(24px,calc((100vw - 1120px)/2)) 70px}.legal-hero h1{margin:6px 0 14px}.legal-hero p{max-width:680px;color:#c5c5c5;line-height:1.7}.legal-content{max-width:820px;margin:0 auto}.legal-content h2{margin:44px 0 14px;font:400 27px/1.25 made_mirage,Georgia,serif}.legal-content h3{margin:26px 0 8px;font-size:15px}.legal-content p{margin:0 0 14px;color:#555;line-height:1.75;font-size:15px}.legal-content a{color:#000;text-decoration:underline;text-underline-offset:3px}.nowrap{white-space:nowrap}
 .listing-more{margin:28px 0 0;text-align:center}
 .district-offers .listing-more{margin-top:34px}
+
+/* Objektpruefung auf den Verkaufsseiten */
+.check-section{background:#fff}
+.check-section .section-head p{max-width:640px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:26px 48px;margin:34px 0 0;max-width:1120px}
+.checks p{margin:0;color:#555;line-height:1.75;font-size:15px}
+.checks b{display:block;margin-bottom:5px;color:#111;font-weight:500}
+.check-section .callout{background:#f5f5f3;border-left:2px solid #000;padding:20px 24px;margin:34px 0 0;max-width:1120px}
+.check-section .callout b{display:block;margin-bottom:6px;color:#000}
+.check-section .callout p{margin:0;color:#555;line-height:1.75;font-size:15px}
+@media(max-width:860px){.checks{grid-template-columns:1fr;gap:20px}}

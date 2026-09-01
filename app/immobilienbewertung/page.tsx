@@ -6,7 +6,7 @@ const url = `${siteUrl}/immobilienbewertung/`;
 const faqs: Array<[string,string]> = [
   ["Was ist meine Immobilie in Bergisch Gladbach wert?", "Der Immobilienwert hängt von Adresse, Stadtteil, Objektart, Flächen, Grundstück, Baujahr, Zustand, Nutzung und weiteren Merkmalen ab. Die Online-Bewertung liefert eine unverbindliche Ersteinschätzung und ersetzt keine Besichtigung."],
   ["Wie wird der Hauswert in BGL ermittelt?", "Berücksichtigt werden die eingegebenen Objekt- und Lagemerkmale sowie lokale Marktdaten. Die interne Berechnung bleibt geschützt; für eine belastbare Verkaufspreisempfehlung werden Immobilie und Unterlagen zusätzlich individuell geprüft."],
-  ["Was beeinflusst den Wohnungswert?", "Neben Lage, Fläche, Baujahr und Zustand sind Etage, Balkon, Aufzug, Stellplatz, Hausgeld, Instandhaltungsrücklage, Gemeinschaftseigentum und gegebenenfalls die Mietsituation relevant."],
+  ["Was beeinflusst den Wohnungswert?", "Neben Lage, Fläche, Baujahr und Zustand sind Etage, Balkon, Aufzug, Stellplatz, Hausgeld, Erhaltungsrücklage, Gemeinschaftseigentum und gegebenenfalls die Mietsituation relevant."],
   ["Ist der Bodenrichtwert der Grundstückswert?", "Nein. Der Bodenrichtwert ist ein amtlicher Orientierungswert für ein typisches Grundstück innerhalb einer Zone. Baurecht, Zuschnitt, Erschließung, Topografie und weitere Eigenschaften können den konkreten Grundstückswert verändern."],
 ];
 
