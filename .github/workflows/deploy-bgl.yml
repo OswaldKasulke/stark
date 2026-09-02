@@ -72,6 +72,14 @@ jobs:
           local-dir: ./out/
           server-dir: /immobilienmakler-bergisch-gladbach.de/
           dangerous-clean-slate: false
+          # Der Lauf vom 02.09.2026 scheiterte mit "550 No such file or
+          # directory" beim Loeschen von _next/<build-id>: der Sync-State auf
+          # dem Server fuehrte einen Ordner, den es dort nicht mehr gab. Ein
+          # neuer State-Name erzwingt einen vollstaendigen Abgleich, ohne auf
+          # dem Server etwas zu loeschen. Denselben Namen nutzt auch der
+          # Notfall-Deploy im Repo romanbecker.de - sonst laufen beide Wege
+          # mit getrenntem State auseinander.
+          state-name: .ftp-deploy-sync-state-bgl-v2.json
           # Bricht ein Lauf im Upload ab, fuehrt der State Dateien als
           # uebertragen, die nie ankamen; der Folgelauf scheitert dann mit 550.
           # 120 s Timeout, weil der Hoster den Kontrollkanal langsam oeffnet.
