@@ -24,12 +24,12 @@ export default function ImpressumPage() {
         <p>Telefon: <a href="tel:+4922049147881">+49 2204 914 7881</a><br/>E-Mail: <a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></p>
         <h3>Registereintrag</h3>
         <p>Registergericht: Amtsgericht Köln<br/>Handelsregisternummer: HRB 116396</p>
-        <h3>Erlaubnis und Aufsichtsbehörde</h3>
+        <h3>Berufsbezeichnung und zuständige Kammer</h3> <p>Berufsbezeichnung: Immobilienmakler (IHK-zertifiziert)<br/>Zuständige Kammer: Industrie- und Handelskammer zu Köln<br/>Verliehen in: Deutschland</p> <h3>Erlaubnis und Aufsichtsbehörde</h3>
         <p>Erlaubnis nach § 34c Abs. 1 Satz 1 Nr. 1 Gewerbeordnung (GewO).</p>
         <p>Rheinisch-Bergischer Kreis<br/>Der Landrat<br/>Am Rübezahlwald 7<br/>51469 Bergisch Gladbach</p>
         <h3>Berufsrechtliche Regelungen</h3>
-        <p><a href="https://www.gesetze-im-internet.de/gewo/__34c.html" target="_blank" rel="noreferrer">§ 34c Gewerbeordnung (GewO) ↗</a><br/><a href="https://www.gesetze-im-internet.de/gewo_34cdv/" target="_blank" rel="noreferrer">Makler- und Bauträgerverordnung (MaBV) ↗</a></p>
-        <h3>Verbraucherstreitbeilegung</h3>
+        <p><a href="https://www.gesetze-im-internet.de/gewo/__34c.html" target="_blank" rel="noreferrer">§ 34c Gewerbeordnung (GewO) ↗</a><br/><a href="https://www.gesetze-im-internet.de/gewo_34cdv/" target="_blank" rel="noreferrer">Makler- und Bauträgerverordnung (MaBV) ↗</a></p> <p>Kooperationspartner der EVERNEST GmbH | Mönkedamm 9-11 | 20457 Hamburg</p>
+        <h3>Haftung für Inhalte</h3> <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG in Verbindung mit den Artikeln 4 bis 8 der Verordnung (EU) 2022/2065 (Digital Services Act) für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach Artikel 8 der Verordnung (EU) 2022/2065 sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p> <h3>Haftung für Links</h3> <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p> <h3>Urheberrecht</h3> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p> <h3>Verbraucherstreitbeilegung</h3>
         <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
         <h3>Verantwortlich für den Inhalt</h3>
         <p>Patrick Stark und Julian Hoffmann<br/>Anschrift wie oben.</p>
