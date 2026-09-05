@@ -64,7 +64,8 @@ export default function BewertungsForm(){
   const update=(key:string,value:string)=>setData(prev=>prev[key]===value?prev:{...prev,[key]:value});
   useEffect(()=>{const street=new URLSearchParams(window.location.hash.slice(1)).get("street");if(street)update("street",street);},[]);
   const resolved=(address:ResolvedAddress)=>{setAddressValid(address.valid);setAddressCandidates(address.candidates);update("district",address.district);update("city",address.city);};
-  const next=()=>setStep(value=>Math.min(6,value+1)); const back=()=>setStep(value=>Math.max(1,value-1));
+  // Ein Grundstück hat kein Baujahr — der Schritt entfällt dort.
+  const next=()=>setStep(value=>value===3&&data.type==="Grundstück"?5:Math.min(6,value+1)); const back=()=>setStep(value=>value===5&&data.type==="Grundstück"?3:Math.max(1,value-1));
   const attributes=modelAttributes(data);
   const requiredFields=addressValid?getSharedRequiredFields(data.type,addressCandidates,attributes):[];
   const additionalFields=requiredFields.filter((field:string)=>!["EGART","WHNFL","FLAE","BJ"].includes(field));
