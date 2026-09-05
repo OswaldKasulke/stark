@@ -62,7 +62,7 @@ export default function BewertungsForm(){
   const [addressCandidates,setAddressCandidates]=useState<AddressCandidate[]>([]);
   const [data,setData]=useState<ValuationData>({type:"",EGART:"",street:"",number:"",zip:"",district:"",city:"",living:"",plot:"",rent:"",gstand:"",year:"",first:"",last:"",email:"",phone:"",contactAddress:"",contactZip:"",contactCity:"",consent:"",outside:"",outsideStreet:"",outsideNumber:"",outsideZip:"",outsideCity:""});
   const update=(key:string,value:string)=>setData(prev=>prev[key]===value?prev:{...prev,[key]:value});
-  useEffect(()=>{const street=new URLSearchParams(window.location.search).get("street");if(street)update("street",street);},[]);
+  useEffect(()=>{const street=new URLSearchParams(window.location.hash.slice(1)).get("street");if(street)update("street",street);},[]);
   const resolved=(address:ResolvedAddress)=>{setAddressValid(address.valid);setAddressCandidates(address.candidates);update("district",address.district);update("city",address.city);};
   const next=()=>setStep(value=>Math.min(6,value+1)); const back=()=>setStep(value=>Math.max(1,value-1));
   const attributes=modelAttributes(data);
