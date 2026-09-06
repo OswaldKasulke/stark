@@ -8,3 +8,22 @@ RewriteRule ^ https://immobilienmakler-bergisch-gladbach.de%{REQUEST_URI} [R=301
 
 # Send the character set in the HTTP header, not just in the markup.
 AddDefaultCharset UTF-8
+
+# Sicherheitsheader, derselbe Satz wie auf romanbecker.de.
+# Die CSP listet genau das, was die Seite wirklich laedt:
+#   'unsafe-inline' bei script/style: der statische Next-Export schreibt
+#     Inline-Skripte und -Styles in jede Seite, ein Nonce ist ohne Server
+#     nicht moeglich.
+#   images.ctfassets.net: Objektbilder aus dem Evernest-CMS.
+#   romanbecker.de: bewertung-adressen.php (Adresssuche im Rechner) und
+#     submit.php (Lead-Versand) liegen dort, nicht auf dieser Domain.
+# Kommt ein neuer Dienst dazu (Analytics, Karten, Schriften von aussen),
+# muss er hier eingetragen werden - sonst blockiert der Browser ihn still.
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://romanbecker.de; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https://images.ctfassets.net; connect-src 'self' https://romanbecker.de; upgrade-insecure-requests"
+</IfModule>
