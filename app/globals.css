@@ -329,3 +329,13 @@ footer,.copyright{background:#000;color:#fff}footer h4,footer p,footer a,.footer
    Der Verweis auf die Nachbarregionen bekommt ein eigenes Mass. */
 .location-grid--paar{grid-template-columns:repeat(2,minmax(0,1fr));max-width:558px}
 @media(max-width:520px){.location-grid--paar{grid-template-columns:1fr;max-width:none}}
+
+
+/* Im Hinweiskasten der Bewertung stand jede Hervorhebung in 20px Serifenschrift –
+   auch die Labels mitten im Absatz ("Besondere Lage:", "Tipp:"). Daneben lief der
+   Fliesstext in 12px Sans, was in derselben Zeile hart bricht. Gemeint war die
+   Regel nur fuer die Ueberschrift des Kastens. */
+.valuation-notice>strong{font:400 20px made_mirage,Georgia,serif;display:block;margin-bottom:10px}
+.valuation-notice p strong{font:inherit;font-weight:500;color:var(--ink)}
+.valuation-notice p{font-size:14px;margin-bottom:10px}
+.valuation-notice p:last-child{margin-bottom:0}
