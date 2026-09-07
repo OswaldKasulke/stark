@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { gclidLesen } from "./gclid";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -13,6 +14,11 @@ export default function ContactForm() {
     body.set("type", "kontakt");
     body.set("site", "BGL");
     body.set("website", "");
+    // Google-Ads-Klickkennung aus der Landingpage-URL mitgeben. Sie steht dort,
+    // weil im Ads-Konto Auto-Tagging aktiv ist. Damit laesst sich die Anfrage
+    // spaeter als Conversion melden - ohne Cookie und ohne Zaehlpixel.
+    const gclid = gclidLesen();
+    if (gclid) body.set("gclid", gclid);
 
     try {
       const response = await fetch("https://romanbecker.de/submit.php", { method: "POST", body });

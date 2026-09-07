@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { defaultImage } from "./seo";
 import Consent from "./Consent";
+import GclidMerker from "./GclidMerker";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://immobilienmakler-bergisch-gladbach.de/"),
@@ -51,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className="antialiased">{children}<Consent /></body>
+      <body className="antialiased">{children}<Consent /><GclidMerker /></body>
     </html>
   );
 }
