@@ -40,7 +40,8 @@ export default function DatenschutzPage(){
 
         <h2>4. Datenerfassung auf dieser Website</h2>
         <h3>Cookies</h3>
-        <p>Diese Website setzt keine Cookies und bindet keine Analyse-, Werbe- oder Trackingdienste ein. Ihre Entscheidung über das Nachladen externer Inhalte (Abschnitt 5) wird ausschließlich lokal in Ihrem Browser gespeichert (localStorage) und nicht an uns übertragen.</p>
+        <p>Solange Sie im Banner nicht zustimmen, setzt diese Website keine Cookies und lädt keinen Analyse-, Werbe- oder Trackingdienst. Stimmen Sie zu, setzt Google Analytics eigene Cookies — Einzelheiten in Abschnitt 7.</p>
+        <p>Unabhängig davon werden zwei Entscheidungen ausschließlich lokal in Ihrem Browser gespeichert (localStorage): Ihre Wahl zum Nachladen externer Inhalte (Abschnitt 5) und Ihre Wahl zur Reichweitenmessung (Abschnitt 7). Beide Werte enthalten keine personenbezogenen Daten und werden nicht an uns übertragen.</p>
         <h3>Server-Log-Dateien</h3>
         <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in Server-Log-Dateien, die Ihr Browser automatisch übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und IP-Adresse. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
         <h3>Kontaktformular</h3>
@@ -58,8 +59,13 @@ export default function DatenschutzPage(){
         <h2>6. Schriftarten</h2>
         <p>Diese Website verwendet ausschließlich lokal auf unserem Server gespeicherte Schriftarten. Es werden keine Google Fonts und keine anderen externen Schriftdienste eingebunden; beim Aufruf der Seite wird deshalb keine Verbindung zu Servern von Schriftanbietern hergestellt.</p>
 
-        <h2>7. Analyse-Tools</h2>
-        <p>Diese Website nutzt keine Webanalyse. Es kommen weder Google Analytics noch vergleichbare Reichweitenmessungen zum Einsatz. Es findet kein Profiling und keine automatisierte Entscheidungsfindung statt.</p>
+        <h2>7. Reichweitenmessung mit Google Analytics</h2>
+        <p>Diese Website nutzt Google Analytics 4, einen Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Wir messen damit, welche Seiten aufgerufen werden und über welchen Weg Besucher zu uns finden.</p>
+        <p><strong>Der Dienst wird erst geladen, nachdem Sie im Banner zugestimmt haben.</strong> Bis dahin wird keine Verbindung zu Google hergestellt, kein Skript von Google geladen und kein Cookie gesetzt. Lehnen Sie ab, bleibt es dauerhaft dabei.</p>
+        <p>Nach Ihrer Zustimmung setzt Google Analytics Cookies und verarbeitet unter anderem die aufgerufenen Seiten, Zeitpunkt und Dauer des Besuchs, die verweisende Seite, Gerätetyp und Browser sowie eine gekürzte IP-Adresse. Google Analytics 4 kürzt die IP-Adresse grundsätzlich, bevor sie gespeichert wird; eine vollständige IP-Adresse wird nicht auf Dauer abgelegt. Die Ereignisdaten dieser Property werden nach zwei Monaten gelöscht.</p>
+        <p>Google verarbeitet die Daten auch auf Servern in den USA. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert; für Übermittlungen dorthin besteht ein Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023. Ein Restrisiko des Zugriffs durch US-Behörden lässt sich gleichwohl nicht vollständig ausschließen.</p>
+        <p>Rechtsgrundlage ist ausschließlich Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDG. Sie können sie jederzeit mit Wirkung für die Zukunft widerrufen: <a href="#" data-consent-reset>Einwilligung widerrufen</a> — Ihre Entscheidung wird zurückgesetzt und Sie werden erneut gefragt.</p>
+        <p>Es findet kein Profiling und keine automatisierte Entscheidungsfindung statt. Wir führen die Analysedaten nicht mit den Angaben aus dem Kontaktformular oder dem Bewertungsrechner zusammen.</p>
 
         <h2>8. Ihre Rechte</h2>
         <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten (Art. 15 DSGVO). Sie haben außerdem ein Recht auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO) und Datenübertragbarkeit (Art. 20 DSGVO).</p>
