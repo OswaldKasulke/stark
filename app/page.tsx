@@ -144,14 +144,14 @@ export default function Home() {
     </section>
 
     <section className="cities section" id="staedte">
-      <div className="district-list-head"><p className="eyebrow">Bergisch Gladbach</p><h3>Alle 25 Stadtteile.</h3></div>
-      <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}/`} key={district.slug}><span>Stadtteilprofil</span><strong>{district.name}</strong><b>↗</b></a>)}</div>
+      <div className="district-list-head"><p className="eyebrow">Bergisch Gladbach</p><h2>Alle 25 Stadtteile.</h2></div>
+      <div className="city-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map((district)=><a className="city" href={`/stadtteile/${district.slug}/`} key={district.slug}><span>Stadtteilprofil</span><strong>{district.name}</strong><b aria-hidden="true">↗</b></a>)}</div>
       <div className="section-head region-list-head"><div><p className="eyebrow">Region &amp; Umland</p><h2>Ortsprofile im Bergischen Land.</h2></div><p>Lokale Marktseiten mit Ortsprofil, Immobilienpreisen und amtlichen Quellen für die Region rund um Bergisch Gladbach.</p></div>
-      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Ortsprofil</span><strong>{name}</strong><b>↗</b></a>)}</div>
+      <div className="location-grid">{locations.map(([name,slug])=><a href={`/${slug}/`} key={slug}><span>Ortsprofil</span><strong>{name}</strong><b aria-hidden="true">↗</b></a>)}</div>
       <div className="section-head region-list-head"><div><p className="eyebrow">Nachbarregionen</p><h2>Jenseits des Bergischen.</h2></div><p>Für Leverkusen und das rechtsrheinische Köln führen Kolleginnen und Kollegen eigene Marktseiten mit Ortsprofilen, Preisen und amtlichen Quellen.</p></div>
       <div className="location-grid location-grid--paar">
-        <a href="https://leverkusen-makler.de/"><span>Stadtprofile &amp; Marktdaten</span><strong>Leverkusen</strong><b>↗</b></a>
-        <a href="https://makler-schael-sick.de/"><span>18 Stadtteile rechts des Rheins</span><strong>Köln, rechtsrheinisch</strong><b>↗</b></a>
+        <a href="https://leverkusen-makler.de/"><span>Stadtprofile &amp; Marktdaten</span><strong>Leverkusen</strong><b aria-hidden="true">↗</b></a>
+        <a href="https://makler-schael-sick.de/"><span>18 Stadtteile rechts des Rheins</span><strong>Köln, rechtsrheinisch</strong><b aria-hidden="true">↗</b></a>
       </div>
     </section>
 
