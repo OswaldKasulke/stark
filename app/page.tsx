@@ -110,11 +110,6 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="seo-services section" aria-labelledby="verkaufen-heading">
-      <div className="section-head"><div><p className="eyebrow">Immobilie verkaufen in Bergisch Gladbach</p><h2 id="verkaufen-heading">Welches Eigentum möchten Sie verkaufen?</h2></div><p>Objektart, Lage und Unterlagen bestimmen den richtigen Verkaufsweg. Unsere Fachseiten beantworten die wichtigsten Fragen mit lokalen Markt- und Bewertungsinformationen.</p></div>
-      <div className="seo-service-grid">{serviceLinks.map(([title,url,text])=><a href={url} key={url}><span>Verkaufsratgeber</span><h3>{title}</h3><p>{text}</p><b>Mehr erfahren →</b></a>)}</div>
-    </section>
-
     <section className="profile section" id="profil">
       <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Evernest Immobilienbüro in der Schloßstraße in Bergisch Gladbach"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
@@ -124,6 +119,11 @@ export default function Home() {
         <div className="profile-points"><span>Professionelle Immobilienbewertung</span><span>Zielgerichtete Vermarktung</span><span>Geprüfte Kaufinteressenten</span><span>Begleitung bis zum Abschluss</span></div>
         <a className="button dark" href="/team/">Team kennenlernen</a>
       </div>
+    </section>
+
+    <section className="seo-services section" aria-labelledby="verkaufen-heading">
+      <div className="section-head"><div><p className="eyebrow">Immobilie verkaufen in Bergisch Gladbach</p><h2 id="verkaufen-heading">Welches Eigentum möchten Sie verkaufen?</h2></div><p>Objektart, Lage und Unterlagen bestimmen den richtigen Verkaufsweg. Unsere Fachseiten beantworten die wichtigsten Fragen mit lokalen Markt- und Bewertungsinformationen.</p></div>
+      <div className="seo-service-grid">{serviceLinks.map(([title,url,text])=><a href={url} key={url}><span>Verkaufsratgeber</span><h3>{title}</h3><p>{text}</p><b>Mehr erfahren →</b></a>)}</div>
     </section>
 
     <section className="market-facts section" id="markt">
