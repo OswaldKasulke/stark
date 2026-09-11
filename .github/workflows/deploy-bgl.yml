@@ -27,6 +27,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Volle Historie: app/sitemap.ts liest das lastmod jeder Seite aus dem
+          # Commit-Datum ihrer Quelldatei. Bei fetch-depth 1 (Standard) kennt git
+          # nur den letzten Commit und alle Seiten bekaemen dasselbe Datum.
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
