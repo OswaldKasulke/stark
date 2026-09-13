@@ -1,0 +1,101 @@
+{
+ "slug": "eigenbedarfsklage",
+ "rang": 5,
+ "stand": "2026-09-13",
+ "titel": "Eigenbedarfskündigung in Bergisch Gladbach: Voraussetzungen, Fristen, Klage",
+ "metaTitel": "Eigenbedarfskündigung – Fristen, Widerspruch, Klage | Stark & Hoffmann",
+ "beschreibung": "Wann Vermieter wegen Eigenbedarfs kündigen dürfen, welche Form und Fristen gelten, wie Mieter widersprechen können und wie eine Räumungsklage abläuft.",
+ "lead": "Wer eine vermietete Wohnung selbst nutzen möchte, braucht einen berechtigten Grund und eine formal einwandfreie Kündigung. Schon kleine Fehler machen sie unwirksam.",
+ "kurz": "Berechtigter Bedarf, Form, Fristen, Widerspruch und Räumungsklage Schritt für Schritt.",
+ "bloecke": [
+  {
+   "h2": "Wann Eigenbedarf vorliegt"
+  },
+  {
+   "p": "Nach § 573 Abs. 2 Nr. 2 BGB darf der Vermieter kündigen, wenn er die Räume als Wohnung für sich, für Familienangehörige oder für Angehörige seines Haushalts benötigt. Dazu zählen neben dem Vermieter selbst etwa Kinder, Eltern, Geschwister und Personen, die mit ihm zusammenleben."
+  },
+  {
+   "p": "Der Bedarf muss tatsächlich bestehen und auf einem nachvollziehbaren Grund beruhen. Wer Eigenbedarf nur vorschiebt, kündigt unwirksam und riskiert Schadensersatz."
+  },
+  {
+   "h2": "So muss die Kündigung aussehen"
+  },
+  {
+   "ul": [
+    "Schriftform: Die Kündigung braucht die schriftliche Form mit Unterschrift des Vermieters oder eines Vertreters (§ 568 Abs. 1 BGB).",
+    "Begründung: Im Schreiben stehen die Person, die einziehen soll, und der Grund, warum sie die Wohnung braucht (§ 573 Abs. 3 BGB).",
+    "Hinweis auf den Widerspruch: Der Vermieter soll den Mieter rechtzeitig auf die Möglichkeit, die Form und die Frist des Widerspruchs hinweisen (§ 568 Abs. 2 BGB)."
+   ]
+  },
+  {
+   "h2": "Welche Fristen gelten"
+  },
+  {
+   "p": "Die Kündigungsfrist richtet sich danach, wie lange der Mieter schon in der Wohnung lebt (§ 573c BGB). Gekündigt werden kann spätestens am dritten Werktag eines Monats zum Ende des übernächsten Monats; nach fünf und nach acht Jahren verlängert sich die Frist um jeweils drei Monate."
+  },
+  {
+   "table": [
+    [
+     "Mietdauer seit Überlassung",
+     "Kündigungsfrist"
+    ],
+    [
+     "bis 5 Jahre",
+     "3 Monate"
+    ],
+    [
+     "mehr als 5 bis 8 Jahre",
+     "6 Monate"
+    ],
+    [
+     "mehr als 8 Jahre",
+     "9 Monate"
+    ]
+   ]
+  },
+  {
+   "h2": "Der Widerspruch des Mieters"
+  },
+  {
+   "p": "Fehlt ein berechtigter Eigenbedarf, ist die Kündigung ohnehin unwirksam. Aber auch bei berechtigtem Bedarf kann der Mieter widersprechen und die Fortsetzung des Mietverhältnisses verlangen, wenn der Auszug für ihn oder seine Familie eine nicht zu rechtfertigende Härte wäre – etwa wegen hohen Alters, schwerer Krankheit oder weil sich kein angemessener Ersatzwohnraum zu zumutbaren Bedingungen findet (§ 574 BGB)."
+  },
+  {
+   "p": "Der Widerspruch muss in Textform und spätestens zwei Monate vor dem Ende des Mietverhältnisses beim Vermieter sein (§ 574b BGB). Hat der Vermieter nicht rechtzeitig auf diese Möglichkeit hingewiesen, kann der Mieter noch im ersten Termin des Räumungsprozesses widersprechen."
+  },
+  {
+   "h2": "Räumungsklage und Räumungsfrist"
+  },
+  {
+   "p": "Zieht der Mieter nicht aus, bleibt die Räumungsklage. Zuständig ist ausschließlich das Amtsgericht, in dessen Bezirk die Wohnung liegt (§ 29a ZPO). Im Verfahren muss der Vermieter seinen Eigenbedarf darlegen und notfalls beweisen, der Mieter seine Härtegründe."
+  },
+  {
+   "p": "Gibt das Gericht der Klage statt, kann es dem Mieter auf Antrag oder von sich aus eine angemessene Räumungsfrist gewähren. Sie darf insgesamt höchstens ein Jahr betragen (§ 721 ZPO)."
+  },
+  {
+   "h2": "Wann eine Eigenbedarfskündigung ausgeschlossen ist"
+  },
+  {
+   "ul": [
+    "Der Vermieter hat im Mietvertrag auf die Kündigung wegen Eigenbedarfs verzichtet.",
+    "Die Wohnung wurde nach der Vermietung in eine Eigentumswohnung umgewandelt und verkauft: Der Erwerber muss dann eine Sperrfrist von mindestens drei Jahren abwarten, die Länder können sie für bestimmte Gemeinden verlängern (§ 577a BGB)."
+   ]
+  },
+  {
+   "h2": "Wenn der Eigenbedarf wegfällt"
+  },
+  {
+   "p": "Entfällt der Bedarf noch vor Ablauf der Kündigungsfrist – zum Beispiel, weil die Tochter doch nicht einzieht –, muss der Vermieter den Mieter darüber informieren. Verschweigt er es, kann er sich schadensersatzpflichtig machen."
+  },
+  {
+   "h2": "Unser Rat"
+  },
+  {
+   "p": "Kaum ein Thema im Mietrecht ist so fehleranfällig. Eine zu knappe Begründung, eine fehlende Angabe der Bedarfsperson oder eine falsch berechnete Frist genügen, damit die Kündigung scheitert und alles von vorn beginnt. Lassen Sie Kündigung und gegebenenfalls das Verfahren deshalb von einer Fachanwältin oder einem Fachanwalt für Mietrecht begleiten."
+  }
+ ],
+ "verwandt": [
+  "immobilienverkauf",
+  "niessbrauch-wohnrecht",
+  "wirtschaftsplan"
+ ]
+}

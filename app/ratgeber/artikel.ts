@@ -1,4 +1,9 @@
 import erbpacht from "./inhalte/erbpacht.json";
+import erbbauzins from "./inhalte/erbbauzins.json";
+import niessbrauchWohnrecht from "./inhalte/niessbrauch-wohnrecht.json";
+import maklerkostenBeimImmobilienkauf from "./inhalte/maklerkosten-beim-immobilienkauf.json";
+import eigenbedarfsklage from "./inhalte/eigenbedarfsklage.json";
+import denkmalAfa from "./inhalte/denkmal-afa.json";
 
 // Jeder Ratgeber liegt als eigene JSON-Datei in ./inhalte – die Sitemap liest
 // das Änderungsdatum je Datei, damit nicht alle Artikel dasselbe lastmod tragen.
@@ -21,9 +26,14 @@ export type Artikel = {
   stand: string;
   bloecke: Block[];
   verwandt?: string[];
+  faq?: string[][];
+  rang?: number;
 };
 
-export const artikel: Artikel[] = [erbpacht];
+const alle: Artikel[] = [erbpacht, erbbauzins, niessbrauchWohnrecht, maklerkostenBeimImmobilienkauf, eigenbedarfsklage, denkmalAfa];
+
+// Reihenfolge nach Rang (Platzierung der Vorlage), ohne Rang ans Ende.
+export const artikel: Artikel[] = [...alle].sort((a, b) => (a.rang ?? 99) - (b.rang ?? 99));
 
 export const autoren = [
   { name: "Patrick Stark", funktion: "Geschäftsführer" },

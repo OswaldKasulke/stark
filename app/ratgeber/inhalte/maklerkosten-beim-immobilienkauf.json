@@ -1,0 +1,76 @@
+{
+ "slug": "maklerkosten-beim-immobilienkauf",
+ "rang": 4,
+ "stand": "2026-09-13",
+ "titel": "Maklerkosten in Bergisch Gladbach: Wer zahlt die Provision beim Kauf?",
+ "metaTitel": "Maklerkosten beim Immobilienkauf in Bergisch Gladbach | Stark & Hoffmann",
+ "beschreibung": "Maklerprovision beim Kauf von Haus oder Wohnung: gesetzliche Teilung seit 2020, übliche 3,57 Prozent je Seite und Ausnahmen bei Grundstücken und Mehrfamilienhäusern.",
+ "lead": "Seit Ende 2020 regelt das Gesetz, wie die Maklerkosten beim Kauf eines Hauses oder einer Wohnung verteilt werden. Für Grundstücke und Anlageobjekte gelten die Regeln nicht – dort sieht die Rechnung anders aus.",
+ "kurz": "Gesetzliche Teilung, übliche Sätze und die Ausnahmen bei Grundstücken und Mehrfamilienhäusern.",
+ "bloecke": [
+  {
+   "p": "Die Provision bezahlt mehr als die reine Vermittlung: Bewertung, Unterlagen, Exposé, Besichtigungen und Verhandlung gehören dazu. Was ein Makler im Einzelnen leistet, beschreibt unser Beitrag zu den Leistungen des Maklers."
+  },
+  {
+   "h2": "Die gesetzliche Teilung seit Dezember 2020"
+  },
+  {
+   "p": "Beim Kauf einer Wohnung oder eines Einfamilienhauses durch einen Verbraucher gelten die §§ 656a bis 656d BGB. Lässt sich der Makler von Verkäufer und Käufer beauftragen, müssen beide eine Provision in gleicher Höhe zahlen. Hat nur der Verkäufer den Makler beauftragt, kann er einen Teil an den Käufer weitergeben – aber höchstens die Hälfte, und fällig wird der Käuferanteil erst, wenn der Verkäufer seinen Anteil nachweislich bezahlt hat (§ 656d BGB)."
+  },
+  {
+   "p": "Früher trugen Käufer in vielen Bundesländern die gesamte Provision allein. Das ist bei diesen Objekten seit der Neuregelung vorbei."
+  },
+  {
+   "h2": "Wie hoch die Provision üblicherweise ist"
+  },
+  {
+   "p": "Üblich sind 3,57 Prozent des Kaufpreises für Käufer und Verkäufer, zusammen also 7,14 Prozent; darin ist die Umsatzsteuer enthalten. Bei einem Kaufpreis von 450.000 Euro zahlt jede Seite damit 16.065 Euro."
+  },
+  {
+   "p": "Eine niedrigere Provision darf vereinbart werden, sie darf den Verkäufer aber nicht einseitig begünstigen: Wird ihm etwas erlassen, wirkt das auch zugunsten des Käufers (§ 656c BGB)."
+  },
+  {
+   "h2": "Wenn der Käufer einen Makler beauftragt"
+  },
+  {
+   "p": "Beauftragt ein Kaufinteressent einen eigenen Makler mit der Suche, zahlt er dessen Provision grundsätzlich selbst. Abweichende Vereinbarungen sind möglich, müssen sich aber in dem Rahmen bewegen, den das Gesetz vorgibt."
+  },
+  {
+   "h2": "Grundstücke, Mehrfamilienhäuser und Wohnungspakete"
+  },
+  {
+   "p": "Die gesetzliche Teilung gilt nur für Wohnungen und Einfamilienhäuser. Bei anderen Objekten greift sie nicht, insbesondere bei:"
+  },
+  {
+   "ul": [
+    "Baugrundstücken",
+    "Mehrfamilienhäusern",
+    "Wohnungspaketen, also mehreren Eigentumswohnungen in einem Kauf"
+   ]
+  },
+  {
+   "p": "Hier zahlt häufig allein der Käufer, oft 5 Prozent zuzüglich Umsatzsteuer, also 5,95 Prozent des Kaufpreises. Bei einem Mehrfamilienhaus für 1.200.000 Euro wären das 71.400 Euro. Eine Beteiligung des Verkäufers schreibt das Gesetz nicht vor, in der Praxis ist sie selten. Käufer sollten diese Kosten von Anfang an in die Kalkulation der Kaufnebenkosten aufnehmen."
+  },
+  {
+   "h2": "Maklerkosten bei der Vermietung"
+  },
+  {
+   "p": "Bei Mietwohnungen gilt das Bestellerprinzip: Wer den Makler beauftragt, bezahlt ihn – meist also der Vermieter. Üblich sind zwei Monatskaltmieten zuzüglich Umsatzsteuer."
+  }
+ ],
+ "faq": [
+  [
+   "Muss ich als Käufer die Hälfte der Provision zahlen?",
+   "Nur wenn Sie selbst einen Maklervertrag abgeschlossen haben oder der Kaufvertrag eine wirksame Übernahme vorsieht. Beim Kauf einer Wohnung oder eines Einfamilienhauses als Verbraucher zahlen Sie höchstens so viel wie der Verkäufer."
+  ],
+  [
+   "Gilt die Teilung auch beim Kauf eines Baugrundstücks?",
+   "Nein. Die §§ 656c und 656d BGB betreffen nur Wohnungen und Einfamilienhäuser. Bei Grundstücken und Mehrfamilienhäusern ist die Verteilung frei vereinbar."
+  ]
+ ],
+ "verwandt": [
+  "kaufnebenkosten",
+  "notarkosten-beim-immobilienkauf",
+  "leistungen-makler"
+ ]
+}

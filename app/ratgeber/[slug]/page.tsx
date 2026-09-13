@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { artikel, autoren, datumLang, findeArtikel, type Artikel, type Block } from "../artikel";
 import { RatgeberFuss, RatgeberKopf } from "../Rahmen";
-import { breadcrumbSchema, businessId, businessSchema, defaultImage, graphSchema, siteUrl } from "../../seo";
+import { breadcrumbSchema, businessId, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../../seo";
 
 export const dynamicParams = false;
 
@@ -31,10 +31,12 @@ export default async function RatgeberArtikel({ params }: { params: Promise<{ sl
   if (!a) notFound();
   const url = `${siteUrl}/ratgeber/${a.slug}/`;
   const weitere = (a.verwandt ?? []).map(findeArtikel).filter((x): x is Artikel => Boolean(x));
+  const fragen = (a.faq ?? []).map(([question, answer]) => ({ question, answer }));
   const schema = graphSchema(
     businessSchema,
     breadcrumbSchema([{ name: "Startseite", url: `${siteUrl}/` }, { name: "Ratgeber", url: `${siteUrl}/ratgeber/` }, { name: a.titel, url }]),
     { "@type": "Article", "@id": `${url}#artikel`, headline: a.titel, description: a.beschreibung, datePublished: a.stand, dateModified: a.stand, inLanguage: "de-DE", mainEntityOfPage: url, image: defaultImage, author: autoren.map((p) => ({ "@type": "Person", name: p.name, jobTitle: p.funktion, worksFor: { "@id": businessId } })), publisher: { "@id": businessId } },
+    ...(fragen.length ? [faqSchema(fragen)] : []),
   );
   return <main className="legal-page rg-seite">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -44,6 +46,7 @@ export default async function RatgeberArtikel({ params }: { params: Promise<{ sl
       <article>
         <p className="rg-autoren">Von {autoren.map((p) => p.name).join(" und ")}, Geschäftsführer der Stark &amp; Hoffmann Immobilien GmbH · Stand {datumLang(a.stand)}</p>
         {a.bloecke.map((b, i) => <Baustein b={b} key={i} />)}
+        {fragen.length > 0 && <div className="rg-faq"><h2>Häufige Fragen</h2>{fragen.map((f) => <details className="faq-item" key={f.question}><summary>{f.question}<span aria-hidden="true">+</span></summary><div><p>{f.answer}</p></div></details>)}</div>}
         {weitere.length > 0 && <div className="rg-weiter"><h2>Weiterlesen</h2><ul className="rg-liste">{weitere.map((w) => <li key={w.slug}><a href={`/ratgeber/${w.slug}/`}>{w.titel}</a></li>)}</ul></div>}
         <p className="rg-hinweis">Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechts-, Steuer- oder Finanzberatung im Einzelfall.</p>
       </article>

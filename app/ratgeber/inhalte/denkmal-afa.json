@@ -1,0 +1,88 @@
+{
+ "slug": "denkmal-afa",
+ "rang": 7,
+ "stand": "2026-09-13",
+ "titel": "Denkmal-AfA in Bergisch Gladbach: So viel Sanierungskosten sind absetzbar",
+ "metaTitel": "Denkmal-AfA – Sanierungskosten steuerlich absetzen | Stark & Hoffmann",
+ "beschreibung": "Denkmal-AfA für Vermieter und Selbstnutzer: 9 und 7 Prozent nach § 7i EStG, 9 Prozent nach § 10f EStG, Voraussetzungen, Bescheinigung und ein Rechenbeispiel.",
+ "lead": "Wer ein Baudenkmal saniert, kann einen großen Teil der Kosten über wenige Jahre von der Steuer absetzen. Das gilt für Vermieter und für Eigennutzer – mit unterschiedlichen Sätzen.",
+ "kurz": "Sätze für Vermieter und Selbstnutzer, Voraussetzungen und ein Rechenbeispiel.",
+ "bloecke": [
+  {
+   "h2": "Was die Denkmal-AfA ist"
+  },
+  {
+   "p": "Die Denkmal-AfA ist eine erhöhte Abschreibung für Sanierungs- und Modernisierungskosten an Baudenkmalen. Eine vergleichbare Förderung gibt es für Gebäude in förmlich festgelegten Sanierungsgebieten. Absetzbar sind die Kosten der Baumaßnahmen, nicht der Kaufpreis der Immobilie selbst."
+  },
+  {
+   "h2": "Die Sätze im Überblick"
+  },
+  {
+   "table": [
+    [
+     "",
+     "Vermieter (§ 7i EStG)",
+     "Selbstnutzer (§ 10f EStG)"
+    ],
+    [
+     "Jahre 1 bis 8",
+     "je bis zu 9 %",
+     "je bis zu 9 %"
+    ],
+    [
+     "Jahre 9 und 10",
+     "je bis zu 7 %",
+     "je bis zu 9 %"
+    ],
+    [
+     "Jahre 11 und 12",
+     "je bis zu 7 %",
+     "–"
+    ],
+    [
+     "insgesamt",
+     "bis zu 100 % in 12 Jahren",
+     "bis zu 90 % in 10 Jahren"
+    ]
+   ]
+  },
+  {
+   "p": "Vermieter setzen die Beträge als Abschreibung bei den Einkünften aus Vermietung und Verpachtung an. Selbstnutzer ziehen sie wie Sonderausgaben ab."
+  },
+  {
+   "h2": "Ein Rechenbeispiel"
+  },
+  {
+   "p": "Angenommen, die Sanierung eines vermieteten Denkmals kostet 200.000 Euro. Acht Jahre lang lassen sich je 18.000 Euro absetzen, danach vier Jahre lang je 14.000 Euro – zusammen die vollen 200.000 Euro. Bewohnen Sie das Denkmal selbst, sind es zehn Jahre lang je 18.000 Euro, insgesamt also 180.000 Euro. Wie viel Steuer das spart, hängt vom persönlichen Steuersatz ab: Je höher er ist, desto größer die Wirkung."
+  },
+  {
+   "h2": "Voraussetzungen"
+  },
+  {
+   "ul": [
+    "Das Gebäude ist nach Landesrecht ein Baudenkmal oder liegt in einem förmlich festgelegten Sanierungsgebiet.",
+    "Die Maßnahmen sind zur Erhaltung des Denkmals oder zu seiner sinnvollen Nutzung erforderlich.",
+    "Sie werden in Abstimmung mit der zuständigen Denkmalbehörde durchgeführt – also vor Beginn abstimmen, nicht erst danach.",
+    "Die Behörde bescheinigt die Voraussetzungen und die Erforderlichkeit der Kosten; ohne diese Bescheinigung gibt es keine erhöhte Abschreibung.",
+    "Soweit öffentliche Zuschüsse die Kosten decken, entfällt die Förderung für diesen Teil."
+   ]
+  },
+  {
+   "h2": "Kauf vom Bauträger"
+  },
+  {
+   "p": "Wird ein Denkmal erst nach Abschluss des Kaufvertrags saniert, lassen sich auch die Anteile des Kaufpreises begünstigt abschreiben, die auf diese Baumaßnahmen entfallen (§ 7i Abs. 1 Satz 5 EStG). Für den Altbau- und Grundstücksanteil gilt das nicht."
+  },
+  {
+   "h2": "Für wen sich das lohnt"
+  },
+  {
+   "p": "Den größten Vorteil haben Käufer mit hoher Steuerlast, weil die Sanierungskosten ihr zu versteuerndes Einkommen über Jahre deutlich senken. Lassen Sie die Rechnung vor dem Kauf mit Ihrer Steuerberatung durchgehen."
+  }
+ ],
+ "verwandt": [
+  "abschreibung-bei-immobilien",
+  "kaufnebenkosten",
+  "heizungsgesetz-aenderung"
+ ]
+}
