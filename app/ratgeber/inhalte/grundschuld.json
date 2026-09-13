@@ -1,0 +1,98 @@
+{
+ "slug": "grundschuld",
+ "rang": 13,
+ "stand": "2026-09-13",
+ "titel": "Grundschuld oder Hypothek? Der Unterschied einfach erklärt",
+ "metaTitel": "Grundschuld oder Hypothek – Unterschied und Folgen | Stark & Hoffmann",
+ "beschreibung": "Grundschuld und Hypothek sichern Baukredite im Grundbuch. Was sie unterscheidet, warum Banken die Grundschuld bevorzugen und was beim Verkauf mit ihr geschieht.",
+ "lead": "Wer eine Immobilie finanziert, lässt fast immer eine Grundschuld eintragen. Warum nicht mehr die Hypothek – und was das beim Tilgen, Umschulden und Verkaufen bedeutet.",
+ "kurz": "Abstrakt oder an den Kredit gebunden: was das für Tilgung, Umschuldung und Verkauf heißt.",
+ "bloecke": [
+  {
+   "h2": "Gemeinsamkeiten und der entscheidende Unterschied"
+  },
+  {
+   "p": "Grundschuld und Hypothek sind Grundpfandrechte. Beide werden in Abteilung III des Grundbuchs eingetragen und erlauben der Bank, die Immobilie verwerten zu lassen, wenn der Kredit nicht bedient wird. Der Unterschied liegt darin, wie eng das Recht mit der Forderung verknüpft ist: Die Hypothek ist akzessorisch, also an ein bestimmtes Darlehen gebunden. Die Grundschuld ist abstrakt – sie besteht unabhängig davon, ob und in welcher Höhe noch Schulden offen sind."
+  },
+  {
+   "table": [
+    [
+     "",
+     "Grundschuld",
+     "Hypothek"
+    ],
+    [
+     "an das Darlehen gebunden?",
+     "nein, abstrakt",
+     "ja, akzessorisch"
+    ],
+    [
+     "bei Tilgung",
+     "bleibt in voller Höhe eingetragen",
+     "der getilgte Teil steht dem Eigentümer zu"
+    ],
+    [
+     "für neue Kredite nutzbar",
+     "ja, ohne Neueintragung",
+     "nein"
+    ],
+    [
+     "heute bei Banken",
+     "Regelfall",
+     "selten"
+    ],
+    [
+     "nach vollständiger Tilgung",
+     "Eigentümergrundschuld (nach Rückgewähr)",
+     "Eigentümergrundschuld"
+    ]
+   ]
+  },
+  {
+   "h2": "Die Grundschuld im Detail"
+  },
+  {
+   "ul": [
+    "Sie bleibt eingetragen, auch wenn das Darlehen zurückgezahlt ist. Was die Bank tatsächlich verlangen darf, steht nicht im Grundbuch, sondern in der Sicherungsabrede zum Darlehensvertrag.",
+    "Sie lässt sich für eine spätere Finanzierung an eine neue Bank abtreten, ohne dass eine neue Grundschuld bestellt werden muss – das spart Notar- und Grundbuchkosten.",
+    "Eingetragen wird meist der Darlehensbetrag oder etwas mehr, damit Zinsen und Kosten abgesichert sind. Über die tatsächliche Restschuld sagt der Betrag deshalb nichts."
+   ]
+  },
+  {
+   "h2": "Die Hypothek im Detail"
+  },
+  {
+   "ul": [
+    "Sie folgt der Forderung: Mit jeder Tilgung sinkt der Teil, der der Bank noch zusteht.",
+    "Sie verschwindet nach der letzten Rate aber nicht von selbst. Erlischt die Forderung, erwirbt der Eigentümer die Hypothek (§ 1163 Abs. 1 BGB), und sie wandelt sich in eine Eigentümergrundschuld um (§ 1177 Abs. 1 BGB). Aus dem Grundbuch verschwindet sie erst mit der Löschung.",
+    "Für eine Anschlussfinanzierung ist sie ungeeignet, weil sie nicht von der alten Forderung gelöst werden kann."
+   ]
+  },
+  {
+   "h2": "Warum Banken fast nur noch Grundschulden nehmen"
+  },
+  {
+   "p": "Bei einer Hypothek muss die Bank jede Veränderung der Forderung auch im Grundbuch mitdenken; Abtretungen, Umschuldungen und Verlängerungen werden dadurch umständlich. Die Grundschuld ist davon getrennt und bleibt als Sicherheit verwendbar, solange sie eingetragen ist. In der Praxis ist sie deshalb der Regelfall, Hypotheken finden sich fast nur noch in alten Grundbüchern. Für Eigentümer ist das kein Nachteil, solange die Sicherungsabrede klar begrenzt, wofür die Bank die Grundschuld nutzen darf."
+  },
+  {
+   "h2": "Die Grundschuld beim Verkauf"
+  },
+  {
+   "p": "In der Regel wird eine noch bestehende Grundschuld aus dem Kaufpreis abgelöst und danach gelöscht. Der Notar holt dafür die Löschungsbewilligung der Bank ein – deshalb sollte die Restschuld früh bekannt sein. Wie das abläuft und was es kostet, erklärt unser Beitrag zum Löschen der Grundschuld."
+  },
+  {
+   "p": "Man kann eine Grundschuld auch stehen lassen: Ist das Darlehen getilgt, lässt sie sich später wieder für einen Kredit verwenden, was günstiger ist als eine neue Eintragung. Beim Verkauf muss der Kaufvertrag dann eindeutig regeln, ob und wie der Käufer sie übernimmt."
+  },
+  {
+   "h2": "Tipp für Käufer"
+  },
+  {
+   "p": "Ein hoher Betrag in Abteilung III heißt nicht, dass entsprechend hohe Schulden bestehen. Entscheidend ist, was die Bank zum Stichtag zur Ablösung verlangt. Lassen Sie sich diese Summe vor der Beurkundung schriftlich bestätigen."
+  }
+ ],
+ "verwandt": [
+  "grundschuld-loeschen",
+  "kaufnebenkosten",
+  "notarkosten-beim-immobilienkauf"
+ ]
+}

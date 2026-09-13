@@ -1,0 +1,76 @@
+{
+ "slug": "notarkosten-beim-immobilienkauf",
+ "rang": 12,
+ "stand": "2026-09-13",
+ "titel": "Notarkosten beim Immobilienkauf in Bergisch Gladbach: Höhe und Leistungen",
+ "metaTitel": "Notarkosten beim Immobilienkauf in Bergisch Gladbach | Stark & Hoffmann",
+ "beschreibung": "Was der Notar beim Immobilienkauf kostet, wer die Kosten trägt, welche Leistungen enthalten sind und welche Gebühren das Grundbuchamt zusätzlich berechnet.",
+ "lead": "Ohne Notar kein Hauskauf. Seine Gebühren sind gesetzlich festgelegt, hängen vom Kaufpreis ab – und werden in aller Regel vom Käufer bezahlt.",
+ "kurz": "Höhe, Kostenverteilung, Leistungen des Notars und die Gebühren des Grundbuchamts.",
+ "bloecke": [
+  {
+   "h2": "Wie hoch die Notarkosten sind"
+  },
+  {
+   "p": "Die Notarkosten betragen beim Immobilienkauf in der Regel etwa 1,0 bis 1,5 Prozent des Kaufpreises. Grundlage ist das Gerichts- und Notarkostengesetz (GNotKG); die Gebühren sind bundesweit gleich und richten sich nach dem Kaufpreis. Enthalten sind neben der Beurkundung auch weitere Tätigkeiten rund um den Vertrag."
+  },
+  {
+   "table": [
+    [
+     "Kaufpreis",
+     "Notarkosten bei 1,0 %",
+     "bei 1,5 %"
+    ],
+    [
+     "300.000 €",
+     "3.000 €",
+     "4.500 €"
+    ],
+    [
+     "500.000 €",
+     "5.000 €",
+     "7.500 €"
+    ],
+    [
+     "700.000 €",
+     "7.000 €",
+     "10.500 €"
+    ]
+   ]
+  },
+  {
+   "h2": "Was der Notar dafür tut"
+  },
+  {
+   "ul": [
+    "Er entwirft den Kaufvertrag und schickt den Entwurf beiden Seiten zur Prüfung.",
+    "Er klärt über Rechte und Pflichten auf, damit beide Parteien wissen, was sie unterschreiben.",
+    "Er beurkundet den Vertrag – erst dadurch wird der Grundstückskauf wirksam.",
+    "Er kümmert sich um die Eintragungen im Grundbuch, also die Umschreibung auf den neuen Eigentümer und die Löschung alter Belastungen."
+   ]
+  },
+  {
+   "h2": "Wer die Kosten trägt"
+  },
+  {
+   "p": "Nach § 448 Abs. 2 BGB trägt der Käufer die Kosten der Beurkundung, der Auflassung und der Eintragung ins Grundbuch. So wird es in der Praxis auch fast immer vereinbart."
+  },
+  {
+   "h2": "Gebühren des Grundbuchamts"
+  },
+  {
+   "p": "Zusätzlich zu den Notargebühren berechnet das Grundbuchamt die Umschreibungen und Eintragungen. Als Faustwert gelten etwa 0,5 Prozent des Kaufpreises."
+  },
+  {
+   "h2": "Neutral für beide Seiten"
+  },
+  {
+   "p": "Der Notar vertritt weder Käufer noch Verkäufer. Er achtet als unparteiische Stelle darauf, dass der Vertrag rechtmäßig ist und der Ablauf für beide Seiten nachvollziehbar bleibt."
+  }
+ ],
+ "verwandt": [
+  "kaufnebenkosten",
+  "maklerkosten-beim-immobilienkauf",
+  "grundschuld"
+ ]
+}

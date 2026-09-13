@@ -1,0 +1,58 @@
+{
+ "slug": "leistungen-makler",
+ "rang": 11,
+ "stand": "2026-09-13",
+ "titel": "Was macht ein Immobilienmakler? Leistungen beim Verkauf in Bergisch Gladbach",
+ "metaTitel": "Leistungen eines Immobilienmaklers im Überblick | Stark & Hoffmann",
+ "beschreibung": "Von der Marktwertermittlung über Exposé, Vermarktung und Käuferprüfung bis zur Schlüsselübergabe: Welche Arbeit ein Makler beim Immobilienverkauf übernimmt.",
+ "lead": "Die Provision bezahlt nicht das Vorstellen eines Käufers, sondern einen ganzen Verkaufsprozess. Welche Aufgaben dazugehören – von der ersten Einschätzung bis zum Übergabeprotokoll.",
+ "kurz": "Welche Aufgaben ein Makler vom ersten Termin bis zur Übergabe übernimmt.",
+ "bloecke": [
+  {
+   "h2": "Phase 1: Vorbereitung"
+  },
+  {
+   "p": "Am Anfang steht eine realistische Bewertung. Ein zu hoher Angebotspreis schadet genauso wie ein zu niedriger: Steht eine Immobilie lange online, fragen sich Interessenten, was mit ihr nicht stimmt. Nach ein oder zwei Preissenkungen gilt sie als „verbrannt“, und Käufer nutzen das in der Verhandlung aus. Deshalb muss der Preis von Beginn an stimmen."
+  },
+  {
+   "ul": [
+    "Marktwert: ermittelt mit mehreren Verfahren – etwa Vergleichswert und Ertragswert – und mit den Daten des Gutachterausschusses.",
+    "Preisstrategie: Angebotspreis, Zeitpunkt und Zielgruppe werden aufeinander abgestimmt.",
+    "Fotos: professionelle Aufnahmen, weil schwache Bilder Reichweite und Preis kosten.",
+    "Exposé: Grundrisse, Ausstattung, Lage, Energiekennwerte, Baujahr und Kosten übersichtlich aufbereitet.",
+    "Unterlagen: Grundbuchauszug, Energieausweis, Pläne, bei Wohnungen Teilungserklärung und Protokolle, bei Vermietung die Mietverträge – vollständig für die Bank des Käufers."
+   ]
+  },
+  {
+   "p": "Sonderthemen wie Asbest, Denkmalschutz, ein Erbbaurecht, offene Grundbuchfragen oder anstehende Sanierungen gehören früh auf den Tisch. Wer sie offen anspricht, schützt sich vor Enttäuschungen und Haftungsrisiken."
+  },
+  {
+   "h2": "Phase 2: Vermarktung"
+  },
+  {
+   "ul": [
+    "Reichweite: Veröffentlichung auf den großen Immobilienportalen, Werbung in sozialen Netzwerken und das direkte Angebot an vorgemerkte Kaufinteressenten – teils schon vor dem Portalstart.",
+    "Anfragen prüfen: Nicht jeder Interessent ist ein Käufer. Ernsthaftigkeit und Suchprofil werden vorab geklärt, das erspart Besichtigungstourismus.",
+    "Finanzierung prüfen: Bevor verhandelt wird, sollte feststehen, dass der Käufer den Kauf auch finanzieren kann. Ein Angebot ohne gesicherte Finanzierung kann den Verkauf um Monate zurückwerfen.",
+    "Besichtigungen: Termine werden koordiniert und so geführt, dass die Immobilie gut zur Geltung kommt."
+   ]
+  },
+  {
+   "h2": "Phase 3: Abschluss"
+  },
+  {
+   "p": "In der Verhandlung geht es um das bestmögliche Ergebnis für den Verkäufer, ohne ernsthafte Käufer zu verlieren. Danach stimmt der Makler den Kaufvertragsentwurf mit dem Notar ab, begleitet den Beurkundungstermin und klärt offene Punkte zwischen den Parteien. Bei der Übergabe wird ein Protokoll erstellt – mit Zählerständen, Schlüsseln und dem Zustand der Immobilie."
+  },
+  {
+   "h2": "Und was kostet das?"
+  },
+  {
+   "p": "Wie hoch die Provision üblicherweise ist und wie sie zwischen Käufer und Verkäufer aufgeteilt wird, erklärt unser Beitrag zu den Maklerkosten beim Immobilienkauf."
+  }
+ ],
+ "verwandt": [
+  "maklerkosten-beim-immobilienkauf",
+  "immobilienverkauf",
+  "kaufnebenkosten"
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "slug": "abschreibung-bei-immobilien",
+ "rang": 9,
+ "stand": "2026-09-13",
+ "titel": "Abschreibung bei Immobilien in Bergisch Gladbach: AfA-Sätze und Sonderregeln",
+ "metaTitel": "Abschreibung bei Immobilien – AfA-Sätze und Sonderregeln | Stark & Hoffmann",
+ "beschreibung": "Welche AfA für vermietete Immobilien gilt: 2,5, 2 oder 3 Prozent je nach Baujahr, Sonderabschreibung, Denkmal-AfA und kürzere Restnutzungsdauer per Gutachten.",
+ "lead": "Wer eine Immobilie vermietet, kann ihren Wertverlust von der Steuer absetzen. Wie viel pro Jahr, hängt vor allem vom Baujahr ab – und davon, ob Sonderregeln greifen.",
+ "kurz": "AfA-Sätze nach Baujahr, Sonderabschreibung, Denkmal-AfA und das Restnutzungsdauer-Gutachten.",
+ "bloecke": [
+  {
+   "h2": "Lineare AfA: der Normalfall"
+  },
+  {
+   "p": "Vermieter setzen die Anschaffungs- oder Herstellungskosten des Gebäudes gleichmäßig über die Jahre ab. Abschreiben lässt sich nur der Gebäudeanteil, nicht der Grund und Boden. Der Satz richtet sich nach dem Jahr der Fertigstellung (§ 7 Abs. 4 EStG):"
+  },
+  {
+   "table": [
+    [
+     "Gebäude (Privatvermögen)",
+     "jährliche AfA",
+     "Zeitraum"
+    ],
+    [
+     "fertiggestellt vor 1925",
+     "2,5 %",
+     "40 Jahre"
+    ],
+    [
+     "fertiggestellt 1925 bis 2022",
+     "2 %",
+     "50 Jahre"
+    ],
+    [
+     "fertiggestellt ab 2023",
+     "3 %",
+     "rund 33 Jahre"
+    ]
+   ]
+  },
+  {
+   "p": "Für Gebäude im Betriebsvermögen, die nicht Wohnzwecken dienen und deren Bauantrag nach dem 31. März 1985 gestellt wurde, gelten ebenfalls 3 Prozent pro Jahr."
+  },
+  {
+   "h2": "Sonderabschreibung für neue Mietwohnungen"
+  },
+  {
+   "p": "Nach § 7b EStG können Bauherren und Käufer neuer Mietwohnungen zusätzlich zur linearen AfA vier Jahre lang je 5 Prozent absetzen. Voraussetzung ist unter anderem, dass die Baukosten bestimmte Obergrenzen nicht überschreiten und die Wohnung mindestens zehn Jahre vermietet wird."
+  },
+  {
+   "h2": "Denkmale und Sanierungsgebiete"
+  },
+  {
+   "p": "Für Sanierungskosten an Baudenkmalen und an Gebäuden in förmlich festgelegten Sanierungsgebieten gelten erhöhte Sätze: Vermieter setzen acht Jahre lang je bis zu 9 Prozent und vier Jahre lang je bis zu 7 Prozent ab (§§ 7i, 7h EStG), Selbstnutzer zehn Jahre lang je bis zu 9 Prozent (§ 10f EStG). Einzelheiten stehen in unserem Beitrag zur Denkmal-AfA."
+  },
+  {
+   "h2": "Außergewöhnliche Abnutzung"
+  },
+  {
+   "p": "Wird ein Gebäude nachweislich außergewöhnlich technisch oder wirtschaftlich abgenutzt, etwa durch einen Schaden, kann zusätzlich eine Absetzung für außergewöhnliche Abnutzung angesetzt werden."
+  },
+  {
+   "h2": "Kürzere Restnutzungsdauer – höhere AfA"
+  },
+  {
+   "p": "Die festen Sätze unterstellen eine Nutzungsdauer von 40, 50 oder 33 Jahren. Ist die tatsächliche Nutzungsdauer kürzer – etwa wegen des Zustands der Bausubstanz oder der Haustechnik –, erlaubt § 7 Abs. 4 Satz 2 EStG eine entsprechend höhere Abschreibung. Der Bundesfinanzhof hat dafür den Weg über ein Gutachten eröffnet (Urteil vom 28.07.2021, IX R 25/19) und später jede im Einzelfall geeignete Methode anerkannt, auch die Ermittlung nach der ImmoWertV (Urteil vom 23.01.2024, IX R 14/23)."
+  },
+  {
+   "p": "Das BMF-Schreiben vom 22.02.2023, das Gutachten öffentlich bestellter oder zertifizierter Sachverständiger verlangte, ist zum 1. Dezember 2025 aufgehoben worden. Die Nachweislast bleibt aber beim Steuerpflichtigen – ein qualifizierter Sachverständiger ist deshalb weiterhin der sichere Weg."
+  },
+  {
+   "h2": "Rechenbeispiel"
+  },
+  {
+   "ul": [
+    "Gebäudeanteil 500.000 Euro, Satz 2 Prozent: 10.000 Euro AfA im Jahr.",
+    "Restnutzungsdauer laut Gutachten 35 Jahre: rund 14.286 Euro AfA im Jahr.",
+    "Bei einem Steuersatz von 42 Prozent spart das rund 1.800 Euro Steuern jährlich.",
+    "Bei 20 Jahren Restnutzungsdauer wären es rund 6.300 Euro im Jahr."
+   ]
+  },
+  {
+   "h2": "Wann sich ein Gutachten lohnt"
+  },
+  {
+   "p": "Vor allem bei älteren Häusern, bei Sanierungsbedarf und bei hohen Kaufpreisen. Für Eigentumswohnungen und Einfamilienhäuser kostet ein Restnutzungsdauer-Gutachten üblicherweise etwa 900 bis 1.800 Euro, für Mehrfamilienhäuser mehr. Bei vermieteten Objekten sind die Kosten in der Regel als Werbungskosten absetzbar."
+  },
+  {
+   "h2": "Die Sätze auf einen Blick"
+  },
+  {
+   "ul": [
+    "Wohngebäude: 2,5, 2 oder 3 Prozent linear, je nach Fertigstellung",
+    "Betriebsgebäude ohne Wohnzwecke: 3 Prozent",
+    "neue Mietwohnungen: zusätzlich 5 Prozent für vier Jahre (§ 7b EStG)",
+    "Denkmal und Sanierungsgebiet: 9 und 7 Prozent bei Vermietung, 9 Prozent bei Eigennutzung"
+   ]
+  }
+ ],
+ "verwandt": [
+  "denkmal-afa",
+  "kaufnebenkosten",
+  "niessbrauch-wohnrecht"
+ ]
+}

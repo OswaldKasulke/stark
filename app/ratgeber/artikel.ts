@@ -4,6 +4,11 @@ import niessbrauchWohnrecht from "./inhalte/niessbrauch-wohnrecht.json";
 import maklerkostenBeimImmobilienkauf from "./inhalte/maklerkosten-beim-immobilienkauf.json";
 import eigenbedarfsklage from "./inhalte/eigenbedarfsklage.json";
 import denkmalAfa from "./inhalte/denkmal-afa.json";
+import abschreibungBeiImmobilien from "./inhalte/abschreibung-bei-immobilien.json";
+import kaufnebenkosten from "./inhalte/kaufnebenkosten.json";
+import notarkostenBeimImmobilienkauf from "./inhalte/notarkosten-beim-immobilienkauf.json";
+import grundschuld from "./inhalte/grundschuld.json";
+import leistungenMakler from "./inhalte/leistungen-makler.json";
 
 // Jeder Ratgeber liegt als eigene JSON-Datei in ./inhalte – die Sitemap liest
 // das Änderungsdatum je Datei, damit nicht alle Artikel dasselbe lastmod tragen.
@@ -30,7 +35,7 @@ export type Artikel = {
   rang?: number;
 };
 
-const alle: Artikel[] = [erbpacht, erbbauzins, niessbrauchWohnrecht, maklerkostenBeimImmobilienkauf, eigenbedarfsklage, denkmalAfa];
+const alle: Artikel[] = [erbpacht, erbbauzins, niessbrauchWohnrecht, maklerkostenBeimImmobilienkauf, eigenbedarfsklage, denkmalAfa, abschreibungBeiImmobilien, kaufnebenkosten, notarkostenBeimImmobilienkauf, grundschuld, leistungenMakler];
 
 // Reihenfolge nach Rang (Platzierung der Vorlage), ohne Rang ans Ende.
 export const artikel: Artikel[] = [...alle].sort((a, b) => (a.rang ?? 99) - (b.rang ?? 99));
