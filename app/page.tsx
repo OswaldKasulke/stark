@@ -113,11 +113,11 @@ export default function Home() {
     <section className="profile section" id="profil">
       <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Evernest Immobilienbüro in der Schloßstraße in Bergisch Gladbach"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
-        <p className="eyebrow">Unser Profil</p><h2>Erfahrene Branchenkenner und Vertriebsprofis.</h2>
-        <p className="lead">Patrick Stark und Julian Hoffmann verantworten das operative und strategische Geschäft am Bergisch Gladbacher Standort.</p>
-        <p>Mit umfangreicher Vertriebs- und Branchenerfahrung begleitet unser Team Eigentümer persönlich und transparent – bei Verkauf, Kauf und Vermietung. Moderne Prozesse unterstützen unsere Arbeit, ersetzen aber nie das persönliche Gespräch.</p>
-        <div className="profile-points"><span>Professionelle Immobilienbewertung</span><span>Zielgerichtete Vermarktung</span><span>Geprüfte Kaufinteressenten</span><span>Begleitung bis zum Abschluss</span></div>
-        <a className="button dark" href="/team/">Team kennenlernen</a>
+        <p className="eyebrow">Unser Profil</p><h2>Zuhause in Bensberg, unterwegs im ganzen Stadtgebiet.</h2>
+        <p className="lead">Den Evernest-Standort Bergisch Gladbach führt die Stark &amp; Hoffmann Immobilien GmbH als Lizenznehmerin, mit Patrick Stark und Julian Hoffmann als Geschäftsführern.</p>
+        <p>Wer uns besuchen möchte, findet den Showroom an der Schloßstraße: Es ist das letzte Geschäft, bevor die Auffahrt zum Bensberger Schloss beginnt. Von hier aus sind wir für Eigentümer in allen 25 Stadtteilen da, dazu in Odenthal, Kürten, Overath, Lindlar und Engelskirchen – egal, ob ein Verkauf ansteht, ein Kauf oder eine Vermietung. Digitale Werkzeuge erledigen bei uns die Routine; für Ihre Fragen nehmen wir uns im direkten Gespräch Zeit.</p>
+        <div className="profile-points"><span>Bewertung mit örtlichen Marktdaten</span><span>Klassisch, diskret oder Off-Market</span><span>Kaufinteressenten vorab geprüft</span><span>Begleitung bis zur Übergabe</span></div>
+        <a className="button dark" href="/team/">Das Team kennenlernen</a>
       </div>
     </section>
 
