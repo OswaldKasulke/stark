@@ -48,6 +48,10 @@ jobs:
       - name: Build static website
         run: npm run build
 
+      # Roman Becker hat auf dieser Seite nichts zu suchen - Texte, Skripte, Daten, PDFs.
+      - name: Kein fremder Personenname
+        run: python3 scripts/pruefe-fremdnamen.py out
+
       # Der Export muss vollstaendig sein, bevor er hochgeladen wird.
       # Ein halber Upload faellt sonst erst in der Suche auf.
       - name: Check export

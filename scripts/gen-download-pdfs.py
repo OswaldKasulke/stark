@@ -78,7 +78,7 @@ make_pdf(
     "checkliste-verkaufsunterlagen.pdf",
     "Kostenlose Checkliste",
     "Unterlagen für den Immobilienverkauf",
-    "Nach der Checkliste von Roman Becker, regional angepasst für Eigentümer in Bergisch Gladbach und im Bergischen Land. Haken Sie ab, was bereits vorliegt; offene Unterlagen lassen sich anschließend gezielt beschaffen.",
+    "Regional angepasst für Eigentümer in Bergisch Gladbach und im Bergischen Land. Haken Sie ab, was bereits vorliegt; offene Unterlagen lassen sich anschließend gezielt beschaffen.",
     [
         ("Für ein Haus", ["Ausweis aller Eigentümer und gegebenenfalls Vollmacht", "Grundbuchauszug - möglichst nicht älter als drei Monate", "Vermaßte Grundrisse, Ansichten und Schnitte", "Wohn- und Nutzflächenberechnung", "Baubeschreibung, Baugenehmigung und Abnahme", "Wohngebäudeversicherung", "Baulastenauskunft und Flurkarte", "Energieausweis", "Grundbesitzabgabenbescheid und jährliche Kosten", "Mietverträge bei vermieteten Flächen"]),
         ("Zusätzlich für eine Eigentumswohnung", ["Teilungserklärung, Abgeschlossenheitsbescheinigung und Aufteilungsplan", "Letzte drei Wohngeldabrechnungen", "Letzte drei Protokolle der Eigentümerversammlungen", "Aktueller Wirtschaftsplan", "Angabe zur Instandhaltungsrücklage und geplanten Maßnahmen", "Kontaktdaten der Hausverwaltung"]),
@@ -86,21 +86,21 @@ make_pdf(
         ("Für die finanzierende Bank", ["Aktuelle Objektunterlagen einschließlich Grundbuch und Flurkarte", "Aussagekräftige Innen- und Außenfotos", "Baujahr, Modernisierungen und Energieausweis", "Bei Wohnungen: WEG-Unterlagen", "Bei Vermietung: Mietverträge und Mietaufstellung", "Kaufvertragsentwurf des Notars"]),
         ("Wo Sie Unterlagen erhalten", ["Grundbuchauszug: zuständiges Grundbuchamt", "Flurkarte: Kataster- oder Liegenschaftsamt", "Baulastenauskunft und Bauakte: örtliche Bauaufsicht", "WEG-Unterlagen: Hausverwaltung", "Energieausweis: zugelassene Aussteller", "Altlastenauskunft: zuständige Umweltbehörde"]),
     ],
-    ["Redaktionelle Grundlage: Roman Becker, Unterlagen für den Immobilienverkauf: https://romanbecker.de/ratgeber/unterlagen-immobilienverkauf.html", "Gebäudeenergiegesetz (GEG): https://www.gesetze-im-internet.de/geg/"],
+    ["Gebäudeenergiegesetz (GEG): https://www.gesetze-im-internet.de/geg/"],
 )
 
 make_pdf(
     "checkliste-notar-kaufvertrag.pdf",
     "Kostenlose Checkliste",
     "19 Angaben für den Kaufvertragsentwurf",
-    "Nach der Praxis-Checkliste von Roman Becker: Diese Angaben helfen dem Notariat, den Kaufvertragsentwurf vollständig und ohne unnötige Rückfragen vorzubereiten.",
+    "Diese Angaben helfen dem Notariat, den Kaufvertragsentwurf vollständig und ohne unnötige Rückfragen vorzubereiten.",
     [
         ("Organisation und Objekt", ["Notariat auswählen", "Wunschtermin für die Beurkundung", "Grundbuchauszug für jede betroffene Einheit", "Vereinbarter Kaufpreis", "Angabe, ob der Käufer finanziert", "Belastungen aus Abteilung II und III: löschen oder übernehmen"]),
         ("Übergabe und besondere Regelungen", ["Übergabetermin und Räumung", "Angabe: bewohnt, vermietet oder frei", "Gewünschter Übergabezeitpunkt", "Besondere Wünsche, etwa Wohnrecht oder Nießbrauch", "Vertretungssituation und mögliche Nachgenehmigung", "Mobilnummer für Rückfragen"]),
         ("Beteiligte und Zahlungen", ["Steuer-IDs, Anschriften, E-Mail-Adressen und Ausweiskopien aller Beteiligten", "Güterstand der Verkäuferseite", "Kontoverbindungen aller Zahlungsempfänger", "Hausverwaltung mit vollständiger Anschrift", "Erforderliche Löschungsbewilligungen"]),
         ("Mitverkauftes und Zustand", ["Liste mitverkaufter beweglicher Gegenstände mit Einzelwerten", "Übergabezustand ausdrücklich festlegen, zum Beispiel besenrein und frei von nicht mitverkauftem Mobiliar"]),
     ],
-    ["Redaktionelle Grundlage: Roman Becker, Was braucht der Notar für den Kaufvertrag?: https://romanbecker.de/ratgeber/was-braucht-der-notar-fuer-den-kaufvertrag.html", "Bundesnotarkammer - Immobilien: https://www.notar.de/themen/immobilien"],
+    ["Bundesnotarkammer - Immobilien: https://www.notar.de/themen/immobilien"],
 )
 
 make_pdf(
