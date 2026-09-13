@@ -339,3 +339,18 @@ footer,.copyright{background:#000;color:#fff}footer h4,footer p,footer a,.footer
 .valuation-notice p strong{font:inherit;font-weight:500;color:var(--ink)}
 .valuation-notice p{font-size:14px;margin-bottom:10px}
 .valuation-notice p:last-child{margin-bottom:0}
+
+/* Ratgeber (app/ratgeber) – eigene rg-Klassen, damit nichts mit bestehenden Regeln kollidiert */
+.rg-pfad{margin:0 0 22px;font-size:12px;color:#8f8f8f}
+.rg-pfad a{color:#c5c5c5;text-decoration:underline;text-underline-offset:3px}
+.legal-content .rg-autoren{font-size:13px;color:#6a6e75;margin:0 0 30px;padding-bottom:18px;border-bottom:1px solid #ebebeb}
+.rg-liste{margin:0 0 18px;padding-left:20px;color:#5f6469;line-height:1.8}
+.rg-liste li{margin:0 0 8px}
+.rg-liste a{color:#000;text-decoration:underline;text-underline-offset:3px}
+.rg-tabelle{overflow-x:auto;margin:8px 0 26px}
+.rg-tabelle table{border-collapse:collapse;width:100%;min-width:460px;font-size:14px;line-height:1.5}
+.rg-tabelle th,.rg-tabelle td{text-align:left;padding:10px 12px;border-bottom:1px solid #dfdfdf;vertical-align:top}
+.rg-tabelle th{font-weight:500;color:#000;background:#f5f5f3}
+.rg-tabelle td{color:#5f6469}
+.rg-weiter{margin-top:42px;padding-top:26px;border-top:1px solid #ebebeb}
+.legal-content .rg-hinweis{font-size:13px;color:#6a6e75;margin-top:34px}

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { districts } from "./stadtteile";
 import { standorte } from "./standorte";
 import { lastmod } from "./lastmod";
+import { artikel } from "./ratgeber/artikel";
 
 export const dynamic = "force-static";
 
@@ -27,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ["app/wohnung-verkaufen-bergisch-gladbach/page.tsx", "app/VerkaufenPage.tsx"], "monthly", 0.9],
     ["/grundstueck-verkaufen-bergisch-gladbach/",
       ["app/grundstueck-verkaufen-bergisch-gladbach/page.tsx", "app/VerkaufenPage.tsx"], "monthly", 0.9],
+    ["/ratgeber/", ["app/ratgeber/page.tsx", "app/haeufige-fragen.ts"], "monthly", 0.8],
     ["/downloads/", ["app/downloads/page.tsx"], "monthly", 0.8],
     ["/team/", ["app/team/page.tsx"], "monthly", 0.8],
     ["/impressum/", ["app/impressum/page.tsx"], "yearly", 0.3],
@@ -57,5 +59,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...feste, ...orte, ...veedel];
+  // Je Artikel die eigene JSON-Datei – so trägt jeder Beitrag sein eigenes Datum.
+  const ratgeber = artikel.map((a) => ({
+    url: `${base}/ratgeber/${a.slug}/`,
+    lastModified: lastmod(`app/ratgeber/inhalte/${a.slug}.json`),
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
+
+  return [...feste, ...ratgeber, ...orte, ...veedel];
 }
