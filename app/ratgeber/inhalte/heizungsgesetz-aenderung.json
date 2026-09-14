@@ -26,23 +26,23 @@
     ],
     [
      "65 % erneuerbare Energien",
-     "Pflicht für neue Heizungen",
+     "Pflicht für neue Heizungen, im Bestand erst nach Fristen der Wärmeplanung",
      "entfällt"
     ],
     [
      "neue Gas- und Ölheizungen",
-     "nur eingeschränkt möglich",
-     "wieder zulässig, mit Beimischpflicht ab 2029"
+     "bis zu diesen Fristen erlaubt, mit Beratungspflicht und Bioanteil ab 2029",
+     "wieder zulässig, im Bestand mit Bio-Treppe ab 2029"
     ],
     [
      "Wahl der Technik",
-     "faktisch Vorrang der Wärmepumpe",
+     "nach Ablauf der Fristen nur Lösungen mit 65 % erneuerbarer Wärme",
      "technologieoffen"
     ],
     [
      "alte Heizkessel",
-     "Betriebsverbot nach 30 Jahren",
-     "Verbot gestrichen"
+     "Betriebsverbot nach 30 Jahren (mit Ausnahmen), fossile Brennstoffe längstens bis Ende 2044",
+     "beides gestrichen"
     ],
     [
      "Förderung",
@@ -55,13 +55,13 @@
    "h2": "Die Bio-Treppe"
   },
   {
-   "p": "Anstelle der 65-Prozent-Regel müssen neue Gas- und Ölheizungen ab 2029 schrittweise einen steigenden Anteil klimaneutraler oder biogener Brennstoffe nutzen:"
+   "p": "Anstelle der 65-Prozent-Regel gilt für Gas-, Öl- und Flüssiggasheizungen, die nach dem 29. Juli 2026 in ein bestehendes Gebäude eingebaut werden, eine Stufenregel: Ein wachsender Teil der Wärme muss aus Biomethan, Bioöl, biogenem Flüssiggas oder Wasserstoff erzeugt werden (§ 43 GModG)."
   },
   {
    "table": [
     [
      "ab",
-     "Mindestanteil klimaneutraler bzw. biogener Brennstoffe"
+     "Mindestanteil der Wärme aus Biobrennstoffen oder Wasserstoff"
     ],
     [
      "1. Januar 2029",
@@ -85,16 +85,19 @@
    "h2": "Was sich für bestehende Heizungen ändert"
   },
   {
-   "p": "Funktionierende Heizungen dürfen weiterlaufen. Gestrichen wurden unter anderem die bisherigen Anforderungen an neue Heizungsanlagen und das Betriebsverbot für alte Heizkessel (§§ 71 sowie 71b bis 72 GEG). Damit entfällt auch die frühere Vorgabe, Heizkessel nach 30 Jahren auszutauschen. Die Pflicht, beim Verkauf oder bei der Vermietung einen Energieausweis vorzulegen, bleibt bestehen."
+   "p": "Funktionierende Heizungen dürfen weiterlaufen. Gestrichen wurden die §§ 71 bis 73 GEG und mit ihnen die bisherigen Anforderungen an neue Heizungsanlagen sowie das Betriebsverbot für alte Heizkessel. Damit entfällt auch die frühere Vorgabe, Heizkessel nach 30 Jahren auszutauschen. Die Pflicht, beim Verkauf oder bei der Vermietung einen Energieausweis vorzulegen, bleibt bestehen."
+  },
+  {
+   "p": "Ein festes Enddatum für Öl und Gas steht nicht mehr im Gesetz. Stattdessen kündigt § 42a GModG eine Grüngas- und Grünheizölquote an: Ein Gesetz, das die Bundesregierung bis zum 1. Dezember 2026 vorlegen soll, wird die Anbieter verpflichten, Brennstoffe für Gebäudeheizungen ab 2045 vollständig klimaneutral zu liefern."
   },
   {
    "h2": "Was das für Eigentümer, Verkäufer und Käufer heißt"
   },
   {
    "ul": [
-    "Eigentümer müssen beim Heizungstausch nicht mehr auf eine Wärmepumpe umsteigen und können ihre Investition freier planen.",
+    "Eigentümer müssen beim Heizungstausch keine 65 Prozent erneuerbare Wärme mehr erreichen und können ihre Investition freier planen.",
     "Verkäufer eines Hauses mit älterer Gas- oder Ölheizung stehen weniger unter Sanierungsdruck – das kann die Preisverhandlung entlasten.",
-    "Käufer sollten Alter und Zustand der Heizung trotzdem genau prüfen. Wer neu mit Gas oder Öl heizt, muss die steigenden Pflichtanteile klimaneutraler Brennstoffe in die Kostenplanung einbeziehen."
+    "Käufer sollten Alter und Zustand der Heizung trotzdem genau prüfen. Wer eine Gas- oder Ölheizung neu einbaut, muss die steigenden Pflichtanteile an Biobrennstoffen oder Wasserstoff in die Kostenplanung einbeziehen."
    ]
   },
   {

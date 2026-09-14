@@ -5,7 +5,7 @@
  "beschreibung": "Erbpacht heißt: Haus kaufen, Grundstück nicht. Wie Erbbauzins, Restlaufzeit und Vertragsende den Wert einer Immobilie in Bergisch Gladbach bestimmen.",
  "lead": "Ein Haus auf Erbpacht wirkt im Inserat oft verlockend günstig. Der Preis bildet aber nur ab, dass das Grundstück nicht mitverkauft wird – und dass der Vertrag irgendwann endet.",
  "kurz": "Haus kaufen, Grundstück nicht: wie Erbbauzins, Restlaufzeit und Vertragsende den Wert bestimmen.",
- "stand": "2026-09-13",
+ "stand": "2026-09-14",
  "bloecke": [
   {
    "h2": "Erbpacht und Erbbaurecht – ist das dasselbe?"
@@ -20,51 +20,53 @@
    "h2": "Warum Erbpacht-Häuser günstiger angeboten werden"
   },
   {
-   "p": "Auf den Immobilienportalen fallen immer wieder Häuser und Wohnungen auf, die oft 20 bis 40 Prozent unter vergleichbaren Angeboten liegen. Häufig steckt ein Erbbaurecht dahinter: Gekauft wird nur das Gebäude, das Grundstück bleibt beim Eigentümer, und der Käufer übernimmt Erbbauzins und Restlaufzeit."
+   "p": "Auf den Immobilienportalen fallen immer wieder Häuser und Wohnungen auf, die deutlich unter vergleichbaren Angeboten liegen. Häufig steckt ein Erbbaurecht dahinter: Gekauft wird nur das Gebäude, das Grundstück bleibt beim Eigentümer, und der Käufer übernimmt Erbbauzins und Restlaufzeit."
   },
   {
    "p": "Ein Schnäppchen ist das nicht. Der Abschlag gleicht den fehlenden Boden und das Risiko der auslaufenden Laufzeit aus – und fällt umso größer aus, je weniger Jahre der Vertrag noch läuft."
   },
   {
-   "h2": "Faustregeln für den Wertabschlag"
+   "h2": "Wie groß der Abschlag in Bergisch Gladbach ist"
   },
   {
-   "p": "Eine grobe Orientierung: Liegt die Restlaufzeit unter 50 Jahren, verliert die Immobilie gegenüber Volleigentum je fehlendem Jahr etwa 1 bis 2 Prozent an Wert. Bei 30 Jahren Restlaufzeit sind 30 bis 40 Prozent Abschlag möglich, bei 20 Jahren 40 bis 50 Prozent."
+   "p": "Eine verlässliche Faustregel je Restlaufzeitjahr gibt es nicht. Belastbare Zahlen liefert der Gutachterausschuss der Stadt Bergisch Gladbach für Eigentumswohnungen im Erbbaurecht: Je höher der jährliche Erbbauzins pro Quadratmeter Wohnfläche, desto weiter lagen die Kaufpreise unter denen vergleichbarer Wohnungen mit eigenem Anteil am Grundstück."
   },
   {
    "table": [
     [
-     "Restlaufzeit",
-     "übliche Wertminderung",
-     "Finanzierung"
+     "jährlicher Erbbauzins je m² Wohnfläche",
+     "Kaufpreis gegenüber Wohnung mit Grundstücksanteil"
     ],
     [
-     "mehr als 70 Jahre",
-     "5–10 %",
-     "gut möglich"
+     "0 €",
+     "8 % niedriger"
     ],
     [
-     "50 bis 70 Jahre",
-     "10–20 %",
-     "möglich"
+     "10 €",
+     "13 % niedriger"
     ],
     [
-     "30 bis 50 Jahre",
-     "20–35 %",
-     "schwierig"
+     "20 €",
+     "18 % niedriger"
     ],
     [
-     "unter 30 Jahre",
-     "35–50 % und mehr",
-     "kaum möglich"
+     "30 €",
+     "23 % niedriger"
+    ],
+    [
+     "40 €",
+     "28 % niedriger"
     ]
    ]
+  },
+  {
+   "p": "Quelle: Grundstücksmarktbericht der Stadt Bergisch Gladbach 2026, Kap. 7.2. Für Häuser im Erbbaurecht nennt der Bericht nur Marktanpassungsfaktoren aus wenigen Verkäufen, die ausdrücklich als grobe Orientierung gelten (Kap. 7.1)."
   },
   {
    "h2": "Was der Erbbauzins kostet"
   },
   {
-   "p": "Üblich sind jährlich 3 bis 5 Prozent des Grundstückswerts. Die Höhe steht im Vertrag, meist zusammen mit einer Wertsicherungsklausel, die den Erbbauzins an die Verbraucherpreise koppelt. Ein Beispiel: Bei 300.000 Euro Grundstückswert und 4 Prozent fallen 12.000 Euro im Jahr an, also 1.000 Euro im Monat – und das dauerhaft, während ein gekauftes Grundstück einmal bezahlt ist."
+   "p": "Eine gesetzlich festgelegte Höhe gibt es nicht; der Erbbauzins steht im Vertrag, gegebenenfalls mit einer Wertsicherungsklausel. Wie niedrig tatsächlich gezahlte Sätze oft sind, zeigt der Grundstücksmarktbericht 2026 der Stadt: Verträge, die zwischen 1950 und 1985 geschlossen wurden, kamen beim Verkauf der Erbbaugrundstücke in den Jahren 2020 bis 2024 im Schnitt auf 0,38 bis 0,51 Prozent des Bodenwerts, jüngere Verträge ab 1996 auf 1,52 Prozent. Ein Beispiel: 300.000 Euro Bodenwert und 1,5 Prozent ergeben 4.500 Euro im Jahr, also 375 Euro im Monat – dauerhaft, während ein gekauftes Grundstück einmal bezahlt ist."
   },
   {
    "p": "Für Wohngebäude zieht das Gesetz eine Grenze: Nach § 9a ErbbauRG darf eine Erhöhung in der Regel nicht über die Entwicklung der allgemeinen wirtschaftlichen Verhältnisse seit Vertragsschluss hinausgehen, und verlangt werden kann sie frühestens alle drei Jahre."
@@ -73,16 +75,16 @@
    "h2": "Laufzeit: Was am Ende passiert"
   },
   {
-   "p": "Erbbaurechte werden meist für 60 bis 99 Jahre bestellt. Läuft der Vertrag aus, gibt es zwei Wege:"
+   "p": "Wie lange ein Erbbaurecht läuft, legt der Vertrag fest. Endet es, gibt es zwei Wege:"
   },
   {
    "ul": [
-    "Verlängerung: Der Grundstückseigentümer bietet einen neuen Zeitraum an, häufig zu höheren Konditionen.",
+    "Verlängerung: Die Beteiligten können sich auf einen neuen Zeitraum einigen. Der Grundstückseigentümer kann die Entschädigung auch vermeiden, indem er das Erbbaurecht für die voraussichtliche Standdauer des Hauses verlängert – wer das ablehnt, verliert den Entschädigungsanspruch (§ 27 Abs. 3 ErbbauRG).",
     "Erlöschen: Das Gebäude geht an den Grundstückseigentümer über. Grundsätzlich schuldet er dafür eine Entschädigung; der Vertrag kann ihre Höhe regeln oder sie ganz ausschließen (§ 27 ErbbauRG). Mindestens zwei Drittel des gemeinen Werts sind nur vorgeschrieben, wenn das Erbbaurecht dem Wohnbedürfnis minderbemittelter Bevölkerungskreise dient."
    ]
   },
   {
-   "p": "Davon zu unterscheiden ist der Heimfall: die vorzeitige Rückübertragung, wenn der Erbbauberechtigte gegen den Vertrag verstößt, etwa den Erbbauzins nicht zahlt. Wegen Zahlungsverzugs ist das erst möglich, wenn mindestens zwei Jahresbeträge offen sind (§ 9 Abs. 4 ErbbauRG)."
+   "p": "Davon zu unterscheiden ist der Heimfall: Wurde er vereinbart, muss der Erbbauberechtigte das Recht unter bestimmten Voraussetzungen vorzeitig auf den Grundstückseigentümer übertragen (§ 2 Nr. 4 ErbbauRG), etwa bei Vertragsverstößen. Wegen Zahlungsverzugs ist das erst möglich, wenn mindestens zwei Jahresbeträge offen sind (§ 9 Abs. 4 ErbbauRG)."
   },
   {
    "p": "Für Käufer ist das Vertragsende das zentrale Risiko. Wer heute mit 60 Jahren Restlaufzeit kauft und nach 20 Jahren wieder verkaufen will, bietet dann nur noch 40 Jahre an – und erzielt entsprechend weniger."
@@ -92,8 +94,8 @@
   },
   {
    "ul": [
-    "Kirchen: die evangelischen und katholischen Landeskirchen, bundesweit die größte Gruppe",
-    "Städte und Gemeinden, oft als Mittel für bezahlbares Wohnen",
+    "Kirchen, vor allem die evangelischen und katholischen Landeskirchen",
+    "Städte und Gemeinden",
     "Stiftungen und gemeinnützige Organisationen",
     "seltener private Eigentümer"
    ]
@@ -102,10 +104,10 @@
    "h2": "Kaufen, verkaufen, finanzieren"
   },
   {
-   "p": "Ein Erbbaurecht wechselt den Besitzer wie ein Grundstück: mit notariellem Vertrag und Eintragung im Grundbuch. Oft hat sich der Grundstückseigentümer im Vertrag Mitsprache gesichert, etwa ein Vorkaufsrecht oder seine Zustimmung zum Verkauf (§ 5 ErbbauRG)."
+   "p": "Ein Erbbaurecht wechselt den Besitzer wie ein Grundstück: mit notariellem Vertrag und Eintragung im Grundbuch. Der Vertrag kann dem Grundstückseigentümer Mitsprache sichern, etwa ein Vorkaufsrecht oder seine Zustimmung zu Verkauf und Belastung (§ 5 ErbbauRG)."
   },
   {
-   "p": "Heikel ist die Finanzierung. Viele Banken verlangen, dass das Erbbaurecht die Kreditlaufzeit um mindestens 20 bis 30 Jahre überdauert. Bei kurzer Restlaufzeit ist ein Baudarlehen deshalb kaum zu bekommen."
+   "p": "Heikel ist die Finanzierung. Für Darlehen, die eine Bank über Pfandbriefe refinanziert, gilt: Die planmäßige Tilgung muss spätestens zehn Jahre vor dem Ende des Erbbaurechts abgeschlossen sein (§ 13 Abs. 2 PfandBG). Bei kurzer Restlaufzeit bleibt deshalb nur ein kurzes Darlehen mit hoher Rate."
   },
   {
    "h2": "Lohnt sich Erbpacht als Kapitalanlage?"

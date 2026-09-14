@@ -1,7 +1,7 @@
 {
  "slug": "erbbauzins",
  "rang": 6,
- "stand": "2026-09-13",
+ "stand": "2026-09-14",
  "titel": "Erbbauzins in Bergisch Gladbach: Höhe, Anpassung und Steuern",
  "metaTitel": "Erbbauzins in Bergisch Gladbach – Höhe und Anpassung | Stark & Hoffmann",
  "beschreibung": "Was der Erbbauzins kostet, wie Wertsicherungsklauseln ihn erhöhen und wann er steuerlich zählt – mit Rechenbeispielen für Käufer in Bergisch Gladbach.",
@@ -12,65 +12,71 @@
    "h2": "Was der Erbbauzins ist"
   },
   {
-   "p": "Der Erbbauzins ist das regelmäßige Entgelt, das der Erbbauberechtigte – also der Eigentümer des Gebäudes – dem Eigentümer des Grundstücks zahlt. Er ist die Gegenleistung dafür, auf fremdem Boden ein Haus haben und nutzen zu dürfen, und fällt über die gesamte Laufzeit des Erbbaurechts an, die sich meist über viele Jahrzehnte erstreckt."
+   "p": "Der Erbbauzins ist das regelmäßige Entgelt, das der Erbbauberechtigte – also der Eigentümer des Gebäudes – dem Eigentümer des Grundstücks zahlt. Er ist die Gegenleistung dafür, auf fremdem Boden ein Haus haben und nutzen zu dürfen, und fällt über die gesamte im Vertrag vereinbarte Laufzeit an."
   },
   {
-   "p": "Geregelt ist er im Erbbaurechtsvertrag. Fast immer enthält dieser eine Klausel, die den Betrag an die Inflation bindet – der Erbbauzins bleibt also selten auf dem Stand des Vertragsschlusses."
+   "p": "Geregelt ist er im Erbbaurechtsvertrag; rechtlich gelten für ihn die Vorschriften über Reallasten (§ 9 ErbbauRG). Enthält der Vertrag eine Wertsicherungsklausel, bleibt der Erbbauzins nicht auf dem Stand des Vertragsschlusses."
   },
   {
-   "h2": "Mit welchen Beträgen Sie rechnen müssen"
+   "h2": "Was in Bergisch Gladbach tatsächlich gezahlt wird"
   },
   {
-   "p": "Marktüblich sind 3 bis 5 Prozent des Grundstückswerts pro Jahr. Bei einem Grundstück im Wert von 300.000 Euro ergibt das 9.000 bis 15.000 Euro jährlich, umgerechnet 750 bis 1.250 Euro im Monat."
+   "p": "Eine übliche Quote schreibt kein Gesetz vor. Der Gutachterausschuss der Stadt hat für Erbbaugrundstücke, die zwischen 2020 und 2024 verkauft wurden, den effektiven Erbbauzins ermittelt – also den im Verkaufsjahr gezahlten Betrag im Verhältnis zum Bodenwert:"
   },
   {
    "table": [
     [
-     "Grundstückswert",
-     "3 % pro Jahr",
-     "5 % pro Jahr",
-     "pro Monat bei 3 %"
+     "Vertragsabschluss",
+     "Verkäufe",
+     "effektiver Erbbauzins im Mittel",
+     "von – bis"
     ],
     [
-     "150.000 €",
-     "4.500 €",
-     "7.500 €",
-     "375 €"
+     "1950 bis 1965",
+     "24",
+     "0,51 %",
+     "0,05 – 1,28 %"
     ],
     [
-     "300.000 €",
-     "9.000 €",
-     "15.000 €",
-     "750 €"
+     "1966 bis 1975",
+     "29",
+     "0,45 %",
+     "0,12 – 1,09 %"
     ],
     [
-     "500.000 €",
-     "15.000 €",
-     "25.000 €",
-     "1.250 €"
+     "1976 bis 1985",
+     "3",
+     "0,38 %",
+     "0,22 – 0,53 %"
     ],
     [
-     "800.000 €",
-     "24.000 €",
-     "40.000 €",
-     "2.000 €"
+     "1986 bis 1995",
+     "2",
+     "1,63 % (nur zwei Fälle)",
+     "1,28 – 1,98 %"
+    ],
+    [
+     "1996 bis 2023",
+     "5",
+     "1,52 %",
+     "1,08 – 2,18 %"
     ]
    ]
   },
   {
-   "p": "Weil der Bodenwert die Grundlage ist, wiegt der Erbbauzins in Lagen mit hohen Bodenpreisen besonders schwer – dort wird er zu einer erheblichen Dauerbelastung."
+   "p": "Quelle: Grundstücksmarktbericht der Stadt Bergisch Gladbach 2026, Kap. 7.1.1. Rechenbeispiel: Bei 400.000 Euro Bodenwert ergeben 1,52 Prozent rund 6.080 Euro im Jahr, gut 500 Euro im Monat; ein alter Vertrag mit 0,5 Prozent läge bei 2.000 Euro im Jahr."
   },
   {
    "h2": "Der niedrige Kaufpreis täuscht"
   },
   {
-   "p": "Erbpacht-Immobilien stehen in den Portalen oft deutlich günstiger als vergleichbare Häuser in derselben Gegend. Der Preis bildet aber nur das Gebäude ab, nicht den Boden. Hinzu kommen der laufende Erbbauzins und die begrenzte Restlaufzeit. Wie stark die Restlaufzeit den Wert drückt, erklären wir im Beitrag zur Erbpacht."
+   "p": "Erbpacht-Immobilien stehen in den Portalen oft deutlich günstiger als vergleichbare Häuser in derselben Gegend. Das Grundstück wird aber nicht mitgekauft. Hinzu kommen der laufende Erbbauzins und die begrenzte Restlaufzeit. Wie stark der Abschlag ausfällt, erklären wir im Beitrag zur Erbpacht."
   },
   {
    "h2": "Wie sich der Erbbauzins mit der Zeit erhöht"
   },
   {
-   "p": "Die meisten Verträge koppeln den Erbbauzins über eine Wertsicherungsklausel an den Verbraucherpreisindex. Ein Rechenbeispiel mit 3 Prozent Inflation pro Jahr: Aus 800 Euro im Monat werden nach 20 Jahren gut 1.440 Euro."
+   "p": "Ein Vertrag kann den Erbbauzins über eine Wertsicherungsklausel an den Verbraucherpreisindex koppeln. Ein Rechenbeispiel mit 3 Prozent Anstieg pro Jahr: Aus 800 Euro im Monat werden nach 20 Jahren gut 1.440 Euro."
   },
   {
    "p": "Für Wohngebäude setzt § 9a ErbbauRG Grenzen: Eine Erhöhung darf in der Regel nicht über die Entwicklung der allgemeinen wirtschaftlichen Verhältnisse seit Vertragsschluss hinausgehen und frühestens drei Jahre nach Vertragsschluss oder nach der letzten Erhöhung verlangt werden."
@@ -94,10 +100,10 @@
   },
   {
    "ul": [
-    "Kirchengemeinden der evangelischen und katholischen Kirche, historisch große Grundbesitzer",
-    "Städte und Gemeinden, vor allem bei geförderten Wohnprojekten",
+    "Kirchen und Kirchengemeinden",
+    "Städte und Gemeinden",
     "Stiftungen",
-    "private Großgrundbesitzer"
+    "seltener private Grundstückseigentümer"
    ]
   }
  ],
@@ -112,7 +118,7 @@
   ],
   [
    "Was passiert, wenn der Erbbauzins nicht gezahlt wird?",
-   "Ist ein Heimfallrecht vereinbart, kann der Grundstückseigentümer das Erbbaurecht zurückverlangen – wegen Zahlungsverzugs allerdings erst, wenn mindestens zwei Jahresbeträge offen sind (§ 9 Abs. 4 ErbbauRG). In der Regel wird vorher nach einer Lösung gesucht."
+   "Ist ein Heimfallrecht vereinbart, kann der Grundstückseigentümer das Erbbaurecht zurückverlangen – wegen Zahlungsverzugs allerdings erst, wenn mindestens zwei Jahresbeträge offen sind (§ 9 Abs. 4 ErbbauRG). Für das Erbbaurecht ist dann grundsätzlich eine angemessene Vergütung zu zahlen (§ 32 ErbbauRG)."
   ]
  ],
  "verwandt": [
