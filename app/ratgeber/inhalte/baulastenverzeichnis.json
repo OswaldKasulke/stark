@@ -1,0 +1,112 @@
+{
+ "slug": "baulastenverzeichnis",
+ "rang": 17,
+ "stand": "2026-09-14",
+ "titel": "Baulastenverzeichnis Bergisch Gladbach: Auskunft, Kosten, typische Baulasten",
+ "metaTitel": "Baulastenverzeichnis Bergisch Gladbach – Auskunft und Kosten | Stark & Hoffmann",
+ "beschreibung": "Was eine Baulast ist, warum sie nicht im Grundbuch steht und wie Sie bei der Bauaufsicht der Stadt Bergisch Gladbach eine Auskunft erhalten – mit Gebühren.",
+ "lead": "Eine Baulast steht nicht im Grundbuch und wird deshalb beim Kauf leicht übersehen. Dabei kann sie bestimmen, was auf einem Grundstück gebaut werden darf.",
+ "kurz": "Baulast und Grundbuch im Vergleich, typische Baulasten und die Auskunft bei der Stadt.",
+ "bloecke": [
+  {
+   "h2": "Was eine Baulast ist"
+  },
+  {
+   "p": "Eine Baulast entsteht, wenn ein Eigentümer der Bauaufsicht gegenüber freiwillig erklärt, auf seinem Grundstück etwas zu dulden, zu tun oder zu unterlassen. Nach der Eintragung ins Baulastenverzeichnis haftet diese Pflicht am Grundstück – jeder künftige Eigentümer ist daran gebunden, auch nach einem Verkauf."
+  },
+  {
+   "p": "Weil die Baulast öffentlich-rechtlich ist, taucht sie im Grundbuch nicht auf. Wer vor dem Kauf nur den Grundbuchauszug prüft, sieht sie nicht. Beide Register müssen deshalb getrennt abgefragt werden."
+  },
+  {
+   "table": [
+    [
+     "",
+     "Grundbuch",
+     "Baulastenverzeichnis"
+    ],
+    [
+     "Rechtsnatur",
+     "privatrechtlich",
+     "öffentlich-rechtlich"
+    ],
+    [
+     "geführt von",
+     "Grundbuchamt beim Amtsgericht",
+     "Bauaufsichtsbehörde"
+    ],
+    [
+     "enthält",
+     "Eigentum, Grundschulden, Wege- und Wohnrechte",
+     "Verpflichtungen gegenüber der Baubehörde"
+    ],
+    [
+     "wirkt gegenüber",
+     "Dritten",
+     "der Behörde"
+    ]
+   ]
+  },
+  {
+   "h2": "Häufige Baulasten"
+  },
+  {
+   "ul": [
+    "Abstandsflächen: Ein Nachbargebäude darf näher an die Grenze rücken, weil sein Abstand auf dem belasteten Grundstück liegt – dort wird dann weniger Bebauung möglich.",
+    "Stellplätze: Auf dem Grundstück müssen Parkplätze für ein anderes Bauvorhaben dauerhaft bereitstehen.",
+    "Zufahrt: Ein dahinterliegendes Grundstück erhält über das belastete Grundstück seinen Zugang und wird dadurch überhaupt bebaubar.",
+    "Vereinigung: Mehrere Flurstücke werden baurechtlich zusammengefasst, zum Beispiel wenn ein Haus auf beiden steht."
+   ]
+  },
+  {
+   "p": "Dieselbe Sache kann doppelt abgesichert sein – ein Durchfahrtsrecht zum Beispiel privatrechtlich im Grundbuch und zusätzlich gegenüber der Bauaufsicht – oder nur an einer Stelle. Einseitig beenden kann der Eigentümer eine Baulast nicht; aufgehoben wird sie nur durch einen schriftlichen Verzicht der Behörde, und den erklärt sie erst, wenn das öffentliche Interesse entfallen ist."
+  },
+  {
+   "h2": "Auskunft in Bergisch Gladbach"
+  },
+  {
+   "p": "Das Baulastenverzeichnis führt die Untere Bauaufsichtsbehörde der Stadt Bergisch Gladbach. Eine schriftliche Auskunft beantragen Sie per Post oder E-Mail an baulastauskunft@stadt-gl.de. Sie ist tagesaktuell, verbindlich und umfasst sowohl belastende als auch begünstigende Baulasten; ist eine Baulast eingetragen, liegt eine Kopie des Baulastenblatts bei."
+  },
+  {
+   "table": [
+    [
+     "Schriftliche Auskunft",
+     "Gebühr je Flurstück"
+    ],
+    [
+     "keine Baulast eingetragen",
+     "30 €"
+    ],
+    [
+     "Baulast eingetragen",
+     "50 bis 200 € zuzüglich Kopiekosten"
+    ]
+   ]
+  },
+  {
+   "ul": [
+    "Das Flurstück muss eindeutig bezeichnet sein – mit Gemarkung, Flur und Flurstücksnummer aus Grundbuchauszug oder Flurkarte.",
+    "Auskunft erhält, wer ein berechtigtes Interesse hat, zum Beispiel Eigentümer und andere dinglich Berechtigte, Kaufinteressenten, künftige Gläubiger, Notare und Entwurfsverfasser."
+   ]
+  },
+  {
+   "h2": "Worauf Sie bei der Auskunft achten sollten"
+  },
+  {
+   "ul": [
+    "Sie gilt nur für die abgefragten Flurstücke. Gehören etwa Haus und Garage zu verschiedenen Flurstücken, müssen alle abgefragt werden.",
+    "Sie beschreibt den Stand am Ausstellungstag. Zieht sich ein Verkauf lange hin, kann eine ältere Auskunft überholt sein."
+   ]
+  },
+  {
+   "h2": "Bedeutung für Kauf und Verkauf"
+  },
+  {
+   "p": "Wer eine Baulast übersieht, zahlt womöglich zu viel: Muss wegen einer Abstandsflächen-Verpflichtung auf die geplante Aufstockung verzichtet werden oder ist ein Teil des Gartens für fremde Stellplätze reserviert, sinkt der Wert. Häufig kommt das erst mit einer abgelehnten Bauvoranfrage ans Licht – wenn der Kauf schon beurkundet ist. Verkäufer müssen ihnen bekannte Baulasten offenlegen, sonst drohen Schadensersatzansprüche. Eine aktuelle Auskunft ohne Eintrag schafft dagegen Vertrauen bei Kaufinteressenten."
+  }
+ ],
+ "verwandt": [
+  "flurkarte",
+  "grundschuld",
+  "immobilienverkauf"
+ ]
+}

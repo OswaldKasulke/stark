@@ -1,0 +1,74 @@
+{
+ "slug": "flurkarte",
+ "rang": 8,
+ "stand": "2026-09-14",
+ "titel": "Flurkarte für Bergisch Gladbach beantragen: Inhalt, Kosten, Katasteramt",
+ "metaTitel": "Flurkarte Bergisch Gladbach beantragen – Kosten & Ablauf | Stark & Hoffmann",
+ "beschreibung": "Flurkarte für Bergisch Gladbach: zuständig ist das Katasteramt des Rheinisch-Bergischen Kreises. Antrag per E-Mail, Formate, Gebühren und Nutzen beim Verkauf.",
+ "lead": "Für Bergisch Gladbach stellt nicht die Stadt die Flurkarte aus, sondern das Katasteramt des Rheinisch-Bergischen Kreises. Was die Karte zeigt, wie Sie sie beantragen und was sie kostet.",
+ "kurz": "Zuständiges Katasteramt, Antrag, Gebühren und wozu die Karte beim Verkauf gebraucht wird.",
+ "bloecke": [
+  {
+   "h2": "Was die Flurkarte zeigt"
+  },
+  {
+   "p": "Die Flurkarte – amtlich Liegenschaftskarte – stellt die Grundstücke eines Gebiets grafisch dar: ihre Grenzen und Flurstücksnummern, die Gebäude, Straßen und Nachbargrundstücke und die Art der Nutzung. Über die Flurstücksnummer ist jedes Grundstück eindeutig zu identifizieren."
+  },
+  {
+   "p": "Gebraucht wird die Karte bei Grundstücksgeschäften, bei Bauvorhaben – sie gehört häufig zu den Bauantragsunterlagen – und wenn Grenzverläufe geklärt werden müssen."
+  },
+  {
+   "h2": "Zuständig: das Katasteramt des Kreises"
+  },
+  {
+   "p": "Das Liegenschaftskataster für Bergisch Gladbach führt der Rheinisch-Bergische Kreis. Zuständig ist das Amt für Liegenschaftskataster und Geoinformation im Kreishaus Heidkamp, Am Rübezahlwald 7, 51469 Bergisch Gladbach."
+  },
+  {
+   "h2": "So beantragen Sie die Flurkarte"
+  },
+  {
+   "ol": [
+    "Eine E-Mail an kataster@rbk-online.de schicken.",
+    "Darin angeben: Ihre Kontaktdaten, die Gemeinde, Straße und Hausnummer sowie – wenn bekannt – die Katasterbezeichnung, also Gemarkung, Flur und Flurstück.",
+    "Format wählen: Die amtliche Liegenschaftskarte gibt es auf Papier oder als PDF, im Maßstab 1:500, 1:1000 oder 1:2000; digitale Daten auch im DXF- oder NAS-Format."
+   ]
+  },
+  {
+   "h2": "Was sie kostet"
+  },
+  {
+   "table": [
+    [
+     "Leistung",
+     "Gebühr"
+    ],
+    [
+     "analoger Auszug DIN A4 oder DIN A3",
+     "30 €"
+    ],
+    [
+     "analoger Auszug ab DIN A2",
+     "60 €"
+    ],
+    [
+     "digitale Daten",
+     "23 € je Viertelstunde Arbeitsaufwand"
+    ]
+   ]
+  },
+  {
+   "p": "Grundlage ist die Kostenordnung für das amtliche Vermessungswesen in Nordrhein-Westfalen (VermWertKostO NRW). Bestellen Sie direkt beim Katasteramt: Private Portale verkaufen dieselben amtlichen Auszüge oft deutlich teurer."
+  },
+  {
+   "h2": "Wofür Sie die Flurkarte beim Verkauf brauchen"
+  },
+  {
+   "p": "Kaufinteressenten, deren Bank und der Notar wollen die Flurkarte regelmäßig sehen. Sie belegt Lage und Zuschnitt des Grundstücks und zeigt, ob die tatsächliche Bebauung mit dem Kataster übereinstimmt. Weichen Grenzverlauf oder Gebäudeumriss ab, sollte das vor der Vermarktung geklärt werden – nicht erst beim Notartermin."
+  }
+ ],
+ "verwandt": [
+  "baulastenverzeichnis",
+  "grundstuecksmarktbericht-bergisch-gladbach",
+  "immobilienverkauf"
+ ]
+}

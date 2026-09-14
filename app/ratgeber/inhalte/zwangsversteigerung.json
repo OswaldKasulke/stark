@@ -1,0 +1,92 @@
+{
+ "slug": "zwangsversteigerung",
+ "rang": 18,
+ "stand": "2026-09-14",
+ "titel": "Zwangsversteigerung in Bergisch Gladbach: Ablauf, Wertgrenzen, Risiken",
+ "metaTitel": "Zwangsversteigerung Bergisch Gladbach – Ablauf und Risiken | Stark & Hoffmann",
+ "beschreibung": "Wie Zwangsversteigerungen am Amtsgericht Bergisch Gladbach ablaufen, welche Wertgrenzen gelten, was die Sicherheitsleistung ist und welche Risiken Bieter tragen.",
+ "lead": "Ein Haus zum Bruchteil des Verkehrswerts – so stellen sich viele eine Zwangsversteigerung vor. Wer mitbieten will, sollte die Regeln kennen, denn Gewährleistung gibt es keine.",
+ "kurz": "Ablauf am Amtsgericht, 5/10- und 7/10-Grenze, Sicherheitsleistung und die typischen Risiken.",
+ "bloecke": [
+  {
+   "h2": "Wer versteigert"
+  },
+  {
+   "p": "Die Zwangsversteigerung ist ein gerichtliches Vollstreckungsverfahren. Meist beantragt sie eine Bank, deren Forderungen nicht mehr bedient werden. Zuständig ist das Amtsgericht, in dessen Bezirk das Grundstück liegt. Das Amtsgericht Bergisch Gladbach versteigert bebaute und unbebaute Grundstücke, Eigentumswohnungen, Gewerbeeinheiten und Erbbaurechte in seinem Bezirk und macht die Termine unter anderem im Internet unter www.zvg-portal.de bekannt."
+  },
+  {
+   "h2": "Der Ablauf"
+  },
+  {
+   "ol": [
+    "Anordnung: Das Gericht ordnet die Versteigerung an und lässt einen Versteigerungsvermerk ins Grundbuch eintragen.",
+    "Wertermittlung: Ein Sachverständiger begutachtet das Objekt, das Gericht setzt den Verkehrswert fest.",
+    "Bekanntmachung: Der Termin wird öffentlich bekannt gemacht. Das Gutachten können Sie beim Amtsgericht Bergisch Gladbach nach vorheriger Terminvereinbarung einsehen.",
+    "Versteigerungstermin: Nach Bekanntgabe des geringsten Gebots beginnt die Bietzeit, die mindestens 30 Minuten dauert.",
+    "Zuschlag: Mit ihm wird der Meistbietende Eigentümer – ohne Notar, ohne Auflassung und ohne Eintragung."
+   ]
+  },
+  {
+   "h2": "Kein festes Mindestgebot, aber zwei Grenzen"
+  },
+  {
+   "p": "Ein Mindestgebot, unter dem niemand bieten dürfte, gibt es nicht. Das Gesetz kennt zwei Wertgrenzen, die im ersten Termin unterschiedlich wirken:"
+  },
+  {
+   "table": [
+    [
+     "Gebot im ersten Termin",
+     "Folge"
+    ],
+    [
+     "unter 50 % des Verkehrswerts",
+     "Das Gericht versagt den Zuschlag von Amts wegen (§ 85a ZVG)."
+    ],
+    [
+     "50 bis unter 70 %",
+     "Ein berechtigter Gläubiger kann die Versagung beantragen (§ 74a ZVG); ohne Antrag wird zugeschlagen."
+    ],
+    [
+     "ab 70 %",
+     "Der Zuschlag wird erteilt."
+    ]
+   ]
+  },
+  {
+   "p": "Wurde der Zuschlag im ersten Termin an einer dieser Grenzen versagt, gelten sie im nächsten Termin nicht mehr – dann ist ein Zuschlag auch weit unter der Hälfte des Verkehrswerts möglich. Wird im ersten Termin dagegen gar nicht geboten, stellt das Gericht das Verfahren einstweilen ein (§ 77 Abs. 1 ZVG); weil kein Zuschlag versagt wurde, bleiben die Grenzen im späteren Termin bestehen. Bleibt auch der zweite Termin ohne Gebot, wird das Verfahren aufgehoben; auf Antrag des Gläubigers kann es als Zwangsverwaltung weiterlaufen (§ 77 Abs. 2 ZVG)."
+  },
+  {
+   "h2": "Sicherheitsleistung"
+  },
+  {
+   "p": "Verlangt ein Beteiligter Sicherheit, müssen Bieter im Normalfall 10 Prozent des Verkehrswerts hinterlegen. Barzahlung ist beim Amtsgericht Bergisch Gladbach nicht möglich. Möglich sind ein Scheck, eine Bankbürgschaft oder eine rechtzeitige Überweisung auf das Gerichtskonto."
+  },
+  {
+   "h2": "Risiken für Bieter"
+  },
+  {
+   "ul": [
+    "Keine Gewährleistung: Ansprüche wegen Mängeln sind ausgeschlossen (§ 56 Satz 3 ZVG).",
+    "Keine Besichtigung garantiert: Gericht und Gutachter können den Zutritt nicht erzwingen; oft beruht das Gutachten nur auf dem äußeren Eindruck.",
+    "Gefahr und Lasten ab Zuschlag: Ab diesem Moment trägt der Ersteher Risiken und Kosten (§ 56 ZVG).",
+    "Mietverhältnisse: Der Ersteher tritt in laufende Mietverträge ein. Ein Sonderkündigungsrecht nach § 57a ZVG besteht nur zum ersten zulässigen Termin.",
+    "Bestehen bleibende Rechte: Rechte, die im Rang vor dem betreibenden Gläubiger stehen – etwa ein Wohnrecht –, erlöschen nicht und kommen zum Gebot hinzu.",
+    "Nebenkosten: Grunderwerbsteuer, Zuschlagsgebühr und oft Räumungskosten; Notarkosten fallen nicht an."
+   ]
+  },
+  {
+   "p": "Gegen den bisherigen Eigentümer ist der Zuschlagsbeschluss zugleich ein Räumungstitel. Gegen Mieter gilt das nicht; dort bleibt nur der Weg über Kündigung und gegebenenfalls Räumungsklage."
+  },
+  {
+   "h2": "Für Eigentümer in Schwierigkeiten"
+  },
+  {
+   "p": "Bis zum Zuschlag bleibt Spielraum. Ein freihändiger Verkauf in Abstimmung mit den Gläubigern bringt in der Regel mehr als eine Versteigerung – je früher er angegangen wird, desto besser. Nicht zu verwechseln ist die Zwangsversteigerung mit der Teilungsversteigerung, die eine Eigentümergemeinschaft auflöst, etwa unter Erben."
+  }
+ ],
+ "verwandt": [
+  "kaufnebenkosten",
+  "grundschuld",
+  "niessbrauch-wohnrecht"
+ ]
+}
