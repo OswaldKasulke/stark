@@ -48,6 +48,7 @@ export default function DatenschutzPage(){
         <p>Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
         <h3>Immobilienbewertung</h3>
         <p>Bei Nutzung der Online-Immobilienbewertung verarbeiten wir die von Ihnen eingegebenen Objektangaben (Objektart, Bauweise, Adresse, Flächen, Baujahr, Zustand, gegebenenfalls Mietangaben) sowie Ihre Kontaktdaten (Vorname, Nachname, E-Mail-Adresse, Telefonnummer und optional Ihre Anschrift). Zusammen mit dem Ergebnis und dem Rechenweg werden diese Angaben zur Bearbeitung Ihrer Anfrage übermittelt und gespeichert.</p>
+        <p>Die Adresse der Immobilie wird schon während der Eingabe geprüft. Dafür werden Straßenname, Hausnummer und Postleitzahl an die Adressprüfung unter <span className="nowrap">romanbecker.de/bewertung-adressen.php</span> übermittelt, die ebenfalls von uns beauftragt betrieben wird. Sie liefert Straßenvorschläge und den Ort zur Postleitzahl und bestätigt, dass es die Adresse gibt. Name und Kontaktdaten werden dabei nicht übertragen, Cookies werden nicht gesetzt; die Zugriffe erfasst der Server wie in Abschnitt 4 beschrieben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, weil die Prüfung für die von Ihnen angefragte Bewertung erforderlich ist.</p>
         <p>Die technische Entgegennahme des Formulars erfolgt über den Endpunkt <span className="nowrap">romanbecker.de/submit.php</span>, der von uns beauftragt betrieben wird. Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie im Formular ausdrücklich erteilen, sowie nach Art. 6 Abs. 1 lit. b DSGVO zur Durchführung vorvertraglicher Maßnahmen. Sie können Ihre Einwilligung jederzeit widerrufen.</p>
 
         <h2>5. Externe Inhalte</h2>
@@ -73,7 +74,7 @@ export default function DatenschutzPage(){
         <p>Ihnen steht ferner ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.</p>
         <p>Für Anliegen zum Datenschutz erreichen Sie uns unter <a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a>.</p>
 
-        <p className="editorial-note">Stand dieser Datenschutzerklärung: 30. August 2026.</p>
+        <p className="editorial-note">Stand dieser Datenschutzerklärung: 14. September 2026.</p>
       </article>
     </section>
 
