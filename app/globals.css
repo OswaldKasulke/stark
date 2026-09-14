@@ -363,6 +363,7 @@ header.site-header.menu-offen nav a:last-child{border-bottom:0}}
 .rg-liste{margin:0 0 18px;padding-left:20px;color:#5f6469;line-height:1.8}
 .rg-liste li{margin:0 0 8px}
 .rg-liste a{color:#000;text-decoration:underline;text-underline-offset:3px}
+.faq-item p a{color:#000;text-decoration:underline;text-underline-offset:3px}
 .rg-tabelle{overflow-x:auto;margin:8px 0 26px}
 .rg-tabelle table{border-collapse:collapse;width:100%;min-width:460px;font-size:14px;line-height:1.5}
 .rg-tabelle th,.rg-tabelle td{text-align:left;padding:10px 12px;border-bottom:1px solid #dfdfdf;vertical-align:top}

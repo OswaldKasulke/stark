@@ -1,3 +1,4 @@
+import { ohneLinks } from "./linktext";
 export const siteUrl = "https://immobilienmakler-bergisch-gladbach.de";
 export const businessId = `${siteUrl}/#immobilienmakler`;
 export const defaultImage = "https://images.ctfassets.net/if6f7uzjzqut/1JeuSYJErKOHJUm9Ojx7LE/0ce8fa4b065d01703dd781a78c71b173/bergisch_gladbach_key_visual.jpg?f=top&fit=fill&fm=jpg&q=82&w=1568&h=1003";
@@ -44,7 +45,7 @@ export const faqSchema = (items: Array<[string, string] | { question: string; an
   "@type": "FAQPage",
   mainEntity: items.map((item) => {
     const [question, answer] = Array.isArray(item) ? item : [item.question, item.answer];
-    return { "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } };
+    return { "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: ohneLinks(answer) } };
   }),
 });
 

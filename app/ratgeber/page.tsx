@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { artikel } from "./artikel";
 import { RatgeberFuss, RatgeberKopf } from "./Rahmen";
+import { Verlinkt } from "../Verlinkt";
 import { faq } from "../haeufige-fragen";
 import { breadcrumbSchema, businessId, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../seo";
 
@@ -32,7 +33,7 @@ export default function RatgeberUebersicht() {
     </section>
     <section className="faq-section section" id="faq">
       <div className="section-head"><div><p className="eyebrow">Häufige Fragen</p><h2>Was Eigentümer in Bergisch Gladbach wissen wollen.</h2></div><p>Antworten rund um Immobilienbewertung, Hausverkauf, Unterlagen und Bodenrichtwerte.</p></div>
-      <div className="faq-grid">{faq.map(([question, answer]) => <details className="faq-item" key={question}><summary>{question}<span aria-hidden="true">+</span></summary><div><p>{answer}</p></div></details>)}</div>
+      <div className="faq-grid">{faq.map(([question, answer]) => <details className="faq-item" key={question}><summary>{question}<span aria-hidden="true">+</span></summary><div><p><Verlinkt text={answer} /></p></div></details>)}</div>
       <div className="faq-cta"><a className="button dark" href="/immobilienbewertung/">Immobilie kostenlos bewerten</a><a href="tel:+4922049147881">Weitere Frage? +49 2204 914 7881</a></div>
       <p className="editorial-note">Redaktionell geprüft durch Stark &amp; Hoffmann Immobilien GmbH · zuletzt aktualisiert am 25.08.2026 · Marktdaten aus amtlichen Grundstücksmarktberichten.</p>
     </section>
