@@ -35,7 +35,12 @@ function ladeStatistik(){
   skript.src = "https://www.googletagmanager.com/gtag/js?id=" + MESS_ID;
   document.head.appendChild(skript);
   w.dataLayer = w.dataLayer || [];
-  function gtag(...args: unknown[]){ w.dataLayer!.push(args); }
+  // gtag.js wertet nur arguments-Objekte aus. Ein Array (Rest-Parameter) im
+  // dataLayer wird still ignoriert - dann laedt das Skript, sendet aber nie.
+  const gtag = function(){
+    // eslint-disable-next-line prefer-rest-params
+    w.dataLayer!.push(arguments);
+  } as (...args: unknown[]) => void;
   w.gtag = gtag;
   gtag("js", new Date());
   gtag("config", MESS_ID);
