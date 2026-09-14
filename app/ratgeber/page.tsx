@@ -28,7 +28,7 @@ export default function RatgeberUebersicht() {
     <section className="legal-hero"><p className="eyebrow light">Ratgeber</p><h1>{titel}</h1><p>Fachbeiträge zu Recht, Kosten und Verkauf der eigenen Immobilie – und die Antworten auf die Fragen, die uns Eigentümer in Bergisch Gladbach am häufigsten stellen.</p></section>
     <section className="seo-services section" aria-labelledby="rg-beitraege">
       <div className="section-head"><div><p className="eyebrow">Fachbeiträge</p><h2 id="rg-beitraege">Immobilienwissen, verständlich erklärt.</h2></div><p>Jeder Beitrag erklärt ein Thema kompakt und verständlich.</p></div>
-      <div className="seo-service-grid">{artikel.map((a) => <a href={`/ratgeber/${a.slug}/`} key={a.slug}><span>Ratgeber</span><h3>{a.titel}</h3><p>{a.kurz}</p><b>Weiterlesen →</b></a>)}</div>
+      <div className="seo-service-grid rg-overview-grid">{artikel.map((a) => <a href={`/ratgeber/${a.slug}/`} key={a.slug}><span>Ratgeber</span><h3>{a.titel}</h3><p>{a.kurz}</p><b>Weiterlesen →</b></a>)}</div>
     </section>
     <section className="faq-section section" id="faq">
       <div className="section-head"><div><p className="eyebrow">Häufige Fragen</p><h2>Was Eigentümer in Bergisch Gladbach wissen wollen.</h2></div><p>Antworten rund um Immobilienbewertung, Hausverkauf, Unterlagen und Bodenrichtwerte.</p></div>
