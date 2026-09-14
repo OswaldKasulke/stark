@@ -1,0 +1,141 @@
+{
+ "slug": "grundschuld-loeschen",
+ "rang": 15,
+ "stand": "2026-09-14",
+ "titel": "Grundschuld löschen in Bergisch Gladbach: Ablauf, Kosten, Dauer",
+ "metaTitel": "Grundschuld löschen – Ablauf, Kosten und Dauer | Stark & Hoffmann",
+ "beschreibung": "Wann sich das Löschen einer Grundschuld lohnt, welche Schritte nötig sind, was Grundbuchamt und Notar kosten und wie die Löschung beim Immobilienverkauf abläuft.",
+ "lead": "Ist der Kredit abbezahlt, bleibt die Grundschuld trotzdem im Grundbuch stehen. Ob Sie sie löschen lassen sollten, wie das geht und was es kostet.",
+ "kurz": "Löschen oder stehen lassen, die Schritte, Gebühren und die Löschung beim Verkauf.",
+ "bloecke": [
+  {
+   "h2": "Warum die Grundschuld nach der Tilgung stehen bleibt"
+  },
+  {
+   "p": "Die Grundschuld sichert der Bank ein Immobiliendarlehen und steht in Abteilung III des Grundbuchs. Anders als oft angenommen verschwindet sie nicht, wenn die letzte Rate gezahlt ist. Sie bleibt eingetragen, bis jemand ihre Löschung veranlasst."
+  },
+  {
+   "h2": "Löschen oder stehen lassen?"
+  },
+  {
+   "ul": [
+    "Stehen lassen: sinnvoll, wenn später wieder ein Kredit nötig werden könnte, etwa für eine Modernisierung. Die Grundschuld kann dann erneut als Sicherheit dienen – eine neue Eintragung mit Notar und Grundbuchamt entfällt.",
+    "Löschen: beim Verkauf in aller Regel nötig, weil Käufer und ihre Banken ein Grundbuch ohne fremde Belastungen erwarten."
+   ]
+  },
+  {
+   "h2": "So läuft die Löschung ab"
+  },
+  {
+   "ol": [
+    "Darlehen vollständig tilgen.",
+    "Löschungsbewilligung bei der Bank anfordern. Nach der Rückzahlung haben Sie Anspruch darauf; bis sie vorliegt, vergehen meist einige Wochen.",
+    "Zustimmung erklären: Eine Grundschuld darf nur mit Zustimmung des Eigentümers gelöscht werden (§ 27 GBO), und die Erklärungen müssen in öffentlich beglaubigter Form vorliegen (§ 29 GBO). Ihre Unterschrift beglaubigt deshalb ein Notar.",
+    "Antrag beim Grundbuchamt: Der Notar reicht die Unterlagen ein, das Grundbuchamt löscht die Grundschuld.",
+    "Kontrolle: Ein aktueller Grundbuchauszug bestätigt, dass die Eintragung gelöscht ist."
+   ]
+  },
+  {
+   "h2": "Was die Löschung kostet"
+  },
+  {
+   "p": "Das Grundbuchamt berechnet für die Löschung eine halbe Gebühr aus dem Betrag der Grundschuld (Nr. 14140 des Kostenverzeichnisses zum GNotKG):"
+  },
+  {
+   "table": [
+    [
+     "Grundschuldbetrag",
+     "volle Gebühr (Tabelle B GNotKG)",
+     "Löschung beim Grundbuchamt (0,5)"
+    ],
+    [
+     "100.000 €",
+     "273,00 €",
+     "136,50 €"
+    ],
+    [
+     "200.000 €",
+     "435,00 €",
+     "217,50 €"
+    ],
+    [
+     "300.000 €",
+     "635,00 €",
+     "317,50 €"
+    ],
+    [
+     "400.000 €",
+     "785,00 €",
+     "392,50 €"
+    ],
+    [
+     "500.000 €",
+     "935,00 €",
+     "467,50 €"
+    ]
+   ]
+  },
+  {
+   "p": "Hinzu kommen die Notarkosten für Beglaubigung und Einreichung, meist im niedrigen dreistelligen Bereich. Bei einer Grundschuld von 300.000 bis 400.000 Euro fallen damit insgesamt rund 400 bis 550 Euro an."
+  },
+  {
+   "h2": "Wie lange es dauert"
+  },
+  {
+   "table": [
+    [
+     "Schritt",
+     "übliche Dauer"
+    ],
+    [
+     "Löschungsbewilligung der Bank",
+     "2 bis 6 Wochen nach Tilgung"
+    ],
+    [
+     "Beglaubigung beim Notar",
+     "1 bis 2 Wochen"
+    ],
+    [
+     "Bearbeitung beim Grundbuchamt",
+     "4 bis 12 Wochen"
+    ],
+    [
+     "insgesamt",
+     "etwa 2 bis 4 Monate"
+    ]
+   ]
+  },
+  {
+   "h2": "Löschung beim Verkauf"
+  },
+  {
+   "p": "Ist die Immobilie beim Verkauf noch belastet, übernimmt der Notar die Abwicklung im Rahmen des Kaufvertrags. In aller Regel zahlt der Käufer direkt: Sobald die Voraussetzungen erfüllt sind, teilt der Notar die Fälligkeit mit, der Käufer überweist den Ablösebetrag an die Bank des Verkäufers und den Rest an den Verkäufer; die Bank erteilt daraufhin die Löschungsbewilligung. Ein Notaranderkonto ist die Ausnahme – der Notar darf Geld nur verwahren, wenn dafür ein berechtigtes Sicherungsinteresse besteht (§ 57 BeurkG)."
+  },
+  {
+   "p": "Unser Tipp: Fragen Sie vor dem Verkauf früh bei Ihrer Bank nach der Restschuld und lassen Sie eine mögliche Vorfälligkeitsentschädigung berechnen, falls der Kredit vorzeitig abgelöst wird."
+  }
+ ],
+ "faq": [
+  [
+   "Muss ich die Grundschuld nach der Tilgung sofort löschen lassen?",
+   "Nein, eine Pflicht dazu gibt es nicht. Sie kann eingetragen bleiben, bis sie für eine neue Finanzierung gebraucht wird oder die Immobilie verkauft wird."
+  ],
+  [
+   "Geht die Löschung ohne Notar?",
+   "Für den Eigentümer praktisch nicht: Seine Zustimmung zur Löschung muss öffentlich beglaubigt sein, und diese Beglaubigung übernimmt ein Notar."
+  ],
+  [
+   "Was ist der Unterschied zwischen Löschungsbewilligung und Löschung?",
+   "Mit der Löschungsbewilligung erklärt die Bank, dass sie mit der Löschung einverstanden ist. Gelöscht ist die Grundschuld erst, wenn das Grundbuchamt die Eintragung gestrichen hat."
+  ],
+  [
+   "Schadet eine nicht gelöschte Grundschuld?",
+   "Solange die Sicherungsabrede keine weiteren Forderungen erfasst, hat sie nach der Tilgung keine praktischen Folgen. Beim Verkauf bestehen Käufer und deren Banken aber meist auf der Löschung."
+  ]
+ ],
+ "verwandt": [
+  "grundschuld",
+  "notarkosten-beim-immobilienkauf",
+  "immobilienverkauf"
+ ]
+}

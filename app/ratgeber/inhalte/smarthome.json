@@ -1,0 +1,75 @@
+{
+ "slug": "smarthome",
+ "rang": 19,
+ "stand": "2026-09-14",
+ "titel": "Smart Home und smarte Heizung in Bergisch Gladbach: Nutzen, Sparpotenzial, Verkauf",
+ "metaTitel": "Smart Home und smarte Heizung – was es bringt | Stark & Hoffmann",
+ "beschreibung": "Vernetzte Heizung, Licht und Sicherheit: welche Smart-Home-Bereiche es gibt, wo smarte Thermostate wirklich sparen und was beim Verkauf mit der Technik passiert.",
+ "lead": "Thermostate per App, Licht nach Szenen, Kameras mit Handyzugriff: Smart Home ist in vielen Häusern angekommen. Was es wirklich spart und was beim Verkauf zu beachten ist.",
+ "kurz": "Die wichtigsten Bereiche, echtes Sparpotenzial der Heizungssteuerung und Tipps für den Verkauf.",
+ "bloecke": [
+  {
+   "h2": "Was zu einem Smart Home gehört"
+  },
+  {
+   "p": "Im Smart Home sind Geräte miteinander vernetzt und lassen sich zentral bedienen – per App, per Sprachbefehl oder über Regeln, die einmal festgelegt werden. Vier Bereiche sind besonders verbreitet:"
+  },
+  {
+   "ul": [
+    "Heizung und Klima – hier liegt das größte Sparpotenzial.",
+    "Licht – dimmbare Leuchten mit wechselnder Lichtfarbe und Szenen für bestimmte Tageszeiten.",
+    "Sicherheit – Kameras mit Zugriff per App, smarte Türschlösser mit Smartphone oder Fingerabdruck, vernetzte Alarm- und Rauchmelder.",
+    "Energie – Messung des Verbrauchs einzelner Geräte und Steckdosen, die sich bei Nichtnutzung abschalten."
+   ]
+  },
+  {
+   "p": "Zusammengeführt wird alles über eine Plattform, meist Google Home, Amazon Alexa oder Apple HomeKit. Prüfen Sie vor dem Kauf von Geräten, ob sie zur gewählten Plattform passen – ein späterer Wechsel ist aufwendig."
+  },
+  {
+   "h2": "Smarte Heizungssteuerung"
+  },
+  {
+   "p": "Der einfachste Einstieg sind vernetzte Thermostate, die die klassischen Thermostatköpfe an den Heizkörpern ersetzen. Sie ermöglichen:"
+  },
+  {
+   "ul": [
+    "eigene Heizprofile für jeden Raum",
+    "Zeitpläne, etwa mit Absenkung nachts und bei Abwesenheit",
+    "Geofencing: Das System merkt über das Smartphone, wenn niemand zu Hause ist, und regelt herunter",
+    "lernende Regelung, die Gewohnheiten und Wettervorhersage einbezieht",
+    "Zonen, in denen nur genutzte Räume geheizt werden",
+    "Auswertungen des Verbrauchs, die oft mehr bewirken als die Automatik"
+   ]
+  },
+  {
+   "p": "Bekannte Systeme sind etwa Tado, das Nest Thermostat, Honeywell Evohome und das Netatmo Smart Thermostat; die meisten arbeiten mit Alexa, Google Assistant und Apple HomeKit zusammen."
+  },
+  {
+   "h2": "Wie viel lässt sich sparen?"
+  },
+  {
+   "p": "Das hängt vor allem davon ab, wie bisher geheizt wurde. Wer ohne Zeitsteuerung durchheizt, spart spürbar; wer ohnehin bedarfsgerecht regelt, sieht auf der Abrechnung kaum einen Unterschied. Einsparquoten der Hersteller beruhen meist auf günstigen Annahmen. Mehr bringt in vielen Häusern eine bessere Gebäudehülle."
+  },
+  {
+   "h2": "Smart Home und Immobilienwert"
+  },
+  {
+   "p": "Vernetzte Technik ist ein Argument, das vor allem jüngere Käufer anspricht. Einen belastbaren Preisaufschlag begründet sie nicht – den Preis bestimmen Lage, Zustand und Energieeffizienz. Eher beschleunigt gute Ausstattung die Entscheidung von Interessenten."
+  },
+  {
+   "h2": "Beim Verkauf beachten"
+  },
+  {
+   "ol": [
+    "Zugänge übergeben: Konten, Apps und Administratorrechte müssen auf den Käufer übergehen. Ein System, das am Konto des Verkäufers hängt, nützt dem Käufer nichts.",
+    "Klar regeln, was bleibt: Fest verbaute Technik gehört ins Exposé und in den Kaufvertrag – sonst nimmt der Verkäufer Thermostatköpfe oder Steckdosen womöglich mit.",
+    "Auf Herstellerbindung achten: Stellt ein Anbieter den Betrieb ein, wird das System zum Rückbauthema. Verbreitete Plattformen sind die sicherere Wahl."
+   ]
+  }
+ ],
+ "verwandt": [
+  "heizungsgesetz-aenderung",
+  "immobilienverkauf",
+  "leistungen-makler"
+ ]
+}

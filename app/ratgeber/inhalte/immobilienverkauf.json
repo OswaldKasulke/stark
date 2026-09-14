@@ -1,0 +1,93 @@
+{
+ "slug": "immobilienverkauf",
+ "rang": 20,
+ "stand": "2026-09-14",
+ "titel": "Immobilienverkauf in Bergisch Gladbach: Ablauf in sechs Schritten",
+ "metaTitel": "Immobilie verkaufen – Ablauf in sechs Schritten | Stark & Hoffmann",
+ "beschreibung": "So läuft ein Immobilienverkauf ab: Wertermittlung mit Vergleichs-, Ertrags- und Sachwert, Unterlagen, Vermarktung, Besichtigung, Notarvertrag und Übergabe.",
+ "lead": "Vom ersten Preisgedanken bis zum Übergabeprotokoll: Ein Verkauf folgt einer festen Reihenfolge. Wer sie kennt, vermeidet teure Umwege.",
+ "kurz": "Von der Wertermittlung über die Vermarktung bis zu Notar und Übergabe.",
+ "bloecke": [
+  {
+   "h2": "1. Den Marktwert ermitteln"
+  },
+  {
+   "p": "Der wichtigste Schritt ist ein realistischer Preis. Ist er zu hoch, bleiben Käufer weg; ist er zu niedrig, verschenken Sie Geld. Der Marktwert ergibt sich nicht aus einer einzigen Zahl, sondern aus mehreren Verfahren und Datenquellen – je nachdem, was über die Immobilie bekannt ist."
+  },
+  {
+   "table": [
+    [
+     "Verfahren oder Quelle",
+     "Worauf es beruht",
+     "Wann es wichtig ist"
+    ],
+    [
+     "Vergleichswert",
+     "tatsächlich erzielte Preise ähnlicher Objekte in der Lage",
+     "vor allem bei Eigentumswohnungen und Reihenhäusern"
+    ],
+    [
+     "Ertragswert",
+     "nachhaltige Nettomiete und marktüblicher Liegenschaftszinssatz",
+     "bei Mehrfamilienhäusern, Zinshäusern und Gewerbe"
+    ],
+    [
+     "Sachwert",
+     "Bodenwert plus Zeitwert des Gebäudes",
+     "wenn es kaum Vergleichsobjekte gibt oder bei besonderen Gebäuden"
+    ],
+    [
+     "Daten des Gutachterausschusses",
+     "Bodenrichtwerte und Marktberichte aus beurkundeten Kaufverträgen",
+     "als amtliche Grundlage jeder seriösen Bewertung"
+    ],
+    [
+     "Beleihungswert der Bank",
+     "vorsichtige Bewertung als Sicherheit für den Kredit",
+     "bestimmt, wie viel der Käufer finanziert bekommt"
+    ]
+   ]
+  },
+  {
+   "p": "Der Beleihungswert liegt in der Regel unter dem Marktwert, häufig um 10 bis 20 Prozent. Für Verkäufer ist das relevant, weil er beeinflusst, ob Käufer den Preis finanzieren können. Das Sachwertverfahren bildet den Markt weniger gut ab und spielt beim Verkauf meist eine Nebenrolle."
+  },
+  {
+   "p": "In der Praxis werden mehrere Ergebnisse kombiniert und mit aktuellen Marktdaten abgeglichen; Lage, Zustand, Ausstattung und Energieeffizienz fließen ein. Bei einer vermieteten Wohnung zählt etwa der Ertragswert ebenso wie Vergleichsverkäufe und die Frage, was Banken Käufern derzeit finanzieren. Amtliche Marktzahlen für Bergisch Gladbach stehen auf unserer Startseite, Bodenrichtwerte auf den Stadtteilseiten."
+  },
+  {
+   "h2": "2. Unterlagen vorbereiten"
+  },
+  {
+   "p": "Gebraucht werden unter anderem Grundbuchauszug, Energieausweis und Baupläne, bei Eigentumswohnungen zusätzlich Teilungserklärung und Protokolle der Eigentümerversammlungen."
+  },
+  {
+   "h2": "3. Inserieren und vermarkten"
+  },
+  {
+   "p": "Angeboten wird die Immobilie über Portale, Zeitungen oder einen Makler. Entscheidend sind gute Fotos und eine aussagekräftige Beschreibung."
+  },
+  {
+   "h2": "4. Besichtigen und verhandeln"
+  },
+  {
+   "p": "Interessenten sollten die Immobilie persönlich ansehen können. In dieser Phase wird meist über Preis und weitere Bedingungen verhandelt."
+  },
+  {
+   "h2": "5. Kaufvertrag beim Notar"
+  },
+  {
+   "p": "Ist ein Käufer gefunden, entwirft der Notar den Kaufvertrag mit allen Vereinbarungen. Mit der Beurkundung wird der Vertrag wirksam."
+  },
+  {
+   "h2": "6. Übergabe und Eigentumswechsel"
+  },
+  {
+   "p": "Nach der Zahlung des Kaufpreises wird die Immobilie übergeben und der Käufer als Eigentümer ins Grundbuch eingetragen. Bei der Übergabe gehören alle wichtigen Dokumente in seine Hände, und ein Übergabeprotokoll hält den Zustand fest."
+  }
+ ],
+ "verwandt": [
+  "leistungen-makler",
+  "maklerkosten-beim-immobilienkauf",
+  "notarkosten-beim-immobilienkauf"
+ ]
+}
