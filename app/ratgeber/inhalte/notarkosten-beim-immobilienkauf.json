@@ -1,7 +1,7 @@
 {
  "slug": "notarkosten-beim-immobilienkauf",
  "rang": 12,
- "stand": "2026-09-13",
+ "stand": "2026-09-14",
  "titel": "Notarkosten beim Immobilienkauf in Bergisch Gladbach: Höhe und Leistungen",
  "metaTitel": "Notarkosten beim Immobilienkauf in Bergisch Gladbach | Stark & Hoffmann",
  "beschreibung": "Was der Notar beim Immobilienkauf kostet, wer die Kosten trägt, welche Leistungen enthalten sind und welche Gebühren das Grundbuchamt zusätzlich berechnet.",
@@ -12,31 +12,34 @@
    "h2": "Wie hoch die Notarkosten sind"
   },
   {
-   "p": "Die Notarkosten betragen beim Immobilienkauf in der Regel etwa 1,0 bis 1,5 Prozent des Kaufpreises. Grundlage ist das Gerichts- und Notarkostengesetz (GNotKG); die Gebühren sind bundesweit gleich und richten sich nach dem Kaufpreis. Enthalten sind neben der Beurkundung auch weitere Tätigkeiten rund um den Vertrag."
+   "p": "Die Notarkosten betragen beim Immobilienkauf meist rund 0,6 bis 1 Prozent des Kaufpreises. Grundlage ist das Gerichts- und Notarkostengesetz (GNotKG); die Gebühren sind bundesweit gleich. Nach Tabelle B aus dem Kaufpreis berechnet der Notar eine 2,0-Gebühr für die Beurkundung und je eine 0,5-Gebühr für Vollzug und Betreuung. Wird finanziert, kommt eine 1,0-Gebühr aus dem Betrag der Grundschuld hinzu. Auf alles fallen 19 Prozent Umsatzsteuer an, außerdem Auslagen."
   },
   {
    "table": [
     [
      "Kaufpreis",
-     "Notarkosten bei 1,0 %",
-     "bei 1,5 %"
+     "Notar ohne Finanzierung",
+     "Notar mit Grundschuld über 80 % des Kaufpreises"
     ],
     [
      "300.000 €",
-     "3.000 €",
-     "4.500 €"
+     "ca. 2.270 €",
+     "ca. 2.900 €"
     ],
     [
      "500.000 €",
-     "5.000 €",
-     "7.500 €"
+     "ca. 3.340 €",
+     "ca. 4.270 €"
     ],
     [
      "700.000 €",
-     "7.000 €",
-     "10.500 €"
+     "ca. 4.480 €",
+     "ca. 5.780 €"
     ]
    ]
+  },
+  {
+   "p": "Beträge einschließlich Umsatzsteuer, ohne Auslagen, berechnet nach Tabelle B des GNotKG."
   },
   {
    "h2": "Was der Notar dafür tut"
@@ -59,7 +62,7 @@
    "h2": "Gebühren des Grundbuchamts"
   },
   {
-   "p": "Zusätzlich zu den Notargebühren berechnet das Grundbuchamt die Umschreibungen und Eintragungen. Als Faustwert gelten etwa 0,5 Prozent des Kaufpreises."
+   "p": "Zusätzlich berechnet das Grundbuchamt eine 1,0-Gebühr für die Eigentumsumschreibung, eine 0,5-Gebühr für die Auflassungsvormerkung und bei Finanzierung eine 1,0-Gebühr für die Grundschuld. Das sind rund 0,3 bis 0,5 Prozent des Kaufpreises – bei 500.000 Euro etwa 1.430 Euro ohne und 2.210 Euro mit Grundschuld."
   },
   {
    "h2": "Neutral für beide Seiten"

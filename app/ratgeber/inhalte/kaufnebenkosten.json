@@ -5,7 +5,7 @@
  "titel": "Kaufnebenkosten in Bergisch Gladbach: Grunderwerbsteuer, Notar, Grundbuch, Makler",
  "metaTitel": "Kaufnebenkosten beim Immobilienkauf in Bergisch Gladbach | Stark & Hoffmann",
  "beschreibung": "Mit welchen Nebenkosten Käufer in Bergisch Gladbach rechnen müssen: 6,5 Prozent Grunderwerbsteuer in NRW, Notar, Grundbuch und Makler – mit Rechenbeispiel.",
- "lead": "Zum Kaufpreis kommen in Nordrhein-Westfalen schnell rund zwölf Prozent Nebenkosten hinzu. Die meisten davon müssen Käufer aus eigenem Geld bezahlen – deshalb gehören sie von Anfang an in die Planung.",
+ "lead": "Zum Kaufpreis kommen in Nordrhein-Westfalen mit Makler gut elf Prozent Nebenkosten hinzu. Die meisten davon müssen Käufer aus eigenem Geld bezahlen – deshalb gehören sie von Anfang an in die Planung.",
  "kurz": "Grunderwerbsteuer, Notar, Grundbuch und Makler – mit Rechenbeispiel und Spartipps.",
  "bloecke": [
   {
@@ -23,11 +23,11 @@
     ],
     [
      "Notar",
-     "etwa 1,0 bis 1,5 %"
+     "rund 0,6 bis 1 %"
     ],
     [
      "Grundbuchamt",
-     "etwa 0,5 %"
+     "rund 0,3 bis 0,5 %"
     ],
     [
      "Maklerprovision (Käuferanteil)",
@@ -36,7 +36,7 @@
    ]
   },
   {
-   "p": "Zusammengerechnet ergibt das bis zu rund 12 Prozent des Kaufpreises, wenn ein Makler beteiligt ist."
+   "p": "Zusammengerechnet sind das mit Makler rund 11 bis 12 Prozent des Kaufpreises, ohne Makler rund 7,5 bis 8 Prozent."
   },
   {
    "h2": "Grunderwerbsteuer: 6,5 Prozent in Nordrhein-Westfalen"
@@ -57,13 +57,13 @@
    "h2": "Notar"
   },
   {
-   "p": "Ohne Notar gibt es keinen Immobilienkauf. Seine Gebühren legt das Gerichts- und Notarkostengesetz (GNotKG) nach dem Kaufpreis fest. Für die Beurkundung fällt etwa 1 Prozent an, für Auflassungsvormerkung und weitere Tätigkeiten kommen rund 0,2 bis 0,3 Prozent hinzu – zusammen meist 1,0 bis 1,5 Prozent. Details stehen in unserem Beitrag zu den Notarkosten."
+   "p": "Ohne Notar gibt es keinen Immobilienkauf. Seine Gebühren legt das Gerichts- und Notarkostengesetz (GNotKG) fest, gerechnet nach Tabelle B aus dem Kaufpreis: Die Beurkundung kostet eine 2,0-Gebühr, Vollzug und Betreuung je eine 0,5-Gebühr, bei einer Finanzierung kommt für die Grundschuld eine 1,0-Gebühr aus deren Betrag dazu. Mit Umsatzsteuer sind das meist 0,6 bis 1 Prozent des Kaufpreises. Details stehen in unserem Beitrag zu den Notarkosten."
   },
   {
    "h2": "Grundbuchamt"
   },
   {
-   "p": "Das Grundbuchamt beim Amtsgericht berechnet Gebühren für die Eintragung des neuen Eigentümers und – bei einer Finanzierung – für die Grundschuld. Als grobe Größe gelten insgesamt etwa 0,5 Prozent des Kaufpreises; für die Grundschuld rechnet man mit rund 0,2 Prozent der Grundschuldsumme."
+   "p": "Das Grundbuchamt beim Amtsgericht berechnet eine 1,0-Gebühr für die Eintragung des neuen Eigentümers, eine 0,5-Gebühr für die Auflassungsvormerkung und – bei einer Finanzierung – eine 1,0-Gebühr für die Grundschuld. Zusammen sind das rund 0,3 bis 0,5 Prozent des Kaufpreises."
   },
   {
    "h2": "Makler"
@@ -92,14 +92,14 @@
      "32.500 €"
     ],
     [
-     "Notar",
-     "ca. 1,2 %",
-     "ca. 6.000 €"
+     "Notar (mit Grundschuld über 400.000 €, inkl. USt.)",
+     "ca. 0,85 %",
+     "ca. 4.270 €"
     ],
     [
      "Grundbuchamt",
-     "ca. 0,5 %",
-     "ca. 2.500 €"
+     "ca. 0,44 %",
+     "ca. 2.210 €"
     ],
     [
      "Makler (Käuferanteil)",
@@ -108,13 +108,13 @@
     ],
     [
      "Nebenkosten gesamt",
-     "ca. 11,8 %",
-     "ca. 58.850 €"
+     "ca. 11,4 %",
+     "ca. 56.830 €"
     ],
     [
      "Gesamtaufwand",
      "–",
-     "ca. 558.850 €"
+     "ca. 556.830 €"
     ]
    ]
   },
@@ -122,7 +122,7 @@
    "h2": "Nebenkosten und Finanzierung"
   },
   {
-   "p": "Die meisten Banken finanzieren nur den Kaufpreis. Die Nebenkosten – im Beispiel rund 59.000 Euro – müssen deshalb in der Regel aus eigenem Geld kommen. Verlangt eine Bank 20 bis 30 Prozent Eigenkapital einschließlich der Nebenkosten, sind es bei 558.850 Euro Gesamtaufwand rund 112.000 bis 168.000 Euro."
+   "p": "Die meisten Banken finanzieren nur den Kaufpreis. Die Nebenkosten – im Beispiel rund 56.800 Euro – müssen deshalb in der Regel aus eigenem Geld kommen. Verlangt eine Bank 20 bis 30 Prozent Eigenkapital einschließlich der Nebenkosten, sind es bei rund 556.800 Euro Gesamtaufwand etwa 111.000 bis 167.000 Euro."
   },
   {
    "h2": "So lassen sich Nebenkosten senken"
@@ -131,8 +131,8 @@
    "ul": [
     "Inventar wie Küche oder Einbauschränke im Kaufvertrag realistisch bepreisen und gesondert ausweisen.",
     "Nach provisionsfreien Angeboten fragen.",
-    "Förderprogramme der KfW prüfen – sie können den Finanzierungsbedarf senken.",
-    "Nicht auf günstigere Notare hoffen: Die Gebühren sind gesetzlich festgelegt und überall gleich."
+    "Das Wohneigentumsprogramm der KfW (124) prüfen: Es kann beim Kauf auch Notar, Makler und Grunderwerbsteuer mitfinanzieren.",
+    "Nicht auf günstigere Notare hoffen: Die Gebühren sind gesetzlich festgelegt, abweichende Vereinbarungen sind unwirksam (§ 125 GNotKG)."
    ]
   },
   {
