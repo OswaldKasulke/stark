@@ -3,6 +3,7 @@ import "./globals.css";
 import { defaultImage } from "./seo";
 import Consent from "./Consent";
 import GclidMerker from "./GclidMerker";
+import MobileMenu from "./MobileMenu";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://immobilienmakler-bergisch-gladbach.de/"),
@@ -52,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className="antialiased">{children}<Consent /><GclidMerker /></body>
+      <body className="antialiased">{children}<Consent /><GclidMerker /><MobileMenu /></body>
     </html>
   );
 }
