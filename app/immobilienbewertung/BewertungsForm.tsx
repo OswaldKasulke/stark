@@ -17,6 +17,8 @@ type ValuationResult={value:number;low:number;high:number;label:string;basis:str
 const AUSSERHALB_GEBIET="des gemeinsamen Bewertungsgebiets Köln, Rhein-Erft-Kreis, Leverkusen und Bergisch Gladbach";
 
 const money=(value:number)=>new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(Math.round(value/1000)*1000);
+// Die Jahresmiete im Rechenweg bleibt ungerundet, sonst ist die Rechnung nicht nachvollziehbar.
+const euroGenau=(value:number)=>new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR",minimumFractionDigits:0,maximumFractionDigits:2}).format(value);
 const numeric=(value:string)=>{
   if(!value)return 0;
   let text=String(value).replace(/[^0-9.,-]/g,"");
@@ -41,10 +43,10 @@ function calculate(data:ValuationData,candidates:AddressCandidate[]):ValuationRe
   }
   const shared=calculateShared({type:data.type,attributes:modelAttributes(data)},candidates);
   if(!istIRW(data.type)){
-    const adresse=`Adresse: ${data.street} ${data.number}, ${data.zip} ${data.city}${data.district?` · ${data.district}`:""}.`;
+    const adresse=`Adresse: ${`${data.street} ${data.number}`.trim()}, ${data.zip} ${data.city}${data.district?` · ${data.district}`:""}.`;
     const basisNeu=data.type==="Grundstück"
       ?`${shared.bodenrichtwert_eur_m2.toLocaleString("de-DE")} €/m² Bodenrichtwert × 0,8 → ${shared.pricePerSqm.toLocaleString("de-DE")} €/m² × ${numeric(data.plot).toLocaleString("de-DE")} m²`
-      :`${money(shared.jahresnettokaltmiete)} Jahresnettokaltmiete × Faktor ${shared.faktor.toFixed(2)}`;
+      :`${euroGenau(shared.jahresnettokaltmiete)} Jahresnettokaltmiete × Faktor ${shared.faktor.toFixed(2)}`;
     // Die Rechenzeile (basisNeu) stand bisher nur auf der Seite, nicht im
     // Protokoll. In der Lead-Mail fehlte damit die entscheidende Zahl: das
     // Verfahren nannte "Jahresnettokaltmiete ÷ Bruttorendite", die
@@ -57,7 +59,7 @@ function calculate(data:ValuationData,candidates:AddressCandidate[]):ValuationRe
       warning:"Unverbindliche Orientierung, keine Verkehrswertermittlung und kein Gutachten."};
   }
   const basis=`${shared.preis_master_eur_m2.toLocaleString("de-DE")} €/m² × Zustand ${shared.zustandsfaktor} → ${shared.pricePerSqm.toLocaleString("de-DE")} €/m² × ${numeric(data.living).toLocaleString("de-DE")} m²`;
-  const protocol=[`Adresse: ${data.street} ${data.number}, ${data.zip} ${data.city}${data.district?` · ${data.district}`:""}.`,`Preis-Master ${shared.lage}: ${shared.preis_master_eur_m2.toLocaleString("de-DE")} €/m².`,`Zustand und Ausstattung ${data.gstand||"—"} → Faktor ${shared.zustandsfaktor}.`,`${shared.pricePerSqm.toLocaleString("de-DE")} €/m² × ${numeric(data.living).toLocaleString("de-DE")} m² = ${money(shared.value)}; Spanne ±10 % ${money(shared.low)} bis ${money(shared.high)}.`];
+  const protocol=[`Adresse: ${`${data.street} ${data.number}`.trim()}, ${data.zip} ${data.city}${data.district?` · ${data.district}`:""}.`,`Preis-Master ${shared.lage}: ${shared.preis_master_eur_m2.toLocaleString("de-DE")} €/m².`,`Zustand und Ausstattung ${data.gstand||"—"} → Faktor ${shared.zustandsfaktor}.`,`${shared.pricePerSqm.toLocaleString("de-DE")} €/m² × ${numeric(data.living).toLocaleString("de-DE")} m² = ${money(shared.value)}; Spanne ±10 % ${money(shared.low)} bis ${money(shared.high)}.`];
   return{value:shared.value,low:shared.low,high:shared.high,label:"Geschätzter Immobilienwert",basis,comparison:shared.modellquelle,protocol:protocol.join("\n"),pricePerSqm:shared.pricePerSqm,warning:"Unverbindliche Orientierung, keine Verkehrswertermittlung und kein Gutachten."};
 }
 
