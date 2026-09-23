@@ -1,10 +1,25 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { properties } from "./immobilien";
 
-export default function ImmobilienGalerie() {
+type Item = (typeof properties)[number];
+
+// Galerie in einer Reihe zum seitlichen Blättern. Ohne `items` zeigt sie die
+// Startseitenauswahl; die Stadtteilseiten übergeben ihre eigene Auswahl.
+export default function ImmobilienGalerie({ items, moreLink = true }: { items?: Item[]; moreLink?: boolean } = {}) {
   const rail = useRef<HTMLDivElement>(null);
+  const [overflow, setOverflow] = useState(true);
+
+  useEffect(() => {
+    const element = rail.current;
+    if (!element) return;
+    const update = () => setOverflow(element.scrollWidth > element.clientWidth + 2);
+    const observer = new ResizeObserver(update);
+    observer.observe(element);
+    update();
+    return () => observer.disconnect();
+  }, []);
 
   const move = (direction: -1 | 1) => {
     const element = rail.current;
@@ -14,9 +29,9 @@ export default function ImmobilienGalerie() {
 
   return (
     <div className="listing-carousel">
-      <button className="listing-arrow listing-arrow-prev" type="button" aria-label="Vorherige Immobilien" onClick={() => move(-1)}>←</button>
+      <button className="listing-arrow listing-arrow-prev" type="button" hidden={!overflow} aria-label="Vorherige Immobilien" onClick={() => move(-1)}>←</button>
       <div className="listing-rail" ref={rail}>
-        {properties.map((property, index) => (
+        {(items ?? properties).map((property, index) => (
           <a className="listing-card" href={property.url} target="_blank" rel="noreferrer" key={property.url}>
             <img data-src={property.image} alt={property.alt} loading={index < 3 ? "eager" : "lazy"} className="external-media" />
             <div className="listing-card-overlay">
@@ -27,8 +42,8 @@ export default function ImmobilienGalerie() {
           </a>
         ))}
       </div>
-      <button className="listing-arrow listing-arrow-next" type="button" aria-label="Nächste Immobilien" onClick={() => move(1)}>→</button>
-      <p className="listing-more"><a className="button dark" href="https://evernest.com/de/search/?lat=50.9924&lng=7.1287&zoom=11" target="_blank" rel="noreferrer">Alle Immobilien im Umkreis ansehen</a></p>
+      <button className="listing-arrow listing-arrow-next" type="button" hidden={!overflow} aria-label="Nächste Immobilien" onClick={() => move(1)}>→</button>
+      {moreLink && <p className="listing-more"><a className="button dark" href="https://evernest.com/de/search/?lat=50.9924&lng=7.1287&zoom=11" target="_blank" rel="noreferrer">Alle Immobilien im Umkreis ansehen</a></p>}
     </div>
   );
 }

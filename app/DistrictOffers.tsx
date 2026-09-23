@@ -1,4 +1,5 @@
 import { properties } from "./immobilien";
+import ImmobilienGalerie from "./ImmobilienGalerie";
 
 function uniqueProperties() {
   const unique = new Map<string, (typeof properties)[number]>();
@@ -31,18 +32,7 @@ export default function DistrictOffers({ district }: { district: string }) {
         </div>
         <p>{localOffers ? `Evernest-Angebote und verkaufte Referenzen mit der Lageangabe Bergisch Gladbach-${district}.` : `Derzeit ist in ${district} kein eigenes Angebot oder keine verkaufte Referenz in der Evernest-Suche geführt. Hier sehen Sie Immobilien aus dem näheren Marktumfeld.`}</p>
       </div>
-      <div className="property-grid">
-        {offers.map((property, index) => (
-          <a className="property-card" href={property.url} target="_blank" rel="noreferrer" key={property.url}>
-            <div className="property-photo">
-              <img data-src={property.image} alt={property.alt} loading={index < 2 ? "eager" : "lazy"} className="external-media" />
-              {property.status && <span>{property.status}</span>}
-            </div>
-            <p className="property-place">{property.place}</p>
-            <h3>{property.price}</h3>
-          </a>
-        ))}
-      </div>
+      <ImmobilienGalerie items={offers} moreLink={false} />
       <p className="listing-more"><a className="button dark" href="https://evernest.com/de/search/?lat=50.9924&lng=7.1287&zoom=11" target="_blank" rel="noreferrer">Alle Immobilien im Umkreis ansehen</a></p>
     </section>
   );
