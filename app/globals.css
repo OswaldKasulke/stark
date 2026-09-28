@@ -429,3 +429,11 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 .rv-nav[disabled]{opacity:0;pointer-events:none}
 @media(max-width:900px){.review-grid.rv-track{grid-auto-columns:calc((100% - 24px)/2)}}
 @media(max-width:600px){.review-grid.rv-track{grid-auto-columns:88%}.rv-nav{display:none}}
+/* Suchprofil: kompakt, damit das ganze Formular auf einen Bildschirm passt */
+.form-row--3{grid-template-columns:1fr 1fr 1fr}
+.contact .suchprofil-form{padding:32px 36px}
+.contact .suchprofil-form .form-field{margin-bottom:12px}
+.contact .suchprofil-form .form-required{margin-bottom:14px}
+.contact .suchprofil-form textarea{resize:vertical}
+.suchprofil-page .contact h1{font-size:clamp(34px,4vw,52px);line-height:1.08;margin:0 0 22px}
+@media(max-width:980px){.contact .suchprofil-form .form-row{grid-template-columns:1fr 1fr;gap:12px}.contact .suchprofil-form .form-row--3{grid-template-columns:1fr 1fr 1fr}.contact .suchprofil-form{padding:22px 18px}.contact .suchprofil-form input,.contact .suchprofil-form select{min-width:0;width:100%}}

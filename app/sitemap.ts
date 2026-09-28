@@ -31,6 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/ratgeber/", ["app/ratgeber/page.tsx", "app/haeufige-fragen.ts"], "monthly", 0.8],
     ["/downloads/", ["app/downloads/page.tsx"], "monthly", 0.8],
     ["/team/", ["app/team/page.tsx"], "monthly", 0.8],
+    ["/suchprofil/", ["app/suchprofil/page.tsx", "app/SuchprofilForm.tsx"], "monthly", 0.6],
     ["/impressum/", ["app/impressum/page.tsx"], "yearly", 0.3],
     ["/agb/", ["app/agb/page.tsx"], "yearly", 0.3],
     ["/datenschutz/", ["app/datenschutz/page.tsx"], "yearly", 0.3],
