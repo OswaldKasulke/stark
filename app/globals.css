@@ -437,3 +437,9 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 .contact .suchprofil-form textarea{resize:vertical}
 .suchprofil-page .contact h1{font-size:clamp(34px,4vw,52px);line-height:1.08;margin:0 0 22px}
 @media(max-width:980px){.contact .suchprofil-form .form-row{grid-template-columns:1fr 1fr;gap:12px}.contact .suchprofil-form .form-row--3{grid-template-columns:1fr 1fr 1fr}.contact .suchprofil-form{padding:22px 18px}.contact .suchprofil-form input,.contact .suchprofil-form select{min-width:0;width:100%}}
+
+/* Lange Rezensionen auf 6 Zeilen kuerzen, "mehr" klappt auf (28.09.2026) */
+.rv-track blockquote>p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;line-clamp:6;overflow:hidden;flex:0 0 auto}
+.rv-track blockquote.offen>p{display:block;-webkit-line-clamp:unset;line-clamp:none}
+.rv-track blockquote cite{margin-top:auto}
+.rv-mehr{align-self:flex-start;background:none;border:0;padding:0;margin:0 0 18px;font:inherit;font-size:13px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
