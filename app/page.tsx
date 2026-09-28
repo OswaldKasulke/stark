@@ -61,9 +61,9 @@ const locations = [
 ];
 
 const marketFacts = [
-  ["1.251", "Kaufverträge", "im Marktjahr 2025"],
-  ["482 Mio. €", "Geldumsatz", "im gesamten Stadtgebiet 2025"],
-  ["332", "Ein- und Zweifamilienhäuser", "Verkäufe im Marktjahr 2025"],
+  ["1.251", "Kaufverträge", "im Marktjahr 2025 · +28 % zu 2024"],
+  ["482 Mio. €", "Geldumsatz", "im gesamten Stadtgebiet 2025 · +34 % zu 2024"],
+  ["332", "Ein- und Zweifamilienhäuser", "Verkäufe im Marktjahr 2025 · +17,7 % zu 2024"],
   ["+40,5 %", "Wohnungseigentum", "mehr Kauffälle als 2024"],
 ];
 
