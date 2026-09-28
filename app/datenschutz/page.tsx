@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { breadcrumbSchema, businessSchema, graphSchema, siteUrl } from "../seo";
+import SiteFooter from "@/app/SiteFooter";
+import HauptNav from "@/app/HauptNav";
 
 const url = `${siteUrl}/datenschutz/`;
 
@@ -14,7 +16,7 @@ export default function DatenschutzPage(){
   const schema = graphSchema(businessSchema, breadcrumbSchema([{ name: "Startseite", url: `${siteUrl}/` }, { name: "Datenschutz", url }]));
   return <main className="legal-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Seitennavigation"><a href="/">Startseite</a><a href="/team/">Team</a><a href="/impressum/">Impressum</a></nav><a className="header-phone" href="tel:+4922049147881">+49 2204 914 7881</a></header>
+    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><HauptNav/><a className="header-phone" href="tel:+4922049147881">+49 2204 914 7881</a></header>
 
     <section className="legal-hero"><p className="eyebrow light">Rechtliches</p><h1>Datenschutzerklärung</h1><p>Diese Erklärung beschreibt, welche personenbezogenen Daten beim Besuch von immobilienmakler-bergisch-gladbach.de verarbeitet werden und wozu.</p></section>
 
@@ -78,6 +80,6 @@ export default function DatenschutzPage(){
       </article>
     </section>
 
-    <footer><div className="footer-brand"><span className="brand-mark">S<span>&amp;</span>H</span><div><strong>Stark &amp; Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Kontakt</h4><p>Schloßstraße 41<br/>51429 Bergisch Gladbach</p><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></div><div><h4>Unternehmen</h4><a href="/">Startseite</a><a href="/team/">Team</a><a href="/downloads/">Downloads</a><a href="/immobilienbewertung/">Immobilienbewertung</a></div><div><h4>Rechtliches</h4><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a><a href="/datenschutz/">Datenschutz</a></div></footer>
+    <SiteFooter/>
   </main>;
 }

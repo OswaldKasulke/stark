@@ -7,6 +7,8 @@ import SoldReferences from "../../SoldReferences";
 import { soldByDistrict } from "../../verkauft";
 import { districtImages } from "../../district-images";
 import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../../seo";
+import SiteFooter from "@/app/SiteFooter";
+import HauptNav from "@/app/HauptNav";
 
 export function generateStaticParams(){ return districts.map(({slug})=>({slug})); }
 
@@ -42,7 +44,7 @@ export default async function DistrictPage({params}:{params:Promise<{slug:string
   ]);
   return <main className="district-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}} />
-    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Seitennavigation"><a href="/#profil">Profil</a><a href="/#fahrplan">Verkaufsfahrplan</a><a href="/#immobilien">Immobilien</a><a href="/#staedte">Stadtteile</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
+    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><HauptNav/><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
     <section className="district-hero" style={image?{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.1)),url(${image.src})`}:undefined}><div><p className="eyebrow light">Immobilienmakler {district.name} · Bergisch Gladbach</p><h1>Immobilienmakler {district.name}</h1><p>Immobilien verkaufen und bewerten – mit persönlicher Beratung durch den Standort Bergisch Gladbach.</p><a className="button gold" href="/immobilienbewertung/">Immobilienbewertung {district.name}</a></div>{image&&<a className="district-photo-credit" href={image.source} target="_blank" rel="noreferrer">Foto: {image.author} · Wikimedia Commons · {image.license} ↗</a>}</section>
     <section className="district-intro section"><div><p className="eyebrow">Stadtteilprofil</p><h2>{district.name} im Porträt</h2><p className="lead">{district.profile}</p><p>Zum 31. Dezember 2025 lebten hier <strong>{district.inhabitants} Einwohner</strong>. Für eine Immobilienbewertung werden neben der konkreten Lage auch Grundstück, Baujahr, Zustand, Nutzung und Energieeffizienz betrachtet.</p></div><aside><span>Stadtteilnummer</span><strong>{district.code}</strong><span>Einwohner 2025</span><strong>{district.inhabitants}</strong><small>Stand: 31.12.2025</small></aside></section>
     <DistrictOffers district={district.name} />
@@ -57,6 +59,6 @@ export default async function DistrictPage({params}:{params:Promise<{slug:string
     <section className="faq-section section"><div className="section-head"><div><p className="eyebrow">Kurz beantwortet</p><h2>Haus, Wohnung oder Grundstück in {district.name} verkaufen.</h2></div><p>Antworten für Eigentümer in Bergisch Gladbach-{district.name}.</p></div><div className="faq-grid">{districtFaq.map(item=><details className="faq-item" key={item.question}><summary>{item.question}<span>+</span></summary><div><p>{item.answer}</p></div></details>)}</div><p className="editorial-note">Stand: 25.08.2026 · Redaktion: Stark &amp; Hoffmann Immobilien · Marktdaten werden mit amtlichen Quellen belegt.</p></section>
     <section className="nearby section"><p className="eyebrow">Weitere Stadtteile</p><div>{nearby.map(item=><a href={`/stadtteile/${item.slug}/`} key={item.slug}><span>Immobilienmakler</span><strong>{item.name}</strong><b aria-hidden="true">→</b></a>)}</div></section>
     <section className="district-contact section" id="kontakt"><div><p className="eyebrow light">Kostenlose Erstberatung</p><h2>Immobilienbewertung in {district.name}</h2><p>Unverbindliche Anfrage an Ihre Immobilienmakler {district.name}.</p></div><div><a className="button gold" href="/immobilienbewertung/#bewertung">Bewertung anfragen</a><a href="tel:+4922049147881">+49 2204 914 7881</a></div></section>
-    <footer><div className="footer-brand"><span className="brand-mark">S<span>&</span>H</span><div><strong>Stark & Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Kontakt</h4><p>Schloßstraße 41<br/>51429 Bergisch Gladbach</p><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="/bergisch-gladbach/">Bergisch Gladbach</a></div><div><h4>Quellen</h4><a href="https://www.boris.nrw.de/">BORIS-NRW</a><a href="https://www.gars.nrw/stadt-gl/produkte-gl/bodenrichtwerte-gl">Gutachterausschuss</a></div><div><h4>Rechtliches</h4><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a><a href="/datenschutz/">Datenschutz</a></div></footer>
+    <SiteFooter/>
   </main>;
 }

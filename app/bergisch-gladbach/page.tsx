@@ -10,6 +10,8 @@ const soldAll = Object.values(soldByDistrict).flat().reduce<{street:string;typ:s
   return list;
 }, []).sort((a, b) => a.street.localeCompare(b.street, "de"));
 import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../seo";
+import SiteFooter from "@/app/SiteFooter";
+import HauptNav from "@/app/HauptNav";
 
 export const metadata: Metadata = {
   title: "Immobilienmarkt Bergisch Gladbach | Stadtteile & Bewertung",
@@ -47,7 +49,7 @@ export default function BergischGladbachPage() {
 
   return <main className="city-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}} />
-    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Seitennavigation"><a href="#profil">Stadtprofil</a><a href="#markt">Markt</a><a href="#stadtteile">Stadtteile</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
+    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><HauptNav/><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
 
     <section className="city-hero"><div><p className="eyebrow light">Immobilienstandort im Bergischen Land</p><h1>Immobilienmarkt Bergisch Gladbach</h1><p>Marktdaten, Immobilienpreise, Bodenrichtwerte und lokale Immobilienbewertung für Bergisch Gladbach (BGL) – von Schildgen bis Lustheide.</p><div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten</a><a className="text-link light" href="#stadtteile">Alle 25 Stadtteile <span>↓</span></a></div></div></section>
 
@@ -66,6 +68,6 @@ export default function BergischGladbachPage() {
 
     <section className="district-contact section"><div><p className="eyebrow light">Kostenlose Ersteinschätzung</p><h2>Was ist Ihre Immobilie in Bergisch Gladbach wert?</h2><p>Die Adresse wird dem richtigen Stadtteil und der passenden Marktlage zugeordnet.</p></div><div><a className="button gold" href="/immobilienbewertung/">Bewertung starten</a><a href="tel:+4922049147881">+49 2204 914 7881</a></div></section>
 
-    <footer><div className="footer-brand"><span className="brand-mark">S<span>&</span>H</span><div><strong>Stark & Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Kontakt</h4><p>Schloßstraße 41<br/>51429 Bergisch Gladbach</p><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></div><div><h4>Standort</h4><a href="/bergisch-gladbach/">Bergisch Gladbach</a><a href="/immobilienbewertung/">Immobilienbewertung</a></div><div><h4>Rechtliches</h4><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a><a href="/datenschutz/">Datenschutz</a></div></footer>
+    <SiteFooter/>
   </main>;
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { breadcrumbSchema, businessId, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "./seo";
+import SiteFooter from "@/app/SiteFooter";
+import HauptNav from "@/app/HauptNav";
 
 type SaleKind = "haus" | "wohnung" | "grundstueck";
 
@@ -98,13 +100,13 @@ export default function VerkaufenPage({ kind }: { kind: SaleKind }) {
   );
   return <main className="sale-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
-    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><nav aria-label="Seitennavigation"><a href="#wert">Wert</a><a href="#pruefung">Prüfung</a><a href="#unterlagen">Unterlagen</a><a href="#ablauf">Ablauf</a><a href="#faq">FAQ</a></nav><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
+    <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&amp;</span>H</span><span><strong>Stark &amp; Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><HauptNav/><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
     <section className="sale-hero"><div><p className="eyebrow light">Immobilienmakler Bergisch Gladbach · BGL</p><h1>{page.title}</h1><p>{page.intro}</p><div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Wert kostenlos einschätzen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 ↗</a></div></div></section>
     <section className="answer-section section" id="wert"><p className="eyebrow">Preis &amp; Wert</p><h2>{page.valueTitle}</h2><p className="lead">{page.valueText}</p><div className="answer-source"><strong>Kurzantwort:</strong> Ein realistischer Verkaufspreis entsteht aus konkreter Lage, Objektmerkmalen, Unterlagen und aktueller Nachfrage – nicht aus einem einzelnen pauschalen Quadratmeterwert.</div></section>
     <section className="check-section section" id="pruefung"><div className="section-head"><div><p className="eyebrow">Objektprüfung</p><h2>Was wir prüfen.</h2></div><p>{page.checkIntro}</p></div><div className="checks">{page.checks.map(([titel,text])=><p key={titel}><b>{titel}.</b> {text}</p>)}</div><div className="callout"><b>Warum das den Preis bewegt</b><p>{page.checkNote}</p></div></section>
     <section className="sale-columns section" id="unterlagen"><article><p className="eyebrow">Vorbereitung</p><h2>Welche Unterlagen werden benötigt?</h2><ul>{page.documents.map(item=><li key={item}>{item}</li>)}</ul><a className="source-link" href="/downloads/">Kostenlose Checklisten herunterladen →</a></article><article id="ablauf"><p className="eyebrow">Verkaufsablauf</p><h2>Vier klare Schritte.</h2><ol>{page.steps.map((item,index)=><li key={item}><span>0{index+1}</span>{item}</li>)}</ol></article></section>
     <section className="faq-section section" id="faq"><div className="section-head"><div><p className="eyebrow">Häufige Fragen</p><h2>Antworten für Eigentümer in Bergisch Gladbach.</h2></div><p>Kurze, belastbare Antworten zu Verkauf, Preis und Wert.</p></div><div className="faq-grid">{page.faq.map(([question,answer])=><details className="faq-item" key={question}><summary>{question}<span>+</span></summary><div><p>{answer}</p></div></details>)}</div><p className="editorial-note">Redaktionell geprüft durch Stark &amp; Hoffmann Immobilien GmbH · Stand 25.08.2026.</p></section>
     <section className="district-contact section"><div><p className="eyebrow light">Kostenlose Ersteinschätzung</p><h2>Verkauf in Bergisch Gladbach vorbereiten.</h2><p>Wir ordnen Lage, Unterlagen und Objektmerkmale ein und besprechen den passenden nächsten Schritt.</p></div><div><a className="button gold" href="/immobilienbewertung/">Bewertung starten</a><a href="tel:+4922049147881">+49 2204 914 7881</a></div></section>
-    <footer><div className="footer-brand"><span className="brand-mark">S<span>&amp;</span>H</span><div><strong>Stark &amp; Hoffmann Immobilien</strong><small>Evernest Lizenzpartner Bergisch Gladbach</small></div></div><div><h4>Verkaufen</h4><a href="/haus-verkaufen-bergisch-gladbach/">Haus verkaufen</a><a href="/wohnung-verkaufen-bergisch-gladbach/">Wohnung verkaufen</a><a href="/grundstueck-verkaufen-bergisch-gladbach/">Grundstück verkaufen</a></div><div><h4>Region</h4><a href="/bergisch-gladbach/">Bergisch Gladbach</a><a href="/#staedte">Stadtteile &amp; Umland</a></div><div><h4>Rechtliches</h4><a href="/impressum/">Impressum</a><a href="/agb/">AGB</a></div></footer>
+    <SiteFooter/>
   </main>;
 }
