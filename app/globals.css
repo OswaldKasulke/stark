@@ -391,3 +391,6 @@ header.site-header.menu-offen nav a:last-child{border-bottom:0}}
 .sold-grid aside strong{display:block;font:400 56px Georgia,serif;line-height:1}
 .sold-grid aside span{display:block;margin-top:10px;color:var(--muted);font-size:13px;line-height:1.5}
 @media(max-width:760px){.sold-grid{grid-template-columns:1fr;gap:30px}.sold-grid ul{columns:1}}
+
+/* H1 ohne automatische Silbentrennung, damit das Keyword am Handy ganz bleibt (28.09.2026) */
+@media(max-width:650px){h1{-webkit-hyphens:manual;hyphens:manual}body .hero h1,body .district-hero h1{font-size:clamp(28px,8.6vw,43px);min-width:0;overflow-wrap:anywhere}}
