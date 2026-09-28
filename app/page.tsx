@@ -5,6 +5,8 @@ import ContactForm from "./ContactForm";
 import { businessSchema, graphSchema, siteUrl } from "./seo";
 import SiteFooter from "@/app/SiteFooter";
 import HauptNav from "@/app/HauptNav";
+import ReviewCarousel from "@/app/ReviewCarousel";
+import googleReviews from "@/app/google-reviews.json";
 
 const heroImage = "/location/2.jpg";
 const serviceLinks = [
@@ -44,11 +46,6 @@ const legacyProperties = [
 // "Google-Bewertung, 2025" unter jedem Zitat — unabhaengig davon, wie alt die
 // zitierte Rezension war, und damit still veraltend.
 // Quelle: Google-Rezensionen des Standorts, abgerufen am 07.09.2026.
-const reviews = [
-  ["Keran Sondrie", "Von der ersten Besichtigung bis zur finalen Übergabe stand er uns stets mit Rat und Tat zur Seite.", "Juni 2026"],
-  ["Ingrid Paschmann", "Unsere Wohnung wurde in kürzester Zeit und zu fairen Konditionen verkauft.", "Mai 2026"],
-  ["Marianne Linden", "Seine Kaufpreisermittlung erfolgte kompetent und stimmte zu 100% mit dem erzielten Kaufpreis überein.", "April 2026"],
-];
 
 const googleReviewsUrl = "https://www.google.com/maps/place/Evernest+Bergisch+Gladbach+-+Stark+%26+Hoffmann+Immobilien+GmbH/@50.9659599,7.1237848,14z/data=!4m10!1m2!2m1!1shoffmann+und+stark!3m6!1s0x47bed77e6a23d7b5:0xa1ba73d86f4ba04f!8m2!3d50.9659599!4d7.1598337!15sChJob2ZmbWFubiB1bmQgc3RhcmtaFCISaG9mZm1hbm4gdW5kIHN0YXJrkgEScmVhbF9lc3RhdGVfYWdlbnRzmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0V1ZGTldSWGxsVlVwcVVWWk9iVTlZUWxSaVZWWlFZVE53YVZadFl4QULgAQD6AQUInAQQSg!16s%2Fg%2F11pq_xh29r?entry=ttu";
 
@@ -128,8 +125,8 @@ export default function Home() {
     </section>
 
     <section className="reviews section">
-      <div className="reviews-title"><p className="eyebrow light">Was Kunden über uns sagen</p><h2>Vertrauen entsteht durch gute Arbeit.</h2><div className="rating-sources"><a href={googleReviewsUrl} target="_blank" rel="noreferrer" aria-label="Google-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>4,9 / 5</strong><small>Google · 111 Rezensionen</small></a><a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer" aria-label="Trustlocal-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>9,2 / 10</strong><small>Trustlocal · 91 Bewertungen</small></a></div><p className="reviews-source-note">Stand: 24.08.2026 · Quellen und vollständige Bewertungen: <a href={googleReviewsUrl} target="_blank" rel="noreferrer">Google ↗</a> und <a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer">Trustlocal ↗</a></p></div>
-      <div className="review-grid">{reviews.map(([name,quote,date])=><blockquote key={name}><div>★★★★★</div><p>„{quote}“</p><cite>{name}<span>Google-Bewertung, {date}</span></cite></blockquote>)}</div>
+      <div className="reviews-title"><p className="eyebrow light">Was Kunden über uns sagen</p><h2>Vertrauen entsteht durch gute Arbeit.</h2><div className="rating-sources"><a href={googleReviewsUrl} target="_blank" rel="noreferrer" aria-label="Google-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>{googleReviews.rating} / 5</strong><small>Google · {googleReviews.count} Rezensionen</small></a><a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer" aria-label="Trustlocal-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>9,2 / 10</strong><small>Trustlocal · 91 Bewertungen</small></a></div><p className="reviews-source-note">Google-Stand: {googleReviews.checked_at.split("-").reverse().join(".")} · Trustlocal-Stand: 24.08.2026 · Quellen und vollständige Bewertungen: <a href={googleReviewsUrl} target="_blank" rel="noreferrer">Google ↗</a> und <a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer">Trustlocal ↗</a></p></div>
+      <ReviewCarousel reviews={googleReviews.reviews} />
     </section>
 
     <section className="cities section" id="staedte">

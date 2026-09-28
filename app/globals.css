@@ -417,3 +417,15 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 .site-footer .sf-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 32px;border-top:1px solid rgba(255,255,255,.12);padding-top:24px}
 .site-footer .sf-bottom span{font-size:12px;color:#7f908d}
 .site-footer .sf-google>*{white-space:nowrap}
+
+/* Rezensions-Karussell (28.09.2026) */
+.rv-carousel{position:relative}
+.review-grid.rv-track{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.rv-track::-webkit-scrollbar{display:none}
+.rv-track blockquote{scroll-snap-align:start}
+.rv-track cite a,.rv-track cite span{display:block;font-weight:400;font-size:11px;margin-top:6px;color:inherit;opacity:.7}
+.rv-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid rgba(0,0,0,.15);background:#fff;color:#000;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.rv-nav--prev{left:-22px}.rv-nav--next{right:-22px}
+.rv-nav[disabled]{opacity:0;pointer-events:none}
+@media(max-width:900px){.review-grid.rv-track{grid-auto-columns:calc((100% - 24px)/2)}}
+@media(max-width:600px){.review-grid.rv-track{grid-auto-columns:88%}.rv-nav{display:none}}
