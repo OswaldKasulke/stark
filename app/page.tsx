@@ -85,7 +85,7 @@ export default function Home() {
 
     <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.08) 82%),url(${heroImage})`}}>
       <div className="hero-content">
-        <p className="eyebrow light">Ihre Immobilienmakler in Bergisch Gladbach</p>
+        <p className="eyebrow light">EVERNEST Lizenzpartner · Immobilienmakler Bergisch Gladbach</p>
         <h1>Immobilienmakler Bergisch Gladbach.<br/>Persönlich begleitet.</h1>
         <p className="hero-copy">Stark &amp; Hoffmann begleitet Eigentümer beim Verkauf und bei der Bewertung von Häusern, Wohnungen und Grundstücken in Bergisch Gladbach – regional auch BGL genannt – sowie im Umland.</p>
         <div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
@@ -94,7 +94,7 @@ export default function Home() {
     </section>
 
     <section className="profile section" id="profil">
-      <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Evernest Immobilienbüro in der Schloßstraße in Bergisch Gladbach"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
+      <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Stark & Hoffmann, Immobilienmakler Bergisch Gladbach – Büro in der Schloßstraße"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
         <p className="eyebrow">Unser Profil</p><h2>Zuhause in Bensberg, unterwegs im ganzen Stadtgebiet.</h2>
         <p className="lead">Den Evernest-Standort Bergisch Gladbach führt die Stark &amp; Hoffmann Immobilien GmbH als Lizenznehmerin, mit Patrick Stark und Julian Hoffmann als Geschäftsführern.</p>
@@ -149,7 +149,7 @@ export default function Home() {
     </section>
 
     <section className="contact section" id="kontakt">
-      <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie uns im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></address></div>
+      <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie Ihre Immobilienmakler Bergisch Gladbach im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></address></div>
       <ContactForm/>
     </section>
 

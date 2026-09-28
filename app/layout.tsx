@@ -8,7 +8,7 @@ import MobileMenu from "./MobileMenu";
 export const metadata: Metadata = {
   metadataBase: new URL("https://immobilienmakler-bergisch-gladbach.de/"),
   title: "Immobilienmakler Bergisch Gladbach | Stark & Hoffmann",
-  description: "Lokale Immobilienmakler in Bergisch Gladbach: Bewertung, Verkauf und persönliche Beratung durch Stark & Hoffmann Immobilien.",
+  description: "Immobilienmakler Bergisch Gladbach: Bewertung, Verkauf und persönliche Beratung durch Stark & Hoffmann Immobilien.",
   alternates: { canonical: "https://immobilienmakler-bergisch-gladbach.de/" },
   openGraph: {
     title: "Immobilienmakler Bergisch Gladbach | Stark & Hoffmann",
