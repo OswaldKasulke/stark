@@ -9,7 +9,7 @@ import HauptNav from "@/app/HauptNav";
 import ReviewCarousel from "@/app/ReviewCarousel";
 import googleReviews from "@/app/google-reviews.json";
 
-export const metadata: Metadata = { description: "Immobilienmakler Bergisch Gladbach: Stark & Hoffmann ist Ihr Makler für Häuser, Wohnungen und Grundstücke in allen 25 Stadtteilen – mit Showroom in Bensberg." };
+export const metadata: Metadata = { description: "Immobilienmakler Bergisch Gladbach: Immobilie verkaufen mit Stark & Hoffmann, Ihrem Makler für Häuser, Wohnungen und Grundstücke in allen 25 Stadtteilen." };
 
 const heroImage = "/location/2.jpg";
 const serviceLinks = [
@@ -89,7 +89,7 @@ export default function Home() {
       <div className="hero-content">
         <p className="eyebrow light">EVERNEST Lizenzpartner · Immobilienmakler Bergisch Gladbach</p>
         <h1>Immobilienmakler Bergisch Gladbach.<br/>Persönlich begleitet.</h1>
-        <p className="hero-copy">Stark &amp; Hoffmann begleitet Eigentümer beim Verkauf und bei der Bewertung von Häusern, Wohnungen und Grundstücken in Bergisch Gladbach – regional auch BGL genannt – sowie im Umland.</p>
+        <p className="hero-copy">Sie möchten Ihre Immobilie in Bergisch Gladbach verkaufen? Stark &amp; Hoffmann begleitet Eigentümer beim Verkauf und bei der Bewertung von Häusern, Wohnungen und Grundstücken – in allen 25 Stadtteilen und im Umland.</p>
         <div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
         <div className="trust-row"><span>Lokale Expertise</span><span>Persönliche Beratung</span><span>Digital unterstützt</span></div>
       </div>
@@ -107,7 +107,7 @@ export default function Home() {
     </section>
 
     <section className="seo-services section" aria-labelledby="verkaufen-heading">
-      <div className="section-head"><div><p className="eyebrow">Immobilie verkaufen in Bergisch Gladbach</p><h2 id="verkaufen-heading">Welches Eigentum möchten Sie verkaufen?</h2></div><p>Objektart, Lage und Unterlagen bestimmen den richtigen Verkaufsweg. Unsere Fachseiten beantworten die wichtigsten Fragen mit lokalen Markt- und Bewertungsinformationen.</p></div>
+      <div className="section-head"><div><p className="eyebrow">Haus, Wohnung oder Grundstück</p><h2 id="verkaufen-heading">Immobilie verkaufen in Bergisch Gladbach.</h2></div><p>Objektart, Lage und Unterlagen bestimmen den richtigen Verkaufsweg. Unsere Fachseiten beantworten die wichtigsten Fragen mit lokalen Markt- und Bewertungsinformationen.</p></div>
       <div className="seo-service-grid">{serviceLinks.map(([title,url,text])=><a href={url} key={url}><span>Verkaufsratgeber</span><h3>{title}</h3><p>{text}</p><b>Mehr erfahren →</b></a>)}</div>
     </section>
 
@@ -118,7 +118,7 @@ export default function Home() {
     </section>
 
     <section className="process section dark-section" id="fahrplan">
-      <div className="section-head"><div><p className="eyebrow light">Verkaufsfahrplan</p><h2>In sechs Schritten zum erfolgreichen Verkauf.</h2></div><p>Ein klarer Prozess schafft Sicherheit. Wir halten Sie in jeder Phase auf dem Laufenden und kümmern uns um die vollständige Abwicklung.</p></div>
+      <div className="section-head"><div><p className="eyebrow light">Verkaufsfahrplan</p><h2>So verkaufen wir Ihre Immobilie in Bergisch Gladbach – in sechs Schritten.</h2></div><p>Ein klarer Prozess schafft Sicherheit. Wir halten Sie in jeder Phase auf dem Laufenden und kümmern uns um die vollständige Abwicklung.</p></div>
       <div className="steps">{steps.map(([number,title,text])=><article className="step" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
 
