@@ -12,6 +12,11 @@ on:
       - next.config.ts
       - tsconfig.json
       - .github/workflows/deploy-bgl.yml
+  workflow_run:
+    # Der Listings-Commit kommt vom GITHUB_TOKEN und loest keinen push-Workflow
+    # aus - ohne diesen Trigger ginge die Aktualisierung nie live.
+    workflows: ["Update BGL Listings"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -24,6 +29,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
