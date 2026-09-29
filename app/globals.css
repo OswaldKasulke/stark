@@ -448,3 +448,5 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 .brw-table small{display:block;font:12px/1.4 Arial,sans-serif;color:rgba(255,255,255,.6);margin-top:4px}
 .city-hero>div{min-width:0;max-width:min(700px,100%)}
 @media(max-width:520px){.city-hero h1{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}}
+/* Stadtteilporträt: eigener, belegter Text je Stadtteil (app/portraets.ts) */
+.portrait{background:#fff}.portrait>div{max-width:760px}.portrait h2{margin-bottom:26px}.portrait p:not(.eyebrow){font-size:17px;line-height:1.75;margin:0 0 18px;color:#1b1b1b}
