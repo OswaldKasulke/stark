@@ -9,7 +9,7 @@ function Karte({ r }: { r: Review }) {
   const [offen, setOffen] = useState(false);
   useEffect(() => { const pruefe = () => { const p = text.current; if (p) setLang(p.scrollHeight > p.clientHeight + 2); }; pruefe(); document.fonts?.ready.then(pruefe); }, []);
   return <blockquote className={offen ? "offen" : undefined}>
-    <div aria-label={`${r.stars} von 5 Sternen`}>{"★".repeat(r.stars)}{"☆".repeat(5 - r.stars)}</div>
+    <div role="img" aria-label={`${r.stars} von 5 Sternen`}>{"★".repeat(r.stars)}{"☆".repeat(5 - r.stars)}</div>
     <p ref={text}>„{r.text}“</p>
     {lang && <button type="button" className="rv-mehr" onClick={() => setOffen(!offen)}>{offen ? "weniger" : "mehr"}</button>}
     <cite>{r.author}{r.source_url ? <a href={r.source_url} target="_blank" rel="noreferrer">Rezension auf Google</a> : <span>Google-Bewertung</span>}</cite>
