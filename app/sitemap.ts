@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/downloads/", ["app/downloads/page.tsx"], "monthly", 0.8],
     ["/team/", ["app/team/page.tsx"], "monthly", 0.8],
     ["/suchprofil/", ["app/suchprofil/page.tsx", "app/SuchprofilForm.tsx"], "monthly", 0.6],
+    ["/bodenrichtwert-bergisch-gladbach/", ["app/bodenrichtwert-bergisch-gladbach/page.tsx"], "monthly", 0.7],
     ["/impressum/", ["app/impressum/page.tsx"], "yearly", 0.3],
     ["/agb/", ["app/agb/page.tsx"], "yearly", 0.3],
     ["/datenschutz/", ["app/datenschutz/page.tsx"], "yearly", 0.3],
