@@ -4,7 +4,7 @@ import SiteFooter from "@/app/SiteFooter";
 import HauptNav from "@/app/HauptNav";
 
 export const metadata: Metadata = {
-  title: "Team | Immobilienmakler Bergisch Gladbach",
+  title: "Unser Team | Stark & Hoffmann Bergisch Gladbach",
   description: "Das Team von Stark & Hoffmann Immobilien in Bergisch Gladbach: persönliche Ansprechpartner für Immobilienbewertung, Verkauf und Vermietung.",
   alternates: { canonical: `${siteUrl}/team/` },
   openGraph: { title: "Unser Team | Stark & Hoffmann Immobilien", description: "Ihre persönlichen Ansprechpartner in Bergisch Gladbach.", url: `${siteUrl}/team/`, images: [defaultImage] },

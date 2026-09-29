@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { artikel } from "./ratgeber/artikel";
 import { districts } from "./stadtteile";
 import ImmobilienGalerie from "./ImmobilienGalerie";
@@ -7,6 +8,8 @@ import SiteFooter from "@/app/SiteFooter";
 import HauptNav from "@/app/HauptNav";
 import ReviewCarousel from "@/app/ReviewCarousel";
 import googleReviews from "@/app/google-reviews.json";
+
+export const metadata: Metadata = { description: "Immobilienmakler Bergisch Gladbach: Stark & Hoffmann ist Ihr Makler für Häuser, Wohnungen und Grundstücke in allen 25 Stadtteilen – mit Showroom in Bensberg." };
 
 const heroImage = "/location/2.jpg";
 const serviceLinks = [
@@ -95,8 +98,8 @@ export default function Home() {
     <section className="profile section" id="profil">
       <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Stark & Hoffmann, Immobilienmakler Bergisch Gladbach – Büro in der Schloßstraße"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
-        <p className="eyebrow">Unser Profil</p><h2>Zuhause in Bensberg, unterwegs im ganzen Stadtgebiet.</h2>
-        <p className="lead">Den Evernest-Standort Bergisch Gladbach führt die Stark &amp; Hoffmann Immobilien GmbH als Lizenznehmerin, mit Patrick Stark und Julian Hoffmann als Geschäftsführern.</p>
+        <p className="eyebrow">Unser Profil</p><h2>Ihr Makler in Bergisch Gladbach – zuhause in Bensberg.</h2>
+        <p className="lead">Als Makler in Bergisch Gladbach führt die Stark &amp; Hoffmann Immobilien GmbH den Evernest-Standort als Lizenznehmerin, mit Patrick Stark und Julian Hoffmann als Geschäftsführern.</p>
         <p>Wer uns besuchen möchte, findet den Showroom an der Schloßstraße: Es ist das letzte Geschäft, bevor die Auffahrt zum Bensberger Schloss beginnt. Von hier aus sind wir für Eigentümer in allen 25 Stadtteilen da, dazu in Odenthal, Kürten, Overath, Lindlar und Engelskirchen – egal, ob ein Verkauf ansteht, ein Kauf oder eine Vermietung. Digitale Werkzeuge erledigen bei uns die Routine; für Ihre Fragen nehmen wir uns im direkten Gespräch Zeit.</p>
         <div className="profile-points"><span>Bewertung mit örtlichen Marktdaten</span><span>Klassisch, diskret oder Off-Market</span><span>Kaufinteressenten vorab geprüft</span><span>Begleitung bis zur Übergabe</span></div>
         <a className="button dark" href="/team/">Das Team kennenlernen</a>
@@ -148,7 +151,7 @@ export default function Home() {
     </section>
 
     <section className="contact section" id="kontakt">
-      <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie Ihre Immobilienmakler Bergisch Gladbach im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></address></div>
+      <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie Ihre Makler in Bergisch Gladbach im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></address></div>
       <ContactForm/>
     </section>
 
