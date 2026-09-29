@@ -445,3 +445,6 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 .rv-mehr{align-self:flex-start;background:none;border:0;padding:0;margin:0 0 18px;font:inherit;font-size:13px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .table-link{margin:-6px 0 14px;font-size:13px}.table-link a{color:#dfc378}
 .brw .brw-table td a{color:#dfc378}
+.brw-table small{display:block;font:12px/1.4 Arial,sans-serif;color:rgba(255,255,255,.6);margin-top:4px}
+.city-hero>div{min-width:0;max-width:min(700px,100%)}
+@media(max-width:520px){.city-hero h1{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}}
