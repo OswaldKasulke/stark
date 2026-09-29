@@ -102,7 +102,7 @@ export const portraets: Record<string, Portraet> = {
   "gronau": {
     "titel": "Gronau im Porträt",
     "absaetze": [
-      "Der Name Gronau soll auf „Groenauwe“, grüne Aue, zurückgehen: Um 1845 lag hier noch ein Wiesental in der Rheinebene, durchflossen von der Strunde. Heute stehen an ihrer Stelle Wohn- und Gewerbegebiete, die Strunde fließt in einem engen Bett, und ein Randkanal schützt vor Hochwasser.",
+      "Der Name Gronau soll auf „Groenauwe“, grüne Aue, zurückgehen: Um 1845 lag hier noch ein Wiesental in der Rheinebene, durchflossen von der Strunde. Heute stehen an ihrer Stelle Industrie- und Wohnansiedlungen, die Strunde fließt in einem engen Bett, und ein Randkanal schützt vor Hochwasser.",
       "Sechs Strundemühlen lagen in Gronau, unter ihnen die Kieppemühle, die Dünnmühle und die Gierather Mühle. Ab der Mitte des 19. Jahrhunderts wurde nach Eisenerz und Buntmetallen gegraben, etwa in den Gruben Habsburg und Hohenzollern.",
       "Gronau liegt im Westen der Stadt, grenzt an Köln und an die Stadtteile Hand, Paffrath, Stadtmitte, Heidkamp, Lückerath, Kippekausen, Alt Refrath und Refrath. Bis zur A 4 in Lustheide sind es etwa drei Kilometer."
     ],
