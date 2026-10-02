@@ -207,14 +207,6 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/6l655ogt4aioarFOJRfF2h/"
   },
   {
-    "place": "Bergisch Gladbach-Lustheide, 51427",
-    "price": "895.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/60oR1MQiK4A6kfjmUVxNkH/9337dd8a982993b4df863eef141b2eef/337733cc-e6ca-453f-9791-ac620b47be1e?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Helles Wohnzimmer mit großen Fenstern, Parkettboden und Blick in den Garten.",
-    "url": "https://www.evernest.com/de/listing/4sOpQWb7lTSp2u8YVKd1b1/"
-  },
-  {
     "place": "Bergisch Gladbach-Kaule, 51429",
     "price": "1.840.000 €",
     "status": "",
@@ -413,5 +405,13 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/46L1Jf9LbHbYMeAY57w5yn/a866e603738342ef38cd3bdf54489f27/1f1fb29a-71f4-48ed-a6dd-786b30784bb0?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Luftaufnahme eines Hauses mit Wintergarten und Garten, umgeben von Bäumen und Wegen.",
     "url": "https://www.evernest.com/de/listing/45DYL5NfNYRI0Ly4tatuao/"
+  },
+  {
+    "place": "Leverkusen-Bergisch-Neukirchen, 51381",
+    "price": "695.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/6xlUUSesEAG5sSMJKZXcym/b51066c2924848a0fdbcf83c1885ad17/85cdfee2-51fa-47e4-a196-c6a45d4d58e7?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Gemütlicher Balkon mit Sitzmöbeln, vielen Pflanzen und Blick ins Grüne.",
+    "url": "https://www.evernest.com/de/listing/62Py2QbZt9RsPi8twJDNL6/"
   }
 ];
