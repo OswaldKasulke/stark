@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 03.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 04.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
