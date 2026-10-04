@@ -247,6 +247,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/2a0HNTmKuXRf1lohi07T7p/"
   },
   {
+    "place": "Bergisch Gladbach-Bärbroich, 51429",
+    "price": "575.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/P5RjO9PWFLhVUPvnOXMmj/a85b80269a482b5963174adac3101ef7/de752037-a363-45bd-a200-21f9cb3fe229?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Steinhaus mit Balkon, Terrasse und Sitzbank, daneben gepflasterte Auffahrt mit geparktem Auto.",
+    "url": "https://www.evernest.com/de/listing/2pVOksOD3lJ69kprWa8i1D/"
+  },
+  {
     "place": "Leverkusen-Schlebusch, 51375",
     "price": "699.000 €",
     "status": "",
@@ -405,13 +413,5 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/46L1Jf9LbHbYMeAY57w5yn/a866e603738342ef38cd3bdf54489f27/1f1fb29a-71f4-48ed-a6dd-786b30784bb0?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Luftaufnahme eines Hauses mit Wintergarten und Garten, umgeben von Bäumen und Wegen.",
     "url": "https://www.evernest.com/de/listing/45DYL5NfNYRI0Ly4tatuao/"
-  },
-  {
-    "place": "Leverkusen-Bergisch-Neukirchen, 51381",
-    "price": "695.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/6xlUUSesEAG5sSMJKZXcym/b51066c2924848a0fdbcf83c1885ad17/85cdfee2-51fa-47e4-a196-c6a45d4d58e7?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Gemütlicher Balkon mit Sitzmöbeln, vielen Pflanzen und Blick ins Grüne.",
-    "url": "https://www.evernest.com/de/listing/62Py2QbZt9RsPi8twJDNL6/"
   }
 ];
