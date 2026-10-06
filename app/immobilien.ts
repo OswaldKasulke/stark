@@ -151,6 +151,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/5FYxtqa6aknNkXCDhz7F8l/"
   },
   {
+    "place": "Bergisch Gladbach-Herkenrath, 51429",
+    "price": "795.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/3a8jGomhBPznWdlLexfq0G/6ab38ddccedec6855f21f6ebfae9e0e8/434ddfca-8354-4c78-bd0f-b4d6cdebad44?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Zweistöckiges Wohnhaus mit rotem Klinkersockel, Garage und kleinem Vorgarten.",
+    "url": "https://www.evernest.com/de/listing/2uURBlpIov5gs5KyxjgOjt/"
+  },
+  {
     "place": "Bergisch Gladbach-Refrath, 51427",
     "price": "458.500 €",
     "status": "",
@@ -405,13 +413,5 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/5Mn4Vjc5ILOL29cp8vYdEN/e35d53ec7d82efc20880b8b5d5522147/74f2f9a8-7956-4cec-af05-29c745c39e34?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Grüne Rasenfläche mit Blumenkübel und angrenzendem Wohngebäude mit Balkonen.",
     "url": "https://www.evernest.com/de/listing/3Bs9Sfefa29TS809QZd8In/"
-  },
-  {
-    "place": "Leverkusen-Bergisch-Neukirchen, 51379",
-    "price": "539.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/46L1Jf9LbHbYMeAY57w5yn/a866e603738342ef38cd3bdf54489f27/1f1fb29a-71f4-48ed-a6dd-786b30784bb0?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Luftaufnahme eines Hauses mit Wintergarten und Garten, umgeben von Bäumen und Wegen.",
-    "url": "https://www.evernest.com/de/listing/45DYL5NfNYRI0Ly4tatuao/"
   }
 ];
