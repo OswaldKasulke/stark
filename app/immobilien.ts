@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 06.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 07.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -295,6 +295,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/5ZmxUCrrNhAYRY7tHXEnTE/"
   },
   {
+    "place": "Köln-Buchheim, 51067",
+    "price": "265.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/5qtcaN1tFBjKWaZnltTSRb/0a26c50fda706b82d161ddd0d4d514f7/9debc2b4-4ddd-48fa-8066-7890b867b803?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Essbereich mit Esstisch und schwarzen Stühlen, großes Fenster mit blauen Vorhängen, TV-Schrankwand.",
+    "url": "https://www.evernest.com/de/listing/5COyoAXSrPLgd0769t920c/"
+  },
+  {
     "place": "Rösrath-Kleineichen, 51503",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -405,13 +413,5 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/5k3EdGXLwzZrdZMJ7CKUjT/90d71a0a92a37b6214406a053e1ca978/eb611764-05df-462f-ab82-59a914e861a5?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller Wohn- und Essbereich mit rundem Holztisch, beigen Stühlen und schwarzer Einbauküche.",
     "url": "https://www.evernest.com/de/listing/1bL20wHL4foRCmqc2EGBCK/"
-  },
-  {
-    "place": "Köln-Deutz, 50679",
-    "price": "Preis auf Anfrage",
-    "status": "Verkauft",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/5Mn4Vjc5ILOL29cp8vYdEN/e35d53ec7d82efc20880b8b5d5522147/74f2f9a8-7956-4cec-af05-29c745c39e34?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Grüne Rasenfläche mit Blumenkübel und angrenzendem Wohngebäude mit Balkonen.",
-    "url": "https://www.evernest.com/de/listing/3Bs9Sfefa29TS809QZd8In/"
   }
 ];
