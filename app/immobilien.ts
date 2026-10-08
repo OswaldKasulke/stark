@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 07.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 08.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -298,8 +298,8 @@ export const properties: Property[] = [
     "place": "Köln-Buchheim, 51067",
     "price": "265.000 €",
     "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/5qtcaN1tFBjKWaZnltTSRb/0a26c50fda706b82d161ddd0d4d514f7/9debc2b4-4ddd-48fa-8066-7890b867b803?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Essbereich mit Esstisch und schwarzen Stühlen, großes Fenster mit blauen Vorhängen, TV-Schrankwand.",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/cQ7WknpXpdfyw5G5CnFDK/cea564644e7c230757b0d2f5224b0310/17db5b7e-8d91-4b9c-a5b5-192700cbdf7d?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Heller Flur mit Fliesenboden, Garderobe und Blick in ein Kinderzimmer mit Etagenbett.",
     "url": "https://www.evernest.com/de/listing/5COyoAXSrPLgd0769t920c/"
   },
   {
