@@ -345,6 +345,8 @@ header.site-header.menu-offen nav a:last-child{border-bottom:0}}
    Der Verweis auf die Nachbarregionen bekommt ein eigenes Mass. */
 .location-grid--paar{grid-template-columns:repeat(2,minmax(0,1fr));max-width:558px}
 @media(max-width:520px){.location-grid--paar{grid-template-columns:1fr;max-width:none}}
+.location-grid--drei{grid-template-columns:repeat(3,minmax(0,1fr));max-width:837px}
+@media(max-width:760px){.location-grid--drei{grid-template-columns:1fr;max-width:none}}
 
 
 /* Im Hinweiskasten der Bewertung stand jede Hervorhebung in 20px Serifenschrift –
