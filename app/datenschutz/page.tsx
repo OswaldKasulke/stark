@@ -25,7 +25,7 @@ export default function DatenschutzPage(){
         <h2>1. Verantwortliche Stelle</h2>
         <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
         <p>Stark &amp; Hoffmann Immobilien GmbH<br/>Schloßstraße 41<br/>51429 Bergisch Gladbach<br/>Amtsgericht Köln, HRB 116396<br/>Geschäftsführer: Patrick Stark, Julian Hoffmann</p>
-        <p>Telefon: <a href="tel:+4922049147881">+49 2204 914 7881</a><br/>E-Mail: <a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></p>
+        <p>Telefon: <a href="tel:+4922049147881">+49 2204 914 7881</a><br/>E-Mail: <a href="mailto:patrick.stark@evernest.com">patrick.stark@evernest.com</a></p>
         <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.</p>
 
         <h2>2. Hosting</h2>
@@ -76,7 +76,7 @@ export default function DatenschutzPage(){
         <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten (Art. 15 DSGVO). Sie haben außerdem ein Recht auf Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO) und Datenübertragbarkeit (Art. 20 DSGVO).</p>
         <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen, die auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO erfolgt (Art. 21 DSGVO).</p>
         <p>Ihnen steht ferner ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.</p>
-        <p>Für Anliegen zum Datenschutz erreichen Sie uns unter <a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a>.</p>
+        <p>Für Anliegen zum Datenschutz erreichen Sie uns unter <a href="mailto:patrick.stark@evernest.com">patrick.stark@evernest.com</a>.</p>
 
         <p className="editorial-note">Stand dieser Datenschutzerklärung: 14. September 2026.</p>
       </article>

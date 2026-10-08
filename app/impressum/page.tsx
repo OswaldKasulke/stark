@@ -23,7 +23,7 @@ export default function ImpressumPage() {
         <h3>Vertretungsberechtigte Geschäftsführer</h3>
         <p>Patrick Stark<br/>Julian Hoffmann</p>
         <h3>Kontakt</h3>
-        <p>Telefon: <a href="tel:+4922049147881">+49 2204 914 7881</a><br/>E-Mail: <a href="mailto:bergischgladbach@evernest.com">bergischgladbach@evernest.com</a></p>
+        <p>Telefon: <a href="tel:+4922049147881">+49 2204 914 7881</a><br/>E-Mail: <a href="mailto:patrick.stark@evernest.com">patrick.stark@evernest.com</a></p>
         <h3>Registereintrag</h3>
         <p>Registergericht: Amtsgericht Köln<br/>Handelsregisternummer: HRB 116396</p>
         <h3>Berufsbezeichnung und zuständige Kammer</h3> <p>Berufsbezeichnung: Immobilienmakler (IHK-zertifiziert)<br/>Zuständige Kammer: Industrie- und Handelskammer zu Köln<br/>Verliehen in: Deutschland</p> <h3>Erlaubnis und Aufsichtsbehörde</h3>

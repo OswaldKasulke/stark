@@ -11,7 +11,7 @@ export const businessSchema = {
   url: `${siteUrl}/`,
   image: defaultImage,
   telephone: "+49 2204 914 7881",
-  email: "bergischgladbach@evernest.com",
+  email: "patrick.stark@evernest.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Schloßstraße 41",
