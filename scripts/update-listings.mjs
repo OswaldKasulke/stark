@@ -86,11 +86,15 @@ function aufbereiten(item) {
   };
 }
 
-function datei(objekte, stand) {
-  const eintraege = objekte.map((o) => {
+function liste(objekte) {
+  return objekte.map((o) => {
     const { _km, ...rest } = o;
     return '  ' + JSON.stringify(rest, null, 2).split('\n').join('\n  ');
   }).join(',\n');
+}
+
+function datei(objekte, alle, stand) {
+  const eintraege = liste(objekte);
 
   return `export type Property = {
   place: string;
@@ -110,7 +114,51 @@ function datei(objekte, stand) {
 export const properties: Property[] = [
 ${eintraege}
 ];
+
+// Vollbestand fuer die Orts- und Stadtteilseiten: alle Objekte im Kasten,
+// per Kachelraster geholt (die API liefert je Abfrage hoechstens 20 verkaufte).
+export const alleObjekte: Property[] = [
+${liste(alle)}
+];
 `;
+}
+
+// Die Such-API liefert je Abfrage hoechstens 20 verkaufte Objekte. Ein einziger
+// Abruf ueber den ganzen Kasten verlor deshalb z. B. alle Overather Referenzen.
+// Kacheln, die die Deckelung erreichen, werden geviertelt (wie auf romanbecker.de).
+const SOLD_CAP = 20;
+const MAX_DEPTH = 5;
+
+async function abfrage(latMin, latMax, lngMin, lngMax) {
+  const bounds = {
+    nw: { lat: latMax, lng: lngMin }, ne: { lat: latMax, lng: lngMax },
+    sw: { lat: latMin, lng: lngMin }, se: { lat: latMin, lng: lngMax },
+  };
+  const antwort = await fetch(API, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'User-Agent': UA },
+    body: JSON.stringify({ bounds, preview: false }),
+  });
+  if (!antwort.ok) throw new Error(`Evernest-API HTTP ${antwort.status}`);
+  return (await antwort.json())?.searchResults ?? [];
+}
+
+async function raster() {
+  const gefunden = new Map();
+  async function ernte(latMin, latMax, lngMin, lngMax, tiefe) {
+    const res = await abfrage(latMin, latMax, lngMin, lngMax);
+    for (const x of res) if (x?.sys?.id) gefunden.set(x.sys.id, x);
+    const verkauft = res.filter((x) => x.salesStatus === 'sold').length;
+    if (verkauft >= SOLD_CAP && tiefe < MAX_DEPTH) {
+      const mLat = (latMin + latMax) / 2, mLng = (lngMin + lngMax) / 2;
+      await ernte(latMin, mLat, lngMin, mLng, tiefe + 1);
+      await ernte(latMin, mLat, mLng, lngMax, tiefe + 1);
+      await ernte(mLat, latMax, lngMin, mLng, tiefe + 1);
+      await ernte(mLat, latMax, mLng, lngMax, tiefe + 1);
+    }
+  }
+  await ernte(BOUNDS.sw.lat, BOUNDS.nw.lat, BOUNDS.nw.lng, BOUNDS.ne.lng, 0);
+  return [...gefunden.values()];
 }
 
 async function main() {
@@ -141,7 +189,14 @@ async function main() {
   console.log(`${objekte.length} Objekte uebernommen (${aktiv} aktiv, ${objekte.length - aktiv} verkauft/reserviert), davon ${inBgl.length} in Bergisch Gladbach`);
 
   const stand = new Date().toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
-  const inhalt = datei(objekte, stand);
+  const gesehenAlle = new Set();
+  const alle = (await raster())
+    .map((item) => aufbereiten(item))
+    .filter((o) => o && !gesehenAlle.has(o.url) && gesehenAlle.add(o.url))
+    .sort((a, b) => a._km - b._km);
+  console.log(`Vollbestand per Raster: ${alle.length} Objekte (${alle.filter((o) => o.status === 'Verkauft').length} verkauft)`);
+
+  const inhalt = datei(objekte, alle, stand);
 
   if (dry) {
     console.log('\n--dry: app/immobilien.ts nicht geschrieben');
