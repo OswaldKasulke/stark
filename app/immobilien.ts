@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 09.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 10.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -232,7 +232,7 @@ export const properties: Property[] = [
   },
   {
     "place": "Odenthal-Glöbusch, 51519",
-    "price": "875.000 €",
+    "price": "795.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/lgLAfzcNzytn60vu0LjJf/76b42c7ff54c35037de12604baac636f/48197efa-2caf-41ad-a721-f59d4dfd5c88?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Einfamilienhaus mit Garten, Einfahrt und geparktem Auto an einer Straßenecke.",
@@ -301,14 +301,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/cQ7WknpXpdfyw5G5CnFDK/cea564644e7c230757b0d2f5224b0310/17db5b7e-8d91-4b9c-a5b5-192700cbdf7d?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller Flur mit Fliesenboden, Garderobe und Blick in ein Kinderzimmer mit Etagenbett.",
     "url": "https://www.evernest.com/de/listing/5COyoAXSrPLgd0769t920c/"
-  },
-  {
-    "place": "Rösrath-Kleineichen, 51503",
-    "price": "Preis auf Anfrage",
-    "status": "Verkauft",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/6CqfP832jqoJBrDoLq8UrX/489931234423b7005b9e77b95b67ecb5/7da6356a-8801-4b5c-b8cf-0407e8902204?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Helles Wohnzimmer mit Holzfußboden, Treppe und großen Fenstern zum Garten.",
-    "url": "https://www.evernest.com/de/listing/7L4aOQw8f26ve1WXpPzQ6U/"
   },
   {
     "place": "Köln-Höhenberg, 51103",
@@ -413,6 +405,14 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/5k3EdGXLwzZrdZMJ7CKUjT/90d71a0a92a37b6214406a053e1ca978/eb611764-05df-462f-ab82-59a914e861a5?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller Wohn- und Essbereich mit rundem Holztisch, beigen Stühlen und schwarzer Einbauküche.",
     "url": "https://www.evernest.com/de/listing/1bL20wHL4foRCmqc2EGBCK/"
+  },
+  {
+    "place": "Leverkusen-Bergisch-Neukirchen, 51379",
+    "price": "539.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/46L1Jf9LbHbYMeAY57w5yn/a866e603738342ef38cd3bdf54489f27/1f1fb29a-71f4-48ed-a6dd-786b30784bb0?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Luftaufnahme eines Hauses mit Wintergarten und Garten, umgeben von Bäumen und Wegen.",
+    "url": "https://www.evernest.com/de/listing/45DYL5NfNYRI0Ly4tatuao/"
   }
 ];
 
@@ -1021,7 +1021,7 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Odenthal-Glöbusch, 51519",
-    "price": "875.000 €",
+    "price": "795.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/lgLAfzcNzytn60vu0LjJf/76b42c7ff54c35037de12604baac636f/48197efa-2caf-41ad-a721-f59d4dfd5c88?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Einfamilienhaus mit Garten, Einfahrt und geparktem Auto an einer Straßenecke.",
@@ -2509,6 +2509,14 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Köln-Lindenthal, 50935",
+    "price": "1.780.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/3tYJA02GML3IOQ9mwgaZqq/e17437b094e8f8db56af3d310fac52ac/6cc59786-c693-46c2-a3a5-1cfe542a1c43?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helle, moderne Küche mit Kücheninsel, Holzboden und großen Fenstern im Hintergrund.",
+    "url": "https://www.evernest.com/de/listing/3CyQIAFh3hpsK6BO6fy5b3/"
+  },
+  {
+    "place": "Köln-Lindenthal, 50935",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/47ZTClLhnfPvSGMxA4RMiH/a611bc75f7c0cfc4b2493983f1c9e998/8e1b8cc9-ff27-4702-af8b-80b3d83896c9?w=960&h=600&fit=fill&fm=webp&q=82",
@@ -2677,14 +2685,6 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Köln-Junkersdorf, 50858",
-    "price": "898.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/1nikcTs23ocCnN3Dqxzo6W/f8c43c1e2435de6954fcec8929697d95/9d8e0ba1-d96b-4b5a-a5c6-d9b849f9eb1d?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Sonnige Terrasse mit Liege, Pflanzenkübeln und Blick auf Garten und Bäume.",
-    "url": "https://www.evernest.com/de/listing/1jXPUCFu83H76cvq7SPQqm/"
-  },
-  {
-    "place": "Köln-Junkersdorf, 50858",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/7AOLNngsbebj50f0QaJmPC/1d9ecb31e096d380c9e82fc343c59030/0209954c-2b59-4fb0-91e0-d90710853dfd?w=960&h=600&fit=fill&fm=webp&q=82",
@@ -2834,6 +2834,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/3AQwQ6YgIGk9DyPElpxcnX/7ff958ff38f53ec35bb1db18ac9c0d0b/ab1d05fb-6452-4e5d-a158-5a9132020b53?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller, leerer Raum mit großen Fliesen und bodentiefen Fenstern zum Garten.",
     "url": "https://www.evernest.com/de/listing/5KH7cly6FrahvymXvmGzuO/"
+  },
+  {
+    "place": "Wesseling, 50389",
+    "price": "895.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/3rAgmWUeGD1ivtP3NAljy7/34e90047f40095782051f2020de11753/28f2aebf-6a22-47c1-84fd-2ebfb9496815?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Moderner Garten mit Terrasse, Esstisch, Stühlen, Sofa und Baum vor einem Wohnhaus.",
+    "url": "https://www.evernest.com/de/listing/6SnW6PUHzfmQeJ0nx5ENYo/"
   },
   {
     "place": "Wuppertal-Kohlfurth, 42349",
@@ -3628,6 +3636,14 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/7HwSi9ARDjNvO3JuhpWPy4/"
   },
   {
+    "place": "Düsseldorf-Oberbilk, 40227",
+    "price": "297.500 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/BvUfKmpTtWry9AY9jrgyC/2dcec4533da0cceb8ac414234f2734bc/f974bbdd-1a52-49de-8621-013f44b74d18?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Heller Wohnraum mit Holzfußboden, Sessel, Stehlampe, Kommode und einer weißen Wendeltreppe.",
+    "url": "https://www.evernest.com/de/listing/lH3AIbtRzrJ4nU5BaHpco/"
+  },
+  {
     "place": "Düsseldorf-Bilk, 40225",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -4202,6 +4218,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/76owIiJC8tZ5OINkMzoJ5J/215b8bcac67c73cc8c75e5fb02d37f97/b80b4cca-96b8-441f-9b64-cf9228c1588e?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Moderner Wohnkomplex mit Balkonen, Garten und gepflastertem Weg, umgeben von Hecken.",
     "url": "https://www.evernest.com/de/listing/5PnaFbLVdEr1FQ7JfFzqOb/"
+  },
+  {
+    "place": "Düsseldorf-Pempelfort, 40477",
+    "price": "790.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/64tVzU1UA9MnQk9lCGpI8H/d0b9f703b216dcb4b7572a0415d3b228/f2a76d1a-6859-46e9-821e-260875c4585b?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Hauseingang",
+    "url": "https://www.evernest.com/de/listing/7yeEXQgcBHa0vtSh3lbbuX/"
   },
   {
     "place": "Düsseldorf-Pempelfort, 40477",
