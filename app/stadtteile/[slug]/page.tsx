@@ -7,6 +7,7 @@ import DistrictOffers from "../../DistrictOffers";
 import SoldReferences from "../../SoldReferences";
 import { soldByDistrict } from "../../verkauft";
 import { districtImages } from "../../district-images";
+import { wochenmaerkte, wochenmarktQuelle } from "../../wochenmaerkte";
 import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../../seo";
 import SiteFooter from "@/app/SiteFooter";
 import HauptNav from "@/app/HauptNav";
@@ -44,12 +45,15 @@ export default async function DistrictPage({params}:{params:Promise<{slug:string
     faqSchema(districtFaq),
   ]);
   const portraet = portraets[district.slug];
+  const maerkte = wochenmaerkte[district.slug];
+  const marktOrt = district.slug==="stadtmitte" ? "der Stadtmitte" : district.name;
   return <main className="district-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}} />
     <header className="site-header"><a className="brand" href="/"><span className="brand-mark">S<span>&</span>H</span><span><strong>Stark & Hoffmann</strong><small>Immobilien · Bergisch Gladbach</small></span></a><HauptNav/><a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a></header>
     <section className="district-hero" style={image?{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.1)),url(${image.src})`}:undefined}><div><p className="eyebrow light">Immobilienmakler {district.name} · Bergisch Gladbach</p><h1>Immobilienmakler {district.name}</h1><p>Immobilien verkaufen und bewerten – mit persönlicher Beratung durch den Standort Bergisch Gladbach. Als Ihr Makler in {district.name} begleiten wir Sie von der Bewertung bis zum Notartermin.</p><a className="button gold" href="/immobilienbewertung/">Immobilienbewertung {district.name}</a></div>{image&&<a className="district-photo-credit" href={image.source} target="_blank" rel="noreferrer">Foto: {image.author} · Wikimedia Commons · {image.license} ↗</a>}</section>
     {portraet && <section className="portrait section"><div><p className="eyebrow">Stadtteilporträt</p><h2>{portraet.titel}</h2>{portraet.absaetze.map((absatz,i)=><p key={i}>{absatz}</p>)}</div></section>}
     <section className="district-intro section"><div><p className="eyebrow">Stadtteilprofil</p><h2>{portraet ? `${district.name} auf einen Blick` : `${district.name} im Porträt`}</h2>{!portraet && <p className="lead">{district.profile}</p>}<p>Zum 31. Dezember 2025 lebten hier <strong>{district.inhabitants} Einwohner</strong>. Für eine Immobilienbewertung werden neben der konkreten Lage auch Grundstück, Baujahr, Zustand, Nutzung und Energieeffizienz betrachtet.</p></div><aside><span>Stadtteilnummer</span><strong>{district.code}</strong><span>Einwohner 2025</span><strong>{district.inhabitants}</strong><small>Stand: 31.12.2025</small></aside></section>
+    {maerkte && <section className="markets section" id="wochenmarkt"><p className="eyebrow">Wochenmarkt</p><h2>{maerkte.length>1?`Wochenmärkte in ${marktOrt}`:`Wochenmarkt in ${marktOrt}`}</h2><ul className="market-list">{maerkte.map(m=><li key={m.ort}><strong>{m.ort}</strong><span>{m.zeiten}</span></li>)}</ul><a className="source-link" href={wochenmarktQuelle} target="_blank" rel="noreferrer">Quelle: Stadt Bergisch Gladbach, Wochenmärkte ↗</a></section>}
     <DistrictOffers district={district.name} />
     <SoldReferences place={district.name} items={soldByDistrict[district.name]} />
     <section className="street-directory section" id="strassen"><p className="eyebrow">Straßenverzeichnis</p><h2>Alle Straßen in Bergisch Gladbach-{district.name}</h2><p>Sie besitzen eine Immobilie in einer dieser {districtStreets.length} Straßen? Ein Klick auf den Straßennamen öffnet die kostenlose Immobilienbewertung mit vorausgewählter Adresse.</p><details><summary>Straßenverzeichnis {district.name} anzeigen ({districtStreets.length} Straßen)</summary><div className="district-street-grid">{districtStreets.map((street)=><div className="district-street" key={street.name}><a href={`/immobilienbewertung/#street=${encodeURIComponent(street.name)}`}>{street.name}<span>Bewertung starten →</span></a><a className="map-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${street.name}, Bergisch Gladbach`)}`} target="_blank" rel="noreferrer" aria-label={`${street.name} auf Google Maps anzeigen`}>⌖</a></div>)}</div></details></section>
