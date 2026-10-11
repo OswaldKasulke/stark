@@ -2836,14 +2836,6 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/5KH7cly6FrahvymXvmGzuO/"
   },
   {
-    "place": "Wesseling, 50389",
-    "price": "895.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/3rAgmWUeGD1ivtP3NAljy7/34e90047f40095782051f2020de11753/28f2aebf-6a22-47c1-84fd-2ebfb9496815?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Moderner Garten mit Terrasse, Esstisch, Stühlen, Sofa und Baum vor einem Wohnhaus.",
-    "url": "https://www.evernest.com/de/listing/6SnW6PUHzfmQeJ0nx5ENYo/"
-  },
-  {
     "place": "Wuppertal-Kohlfurth, 42349",
     "price": "399.000 €",
     "status": "",
