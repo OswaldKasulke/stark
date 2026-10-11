@@ -10,7 +10,7 @@ export type ResolvedAddress = { zip:string; district:string; city:string; region
 // "12/14") - sonst bleibt die Nummer im Suchbegriff und die Trefferliste leer.
 const NUMMER=/[\s,]+(\d+\s*[a-zA-Z]?(?:\s*[-–\/]\s*\d+\s*[a-zA-Z]?)?)\s*$/;
 // Gespeicherte Browser-Adressen bringen oft einen Zusatz hinter der Hausnummer
-// mit ("Weisshausstrasse 23, Datenschwester GmbH"). Alles ab dem Komma nach der
+// mit ("Musterweg 5, Firma XY GmbH"). Alles ab dem Komma nach der
 // Nummer faellt weg, sonst findet die Suche die Strasse nicht.
 const ZUSATZ=/^(.*?\D[\s,]+\d+\s*[a-zA-Z]?(?:\s*[-–\/]\s*\d+\s*[a-zA-Z]?)?)\s*,.*$/;
 export function ohneZusatz(eingabe:string){return (eingabe||"").replace(ZUSATZ,"$1");}
