@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 11.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 12.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -224,6 +224,14 @@ export const properties: Property[] = [
   },
   {
     "place": "Bergisch Gladbach-Moitzfeld, 51429",
+    "price": "499.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/3gMVtgOM7NjwvnI4ZLHgeD/9e2268dae4af2b6ab43fe07a9ef8c645/f1343825-533a-4b32-bdbf-4dd3979a42dd?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Garten mit Rasen, Terrasse und Baum vor einem Wohnhaus mit Balkonen.",
+    "url": "https://www.evernest.com/de/listing/3Clt5hKLDQvLpclAUCD5NZ/"
+  },
+  {
+    "place": "Bergisch Gladbach-Moitzfeld, 51429",
     "price": "180.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/12HUCToDPAFBBxLcSO00aZ/02b71a671a5326e70edcf0deb85ee279/3a07ff20-2afa-4d36-8aa4-aa645d1dadc2?w=960&h=600&fit=fill&fm=webp&q=82",
@@ -405,14 +413,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/5k3EdGXLwzZrdZMJ7CKUjT/90d71a0a92a37b6214406a053e1ca978/eb611764-05df-462f-ab82-59a914e861a5?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller Wohn- und Essbereich mit rundem Holztisch, beigen Stühlen und schwarzer Einbauküche.",
     "url": "https://www.evernest.com/de/listing/1bL20wHL4foRCmqc2EGBCK/"
-  },
-  {
-    "place": "Leverkusen-Bergisch-Neukirchen, 51379",
-    "price": "539.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/46L1Jf9LbHbYMeAY57w5yn/a866e603738342ef38cd3bdf54489f27/1f1fb29a-71f4-48ed-a6dd-786b30784bb0?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Luftaufnahme eines Hauses mit Wintergarten und Garten, umgeben von Bäumen und Wegen.",
-    "url": "https://www.evernest.com/de/listing/45DYL5NfNYRI0Ly4tatuao/"
   }
 ];
 
@@ -954,6 +954,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/71KkpnP0mGJhUOOOSYv4cP/473bfd214a763fc1620dee8634e47a9f/fb018c9b-20e6-48a9-aae5-bab8a2f7e033?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Luftaufnahme eines Wohngebäudes mit begrüntem Dach, umgeben von Bäumen und Parkplätzen.",
     "url": "https://www.evernest.com/de/listing/5tICXsWCObrtdkbra5Zoc5/"
+  },
+  {
+    "place": "Bergisch Gladbach-Moitzfeld, 51429",
+    "price": "499.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/3gMVtgOM7NjwvnI4ZLHgeD/9e2268dae4af2b6ab43fe07a9ef8c645/f1343825-533a-4b32-bdbf-4dd3979a42dd?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Garten mit Rasen, Terrasse und Baum vor einem Wohnhaus mit Balkonen.",
+    "url": "https://www.evernest.com/de/listing/3Clt5hKLDQvLpclAUCD5NZ/"
   },
   {
     "place": "Köln-Dellbrück, 51069",
