@@ -231,6 +231,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/3Clt5hKLDQvLpclAUCD5NZ/"
   },
   {
+    "place": "Bergisch Gladbach-Lustheide, 51427",
+    "price": "199.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/6uPG2CO0LGFgKN6TEVD7bn/1e4d0db76486a718b045069ad3c6d2ce/55fb1767-5ca3-45fd-961b-5efcd06d776d?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Mehrstöckiges Wohngebäude mit Balkonen und gepflegten Hecken an einer Straße.",
+    "url": "https://www.evernest.com/de/listing/3Bczle4hHCYNMlk2MiDnii/"
+  },
+  {
     "place": "Bergisch Gladbach-Moitzfeld, 51429",
     "price": "180.000 €",
     "status": "",
@@ -309,6 +317,14 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/cQ7WknpXpdfyw5G5CnFDK/cea564644e7c230757b0d2f5224b0310/17db5b7e-8d91-4b9c-a5b5-192700cbdf7d?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller Flur mit Fliesenboden, Garderobe und Blick in ein Kinderzimmer mit Etagenbett.",
     "url": "https://www.evernest.com/de/listing/5COyoAXSrPLgd0769t920c/"
+  },
+  {
+    "place": "Rösrath-Kleineichen, 51503",
+    "price": "Preis auf Anfrage",
+    "status": "Verkauft",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/6CqfP832jqoJBrDoLq8UrX/489931234423b7005b9e77b95b67ecb5/7da6356a-8801-4b5c-b8cf-0407e8902204?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helles Wohnzimmer mit Holzfußboden, Treppe und großen Fenstern zum Garten.",
+    "url": "https://www.evernest.com/de/listing/7L4aOQw8f26ve1WXpPzQ6U/"
   },
   {
     "place": "Köln-Höhenberg, 51103",
@@ -397,22 +413,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1TqmDlGafZIfOqlssMCkhU/60aef889a965f715dc78f29f638e518c/c33ad73c-ec57-42e0-847c-00d889d14868?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Luftaufnahme eines bewachsenen Grundstücks neben einer Straße und Wohnhäusern.",
     "url": "https://www.evernest.com/de/listing/15OcXDJG8SO3K9lcLBlHD3/"
-  },
-  {
-    "place": "Köln-Niehl, 50735",
-    "price": "325.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/6hW2H7eNkOcbBAbeDmV9rk/23751bdd63c019e8eba09a09521c831e/823a31bf-9a0b-4895-9ccc-86ed22308a6a?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Leerer, heller Raum mit weißen Fliesen, großem Fenster und Tür, Blick nach draußen.",
-    "url": "https://www.evernest.com/de/listing/6dfBgQE4AleYMtMGn0YqO7/"
-  },
-  {
-    "place": "Leverkusen-Opladen, 51379",
-    "price": "519.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/5k3EdGXLwzZrdZMJ7CKUjT/90d71a0a92a37b6214406a053e1ca978/eb611764-05df-462f-ab82-59a914e861a5?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Heller Wohn- und Essbereich mit rundem Holztisch, beigen Stühlen und schwarzer Einbauküche.",
-    "url": "https://www.evernest.com/de/listing/1bL20wHL4foRCmqc2EGBCK/"
   }
 ];
 
@@ -970,6 +970,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/3AZ87ybj3jKJxpfQ6Ul4vB/ee5f95902a9896d7f9253a8960a97b14/b5fce58b-e4fa-4565-971b-52b2dc76a23e?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Gepflegter Garten mit Gehweg führt zu einem Einfamilienhaus mit Satteldach.",
     "url": "https://www.evernest.com/de/listing/4RIyPHsAMtdtajwe5Rd9kB/"
+  },
+  {
+    "place": "Bergisch Gladbach-Lustheide, 51427",
+    "price": "199.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/6uPG2CO0LGFgKN6TEVD7bn/1e4d0db76486a718b045069ad3c6d2ce/55fb1767-5ca3-45fd-961b-5efcd06d776d?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Mehrstöckiges Wohngebäude mit Balkonen und gepflegten Hecken an einer Straße.",
+    "url": "https://www.evernest.com/de/listing/3Bczle4hHCYNMlk2MiDnii/"
   },
   {
     "place": "Bergisch Gladbach-Moitzfeld, 51429",
@@ -2900,14 +2908,6 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/6EN4HB1GIIlgzTe3AQVpZY/"
   },
   {
-    "place": "Wesseling-Keldenich, 50389",
-    "price": "219.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/5Kq1kGhXtNpcUl8UHqCCUa/bb6be9af092879d1a04fd419197a94f0/40bad65e-3f24-4d16-a543-ba105daac27d?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Helles Esszimmer mit Holztisch, vier Stühlen, Sideboards und großen Fenstern mit Blick ins Grüne.",
-    "url": "https://www.evernest.com/de/listing/2ePhy4kJjARQ9lC6RyS43n/"
-  },
-  {
     "place": "Hückeswagen, 42499",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -3226,14 +3226,6 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/i7MknKfuk5j9rfTmmHNSs/f511a9e28763b6e8c7fb6f8daefe1e01/0a0cc11c-5b5d-45b1-a36e-fcbbcc8a35a4?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Vorderansicht eines mehrstöckigen Wohnhauses mit mehreren Balkonen und Vorgarten.",
     "url": "https://www.evernest.com/de/listing/3UyW8pYggCA1sSaYbZ7jQq/"
-  },
-  {
-    "place": "Bornheim-Merten, 53332",
-    "price": "Preis auf Anfrage",
-    "status": "Verkauft",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/7sTu7GnvCCzd0RPeETG5Vs/817e0b5bbe9cf6e5cc335c92630d3829/5d577f13-4a83-411f-972c-400b61d4a0d8?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Dreistöckiges Wohnhaus mit roter Fassade und Vorgarten, daneben ein Gehweg.",
-    "url": "https://www.evernest.com/de/listing/42k5qNiHC2S9089iFIfJaV/"
   },
   {
     "place": "Düsseldorf-Unterbach, 40627",
@@ -4002,14 +3994,6 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/79CXllLNZtgcqP8KJbidwT/bea70e083492dd491521c7f239b40b4e/91739e18-7fcc-4b85-bfe4-c2db7fe0228e?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Mehrstöckige Wohnhäuser mit geparkten Autos und Bäumen an einer ruhigen Straße.",
     "url": "https://www.evernest.com/de/listing/1f83pB40Ixqci3Baa2rZPI/"
-  },
-  {
-    "place": "Düsseldorf-Pempelfort, 40211",
-    "price": "699.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/1RPl0N01zzISw0BZeqpvVP/0c507df18c0cbcdfb2ed597143b21b50/cc8baa9a-3e0d-4f7f-86fa-57f64138f61f?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Leerer Raum mit Parkettboden und weißen Wänden, große Fenster und Glastür zur nächsten Etage.",
-    "url": "https://www.evernest.com/de/listing/1LNxFqeiim9oVMWe5gzXbK/"
   },
   {
     "place": "Düsseldorf-Pempelfort, 40211",
