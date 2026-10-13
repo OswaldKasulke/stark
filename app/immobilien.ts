@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 12.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 13.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -295,6 +295,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/4jaRhPx3kzC7VNyVpC4gHh/"
   },
   {
+    "place": "Leverkusen-Schlebusch, 51377",
+    "price": "109.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/PEUNHAvaOnR058r6JAih9/75c66350ef56de7704f9a870d178538f/6bb2ba75-9211-48e8-b47f-cd5b4ee2423a?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Vierstöckiges Wohnhaus mit Balkonen und gepflegtem grünen Garten, umgeben von Bäumen.",
+    "url": "https://www.evernest.com/de/listing/24uZAvsQJlLkiMk4PojkSi/"
+  },
+  {
     "place": "Rösrath-Forsbach, 51503",
     "price": "695.000 €",
     "status": "",
@@ -405,14 +413,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/39jgYHWZzKKLi8UjTvLXeT/7c7d7b2f2d7b0abd15a716cf82437d1c/f41b789c-e1eb-4c0c-ac89-759ac939a3f3?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Helles Wohn- und Schlafzimmer mit Bett, Sofa, Fernseher und gelbem Teppich.",
     "url": "https://www.evernest.com/de/listing/31nNgM6RGekuaURamIaJKY/"
-  },
-  {
-    "place": "Kürten-Weiden, 51515",
-    "price": "259.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/1TqmDlGafZIfOqlssMCkhU/60aef889a965f715dc78f29f638e518c/c33ad73c-ec57-42e0-847c-00d889d14868?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Luftaufnahme eines bewachsenen Grundstücks neben einer Straße und Wohnhäusern.",
-    "url": "https://www.evernest.com/de/listing/15OcXDJG8SO3K9lcLBlHD3/"
   }
 ];
 
@@ -1146,6 +1146,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/2GkjHrB1JQfMXBA1ByNrQc/fd596c212d8b0950e5d2f43f5187af02/003-web-1000px.jpg?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Helles Wohnzimmer mit Holzofen, großem Fenster, Teppich und angrenzender moderner Küche.",
     "url": "https://www.evernest.com/de/listing/6XcpvA6vhsnNSUDsYSN3Oq/"
+  },
+  {
+    "place": "Leverkusen-Schlebusch, 51377",
+    "price": "109.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/PEUNHAvaOnR058r6JAih9/75c66350ef56de7704f9a870d178538f/6bb2ba75-9211-48e8-b47f-cd5b4ee2423a?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Vierstöckiges Wohnhaus mit Balkonen und gepflegtem grünen Garten, umgeben von Bäumen.",
+    "url": "https://www.evernest.com/de/listing/24uZAvsQJlLkiMk4PojkSi/"
   },
   {
     "place": "Köln-Buchheim, 51067",
@@ -3989,7 +3997,7 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Düsseldorf-Pempelfort, 40211",
-    "price": "699.000 €",
+    "price": "675.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/79CXllLNZtgcqP8KJbidwT/bea70e083492dd491521c7f239b40b4e/91739e18-7fcc-4b85-bfe4-c2db7fe0228e?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Mehrstöckige Wohnhäuser mit geparkten Autos und Bäumen an einer ruhigen Straße.",
