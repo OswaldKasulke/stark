@@ -1757,7 +1757,7 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Köln-Merkenich, 50769",
-    "price": "310.000 €",
+    "price": "295.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/7mfCWa2JfTKCWZ2HZ6JLin/1b09dbbb141605f86ffa70e153c95c69/a96c8bc3-dba1-4f04-92b0-4e5a31b303ff?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Helles Wohnzimmer mit Holzdecke, großen Fenstern, Sitzmöbeln und Zimmerpflanzen.",
@@ -2349,7 +2349,7 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Köln-Seeberg, 50769",
-    "price": "350.000 €",
+    "price": "319.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/2SKdAdxJt9vGWPWJ0iT8xP/f6719798a1d21e0fd6c8f214a319c303/c223868a-157c-41b1-b372-abaab46afbeb?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Flur mit Holztreppe, weißen Wänden, Fliesenboden und Blick auf einen Balkon mit rotem Geländer.",
