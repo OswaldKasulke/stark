@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 13.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 14.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -2260,14 +2260,6 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/4vsBxa7VHW3L5FhmshCEQ2/"
   },
   {
-    "place": "Leverkusen-Rheindorf, 51371",
-    "price": "195.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/3Y21SAxPmLFY79ZpF17b5e/94de154756acf373fd7179626c92fdd8/6e70341a-f0b8-413a-a353-0216de2e7f51?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Heller Flur mit braunen Fliesen und holzvertäfelter Wand, Türen führen in weitere Zimmer.",
-    "url": "https://www.evernest.com/de/listing/517unqTftzSFbar7hqh5c3/"
-  },
-  {
     "place": "Leichlingen (Rheinland)-Leichlingen, 42799",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -4016,7 +4008,7 @@ export const alleObjekte: Property[] = [
     "price": "699.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/2n6iCKONBJbJOqx95OwMH9/3fa2b9072ded5189466c725cd24cad17/15596fc3-9df3-4cb1-8477-56ec3b6c4b6c?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Heller, moderner Wohnraum mit Esstisch, offener Küche und Treppe zu einer Galerie.",
+    "alt": "Wohn- & Essbereich",
     "url": "https://www.evernest.com/de/listing/5G3XSgYxG4bdPSO4Tp1qef/"
   },
   {
