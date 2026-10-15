@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 14.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 15.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -263,6 +263,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/1ZKQZJSBzBfGNYG63GJxSq/"
   },
   {
+    "place": "Leverkusen-Schlebusch, 51375",
+    "price": "89.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/7vpxU7gUWH6VYEwCe4Vzsx/1dd7271bd27e7dae380019c6880af684/734c8891-53f4-454b-a13e-a9c9fbc486be?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Luftaufnahme eines mehrstöckigen Wohnhauses mit umliegenden Bäumen und Nachbarhäusern.",
+    "url": "https://www.evernest.com/de/listing/5iEtU9sDZjBZE64Wi1IuA8/"
+  },
+  {
     "place": "Odenthal-Erberich, 51519",
     "price": "695.000 €",
     "status": "",
@@ -322,8 +330,8 @@ export const properties: Property[] = [
     "place": "Köln-Buchheim, 51067",
     "price": "265.000 €",
     "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/cQ7WknpXpdfyw5G5CnFDK/cea564644e7c230757b0d2f5224b0310/17db5b7e-8d91-4b9c-a5b5-192700cbdf7d?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Heller Flur mit Fliesenboden, Garderobe und Blick in ein Kinderzimmer mit Etagenbett.",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4E4SgsySvXunyJNlpTiNtP/7b2b67ad8a5a26d1c0b906e115522330/74e8e4eb-12c9-4fe2-9029-f2f10c802bf2?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Mehrfamilienhaus mit drei Stockwerken und mehreren Fenstern, umgeben von Hecken und Gehweg.",
     "url": "https://www.evernest.com/de/listing/5COyoAXSrPLgd0769t920c/"
   },
   {
@@ -405,14 +413,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/68Dzklf5DAAvZ1qc34zHwW/9d93c77a856bd234a44f9d0c3d85aaa9/0f1c4bd7-f759-4e15-9484-5b1d0b61711a?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Wohnzimmer mit Hochbett, grauem Sofa, gelber Wand und Regal mit Aufbewahrungsboxen.",
     "url": "https://www.evernest.com/de/listing/1oU2aBuesXGEaESz13WKfU/"
-  },
-  {
-    "place": "Köln-Humboldt/ Gremberg, 51105",
-    "price": "Preis auf Anfrage",
-    "status": "Verkauft",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/39jgYHWZzKKLi8UjTvLXeT/7c7d7b2f2d7b0abd15a716cf82437d1c/f41b789c-e1eb-4c0c-ac89-759ac939a3f3?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Helles Wohn- und Schlafzimmer mit Bett, Sofa, Fernseher und gelbem Teppich.",
-    "url": "https://www.evernest.com/de/listing/31nNgM6RGekuaURamIaJKY/"
   }
 ];
 
@@ -1092,6 +1092,14 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/2fU0HHLeQI90BCVrbjsFGu/"
   },
   {
+    "place": "Leverkusen-Schlebusch, 51375",
+    "price": "89.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/7vpxU7gUWH6VYEwCe4Vzsx/1dd7271bd27e7dae380019c6880af684/734c8891-53f4-454b-a13e-a9c9fbc486be?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Luftaufnahme eines mehrstöckigen Wohnhauses mit umliegenden Bäumen und Nachbarhäusern.",
+    "url": "https://www.evernest.com/de/listing/5iEtU9sDZjBZE64Wi1IuA8/"
+  },
+  {
     "place": "Odenthal-Erberich, 51519",
     "price": "695.000 €",
     "status": "",
@@ -1223,8 +1231,8 @@ export const alleObjekte: Property[] = [
     "place": "Köln-Buchheim, 51067",
     "price": "265.000 €",
     "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/cQ7WknpXpdfyw5G5CnFDK/cea564644e7c230757b0d2f5224b0310/17db5b7e-8d91-4b9c-a5b5-192700cbdf7d?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Heller Flur mit Fliesenboden, Garderobe und Blick in ein Kinderzimmer mit Etagenbett.",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4E4SgsySvXunyJNlpTiNtP/7b2b67ad8a5a26d1c0b906e115522330/74e8e4eb-12c9-4fe2-9029-f2f10c802bf2?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Mehrfamilienhaus mit drei Stockwerken und mehreren Fenstern, umgeben von Hecken und Gehweg.",
     "url": "https://www.evernest.com/de/listing/5COyoAXSrPLgd0769t920c/"
   },
   {
@@ -4210,6 +4218,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/64tVzU1UA9MnQk9lCGpI8H/d0b9f703b216dcb4b7572a0415d3b228/f2a76d1a-6859-46e9-821e-260875c4585b?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Hauseingang",
     "url": "https://www.evernest.com/de/listing/7yeEXQgcBHa0vtSh3lbbuX/"
+  },
+  {
+    "place": "Düsseldorf-Unterbilk, 40219",
+    "price": "315.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/2GuCO8pRFSNziatEkKwlbj/8f405e058f5215b3b76e96f1d2f33791/479c5862-c47e-4c5b-bd8e-f2ea71b77475?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Modernes Wohnzimmer mit grüner Wand, großem Sofa, Sessel, Sideboard und Wandbildern.",
+    "url": "https://www.evernest.com/de/listing/3nPJd86jCCXJHKO60AvYwv/"
   },
   {
     "place": "Düsseldorf-Pempelfort, 40477",
