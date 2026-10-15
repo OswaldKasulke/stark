@@ -462,3 +462,6 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 @media(max-width:650px){.form-row.address-row{grid-template-columns:1fr 84px;gap:14px}}
 .address-row input[type=search]{-webkit-appearance:none;appearance:none}
 .address-row input[type=search]::-webkit-search-cancel-button{display:none}
+/* Beschriftung von PLZ/Ort/Strasse/Hausnummer im Rechner per CSS - sonst
+   erkennt Chrome die Felder als Adresse und legt sein Autofill darueber. */
+.label-css::before{content:attr(data-t)}
