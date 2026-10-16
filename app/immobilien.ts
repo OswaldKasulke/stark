@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 15.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 16.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -311,6 +311,14 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/24uZAvsQJlLkiMk4PojkSi/"
   },
   {
+    "place": "Kürten-Biesfeld, 51515",
+    "price": "445.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/Yf573NEDeyiqXZcIgmktq/b4d0ba35dcdc6d9478a7fd3dd5859353/9c579e4e-a1e5-452f-bb58-20172ea86437?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Einfamilienhaus mit hellem Putz, Vorgarten, gepflasterter Einfahrt und geparktem Auto.",
+    "url": "https://www.evernest.com/de/listing/1QRPDqpXUQYKnVGSV93v1U/"
+  },
+  {
     "place": "Rösrath-Forsbach, 51503",
     "price": "695.000 €",
     "status": "",
@@ -405,14 +413,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/51OKJg6BEZ1iLdPE6rfNRy/aea1ae45ee2845daa07345f6e7db541d/94277ddf-4974-4f62-ac10-5ec3971bd81e?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Mehrstöckiges Wohngebäude mit Geschäften im Erdgeschoss an einer belebten Straße mit Passanten.",
     "url": "https://www.evernest.com/de/listing/1007Z6hrpTQM73XvDZS71n/"
-  },
-  {
-    "place": "Köln-Humboldt/ Gremberg, 51105",
-    "price": "Preis auf Anfrage",
-    "status": "Verkauft",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/68Dzklf5DAAvZ1qc34zHwW/9d93c77a856bd234a44f9d0c3d85aaa9/0f1c4bd7-f759-4e15-9484-5b1d0b61711a?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Wohnzimmer mit Hochbett, grauem Sofa, gelber Wand und Regal mit Aufbewahrungsboxen.",
-    "url": "https://www.evernest.com/de/listing/1oU2aBuesXGEaESz13WKfU/"
   }
 ];
 
@@ -1162,6 +1162,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/PEUNHAvaOnR058r6JAih9/75c66350ef56de7704f9a870d178538f/6bb2ba75-9211-48e8-b47f-cd5b4ee2423a?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Vierstöckiges Wohnhaus mit Balkonen und gepflegtem grünen Garten, umgeben von Bäumen.",
     "url": "https://www.evernest.com/de/listing/24uZAvsQJlLkiMk4PojkSi/"
+  },
+  {
+    "place": "Kürten-Biesfeld, 51515",
+    "price": "445.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/Yf573NEDeyiqXZcIgmktq/b4d0ba35dcdc6d9478a7fd3dd5859353/9c579e4e-a1e5-452f-bb58-20172ea86437?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Einfamilienhaus mit hellem Putz, Vorgarten, gepflasterter Einfahrt und geparktem Auto.",
+    "url": "https://www.evernest.com/de/listing/1QRPDqpXUQYKnVGSV93v1U/"
   },
   {
     "place": "Köln-Buchheim, 51067",
@@ -3212,6 +3220,14 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/2sVOeJL7rPEo5e3S00I2ZI/"
   },
   {
+    "place": "Radevormwald-Innenstadt, 42477",
+    "price": "3.480.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/13aQG3g4puFtGLOJA2AQ3K/5234f312cffc1cf2ef3b826fbb2c6023/d58f1f1b-b71f-4794-afda-29ea83ab6a2a?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Mehrere Wohnhäuser mit dunklen Dächern und Garten, umgeben von grüner Landschaft.",
+    "url": "https://www.evernest.com/de/listing/3Kx3W6Xo0qaSXzTA1XsaQs/"
+  },
+  {
     "place": "Erkrath-Unterfeldhaus, 40699",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -3319,8 +3335,8 @@ export const alleObjekte: Property[] = [
     "place": "Düsseldorf-Holthausen, 40589",
     "price": "6.900.000 €",
     "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/dEfwXAm9zMSrzJ8KqAGY4/f6f44cb93cb4fa448849038cf1f95b9e/f29dcd24-067d-458d-a485-a07e3ceb85e5?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Unscharfe Ansicht von modernen Wohngebäuden mit rundem Textfeld in der Mitte.",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/56ZWIbG3jHOKTLL9GeG6on/e9c39462168253ec1bcc4425174eb135/c816f08e-fcbc-4c65-92b2-9f7d53b6be97?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Vierstöckiges Wohnhaus mit mehreren Fenstern und Parkplätzen davor an einer Straße.",
     "url": "https://www.evernest.com/de/listing/7qWJcCEfpj5dN3PadWwIBa/"
   },
   {
