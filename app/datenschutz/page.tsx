@@ -43,7 +43,7 @@ export default function DatenschutzPage(){
         <h2>4. Datenerfassung auf dieser Website</h2>
         <h3>Cookies</h3>
         <p>Solange Sie im Banner nicht zustimmen, setzt diese Website keine Cookies und lädt keinen Analyse-, Werbe- oder Trackingdienst. Stimmen Sie zu, setzt Google Analytics eigene Cookies — Einzelheiten in Abschnitt 7.</p>
-        <p>Unabhängig davon werden zwei Entscheidungen ausschließlich lokal in Ihrem Browser gespeichert (localStorage): Ihre Wahl zum Nachladen externer Inhalte (Abschnitt 5) und Ihre Wahl zur Reichweitenmessung (Abschnitt 7). Beide Werte enthalten keine personenbezogenen Daten und werden nicht an uns übertragen.</p>
+        <p>Unabhängig davon wird Ihre Entscheidung zur Reichweitenmessung (Abschnitt 7) ausschließlich lokal in Ihrem Browser gespeichert (localStorage), damit Sie nicht bei jedem Aufruf erneut gefragt werden. Dieser Wert enthält keine personenbezogenen Daten und wird nicht an uns übertragen. Ändern oder widerrufen können Sie Ihre Entscheidung jederzeit über den Link „Cookie-Einstellungen“ im Fußbereich jeder Seite.</p>
         <h3>Server-Log-Dateien</h3>
         <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in Server-Log-Dateien, die Ihr Browser automatisch übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und IP-Adresse. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
         <h3>Kontaktformular</h3>
@@ -55,11 +55,12 @@ export default function DatenschutzPage(){
         <p>Die Adresse der Immobilie wird schon während der Eingabe geprüft. Dafür werden Straßenname, Hausnummer und Postleitzahl an die Adressprüfung unter romanbecker.de/<wbr />bewertung-adressen.php übermittelt, die ebenfalls von uns beauftragt betrieben wird. Sie liefert Straßenvorschläge und den Ort zur Postleitzahl und bestätigt, dass es die Adresse gibt. Name und Kontaktdaten werden dabei nicht übertragen, Cookies werden nicht gesetzt; die Zugriffe erfasst der Server wie in Abschnitt 4 beschrieben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, weil die Prüfung für die von Ihnen angefragte Bewertung erforderlich ist.</p>
         <p>Die technische Entgegennahme der Formulare erfolgt über den Endpunkt <span className="nowrap">romanbecker.de/submit.php</span>, der von uns beauftragt betrieben wird. Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie im Formular ausdrücklich erteilen, sowie nach Art. 6 Abs. 1 lit. b DSGVO zur Durchführung vorvertraglicher Maßnahmen. Sie können Ihre Einwilligung jederzeit widerrufen.</p>
 
-        <h2>5. Externe Inhalte</h2>
-        <p>Auf der Startseite, den Stadtteilseiten und den Ortsseiten zeigen wir Objektbilder, die vom Bildserver <span className="nowrap">images.ctfassets.net</span> (Contentful GmbH) geladen werden. Beim Nachladen dieser Bilder wird Ihre IP-Adresse an den Anbieter übertragen.</p>
-        <p>Diese Bilder werden erst geladen, nachdem Sie zugestimmt haben. Ohne Ihre Zustimmung bleiben die Bildflächen leer; alle Texte und Funktionen der Website stehen Ihnen unverändert zur Verfügung. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO. Ihre Entscheidung können Sie jederzeit hier zurücksetzen:</p>
+        <h3>Anzeigen-Kennung (gclid)</h3>
+        <p>Kommen Sie über eine unserer Google-Anzeigen auf diese Website, hängt Google eine Klick-Kennung (gclid) an die Adresse an. Die Seite liest diese Kennung aus der Adresse, gibt sie beim Wechsel auf andere Seiten dieser Website in der Adresse weiter und sendet sie zusammen mit einer Anfrage über ein Formular mit. Auf Ihrem Gerät wird sie weder in einem Cookie noch anderweitig gespeichert.</p>
+        <p>Wir speichern die Kennung zusammen mit Ihrer Anfrage und können damit Google Ads (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) melden, dass auf einen Anzeigenklick eine Anfrage folgte (Conversion-Messung). Dabei übermitteln wir nur die Kennung und den Zeitpunkt, nicht Ihren Namen und nicht Ihre Kontaktdaten. Rechtsgrundlage ist unser berechtigtes Interesse an der Erfolgsmessung unserer Werbung (Art. 6 Abs. 1 lit. f DSGVO); Sie können dem jederzeit widersprechen (Art. 21 DSGVO).</p>
 
-        <p><button type="button" className="button outline" data-consent-reset>Entscheidung zu externen Inhalten zurücksetzen</button></p>
+        <h2>5. Objektfotos</h2>
+        <p>Die Fotos zu den Immobilienangeboten stammen aus dem Bestand der Evernest GmbH. Wir übernehmen sie beim Erstellen der Website und stellen sie von unserem eigenen Server bereit. Beim Aufruf einer Seite wird deshalb kein Bildserver eines Dritten kontaktiert, und für die Fotos ist keine Einwilligung nötig.</p>
 
         <h2>6. Schriftarten</h2>
         <p>Diese Website verwendet ausschließlich lokal auf unserem Server gespeicherte Schriftarten. Es werden keine Google Fonts und keine anderen externen Schriftdienste eingebunden; beim Aufruf der Seite wird deshalb keine Verbindung zu Servern von Schriftanbietern hergestellt.</p>
@@ -69,7 +70,7 @@ export default function DatenschutzPage(){
         <p><strong>Der Dienst wird erst geladen, nachdem Sie im Banner zugestimmt haben.</strong> Bis dahin wird keine Verbindung zu Google hergestellt, kein Skript von Google geladen und kein Cookie gesetzt. Lehnen Sie ab, bleibt es dauerhaft dabei.</p>
         <p>Nach Ihrer Zustimmung setzt Google Analytics Cookies und verarbeitet unter anderem die aufgerufenen Seiten, Zeitpunkt und Dauer des Besuchs, die verweisende Seite, Gerätetyp und Browser sowie eine gekürzte IP-Adresse. Google Analytics 4 kürzt die IP-Adresse grundsätzlich, bevor sie gespeichert wird; eine vollständige IP-Adresse wird nicht auf Dauer abgelegt. Die Ereignisdaten dieser Property werden nach zwei Monaten gelöscht.</p>
         <p>Google verarbeitet die Daten auch auf Servern in den USA. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert; für Übermittlungen dorthin besteht ein Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023. Ein Restrisiko des Zugriffs durch US-Behörden lässt sich gleichwohl nicht vollständig ausschließen.</p>
-        <p>Rechtsgrundlage ist ausschließlich Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDG. Sie können sie jederzeit mit Wirkung für die Zukunft widerrufen: <a href="#" data-consent-reset>Einwilligung widerrufen</a> — Ihre Entscheidung wird zurückgesetzt und Sie werden erneut gefragt.</p>
+        <p>Rechtsgrundlage ist ausschließlich Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Sie können sie jederzeit mit Wirkung für die Zukunft widerrufen: <a href="#" data-consent-reset>Einwilligung widerrufen</a> — Ihre Entscheidung wird zurückgesetzt und Sie werden erneut gefragt.</p>
         <p>Es findet kein Profiling und keine automatisierte Entscheidungsfindung statt. Wir führen die Analysedaten nicht mit den Angaben aus dem Kontaktformular oder dem Bewertungsrechner zusammen.</p>
 
         <h2>8. Ihre Rechte</h2>
@@ -78,7 +79,7 @@ export default function DatenschutzPage(){
         <p>Ihnen steht ferner ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.</p>
         <p>Für Anliegen zum Datenschutz erreichen Sie uns unter <a href="mailto:patrick.stark@evernest.com">patrick.stark@evernest.com</a>.</p>
 
-        <p className="editorial-note">Stand dieser Datenschutzerklärung: 14. September 2026.</p>
+        <p className="editorial-note">Stand dieser Datenschutzerklärung: 17. Oktober 2026. September 2026.</p>
       </article>
     </section>
 

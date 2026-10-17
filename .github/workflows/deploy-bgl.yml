@@ -51,8 +51,18 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      # Objektfotos von images.ctfassets.net vor dem Build auf den eigenen Server
+      # holen: beim Seitenaufruf geht so keine IP an Dritte, und die Fotos
+      # brauchen keine Einwilligung (DSGVO-Prüfung 17.10.2026).
+      - name: Objektfotos lokal ablegen
+        run: python3 scripts/fremdinhalte-lokal.py app public https://immobilienmakler-bergisch-gladbach.de
+
       - name: Build static website
         run: npm run build
+
+      - name: Keine Fotos mehr von images.ctfassets.net
+        run: python3 scripts/fremdinhalte-lokal.py --check out
+
 
       # Roman Becker hat auf dieser Seite nichts zu suchen - Texte, Skripte, Daten, PDFs.
       - name: Kein fremder Personenname

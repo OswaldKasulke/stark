@@ -465,3 +465,5 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 /* Beschriftung von PLZ/Ort/Strasse/Hausnummer im Rechner per CSS - sonst
    erkennt Chrome die Felder als Adresse und legt sein Autofill darueber. */
 .label-css::before{content:attr(data-t)}
+
+.sf-consent{background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;text-align:left}.sf-consent:hover{text-decoration:underline}

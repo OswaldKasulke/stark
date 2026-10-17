@@ -33,7 +33,7 @@ export default function ImmobilienGalerie({ items, moreLink = true }: { items?: 
       <div className="listing-rail" ref={rail}>
         {(items ?? properties).map((property, index) => (
           <a className="listing-card" href={property.url} target="_blank" rel="noreferrer" key={property.url}>
-            <img data-src={property.image} alt={property.alt} loading={index < 3 ? "eager" : "lazy"} className="external-media" />
+            <img src={property.image} alt={property.alt} loading={index < 3 ? "eager" : "lazy"} className="external-media" />
             <div className="listing-card-overlay">
               {property.status && <span className={`listing-badge${property.status === "Verkauft" ? " sold" : ""}`}>{property.status}</span>}
               <p>{property.place}</p>
