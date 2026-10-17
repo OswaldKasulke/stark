@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 16.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 17.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -65,7 +65,7 @@ export const properties: Property[] = [
   {
     "place": "Bergisch Gladbach-Sand, 51465",
     "price": "590.000 €",
-    "status": "",
+    "status": "Reserviert",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1v52YoPKpxyvxZfwFlqRW5/fa83a0b92050588e68a80d4de600e587/aaec30a1-be14-4bd5-964b-e55a5a28e5dd?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Freistehendes Wohnhaus mit rotem Dach, gepflasterter Einfahrt und kleinem Garten, in ruhigem Wohngebiet.",
     "url": "https://www.evernest.com/de/listing/99zrZppy45kmE2s6BLtjd/"
@@ -319,6 +319,22 @@ export const properties: Property[] = [
     "url": "https://www.evernest.com/de/listing/1QRPDqpXUQYKnVGSV93v1U/"
   },
   {
+    "place": "Köln-Rath/ Heumar, 51107",
+    "price": "240.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4mWanQHMuPRqHOj6GDjQwn/e51138c6a86311f62b8d588ce67f6764/2c61bad7-6ed3-4c1a-a14a-a4eedcdd4bba?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helles Wohnzimmer mit Sofa, Sessel, Balkonzugang und Teppich auf dem Boden.",
+    "url": "https://www.evernest.com/de/listing/3EgwneHnm9bREK1MUz9QM6/"
+  },
+  {
+    "place": "Köln-Rath/ Heumar, 51107",
+    "price": "198.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4rx5LsZ8GJI34PIV40SjUm/7093e561f472bb1a94cc44dedc6ab040/98bea9d0-c612-4a4c-8ba4-6cb147ef787c?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helles Wohnzimmer mit Ecksofa, Couchtisch, Esstisch, Stühlen, Fernseher und Gitarre am Fenster.",
+    "url": "https://www.evernest.com/de/listing/XSFqEuEwq6EuoQ9gdql14/"
+  },
+  {
     "place": "Rösrath-Forsbach, 51503",
     "price": "695.000 €",
     "status": "",
@@ -397,22 +413,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1HEMGHjmM9nZfBMvLfOxrd/b2c36a1e1c3277d19e814531199da07e/30ecb965-1b84-4b9d-85fc-0953f5d341fc?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Gemütliches Einfamilienhaus mit Garten, Terrasse und Gartenmöbeln, bewachsen mit Efeu.",
     "url": "https://www.evernest.com/de/listing/Gx1oYVId7Dgne68l4lvcK/"
-  },
-  {
-    "place": "Leverkusen-Lützenkirchen, 51381",
-    "price": "130.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/BXyiC8YSiqPotaE9zynfQ/bccb0940b12755bbe4233b15192cf7f9/522a6b50-03ff-4cfe-a563-67ce1bfab2fb?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Flur mit Jacken an der Garderobe, Spiegel und Blick ins Wohnzimmer mit Sofa.",
-    "url": "https://www.evernest.com/de/listing/7M0GZZAlWjYZCSlbHjRnol/"
-  },
-  {
-    "place": "Leverkusen-Wiesdorf, 51373",
-    "price": "1.495.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/51OKJg6BEZ1iLdPE6rfNRy/aea1ae45ee2845daa07345f6e7db541d/94277ddf-4974-4f62-ac10-5ec3971bd81e?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Mehrstöckiges Wohngebäude mit Geschäften im Erdgeschoss an einer belebten Straße mit Passanten.",
-    "url": "https://www.evernest.com/de/listing/1007Z6hrpTQM73XvDZS71n/"
   }
 ];
 
@@ -510,7 +510,7 @@ export const alleObjekte: Property[] = [
   {
     "place": "Bergisch Gladbach-Sand, 51465",
     "price": "590.000 €",
-    "status": "",
+    "status": "Reserviert",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1v52YoPKpxyvxZfwFlqRW5/fa83a0b92050588e68a80d4de600e587/aaec30a1-be14-4bd5-964b-e55a5a28e5dd?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Freistehendes Wohnhaus mit rotem Dach, gepflasterter Einfahrt und kleinem Garten, in ruhigem Wohngebiet.",
     "url": "https://www.evernest.com/de/listing/99zrZppy45kmE2s6BLtjd/"
@@ -1204,6 +1204,22 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/71SA9MOTNZVvWpytXCexHt/"
   },
   {
+    "place": "Köln-Rath/ Heumar, 51107",
+    "price": "240.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4mWanQHMuPRqHOj6GDjQwn/e51138c6a86311f62b8d588ce67f6764/2c61bad7-6ed3-4c1a-a14a-a4eedcdd4bba?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helles Wohnzimmer mit Sofa, Sessel, Balkonzugang und Teppich auf dem Boden.",
+    "url": "https://www.evernest.com/de/listing/3EgwneHnm9bREK1MUz9QM6/"
+  },
+  {
+    "place": "Köln-Rath/ Heumar, 51107",
+    "price": "198.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4rx5LsZ8GJI34PIV40SjUm/7093e561f472bb1a94cc44dedc6ab040/98bea9d0-c612-4a4c-8ba4-6cb147ef787c?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helles Wohnzimmer mit Ecksofa, Couchtisch, Esstisch, Stühlen, Fernseher und Gitarre am Fenster.",
+    "url": "https://www.evernest.com/de/listing/XSFqEuEwq6EuoQ9gdql14/"
+  },
+  {
     "place": "Köln-Rath/Heumar, 51107",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -1604,20 +1620,20 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/6wQ4n6PHLCt02wWM7IstpI/"
   },
   {
-    "place": "Leverkusen-Bergisch-Neukirchen, 51381",
-    "price": "695.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/6xlUUSesEAG5sSMJKZXcym/b51066c2924848a0fdbcf83c1885ad17/85cdfee2-51fa-47e4-a196-c6a45d4d58e7?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Gemütlicher Balkon mit Sitzmöbeln, vielen Pflanzen und Blick ins Grüne.",
-    "url": "https://www.evernest.com/de/listing/62Py2QbZt9RsPi8twJDNL6/"
-  },
-  {
     "place": "Köln-Nippes, 50733",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1Mpno4plJQOZhXYP6euIVV/bcdf558611df36798cef12383d0b5d93/e287ef85-aba3-4b3e-8e3e-1deffe99d1d2?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Helles Wohnzimmer mit großem Fenster, Kamin, Sofa und Holzfußboden.",
     "url": "https://www.evernest.com/de/listing/32dVHhmb4o5JEfDq1Zcl73/"
+  },
+  {
+    "place": "Kürten, 51515",
+    "price": "225.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/2SEjjviMbnY4kueW8KYOio/bb6d8849a197e4bf8e48eb6b27011095/97ec70af-7a48-4199-b6bd-04519c11d64c?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Balkon mit Fliesenboden und Blick auf Bäume und Häuser in einer Wohngegend.",
+    "url": "https://www.evernest.com/de/listing/5U3ewr5nzgOInuXgEwTWgH/"
   },
   {
     "place": "Rösrath-Menzlingen, 51503",
@@ -2274,6 +2290,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1BPRFFHyMJpBqKstlCJ1mv/9cc74f4c07366723a2bc62575fb0516c/97fd56d6-c48f-4116-8a90-e0cf09a78003?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Weißes Einfamilienhaus mit dunklem Dach, Garage und kleinem Garten an einer Straße.",
     "url": "https://www.evernest.com/de/listing/4vsBxa7VHW3L5FhmshCEQ2/"
+  },
+  {
+    "place": "Leverkusen-Rheindorf, 51371",
+    "price": "179.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/5jVzpFWni2em3b0yWTSAi/95658787709c5bb4eaf54b011c7eb385/ef504e9a-c779-4576-97c5-989b420474d2?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Visualisierung Küche",
+    "url": "https://www.evernest.com/de/listing/517unqTftzSFbar7hqh5c3/"
   },
   {
     "place": "Leichlingen (Rheinland)-Leichlingen, 42799",
@@ -3554,6 +3578,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/5Uzr9rpKDKb2xxEgCJaw2m/ef1f89ee08052723e30e7bc7d096441e/Wohnzimmer_mit_Blick_auf_Garten.jpg?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Helles, leeres Zimmer mit Holzboden, großen Fenstern und einer Tür zum Garten.",
     "url": "https://www.evernest.com/de/listing/2Q61OpfEWNI7Htx9Agj9mr/"
+  },
+  {
+    "place": "Düsseldorf-Oberbilk, 40227",
+    "price": "279.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/zARZoHGX58sc3UKd20Uzg/2a91617b239cbc3744f68acc9805f652/304baff0-55b2-4202-ac90-91aa665ea7e4?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Moderne schwarze Küchenzeile unter Dachschräge mit Waschmaschine, Herd und Fenster.",
+    "url": "https://www.evernest.com/de/listing/5SkZdap6ri6BL8Sj5zqqwC/"
   },
   {
     "place": "Düsseldorf-Oberbilk, 40227",
