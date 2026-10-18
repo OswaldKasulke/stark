@@ -2709,6 +2709,14 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Köln-Junkersdorf, 50858",
+    "price": "1.920.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/1xOsaUUY2pkU7C5tUZBwox/f9dbc9c922bd965334b5f74313ae2c4a/6d156016-8b45-4b87-818c-72c77623859a?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Modernes Wohngebäude mit Flachdach und großer Terrasse, umgeben von weiteren Wohnhäusern und Bäumen.",
+    "url": "https://www.evernest.com/de/listing/3ACbbjJqBAuoURGU8b7eUB/"
+  },
+  {
+    "place": "Köln-Junkersdorf, 50858",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/73uqJOFVLb0vrsL1lloAsV/a9d12479a18e2309d1abd1439a03a041/1b1bced0-91bc-49b4-aa90-b0b092ddf4c3?w=960&h=600&fit=fill&fm=webp&q=82",
