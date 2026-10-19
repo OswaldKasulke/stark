@@ -2068,14 +2068,6 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/3yeSXt4AowZXg5ez86i5E0/"
   },
   {
-    "place": "Köln-Marienburg, 50968",
-    "price": "1.099.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/hToCjebE2JuDROeV240MG/8057a2693d3b043f41bfa37756aaf595/a077ba4f-a0c0-4b8a-af31-64120ff5988e?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Modernes Wohnzimmer mit dunklem Sofa, Glastisch, Sessel und großem Fenster auf Parkettboden.",
-    "url": "https://www.evernest.com/de/listing/7uLH5U8c4bG5GmIs0ZhBHX/"
-  },
-  {
     "place": "Köln-Altstadt-Süd, 50676",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -2452,14 +2444,6 @@ export const alleObjekte: Property[] = [
     "url": "https://www.evernest.com/de/listing/1vkaFM5pnT5OIh3WGWJZMg/"
   },
   {
-    "place": "Köln-Sürth, 50999",
-    "price": "479.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/1w9dfwvN8HO1N8UPltjIft/038e6b4262b1cea50914068630f11d92/b5698ea9-6ce2-4e5c-b546-9cdad2d7cf3f?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Modernes Wohnzimmer mit Sofa, Couchtisch, Essbereich und Treppe, helle Holzböden und Dekoration.",
-    "url": "https://www.evernest.com/de/listing/5uJuHo7kguh2FPbxcVpjPP/"
-  },
-  {
     "place": "Köln-Lindenthal, 50931",
     "price": "Preis auf Anfrage",
     "status": "Verkauft",
@@ -2738,14 +2722,6 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/2MGN3GDxdmGFK9wBCVXUY7/3e07c0072c25a6412004c76ebc37d03d/494954c2-be37-444c-9353-f6c84663f40a?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Modernes weißes Haus mit Garten, Terrasse, Gartenmöbeln und Bäumen im Vordergrund.",
     "url": "https://www.evernest.com/de/listing/6MuxJiV4Pqt1sguKjRsWFX/"
-  },
-  {
-    "place": "Köln-Godorf, 50997",
-    "price": "Preis auf Anfrage",
-    "status": "Verkauft",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/4nnann6HnJWp2i2XD3pEBX/1695384a92bf5c58e8f97f7e310f8231/5c2e6137-b11f-4fdc-ba84-a41d1e558066?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Modernes, dreistöckiges Wohnhaus mit Garage und mehreren Fenstern an der Straßenseite.",
-    "url": "https://www.evernest.com/de/listing/3AhNO64kIZOxXVmhklSYTi/"
   },
   {
     "place": "Köln-Junkersdorf, 50858",
