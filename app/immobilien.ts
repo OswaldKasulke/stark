@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 18.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 19.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -88,7 +88,7 @@ export const properties: Property[] = [
   },
   {
     "place": "Bergisch Gladbach-Stadtmitte, 51465",
-    "price": "891.900 €",
+    "price": "849.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/7iZanRwmj92aiQOzkFAFJC/eff292264b3bb58db7374fa417488759/4f38bfb9-4bfc-4714-ab54-691cf1d6cb58?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Modernes Haus mit großer Glasüberdachung, Terrasse, Gartenmöbeln und Rasenfläche im Vorgarten.",
@@ -549,7 +549,7 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Bergisch Gladbach-Stadtmitte, 51465",
-    "price": "891.900 €",
+    "price": "849.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/7iZanRwmj92aiQOzkFAFJC/eff292264b3bb58db7374fa417488759/4f38bfb9-4bfc-4714-ab54-691cf1d6cb58?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Modernes Haus mit großer Glasüberdachung, Terrasse, Gartenmöbeln und Rasenfläche im Vorgarten.",
