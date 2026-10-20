@@ -3,7 +3,6 @@
 import { FormEvent, useState } from "react";
 import { gclidLesen } from "./gclid";
 
-// Suchprofil fuer Kaufinteressenten. Ersetzt den Link auf das Evernest-Formular:
 // das war zu lang (man sah nicht, was noch fehlt) und schickte keine Mail.
 // Geht wie das Kontaktformular an romanbecker.de/submit.php (type "suchprofil").
 const pflicht = (text: string) => ({

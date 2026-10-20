@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
 import { districts } from "../stadtteile";
-import SoldReferences from "../SoldReferences";
-import { soldByDistrict } from "../verkauft";
 
-const soldAll = Object.values(soldByDistrict).flat().reduce<{street:string;typ:string;count:number}[]>((list, item) => {
-  const hit = list.find((entry) => entry.street === item.street);
-  if (!hit) list.push({ ...item });
-  else { hit.count += item.count; if (hit.typ !== item.typ) hit.typ = "Immobilie"; }
-  return list;
-}, []).sort((a, b) => a.street.localeCompare(b.street, "de"));
 import { breadcrumbSchema, businessSchema, defaultImage, faqSchema, graphSchema, siteUrl } from "../seo";
 import SiteFooter from "@/app/SiteFooter";
 import HauptNav from "@/app/HauptNav";
@@ -75,7 +67,6 @@ export default function BergischGladbachPage() {
       <div className="city-source-row"><a className="button gold" href="/immobilienbewertung/">Eigene Immobilie bewerten</a><a className="source-link light" href="https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_20700_2026.pdf" target="_blank" rel="noreferrer">Quelle: Grundstücksmarktbericht 2026, S. 5 und 37–40 ↗</a></div>
     </section>
 
-    <SoldReferences place="Bergisch Gladbach" items={soldAll} />
     <section className="city-brw section dark-section"><div className="section-head"><div><p className="eyebrow light">Bodenrichtwerte</p><h2>Der Wert beginnt bei der konkreten Lage.</h2></div><p>Bergisch Gladbach umfasst 286 Bodenrichtwertzonen in Wohngebieten. Der amtliche Bodenrichtwert muss deshalb immer für die konkrete Adresse geprüft werden.</p></div><div className="city-brw-grid"><article><span>Gute Lage</span><strong>970 €/m²</strong><p>Freistehende Ein- und Zweifamilienhäuser</p></article><article><span>Mittlere Lage</span><strong>660 €/m²</strong><p>Freistehende Ein- und Zweifamilienhäuser</p></article><article><span>Einfache Lage</span><strong>510 €/m²</strong><p>Freistehende Ein- und Zweifamilienhäuser</p></article></div><div className="city-source-row"><a className="button gold" href="/bodenrichtwert-bergisch-gladbach/">Bodenrichtwert Bergisch Gladbach 2026</a><a className="button gold" href="https://www.boris.nrw.de/" target="_blank" rel="noreferrer">Adresse in BORIS-NRW prüfen ↗</a><a className="source-link light" href="https://www.boris.nrw.de/borisfachdaten/gmb/2026/GMB_20700_2026.pdf" target="_blank" rel="noreferrer">Quelle: Grundstücksmarktbericht 2026, S. 27–32 ↗</a></div></section>
 
     <section className="city-districts section" id="stadtteile"><div className="section-head"><div><p className="eyebrow">Stadtteile Bergisch Gladbach</p><h2>25 Lagen. Eine Stadt.</h2></div><p>Für jeden Stadtteil stehen eine eigene Marktseite, das amtliche Straßenverzeichnis und – soweit veröffentlicht – die lokale Bodenwertspanne bereit.</p></div><div className="city-district-grid">{[...districts].sort((a,b)=>a.name.localeCompare(b.name,"de")).map(district=><a href={`/stadtteile/${district.slug}/`} key={district.slug}><div><strong>{district.name}</strong><small>{district.inhabitants} Einwohner</small></div><b aria-hidden="true">→</b></a>)}</div><a className="source-link" href="https://www.bergischgladbach.de/statistik.aspx" target="_blank" rel="noreferrer">Quelle: Stadt Bergisch Gladbach, Statistikdienststelle ↗</a></section>

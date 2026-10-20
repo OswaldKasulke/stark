@@ -12,11 +12,6 @@ on:
       - next.config.ts
       - tsconfig.json
       - .github/workflows/deploy-bgl.yml
-  workflow_run:
-    # Der Listings-Commit kommt vom GITHUB_TOKEN und loest keinen push-Workflow
-    # aus - ohne diesen Trigger ginge die Aktualisierung nie live.
-    workflows: ["Update BGL Listings"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -29,7 +24,6 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,17 +45,11 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
-      # Objektfotos von images.ctfassets.net vor dem Build auf den eigenen Server
-      # holen: beim Seitenaufruf geht so keine IP an Dritte, und die Fotos
-      # brauchen keine Einwilligung (DSGVO-Prüfung 17.10.2026).
-      - name: Objektfotos lokal ablegen
-        run: python3 scripts/fremdinhalte-lokal.py app public https://immobilienmakler-bergisch-gladbach.de
-
       - name: Build static website
         run: npm run build
 
-      - name: Keine Fotos mehr von images.ctfassets.net
-        run: python3 scripts/fremdinhalte-lokal.py --check out
+      - name: Markenfreiheit und lokale Dateien prüfen
+        run: python3 scripts/pruefe-auftritt.py out
 
 
       # Roman Becker hat auf dieser Seite nichts zu suchen - Texte, Skripte, Daten, PDFs.

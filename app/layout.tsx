@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Immobilienmakler Bergisch Gladbach | Stark & Hoffmann",
     description: "Immobilienbewertung und Verkauf in Bergisch Gladbach und allen 25 Stadtteilen.",
-    images: [{ url: defaultImage, width: 1568, height: 1003, alt: "Immobilienmakler Bergisch Gladbach – Stark & Hoffmann Immobilien" }],
+    images: [{ url: defaultImage, width: 192, height: 192, alt: "Immobilienmakler Bergisch Gladbach – Stark & Hoffmann Immobilien" }],
   },
   twitter: {
     card: "summary_large_image",

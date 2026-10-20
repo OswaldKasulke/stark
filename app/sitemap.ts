@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Jede Route mit der Quelle, die ihren Inhalt bestimmt.
   const seiten: Array<[string, string[], "weekly" | "monthly" | "yearly", number]> = [
-    ["/", ["app/page.tsx", "app/immobilien.ts"], "weekly", 1],
+    ["/", ["app/page.tsx"], "weekly", 1],
     ["/bergisch-gladbach/", ["app/bergisch-gladbach/page.tsx"], "monthly", 0.9],
     ["/immobilienbewertung/", ["app/immobilienbewertung/page.tsx",
       "app/immobilienbewertung/BewertungsForm.tsx",
@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const veedel = districts.map((district) => ({
     url: `${base}/stadtteile/${district.slug}/`,
     lastModified: lastmod("app/stadtteile/[slug]/page.tsx", "app/stadtteile.ts",
-      "app/district-images.ts", "app/DistrictOffers.tsx"),
+      "app/district-images.ts"),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));

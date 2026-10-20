@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
 import { artikel } from "./ratgeber/artikel";
 import { districts } from "./stadtteile";
-import ImmobilienGalerie from "./ImmobilienGalerie";
 import ContactForm from "./ContactForm";
 import { businessSchema, graphSchema, siteUrl } from "./seo";
 import SiteFooter from "@/app/SiteFooter";
 import HauptNav from "@/app/HauptNav";
-import ReviewCarousel from "@/app/ReviewCarousel";
-import googleReviews from "@/app/google-reviews.json";
 
 export const metadata: Metadata = { description: "Immobilienmakler Bergisch Gladbach: Immobilie verkaufen mit Stark & Hoffmann, Ihrem Makler für Häuser, Wohnungen und Grundstücke in allen 25 Stadtteilen." };
 
-const heroImage = "/location/2.jpg";
 const serviceLinks = [
   ["Haus verkaufen", "/haus-verkaufen-bergisch-gladbach/", "Bewertung, Unterlagen und Vermarktung für Ein- und Zweifamilienhäuser."],
   ["Wohnung verkaufen", "/wohnung-verkaufen-bergisch-gladbach/", "Wohnungswert, Gemeinschaftsunterlagen und passende Käuferansprache."],
@@ -26,31 +22,6 @@ const steps = [
   ["05", "Besichtigung & Prüfung", "Wir organisieren Besichtigungen, qualifizieren Kaufinteressenten und prüfen Finanzierungsnachweise."],
   ["06", "Notar & Übergabe", "Von der Verhandlung über den Notartermin bis zur protokollierten Schlüsselübergabe bleiben wir an Ihrer Seite."],
 ];
-
-const legacyProperties = [
-  { place:"Odenthal-Erberich · 51519", title:"Bungalow mit großem Grundstück, Pool, Doppelgaragen und viel Potenzial in Odenthal-Erberich", price:"475.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/76CeSFsWDiiAKSJb9tvCSe/8e58988f93315789dff5f7877458d5f5/2d598894-db1b-4133-ac08-58679835c64b?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/1ZKQZJSBzBfGNYG63GJxSq/" },
-  { place:"Lohmar-Donrath · 53797", title:"Ein Haus für Mehrgenerationen, ein Zuhause fürs Leben: Zweifamilienhaus mit positiver Bauvoranfrage.", price:"879.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/5upwrosoUSQH08gO88KXBA/4dec6c4526f499e58140363f8ca1acd0/838dfc47-62c2-4ed0-ad9e-8b2a26f0d9d1?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/6KHhvo2dzdK42fEv3KVSH9/" },
-  { place:"Bergisch Gladbach-Schildgen · 51467", title:"Charmantes freistehendes Einfamilienhaus mit 280 m² Wohnfläche – stilvolles Wohnen & Arbeiten", price:"892.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/1VdUEglILwR1pj27rLPb0/d99fce6d19050aac68244799ba3fa21d/7d3afb4b-4a74-48f9-912e-f43fe08905cc?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/4QkJceuNhZnDcrDUTfgDCy/" },
-  { place:"Bergisch Gladbach-Stadtmitte · 51465", title:"Energieeffizienter Neubau-Bungalow mit Fernblick: bezugsfrei, barrierearm und flexibel nutzbar", price:"949.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/6IlBzgGyd54Glg0XcTV66q/20d7e2c8ec1c079ff17e21cfc18b220e/4f38bfb9-4bfc-4714-ab54-691cf1d6cb58?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/6hq9UOIn1AAgKSkUGRDhcN/" },
-  { place:"Bergisch Gladbach-Stadtmitte · 51465", title:"Stilvolle Altbau-Doppelhaushälfte, Architektur mit Geschichte", price:"486.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/4yoN32qeWKVoJfdFDx1BkW/edc5f3e1f8318b9a86843b95bc346901/5e34cac0-b5f7-4e45-b11c-7c03fd5ab2bc?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/49onmenXN9iMpvIeb5mXxO/" },
-  { place:"Odenthal-Glöbusch · 51519", title:"Exklusives Mehrgenerationenhaus mit zwei Wohneinheiten in grüner Wohnlage von Odenthal-Glöbusch", price:"875.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/56yJ2L4XSKMPwm7abkSHhO/f2fb5546df56ba09719424f20c7880b8/64e66707-0915-41a1-9810-f6ceba72cefa?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/ZUXtatV9l9NnxJLqKo0DZ/" },
-  { place:"Bergisch Gladbach-Lustheide · 51427", title:"Freistehendes Einfamilienhaus mit großem Grundstück", price:"895.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/60oR1MQiK4A6kfjmUVxNkH/9337dd8a982993b4df863eef141b2eef/337733cc-e6ca-453f-9791-ac620b47be1e?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/4sOpQWb7lTSp2u8YVKd1b1/" },
-  { place:"Bergisch Gladbach-Stadtmitte · 51465", title:"Klassische Eleganz auf weitläufigem Parkareal in bester Lage", price:"Preis auf Anfrage", image:"https://images.ctfassets.net/if6f7uzjzqut/xshBvzhUPe2oJUYoARyeg/9d992a4697aef920a3172182d8f6924c/8c174356-5f12-4844-8b0a-9c1e6e5f5df0?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/1b2iW8md9sRyBgpa3zrWnU/" },
-  { place:"Odenthal-Erberich · 51519", title:"Vielseitiges Zweifamilienhaus mit Einliegerwohnung und großem Grundstück in Odenthal", price:"695.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/5kO8RPl3P0l6T4JG8wpxCV/3296ca9e8d382f8b811ec589b6fd7a07/7a7c0d21-d168-4771-9ca3-7023dc24b9ef?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/2a0HNTmKuXRf1lohi07T7p/" },
-  { place:"Bergisch Gladbach-Stadtmitte · 51465", title:"Charmante 3-Zimmer-Wohnung mit Garten in stilvoller Villa, Bestlage Citynähe GL", price:"370.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/6VrSkiZxS3PVfDf30e21FS/3ca0b64da69a93a8c66fee80803e7475/bbf49d9a-6dc9-4932-8bf7-02e117c3821b?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/739anoEJHURONwToX1fsi9/" },
-  { place:"Odenthal-Klasmühle · 51519", title:"Weite, Waldnähe & Wellness – ein Zuhause voller Möglichkeiten", price:"Verkauft", image:"https://images.ctfassets.net/if6f7uzjzqut/2qNnfq4qwHhOaNTqCHHeXm/787afb2d5086c23aa0eee3811cc6a336/52f5b64c-ce1b-421b-8d2d-7f797e1a9500?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/2xTP7fOu3avF27PR8p7Xu7/" },
-  { place:"Bergisch Gladbach-Nußbaum · 51467", title:"Design trifft Lebensqualität: Architektenhaus mit Spa und Smart-Home in bester Lage von BGL-Nußbaum", price:"1.399.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/3htTTDunHlqMvj1OpSt3b7/47ed6d560cb78911a6c0d36b65591a69/a4ef604a-7cee-425d-a13a-6de57f4dc527?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/6Z7zXP636pyMpcqvah3tRt/" },
-  { place:"Santanyí", title:"Cala d'Or Mallorca: „El arte de vivir bien!“", price:"1.250.000 €", image:"https://images.ctfassets.net/if6f7uzjzqut/3OQ50bWbRADIRg7vs8J2uY/f9274610b74098bed87a0fb6b7db12ce/a3ccfdf4-f7df-49e9-9f27-c34b6f483bf5?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/3pxIrXS5DaxcfNDhbTrHPX/" },
-  { place:"Bergisch Gladbach-Lückerath · 51429", title:"Mit Liebe gepflegt, mit Pool gekrönt: Doppelhaushälfte in Bensberg", price:"Verkauft", image:"https://images.ctfassets.net/if6f7uzjzqut/1GohMKdyEwpKHfupI1600v/43c280f723ec8b8f192eda26b980f7e9/67e7d896-c4b0-4822-94aa-39b1f6037671?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/79T5H2ABzWbB6JhrCie8qP/" },
-  { place:"Bergisch Gladbach-Refrath · 51427", title:"Hochwertige Eigentumswohnungen in KfW-40-Bauweise in Bergisch Gladbach-Refrath", price:"Ab 346.500 €", image:"https://images.ctfassets.net/if6f7uzjzqut/7e6r8vJCYnvMy3gw5Xvn3H/19af800523918cf9f65ecd86f9827012/7d92867d-15c2-48f6-9bdf-68b8b99dbb95?fm=webp&w=900&h=700&fit=fill&q=75", url:"https://www.evernest.com/de/listing/0dLo3OABJS1e4BTJ7bdtM/" },
-];
-
-// Das Datum steht je Bewertung in den Daten. Vorher stand im Template fest
-// "Google-Bewertung, 2025" unter jedem Zitat — unabhaengig davon, wie alt die
-// zitierte Rezension war, und damit still veraltend.
-// Quelle: Google-Rezensionen des Standorts, abgerufen am 07.09.2026.
-
-const googleReviewsUrl = "https://www.google.com/maps/place/Evernest+Bergisch+Gladbach+-+Stark+%26+Hoffmann+Immobilien+GmbH/@50.9659599,7.1237848,14z/data=!4m10!1m2!2m1!1shoffmann+und+stark!3m6!1s0x47bed77e6a23d7b5:0xa1ba73d86f4ba04f!8m2!3d50.9659599!4d7.1598337!15sChJob2ZmbWFubiB1bmQgc3RhcmtaFCISaG9mZm1hbm4gdW5kIHN0YXJrkgEScmVhbF9lc3RhdGVfYWdlbnRzmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0V1ZGTldSWGxsVlVwcVVWWk9iVTlZUWxSaVZWWlFZVE53YVZadFl4QULgAQD6AQUInAQQSg!16s%2Fg%2F11pq_xh29r?entry=ttu";
 
 const locations = [
   ["Bechen", "bechen"],
@@ -85,9 +56,9 @@ export default function Home() {
       <a className="header-cta" href="/immobilienbewertung/">Kostenlose Bewertung</a>
     </header>
 
-    <section className="hero" id="top" style={{backgroundImage:`linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.08) 82%),url(${heroImage})`}}>
+    <section className="hero" id="top">
       <div className="hero-content">
-        <p className="eyebrow light">EVERNEST Lizenzpartner · Immobilienmakler Bergisch Gladbach</p>
+        <p className="eyebrow light">Immobilienmakler Bergisch Gladbach</p>
         <h1>Immobilienmakler Bergisch Gladbach.<br/>Persönlich begleitet.</h1>
         <p className="hero-copy">Sie möchten Ihre Immobilie in Bergisch Gladbach verkaufen? Stark &amp; Hoffmann begleitet Eigentümer beim Verkauf und bei der Bewertung von Häusern, Wohnungen und Grundstücken – in allen 25 Stadtteilen und im Umland.</p>
         <div className="hero-actions"><a className="button gold" href="/immobilienbewertung/">Immobilie bewerten lassen</a><a className="text-link light" href="tel:+4922049147881">+49 2204 914 7881 <span>↗</span></a></div>
@@ -96,10 +67,9 @@ export default function Home() {
     </section>
 
     <section className="profile section" id="profil">
-      <div className="profile-image"><div className="profile-gallery"><img src="/location/3.jpg" alt="Stark & Hoffmann, Immobilienmakler Bergisch Gladbach – Büro in der Schloßstraße"/><img src="/location/1.jpg" alt="Evernest Schriftzug im Immobilienbüro Bergisch Gladbach" loading="lazy"/><img src="/location/4.jpg" alt="Beratungsbereich im Evernest Immobilienbüro Bergisch Gladbach" loading="lazy"/></div><div className="image-label"><strong>Stark & Hoffmann</strong><span>Evernest Lizenzpartner</span></div></div>
       <div className="profile-copy">
         <p className="eyebrow">Unser Profil</p><h2>Ihr Makler in Bergisch Gladbach – zuhause in Bensberg.</h2>
-        <p className="lead">Als Makler in Bergisch Gladbach führt die Stark &amp; Hoffmann Immobilien GmbH den Evernest-Standort als Lizenznehmerin, mit Patrick Stark und Julian Hoffmann als Geschäftsführern.</p>
+        <p className="lead">Stark &amp; Hoffmann Immobilien GmbH begleitet Eigentümer in Bergisch Gladbach bei Bewertung, Verkauf und Vermietung. Geschäftsführer sind Patrick Stark und Julian Hoffmann.</p>
         <p>Wer uns besuchen möchte, findet den Showroom an der Schloßstraße: Es ist das letzte Geschäft, bevor die Auffahrt zum Bensberger Schloss beginnt. Von hier aus sind wir für Eigentümer in allen 25 Stadtteilen da, dazu in Odenthal, Kürten, Overath, Lindlar und Engelskirchen – egal, ob ein Verkauf ansteht, ein Kauf oder eine Vermietung. Digitale Werkzeuge erledigen bei uns die Routine; für Ihre Fragen nehmen wir uns im direkten Gespräch Zeit.</p>
         <div className="profile-points"><span>Bewertung mit örtlichen Marktdaten</span><span>Klassisch, diskret oder Off-Market</span><span>Kaufinteressenten vorab geprüft</span><span>Begleitung bis zur Übergabe</span></div>
         <a className="button dark" href="/team/">Das Team kennenlernen</a>
@@ -123,13 +93,8 @@ export default function Home() {
     </section>
 
     <section className="properties section" id="immobilien">
-      <div className="section-head"><div><p className="eyebrow">Unsere Immobilien</p><h2>Immobilienangebote in Bergisch Gladbach und Umgebung.</h2><p className="gallery-status">50 Einträge · nach Entfernung zur Stadtmitte sortiert</p></div></div>
-      <ImmobilienGalerie />
-    </section>
-
-    <section className="reviews section">
-      <div className="reviews-title"><p className="eyebrow light">Was Kunden über uns sagen</p><h2>Vertrauen entsteht durch gute Arbeit.</h2><div className="rating-sources"><a href={googleReviewsUrl} target="_blank" rel="noreferrer" aria-label="Google-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>{googleReviews.rating} / 5</strong><small>Google · {googleReviews.count} Rezensionen</small></a><a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer" aria-label="Trustlocal-Bewertungen ansehen"><span className="rating-stars">★★★★★</span><strong>9,2 / 10</strong><small>Trustlocal · 91 Bewertungen</small></a></div><p className="reviews-source-note">Google-Stand: {googleReviews.checked_at.split("-").reverse().join(".")} · Trustlocal-Stand: 24.08.2026 · Quellen und vollständige Bewertungen: <a href={googleReviewsUrl} target="_blank" rel="noreferrer">Google ↗</a> und <a href="https://trustlocal.de/nordrhein-westfalen/bergisch-gladbach/immobilienmakler/patrick-stark-immobilien/" target="_blank" rel="noreferrer">Trustlocal ↗</a></p></div>
-      <ReviewCarousel reviews={googleReviews.reviews} />
+      <div className="section-head"><div><p className="eyebrow">Ihre Immobiliensuche</p><h2>Finden Sie ein Zuhause, das zu Ihnen passt.</h2></div><p>Teilen Sie uns Ihre Wunschlage, die passende Objektart und Ihr Budget mit. Wir besprechen mit Ihnen die nächsten Schritte Ihrer Suche.</p></div>
+      <a className="button dark" href="/suchprofil/">Suchwunsch mitteilen</a>
     </section>
 
     <section className="cities section" id="staedte">
@@ -152,7 +117,7 @@ export default function Home() {
     </section>
 
     <section className="contact section" id="kontakt">
-      <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie Ihre Makler in Bergisch Gladbach im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:patrick.stark@evernest.com">patrick.stark@evernest.com</a></address></div>
+      <div className="contact-info"><p className="eyebrow light">Kontakt</p><h2>Sprechen wir über Ihre Immobilie.</h2><p>Unverbindlich, persönlich und ohne Zeitdruck. Besuchen Sie Ihre Makler in Bergisch Gladbach im Showroom in Bensberg oder schreiben Sie uns.</p><address><strong>Stark & Hoffmann Immobilien GmbH</strong><span>Schloßstraße 41<br/>51429 Bergisch Gladbach</span><a href="tel:+4922049147881">+49 2204 914 7881</a><a href="mailto:hallo@immobilienmakler-bergisch-gladbach.de">hallo@immobilienmakler-bergisch-gladbach.de</a></address></div>
       <ContactForm/>
     </section>
 
