@@ -1750,7 +1750,7 @@ export const alleObjekte: Property[] = [
   {
     "place": "Leverkusen-Opladen, 51379",
     "price": "379.000 €",
-    "status": "",
+    "status": "Reserviert",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1UaVuuEXW4i00tOXqFSFtX/cf2705f43929a67140565e6fba5a376f/e7377ba0-8e28-40fb-8888-e265a677f5d2?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Zweistöckiges Haus mit weißer Fassade, Garten, zwei Fahrrädern und Metallzaun im Vordergrund.",
     "url": "https://www.evernest.com/de/listing/5gvFXjsnLzENcv7SKiTBYl/"
@@ -3290,14 +3290,6 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/45wGOIWo944zdVZwqseeow/aee39af8d665e4632f5fe39cae6e11fc/Aussenansicht.jpeg?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Zweistöckiges Wohnhaus mit Satteldach und zwei Eingängen, umgeben von Büschen, an einer Straße gelegen.",
     "url": "https://www.evernest.com/de/listing/4xINggVl6FOFyBWDFDll6Q/"
-  },
-  {
-    "place": "Wuppertal-Friedrichsberg, 42119",
-    "price": "449.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/QQc2KsOr8CGphu63hsh2w/22ceb64db9ff5c908eba8871e7dc22e0/05608240-6fc9-4a99-a78b-f3d8d0a65c2e?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Modernes Wohnhaus mit Solarpanelen auf dem Dach, Zufahrtsweg und Gartenhäuschen.",
-    "url": "https://www.evernest.com/de/listing/3HQqel9OJfQ8XvUHOlvYIY/"
   },
   {
     "place": "Düsseldorf-Unterbach, 40627",
