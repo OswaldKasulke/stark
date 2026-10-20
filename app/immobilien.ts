@@ -9,7 +9,7 @@ export type Property = {
 
 // AUTOMATISCH ERZEUGT — nicht von Hand aendern.
 // Evernest-Angebote und verkaufte Referenzen im Umkreis von Bergisch Gladbach,
-// abgerufen am 19.10.2026. Reihenfolge: Entfernung zur Stadtmitte
+// abgerufen am 20.10.2026. Reihenfolge: Entfernung zur Stadtmitte
 // (50.9924 / 7.1287) aufsteigend, 50 naechste Objekte.
 // Aktualisierung: scripts/update-listings.mjs, taeglich ueber
 // .github/workflows/update-listings.yml.
@@ -181,14 +181,6 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/5ymXNvVyH68D2MrVGp77T0/2bebd7545eb9dbe87224a2787606a447/abf44f1b-0365-4c9e-982f-79413dc68303?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Modernes Badezimmer mit Waschbecken, Spiegel, Toilette, offener Dusche und Fenster mit Blick ins Grüne.",
     "url": "https://www.evernest.com/de/listing/3ce35h2AXgVENl0uya9Qgo/"
-  },
-  {
-    "place": "Bergisch Gladbach-Bockenberg, 51429",
-    "price": "175.000 €",
-    "status": "Reserviert",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/6DQ9JiJ08KcBhMvU7b7okW/3763a76f11c4a09dc2566027402ddd9f/02be3a19-5caf-4b45-a48d-e99c533eba28?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Helles leeres Wohnzimmer mit Parkettboden und großen Fenstern, die auf einen Balkon führen.",
-    "url": "https://www.evernest.com/de/listing/3KCi3v5FcFGRZIppDPwuuQ/"
   },
   {
     "place": "Bergisch Gladbach-Bockenberg, 51429",
@@ -413,6 +405,14 @@ export const properties: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/1HEMGHjmM9nZfBMvLfOxrd/b2c36a1e1c3277d19e814531199da07e/30ecb965-1b84-4b9d-85fc-0953f5d341fc?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Gemütliches Einfamilienhaus mit Garten, Terrasse und Gartenmöbeln, bewachsen mit Efeu.",
     "url": "https://www.evernest.com/de/listing/Gx1oYVId7Dgne68l4lvcK/"
+  },
+  {
+    "place": "Leverkusen-Lützenkirchen, 51381",
+    "price": "130.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/BXyiC8YSiqPotaE9zynfQ/bccb0940b12755bbe4233b15192cf7f9/522a6b50-03ff-4cfe-a563-67ce1bfab2fb?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Flur mit Jacken an der Garderobe, Spiegel und Blick ins Wohnzimmer mit Sofa.",
+    "url": "https://www.evernest.com/de/listing/7M0GZZAlWjYZCSlbHjRnol/"
   }
 ];
 
@@ -850,14 +850,6 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/2FMRXJL51IjyUvbhocLBXx/30ed7e5ed806fe8720d6c556111d47d8/7e93ac5b-335c-43d8-9d4e-8f90598db51e?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Einfamilienhaus mit Garten auf einer Ecke, umgeben von anderen Häusern und viel Grün.",
     "url": "https://www.evernest.com/de/listing/5mjcqHTFVA5gKzosNMFCRU/"
-  },
-  {
-    "place": "Bergisch Gladbach-Bockenberg, 51429",
-    "price": "175.000 €",
-    "status": "Reserviert",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/6DQ9JiJ08KcBhMvU7b7okW/3763a76f11c4a09dc2566027402ddd9f/02be3a19-5caf-4b45-a48d-e99c533eba28?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Helles leeres Wohnzimmer mit Parkettboden und großen Fenstern, die auf einen Balkon führen.",
-    "url": "https://www.evernest.com/de/listing/3KCi3v5FcFGRZIppDPwuuQ/"
   },
   {
     "place": "Bergisch Gladbach-Bensberg, 51429",
@@ -1778,6 +1770,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/6n2RsjfuZuaWn5avc57DYj/f6e6a745be72600bc978e5223801922c/21c9bd59-7b97-44de-87e7-112bb6975368?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Rotes Wohnhaus mit mehreren Balkonen und Pflanzen an der Fassade, Blick von der Straße.",
     "url": "https://www.evernest.com/de/listing/6tXmPuvQKFKa1Zlxeiah86/"
+  },
+  {
+    "place": "Köln-Nippes, 50733",
+    "price": "389.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/6hEZpN8wegipVv3tVlPbkc/3703e6005e508385a20d2e5cec4f013d/e48d18bc-ae65-40bc-97b2-b4eb2272284c?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Helles Wohnzimmer mit grauem Sofa, Esstisch, offener Küche und Bilderwand.",
+    "url": "https://www.evernest.com/de/listing/1o6MgqiNc5zPo5WKfQR3KN/"
   },
   {
     "place": "Köln-Nippes, 50733",
@@ -2850,6 +2850,14 @@ export const alleObjekte: Property[] = [
     "image": "https://images.ctfassets.net/if6f7uzjzqut/2qTv2N72MpeLAa7deeQHvS/9a98fcef768027880a252d9630c4b1eb/c1d7d68a-483e-4695-a190-107e3fc0c938?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Wohnhaus mit Garage, davor steht ein blaues Auto, Bäume mit Herbstlaub und Zebrastreifen-Straßenmarkierung.",
     "url": "https://www.evernest.com/de/listing/70rTmXiZ9LNvXwd5C2AsQ0/"
+  },
+  {
+    "place": "Remscheid-Scheid, 42853",
+    "price": "545.000 €",
+    "status": "",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/4V8xxHUEX8bDwlpJWlm4n5/477d5170b6abde14c14dac575fea86d4/b2c95e6c-9620-4790-9053-9c49c126d47b?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Außenansicht",
+    "url": "https://www.evernest.com/de/listing/18jtlCCrMddAt34hDZag06/"
   },
   {
     "place": "Köln-Lövenich, 50859",
@@ -4109,19 +4117,19 @@ export const alleObjekte: Property[] = [
   },
   {
     "place": "Düsseldorf-Düsseltal, 40237",
-    "price": "1.760.000 €",
-    "status": "",
-    "image": "https://images.ctfassets.net/if6f7uzjzqut/jw3pIs4tRJtplQBol1lhm/f3da1a4fb2bee322783946dbc7b11866/b71ceb00-9427-4c4b-97c1-99aea93e4448?w=960&h=600&fit=fill&fm=webp&q=82",
-    "alt": "Große Terrasse mit Sitzgruppe, Blick auf bunten Garten mit Blumen, Bäumen und Wasserbecken.",
-    "url": "https://www.evernest.com/de/listing/6PbggxUVHcqt9ilAdylNGx/"
-  },
-  {
-    "place": "Düsseldorf-Düsseltal, 40237",
     "price": "749.000 €",
     "status": "",
     "image": "https://images.ctfassets.net/if6f7uzjzqut/67n0p4fQAWDopl0bXoIe0Z/4fa586ea4d6631ce00942bd89484d11a/9eee299b-4705-46d9-93bb-f6ddf72da38d?w=960&h=600&fit=fill&fm=webp&q=82",
     "alt": "Heller, leerer Raum mit Holzfußboden, weißen Wänden und großen Fenstern mit Blick ins Grüne.",
     "url": "https://www.evernest.com/de/listing/5Aro1u7Eevh22crcbANL8l/"
+  },
+  {
+    "place": "Düsseldorf-Düsseltal, 40237",
+    "price": "Preis auf Anfrage",
+    "status": "Verkauft",
+    "image": "https://images.ctfassets.net/if6f7uzjzqut/jw3pIs4tRJtplQBol1lhm/f3da1a4fb2bee322783946dbc7b11866/b71ceb00-9427-4c4b-97c1-99aea93e4448?w=960&h=600&fit=fill&fm=webp&q=82",
+    "alt": "Große Terrasse mit Sitzgruppe, Blick auf bunten Garten mit Blumen, Bäumen und Wasserbecken.",
+    "url": "https://www.evernest.com/de/listing/6PbggxUVHcqt9ilAdylNGx/"
   },
   {
     "place": "Düsseldorf-Pempelfort, 40211",
