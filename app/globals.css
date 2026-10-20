@@ -470,8 +470,6 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 
 /* Eigenständiger Auftritt ohne Büro-Markenbilder. */
 .hero{background-color:#202725}
-.profile{grid-template-columns:1fr}
-.profile-copy{max-width:900px}
 
 a[href^="mailto:"]{overflow-wrap:anywhere}
 
