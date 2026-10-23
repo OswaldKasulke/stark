@@ -474,3 +474,8 @@ footer.site-footer{display:block;padding:72px clamp(24px,8vw,132px) 40px}
 a[href^="mailto:"]{overflow-wrap:anywhere}
 
 .team-placeholder{aspect-ratio:auto;height:180px;background:#202725;color:#fff}
+
+/* Verkaufte Immobilien als Straßenzeile (23.10.2026) */
+.sold-references h2{margin-bottom:18px}
+.sold-streets{max-width:900px;font-size:17px;line-height:1.8;margin:0 0 18px}
+.sold-question{margin:0;color:var(--muted)}.sold-question a{color:#000;border-bottom:1px solid #000;padding-bottom:2px}
