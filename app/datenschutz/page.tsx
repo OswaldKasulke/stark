@@ -79,7 +79,7 @@ export default function DatenschutzPage(){
         <p>Ihnen steht ferner ein Beschwerderecht bei einer Aufsichtsbehörde zu, insbesondere bei der Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.</p>
         <p>Für Anliegen zum Datenschutz erreichen Sie uns unter <a href="mailto:hallo@immobilienmakler-bergisch-gladbach.de">hallo@immobilienmakler-bergisch-gladbach.de</a>.</p>
 
-        <p className="editorial-note">Stand dieser Datenschutzerklärung: 17. Oktober 2026. September 2026.</p>
+        <p className="editorial-note">Stand dieser Datenschutzerklärung: 30. Oktober 2026.</p>
       </article>
     </section>
 

@@ -147,6 +147,7 @@ h2{font-size:clamp(39px,4.6vw,65px);line-height:1.03}
 .contact input:focus,.contact select:focus,.contact textarea:focus{border-color:var(--gold)}
 .contact .consent{flex-direction:row;align-items:flex-start;text-transform:none;letter-spacing:0;line-height:1.45;color:var(--muted)}
 .contact .consent input{width:auto;margin-top:2px}
+.consent a{text-decoration:underline;text-underline-offset:3px}
 footer{background:#061b1d;color:#d4ddda;padding:70px clamp(24px,8vw,132px);display:grid;grid-template-columns:1.35fr 1fr 1fr 1.2fr;gap:50px;border-top:1px solid rgba(255,255,255,.1)}
 footer h4{color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-size:9px;margin:0 0 20px}
 footer p,footer a{display:block;font-size:11px;line-height:1.75;color:#9cacaa;margin-bottom:7px}
