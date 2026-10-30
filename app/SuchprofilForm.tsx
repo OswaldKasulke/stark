@@ -55,7 +55,7 @@ export default function SuchprofilForm() {
       <div className="form-field"><label htmlFor="such-telefon">Telefon *</label><input id="such-telefon" name="telefon" type="tel" autoComplete="tel" {...pflicht("Bitte geben Sie Ihre Telefonnummer ein.")}/></div>
     </div>
     <div className="form-field"><label htmlFor="such-nachricht">Anmerkungen</label><textarea id="such-nachricht" name="nachricht" rows={2}/></div>
-    <label className="consent" htmlFor="such-einwilligung"><input id="such-einwilligung" name="einwilligung" type="checkbox" {...pflicht("Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu.")}/> Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung des Suchprofils zu. Details in der <a href="/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>. *</label>
+    <label className="consent" htmlFor="such-einwilligung"><input id="such-einwilligung" name="einwilligung" type="checkbox" {...pflicht("Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu.")}/> <span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung des Suchprofils zu. Details in der <a href="/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>. *</span></label>
     <button className="button gold" type="submit" disabled={status === "sending"}>{status === "sending" ? "Wird gesendet …" : "Suchprofil senden"}</button>
     {status === "sent" && <p className="form-status success" role="status">Vielen Dank. Ihr Suchprofil wurde versendet.</p>}
     {status === "error" && <p className="form-status error" role="alert">Das Suchprofil konnte nicht gesendet werden. Bitte versuchen Sie es erneut.</p>}
