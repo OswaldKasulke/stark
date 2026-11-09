@@ -484,3 +484,4 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
 /* Einheitlicher Sektionsabstand 32 px oben/unten auf allen vier Seiten (Roman, 09.11.2026) */
 .section:not(.tool-section){padding-top:32px;padding-bottom:32px}
 .district-mini-section{padding-top:32px;padding-bottom:32px}
+.section>:last-child,.section>:last-child>:last-child{margin-bottom:0}.section>:first-child,.section>:first-child>:first-child{margin-top:0}
