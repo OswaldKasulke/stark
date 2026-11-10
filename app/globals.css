@@ -485,3 +485,8 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
 .section{padding-top:32px;padding-bottom:32px}
 .district-mini-section{padding-top:32px;padding-bottom:32px}
 .section>:last-child,.section>:last-child>:last-child{margin-bottom:0}.section>:first-child,.section>:first-child>:first-child{margin-top:0}
+
+/* Heros ebenfalls 32 px oben/unten, ohne Mindesthöhe (Roman, 10.11.2026) */
+.hero,.district-hero,.page-hero,.team-hero,.tool-hero,.legal-hero,.city-hero,.location-hero,.downloads-hero,.sale-hero{padding-top:32px!important;padding-bottom:32px!important;min-height:0!important}
+:is(.hero,.district-hero,.page-hero,.team-hero,.tool-hero,.legal-hero,.city-hero,.location-hero,.downloads-hero,.sale-hero)>:last-child,:is(.hero,.district-hero,.page-hero,.team-hero,.tool-hero,.legal-hero,.city-hero,.location-hero,.downloads-hero,.sale-hero)>:last-child>:last-child{margin-bottom:0}:is(.hero,.district-hero,.page-hero,.team-hero,.tool-hero,.legal-hero,.city-hero,.location-hero,.downloads-hero,.sale-hero)>:first-child,:is(.hero,.district-hero,.page-hero,.team-hero,.tool-hero,.legal-hero,.city-hero,.location-hero,.downloads-hero,.sale-hero)>:first-child>:first-child{margin-top:0}
+.valuation-tool{margin-top:0}
