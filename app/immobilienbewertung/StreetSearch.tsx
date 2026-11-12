@@ -43,7 +43,7 @@ export default function StreetSearch({postalCode,street,number,onPostalCodeChang
   const [matches,setMatches]=useState<any[]>([]);
   const [resolution,setResolution]=useState<AddressResolution>({valid:false,message:"",candidates:[]});
   useEffect(()=>{let aktuell=true;const timer=setTimeout(()=>{if(strasse.trim().length<2){setMatches([]);return;}searchSharedStreetsRemote(strasse,10,postalCode).then(treffer=>{if(!aktuell)return;setMatches(treffer);if(autoWahl.current&&treffer.length===1&&nummerImStrassenfeld&&!selectedId){autoWahl.current=false;waehle(treffer[0]);}});},180);return ()=>{aktuell=false;clearTimeout(timer);};},[strasse,postalCode]);
-  useEffect(()=>{let aktuell=true;resolveSharedAddressRemote(selectedId,nummer,postalCode).then(ergebnis=>{if(aktuell)setResolution(ergebnis);});return ()=>{aktuell=false;};},[selectedId,nummer,postalCode]);
+  useEffect(()=>{let aktuell=true;if(!selectedId){setResolution({valid:false,message:"",candidates:[]});return ()=>{aktuell=false;};}resolveSharedAddressRemote(selectedId,nummer,postalCode).then(ergebnis=>{if(aktuell)setResolution(ergebnis);});return ()=>{aktuell=false;};},[selectedId,nummer,postalCode]);
   const first=resolution.candidates[0];
   const result:ResolvedAddress={zip:first?.zip||"",district:first?.area||"",city:first?.city||"",region:first?.region||"",valid:resolution.valid,message:resolution.message,candidates:resolution.candidates};
   useEffect(()=>onResolve(result),[result.zip,result.district,result.city,result.region,result.valid,result.message,JSON.stringify(result.candidates)]);
